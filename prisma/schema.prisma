@@ -1,0 +1,63 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Question {
+  id              Int       @id @default(autoincrement())
+  year            String?   // 例: "R5", "R4", "H27"
+  questionNumber  Int?      // 例: 1〜50
+  field           String?   // Keep for backwards compatibility for now
+  majorField      String?   // 大分類: "権利関係", "宅建業法" etc.
+  subField        String?   // 中分類: "代理", "意思表示" etc.
+  content         String?   // 問題文テキスト
+  sourceSheet     String?   // Excelのどのシートから来たか
+  knowledgeTags   String?   // AIによって抽出された実践タグ(カンマ区切り等で保存)
+  riskCategory    String?   // 法律家の視点: 取引リスク対応型分類
+  situationCategory String? // 講師の視点: シチュエーション型分類
+
+  options         Option[]
+  attempts        Attempt[]
+  explanation     QuestionExplanation?
+  userMeta        UserQuestionMeta?
+}
+
+model QuestionExplanation {
+  id            Int      @id @default(autoincrement())
+  questionId    Int      @unique
+  question      Question @relation(fields: [questionId], references: [id], onDelete: Cascade)
+  content       String?  // 設問全体の解説
+  isDebated     Boolean  @default(false) // ディベート・解説済みフラグ
+}
+
+model UserQuestionMeta {
+  id            Int      @id @default(autoincrement())
+  questionId    Int      @unique
+  question      Question @relation(fields: [questionId], references: [id], onDelete: Restrict)
+  isBookmarked  Boolean  @default(false) // 苦手・要復習フラグ
+}
+
+model Option {
+  id              Int       @id @default(autoincrement())
+  questionId      Int
+  question        Question  @relation(fields: [questionId], references: [id], onDelete: Cascade)
+  optionNumber    Int       // 1, 2, 3, 4
+  content         String?   // 選択肢のテキスト
+  isCorrect       Boolean?  // 正答かどうか
+  explanation     String?   // この選択肢単体の解説
+}
+
+model Attempt {
+  id              Int       @id @default(autoincrement())
+  questionId      Int
+  question        Question  @relation(fields: [questionId], references: [id], onDelete: Restrict)
+  isCorrect       Boolean
+  attemptedAt     DateTime  @default(now())
+  selectedOptions String?   // ユーザーが選んだ選択肢（複数回答対応: "1,3" のようなカンマ区切り、またはJSON配列）
+  reasoning       String?   // 選んだ理由・思考プロセスのメモ
+  judgments       String?   // 肢ごとの仮判定メモ(JSON string)
+}
