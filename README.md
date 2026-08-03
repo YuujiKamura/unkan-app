@@ -1,0 +1,44 @@
+# 運行管理者試験（貨物） 過去問ダッシュボード
+
+運行管理者試験（貨物）の過去問題（CBT・筆記）を解いて、学習進捗や正答率を管理できる Web アプリケーションです。
+
+## 🌐 アプリケーション URL (GitHub Pages)
+
+**[https://yuujikamura.github.io/unkan-app/](https://yuujikamura.github.io/unkan-app/)**
+
+このアプリは GitHub Actions を用いて完全な静的サイト（SPA）としてビルドされ、ブラウザのみで動作します。
+
+## 🚀 主な機能
+
+* **過去問の解答と正誤判定**: 令和2年〜令和6年などの実際の過去問データを収録し、選択形式やCBTの穴埋め形式に対応。
+* **学習進捗ダッシュボード**: 年度ごと、分野（4大分野）ごとの正答率や未回答問題の進捗を可視化。
+* **学習カレンダー表示**: GitHubの草（ヒートマップ）のように日々の学習量を記録・表示。
+* **ローカルセーブ・ロード機能**: ブラウザの LocalStorage にセーブデータを保存し、JSONファイルとしてエクスポート・インポートすることが可能（オフラインでの学習データ持ち運びに対応）。
+
+## 🛠 開発・ローカル環境の立ち上げ
+
+Node.js (v20以上を推奨) がインストールされている環境で、以下のコマンドを実行してください。
+
+```bash
+# 依存関係のインストール
+npm install
+
+# ローカル開発サーバーの起動
+npm run dev
+```
+
+ブラウザで `http://localhost:3000/` にアクセスすると、ダッシュボード画面が表示されます。
+
+> **Note**: ローカル開発時（`npm run dev`）はルートパス `/` で起動しますが、GitHub Pagesへのデプロイ時は `next.config.mjs` の設定により自動的に `/unkan-app` が `basePath` として設定されます。
+
+## 📁 データの更新・管理
+
+問題データ（`public/data/questions.json`）は、元のPDFまたは画像（`data/images/`）からOCRを通じてパースされ、スクリプト（`scripts/io/fix_*.ts` 等）によって正規化されたものが格納されています。
+新しい年度の問題を追加する場合は、画像からJSONを抽出し、正規化スクリプトで変換した上で `public/data/questions.json` を更新してください。
+
+## 📝 技術スタック
+
+* **フレームワーク**: Next.js (App Router, Static Export)
+* **言語**: TypeScript
+* **スタイリング**: Vanilla CSS (`src/app/globals.css`)
+* **データ管理**: Prisma (スクリプトからのJSON生成用), ブラウザ LocalStorage (進捗管理用)
