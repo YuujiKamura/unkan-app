@@ -4,8 +4,8 @@ const isSpaBuild = process.env.NEXT_PUBLIC_APP_MODE === 'spa' && process.env.NOD
 
 const nextConfig = {
   output: isSpaBuild || isGitHubActions ? 'export' : undefined,
-  basePath: isGitHubActions ? '/unkan_questions' : undefined,
-  trailingSlash: isSpaBuild || isGitHubActions,
+  basePath: (isSpaBuild || isGitHubActions) ? '/unkan-app' : undefined,
+  trailingSlash: false,
   images: {
     unoptimized: isSpaBuild || isGitHubActions,
   },

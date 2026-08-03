@@ -7,11 +7,13 @@ import remarkGfm from 'remark-gfm';
 import remarkBreaks from 'remark-breaks';
 import EditQuestionModal from './EditQuestionModal';
 
+import { apiClient } from '../lib/apiClient';
+
 type Question = {
   id: number;
   year: string;
   questionNumber: number;
-  field: string;
+  field: string | null;
   content: string | null;
   correctAnswer: number;
   explanation: string | null;
@@ -30,9 +32,45 @@ export default function Quiz({ mode }: { mode: 'random' | 'review' }) {
   const [isEditModalOpen, setIsEditModalOpen] = useState(false);
 
   useEffect(() => {
-    fetch(`/api/questions?limit=10&mode=${mode}`)
-      .then(res => res.json())
-      .then(data => setQuestions(data));
+    const IS_SPA_MODE = process.env.NEXT_PUBLIC_APP_MODE === 'spa' || (typeof window !== 'undefined' && window.location.hostname.includes('github.io'));
+    
+    if (IS_SPA_MODE) {
+      import('../lib/dataRepository').then(({ getQuestionsClient, getAttemptsClient }) => {
+        getQuestionsClient().then(allQs => {
+          let candidates = allQs.filter(q => q.content && !['平成26年', '平成27年', '平成28年', '平成29年', '平成30年'].includes(q.year));
+          
+          const bookmarks = (() => { try { return JSON.parse(localStorage.getItem('unkan_spa_bookmarks') || '{}'); } catch { return {}; } })();
+          const debates = (() => { try { return JSON.parse(localStorage.getItem('unkan_spa_debates') || '{}'); } catch { return {}; } })();
+          const explanations = (() => { try { return JSON.parse(localStorage.getItem('unkan_spa_explanations') || '{}'); } catch { return {}; } })();
+          const attempts = getAttemptsClient();
+
+          if (mode === 'review') {
+            candidates = candidates.filter(q => {
+              if (bookmarks[q.id]) return true;
+              return attempts.some((a: any) => a.questionId === q.id && !a.isCorrect);
+            });
+          }
+
+          for (let i = candidates.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [candidates[i], candidates[j]] = [candidates[j], candidates[i]];
+          }
+          
+          const selected = candidates.slice(0, 10).map(q => ({
+            ...q,
+            isBookmarked: bookmarks[q.id] || false,
+            isDebated: debates[q.id] || false,
+            explanation: explanations[q.id] || q.explanation || null
+          }));
+          
+          setQuestions(selected);
+        });
+      });
+    } else {
+      fetch(`/api/questions?limit=10&mode=${mode}`)
+        .then(res => res.json())
+        .then(data => setQuestions(data));
+    }
   }, [mode]);
 
   if (questions.length === 0) {
@@ -97,14 +135,10 @@ export default function Quiz({ mode }: { mode: 'random' | 'review' }) {
     }
 
     // ログ記録
-    await fetch('/api/attempts', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        questionId: currentQ.id,
-        selectedOption: optionNumber,
-        isCorrect
-      })
+    await apiClient.saveAttempt({
+      questionId: currentQ.id,
+      selectedOptions: optionNumber.toString(),
+      isCorrect
     });
   };
 
@@ -114,11 +148,7 @@ export default function Quiz({ mode }: { mode: 'random' | 'review' }) {
     newQuestions[currentIndex].isBookmarked = newStatus;
     setQuestions(newQuestions);
 
-    await fetch(`/api/questions/${currentQ.id}/bookmark`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ isBookmarked: newStatus })
-    });
+    await apiClient.toggleBookmark(currentQ.id, newStatus);
   };
 
   const toggleDebate = async () => {
@@ -129,11 +159,7 @@ export default function Quiz({ mode }: { mode: 'random' | 'review' }) {
     updatedQuestions[currentIndex] = { ...currentQ, isDebated: newStatus };
     setQuestions(updatedQuestions);
 
-    await fetch(`/api/questions/${currentQ.id}/debate`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ isDebated: newStatus })
-    });
+    await apiClient.toggleDebate(currentQ.id, newStatus);
   };
 
   const nextQuestion = () => {

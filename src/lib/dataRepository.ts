@@ -22,7 +22,7 @@ export async function getQuestionsClient(): Promise<Question[]> {
   }
 
   try {
-    const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+    const basePath = (typeof window !== 'undefined' && window.location.pathname.startsWith('/unkan-app')) ? '/unkan-app' : '';
     const res = await fetch(`${basePath}/data/questions.json`);
     if (res.ok) {
       cachedQuestions = await res.json();

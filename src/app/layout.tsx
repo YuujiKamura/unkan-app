@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import SaveLoadUI from "../components/SaveLoadUI";
 import AutoSaveSyncProvider from "../components/AutoSaveSyncProvider";
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: "運行管理者 過去問演習・学習ダッシュボード",
@@ -29,7 +30,7 @@ export default function RootLayout({
             WebkitBackdropFilter: 'blur(12px)'
           }}>
             <div style={{ display: 'flex', gap: '1rem', justifyContent: 'space-between', width: '100%', alignItems: 'center', flexWrap: 'wrap' }}>
-              <a href="/questions" style={{ 
+              <Link href="/questions" style={{ 
                 textDecoration: 'none', 
                 color: 'var(--text-primary)', 
                 fontWeight: 'bold',
@@ -39,7 +40,7 @@ export default function RootLayout({
                 fontSize: '1.2rem'
               }}>
                 🏠 運行管理者過去問ダッシュボード
-              </a>
+              </Link>
               <SaveLoadUI />
             </div>
           </nav>

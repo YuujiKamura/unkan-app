@@ -72,6 +72,11 @@ export default function EditQuestionModal({
     setErrorMsg('');
 
     try {
+      const IS_SPA_MODE = process.env.NEXT_PUBLIC_APP_MODE === 'spa' || (typeof window !== 'undefined' && window.location.hostname.includes('github.io'));
+      if (IS_SPA_MODE) {
+        throw new Error('Github PagesなどのSPA環境からは問題文の編集はできません。');
+      }
+
       const res = await fetch(`/api/questions/${question.id}`, {
         method: 'PATCH',
         headers: { 'Content-Type': 'application/json' },

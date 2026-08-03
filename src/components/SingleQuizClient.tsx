@@ -386,9 +386,9 @@ export default function SingleQuizClient({
           {groupTitle && <span style={{ color: '#2563eb', fontWeight: 800 }}>{groupTitle}</span>}
           {totalInGroup > 0 && <span style={{ color: '#475569', fontSize: '0.9rem' }}>({currentPosition} / {totalInGroup}問目)</span>}
         </div>
-        <a href={`/questions${navQueryStr}`} style={{ fontSize: '0.88rem', color: '#2563eb', fontWeight: 'bold', textDecoration: 'none' }}>
-          ↩ 問題一覧に戻る
-        </a>
+        <Link href={`/questions${navQueryStr}`} style={{ fontSize: '0.88rem', color: '#2563eb', fontWeight: 'bold', textDecoration: 'none' }}>
+          ← 一覧へ戻る
+        </Link>
       </div>
 
       <header style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '2rem', alignItems: 'center', gap: '1rem', flexWrap: 'wrap' }}>
@@ -1040,9 +1040,9 @@ export default function SingleQuizClient({
         )}
         
         <div style={{ display: 'flex', justifyContent: 'center' }}>
-          <a href="/questions" className="btn btn-primary" style={{ width: '100%', maxWidth: '300px', textAlign: 'center', textDecoration: 'none' }}>
-            問題一覧に戻る
-          </a>
+          <Link href="/questions" className="btn btn-primary" style={{ width: '100%', maxWidth: '300px', textAlign: 'center', textDecoration: 'none' }}>
+            一覧に戻る
+          </Link>
         </div>
       </div>
 

@@ -1,9 +1,10 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import Link from 'next/link';
 import { useRouter, useSearchParams } from 'next/navigation';
 import EditQuestionModal from './EditQuestionModal';
+
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
 type QuestionItem = {
   id: number;
@@ -66,23 +67,7 @@ export default function QuestionsListContent({
     }
   }, [groups, activeTab, isMounted]);
 
-  useEffect(() => {
-    // ブラウザバック時やタブがフォーカスされた時に、キャッシュを破棄して最新データをフェッチする
-    const handleRefresh = () => {
-      router.refresh();
-    };
 
-    window.addEventListener('pageshow', handleRefresh);
-    window.addEventListener('focus', handleRefresh);
-
-    // マウント時にも念のためリフレッシュ
-    router.refresh();
-
-    return () => {
-      window.removeEventListener('pageshow', handleRefresh);
-      window.removeEventListener('focus', handleRefresh);
-    };
-  }, [router]);
 
   // Find the maximum number of attempts any question has, so we know how many iterations to show in the dropdown
   const maxAttempts = Math.max(...mappedQuestions.map(q => q.attempts.length), 0);
@@ -185,9 +170,9 @@ export default function QuestionsListContent({
               return (
                 <tr key={q.id} style={{ borderBottom: '1px solid rgba(255,255,255,0.05)' }}>
                   <td style={{ padding: '0.2rem 0.5rem', fontWeight: 'bold', whiteSpace: 'nowrap' }}>
-                    <Link href={quizHref} style={{ color: 'var(--text-primary)', textDecoration: 'underline' }}>
+                    <a href={`${basePath}${quizHref}`} style={{ color: 'var(--text-primary)', textDecoration: 'underline' }}>
                       {q.year} 問{q.questionNumber}
-                    </Link>
+                    </a>
                   </td>
                   <td style={{ padding: '0.2rem 0.5rem', whiteSpace: 'nowrap' }}>{q.majorField || '不明'} - {q.subField || '未分類'}</td>
                   <td style={{ padding: '0.2rem 0.5rem', whiteSpace: 'nowrap' }}>
@@ -211,13 +196,13 @@ export default function QuestionsListContent({
                   </td>
                   <td style={{ padding: '0.2rem 0.5rem', whiteSpace: 'nowrap' }}>
                     <div style={{ display: 'flex', gap: '0.8rem', alignItems: 'center' }}>
-                      <Link 
-                        href={quizHref}
+                      <a
+                        href={`${basePath}${quizHref}`}
                         className={`btn ${isDebated ? 'btn-primary' : 'btn-secondary'}`}
-                        style={{ padding: '0.3rem 0.8rem', fontSize: '0.85rem' }}
+                        style={{ padding: '0.3rem 0.8rem', fontSize: '0.85rem', textDecoration: 'none' }}
                       >
                         {q.attempts.length > 0 ? '復習する' : '挑戦する'}
-                      </Link>
+                      </a>
                       <button
                         onClick={async () => {
                           // 全データの取得が必要な場合はAPIから取得

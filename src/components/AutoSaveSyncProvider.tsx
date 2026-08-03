@@ -6,6 +6,8 @@ export default function AutoSaveSyncProvider({ children }: { children: React.Rea
   const syncTimerRef = useRef<NodeJS.Timeout | null>(null);
 
   const triggerSync = () => {
+    if (process.env.NEXT_PUBLIC_APP_MODE === 'spa') return;
+
     try {
       if (typeof window !== 'undefined' && navigator.sendBeacon) {
         navigator.sendBeacon('/api/userdata/sync');

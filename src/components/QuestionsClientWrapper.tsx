@@ -1,7 +1,7 @@
 'use client';
 
 import { useSearchParams } from 'next/navigation';
-import Link from 'next/link';
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 import HistoryCalendar from '@/components/HistoryCalendar';
 import QuestionsListContent from '@/components/QuestionsListContent';
 import SubFieldChart from '@/components/SubFieldChart';
@@ -82,15 +82,15 @@ export default function QuestionsClientWrapper({
       <header style={{ marginBottom: '1.5rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: '#ffffff', padding: '0.8rem 1.2rem', borderRadius: '14px', border: '2px solid #000000', boxShadow: '0 2px 8px rgba(0,0,0,0.05)' }}>
         <div style={{ display: 'flex', gap: '0.8rem', flexWrap: 'wrap', alignItems: 'center' }}>
           <span style={{ fontWeight: 'bold', color: '#000000', fontSize: '0.95rem' }}>📁 表示切替:</span>
-          <Link href="/questions?groupBy=year" className={`btn ${groupBy === 'year' ? 'btn-primary' : 'btn-secondary'}`} style={{ padding: '0.5rem 1.2rem', fontSize: '0.95rem', fontWeight: 'bold' }}>
+          <a href={`${basePath}/questions?groupBy=year`} className={`btn ${groupBy === 'year' ? 'btn-primary' : 'btn-secondary'}`} style={{ padding: '0.5rem 1.2rem', fontSize: '0.95rem', fontWeight: 'bold', textDecoration: 'none' }}>
             📅 年度別
-          </Link>
-          <Link href="/questions?groupBy=field" className={`btn ${groupBy === 'field' ? 'btn-primary' : 'btn-secondary'}`} style={{ padding: '0.5rem 1.2rem', fontSize: '0.95rem', fontWeight: 'bold' }}>
+          </a>
+          <a href={`${basePath}/questions?groupBy=field`} className={`btn ${groupBy === 'field' ? 'btn-primary' : 'btn-secondary'}`} style={{ padding: '0.5rem 1.2rem', fontSize: '0.95rem', fontWeight: 'bold', textDecoration: 'none' }}>
             📚 大分類別 (4大分野)
-          </Link>
-          <Link href="/questions?groupBy=subField" className={`btn ${groupBy === 'subField' ? 'btn-primary' : 'btn-secondary'}`} style={{ padding: '0.5rem 1.2rem', fontSize: '0.95rem', fontWeight: 'bold' }}>
+          </a>
+          <a href={`${basePath}/questions?groupBy=subField`} className={`btn ${groupBy === 'subField' ? 'btn-primary' : 'btn-secondary'}`} style={{ padding: '0.5rem 1.2rem', fontSize: '0.95rem', fontWeight: 'bold', textDecoration: 'none' }}>
             🏷️ テーマ別 (小分類)
-          </Link>
+          </a>
         </div>
       </header>
 

@@ -26,7 +26,14 @@ if (fs.existsSync(nextDir)) {
 
 try {
   console.log('3. Running Next.js build...');
-  execSync('npx cross-env NEXT_PUBLIC_APP_MODE=spa npx next build', { stdio: 'inherit' });
+  execSync('npx cross-env NEXT_PUBLIC_APP_MODE=spa NEXT_PUBLIC_BASE_PATH=/unkan-app npx next build', { stdio: 'inherit' });
+  
+  // Add .nojekyll for GitHub Pages
+  const outDir = path.join(__dirname, '../out');
+  if (fs.existsSync(outDir)) {
+    fs.writeFileSync(path.join(outDir, '.nojekyll'), '');
+    console.log('Created .nojekyll in out directory.');
+  }
 } catch (e) {
   console.error('Build failed');
 } finally {
