@@ -299,7 +299,7 @@ export default function SingleQuizClient({
         attempts: [
           {
             id: savedAttempt?.id || Date.now(),
-            selectedOption: selectedOptions.join(','),
+            selectedOptions: selectedOptions.join(','),
             isCorrect: isActuallyCorrect,
             attemptedAt: savedAttempt?.attemptedAt || new Date().toISOString(),
             reasoning: reasoningText,
@@ -537,12 +537,12 @@ export default function SingleQuizClient({
               )}
 
               <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-                {(currentQ.options && currentQ.options.length > 0 ? currentQ.options : [
+                {[...(currentQ.options && currentQ.options.length > 0 ? currentQ.options : [
                   { optionNumber: 1, content: '' },
                   { optionNumber: 2, content: '' },
                   { optionNumber: 3, content: '' },
                   { optionNumber: 4, content: '' }
-                ]).sort((a: any, b: any) => a.optionNumber - b.optionNumber).map((opt: any) => {
+                ])].sort((a: any, b: any) => a.optionNumber - b.optionNumber).map((opt: any) => {
                   let btnStyle: React.CSSProperties = { justifyContent: 'flex-start', padding: '1.2rem', width: '100%', textAlign: 'left', fontSize: '1.1rem' };
                   let btnClass = "btn btn-secondary";
                   
@@ -912,7 +912,7 @@ export default function SingleQuizClient({
                     <span style={{ fontWeight: 'bold' }}>
                       {isAnswered ? (
                         <span style={{ color: attempt.isCorrect ? 'var(--success)' : 'var(--error)' }}>
-                          {attempt.isCorrect ? '正解' : '不正解'} (選択: {attempt.selectedOption || 'なし'})
+                          {attempt.isCorrect ? '正解' : '不正解'} (選択: {attempt.selectedOptions || 'なし'})
                         </span>
                       ) : (
                         <span style={{ color: 'var(--text-secondary)' }}>解答済 (結果は回答後に表示)</span>

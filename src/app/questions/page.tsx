@@ -56,7 +56,7 @@ export default async function QuestionsList() {
   // SPAモードまたはDB未接続時は完全クリーンな（個人履歴なしの）データをセット
   if (mappedQuestions.length === 0) {
     try {
-      const jsonPath = path.join(process.cwd(), 'public', 'questions.json');
+      const jsonPath = path.join(process.cwd(), 'public', 'data', 'questions.json');
       if (fs.existsSync(jsonPath)) {
         const raw = fs.readFileSync(jsonPath, 'utf-8');
         const questions: any[] = JSON.parse(raw);

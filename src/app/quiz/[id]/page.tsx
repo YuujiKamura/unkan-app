@@ -21,7 +21,7 @@ export async function generateStaticParams() {
   }
 
   try {
-    const jsonPath = path.join(process.cwd(), 'public', 'questions.json');
+    const jsonPath = path.join(process.cwd(), 'public', 'data', 'questions.json');
     if (fs.existsSync(jsonPath)) {
       const raw = fs.readFileSync(jsonPath, 'utf-8');
       const questions: any[] = JSON.parse(raw);
@@ -105,7 +105,7 @@ export default async function SingleQuizPage({
 
   if (!questionRaw) {
     try {
-      const jsonPath = path.join(process.cwd(), 'public', 'questions.json');
+      const jsonPath = path.join(process.cwd(), 'public', 'data', 'questions.json');
       if (fs.existsSync(jsonPath)) {
         const raw = fs.readFileSync(jsonPath, 'utf-8');
         const questions: any[] = JSON.parse(raw);
@@ -153,7 +153,7 @@ export default async function SingleQuizPage({
     });
   } catch (e) {
     try {
-      const jsonPath = path.join(process.cwd(), 'public', 'questions.json');
+      const jsonPath = path.join(process.cwd(), 'public', 'data', 'questions.json');
       if (fs.existsSync(jsonPath)) {
         const raw = fs.readFileSync(jsonPath, 'utf-8');
         const questions: any[] = JSON.parse(raw);
@@ -231,7 +231,7 @@ export default async function SingleQuizPage({
     });
   } catch (e) {
     try {
-      const jsonPath = path.join(process.cwd(), 'public', 'questions.json');
+      const jsonPath = path.join(process.cwd(), 'public', 'data', 'questions.json');
       if (fs.existsSync(jsonPath)) {
         const raw = fs.readFileSync(jsonPath, 'utf-8');
         const questions: any[] = JSON.parse(raw);
@@ -262,24 +262,40 @@ export default async function SingleQuizPage({
 
   // 万が一、現在の問題が条件フィルタで除外されていた場合の一括フォールバック
   if (currentIndex === -1) {
-    groupQuestions = await prisma.question.findMany({
-      where: { year: questionRaw.year },
-      select: { 
-        id: true,
-        year: true,
-        questionNumber: true,
-        attempts: {
-          orderBy: { attemptedAt: 'desc' },
-          take: 1
+    try {
+      groupQuestions = await prisma.question.findMany({
+        where: { year: questionRaw.year },
+        select: { 
+          id: true,
+          year: true,
+          questionNumber: true,
+          attempts: {
+            orderBy: { attemptedAt: 'desc' },
+            take: 1
+          }
         }
-      }
-    });
-    groupQuestions.sort((a, b) => {
-      const ya = getYearNum(a.year);
-      const yb = getYearNum(b.year);
-      if (ya !== yb) return yb - ya;
-      return (a.questionNumber || 0) - (b.questionNumber || 0);
-    });
+      });
+      groupQuestions.sort((a, b) => {
+        const ya = getYearNum(a.year);
+        const yb = getYearNum(b.year);
+        if (ya !== yb) return yb - ya;
+        return (a.questionNumber || 0) - (b.questionNumber || 0);
+      });
+    } catch (e) {
+      try {
+        const jsonPath = path.join(process.cwd(), 'public', 'data', 'questions.json');
+        if (fs.existsSync(jsonPath)) {
+          const raw = fs.readFileSync(jsonPath, 'utf-8');
+          const questions: any[] = JSON.parse(raw);
+          groupQuestions = questions.filter(q => q.year === questionRaw.year).map(q => ({
+            id: q.id,
+            year: q.year,
+            questionNumber: q.questionNumber,
+            attempts: []
+          }));
+        }
+      } catch (e2) {}
+    }
     currentIndex = groupQuestions.findIndex(q => q.id === id);
     contextModeLabel = '📅 年度別演習';
     groupTitle = questionRaw.year || '年度';

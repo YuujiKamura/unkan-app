@@ -48,7 +48,7 @@ export default function QuestionsClientWrapper({
     const ya = getYearNum(a.year);
     const yb = getYearNum(b.year);
     if (ya !== yb) return yb - ya;
-    return (a.questionNumber || 0) - (a.questionNumber || 0);
+    return (a.questionNumber || 0) - (b.questionNumber || 0);
   });
 
   const years = Array.from(new Set(mappedQuestions.map(q => q.year).filter(Boolean)));
