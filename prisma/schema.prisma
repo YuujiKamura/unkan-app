@@ -15,10 +15,12 @@ model Question {
   majorField      String?   // 大分類: "権利関係", "宅建業法" etc.
   subField        String?   // 中分類: "代理", "意思表示" etc.
   content         String?   // 問題文テキスト
+  imageUrl        String?   // 標識等の画像パス(例: /images/R5_16.png)
   sourceSheet     String?   // Excelのどのシートから来たか
   knowledgeTags   String?   // AIによって抽出された実践タグ(カンマ区切り等で保存)
   riskCategory    String?   // 法律家の視点: 取引リスク対応型分類
   situationCategory String? // 講師の視点: シチュエーション型分類
+  format          String    @default("SINGLE") // 出題形式 (SINGLE, MULTI_GROUP 等)
 
   options         Option[]
   attempts        Attempt[]
@@ -47,8 +49,9 @@ model Option {
   question        Question  @relation(fields: [questionId], references: [id], onDelete: Cascade)
   optionNumber    Int       // 1, 2, 3, 4
   content         String?   // 選択肢のテキスト
-  isCorrect       Boolean?  // 正答かどうか
-  explanation     String?   // この選択肢単体の解説
+  isCorrect       Boolean?  // 正答フラグ
+  explanation     String?   // 選択肢毎の解説
+  structuredData  String?   // JSON文字列 (MULTI_GROUP等の場合の構造化データ)
 }
 
 model Attempt {

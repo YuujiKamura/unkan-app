@@ -6,6 +6,7 @@ import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import remarkBreaks from 'remark-breaks';
 import EditQuestionModal from './EditQuestionModal';
+import QuestionOptionsRenderer from './QuestionOptionsRenderer';
 
 import { apiClient } from '../lib/apiClient';
 
@@ -16,6 +17,8 @@ type Question = {
   field: string | null;
   content: string | null;
   correctAnswer: number;
+  correctOptions?: number[];
+  format?: 'MULTI_GROUP' | 'NORMAL';
   explanation: string | null;
   isBookmarked: boolean;
   isDebated: boolean;
@@ -26,6 +29,7 @@ export default function Quiz({ mode }: { mode: 'random' | 'review' }) {
   const [questions, setQuestions] = useState<Question[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedOption, setSelectedOption] = useState<number | null>(null);
+  const [selectedMultiOptions, setSelectedMultiOptions] = useState<Record<number, number>>({});
   const [isAnswered, setIsAnswered] = useState(false);
   const [score, setScore] = useState(0);
   const [copied, setCopied] = useState(false);
@@ -37,7 +41,7 @@ export default function Quiz({ mode }: { mode: 'random' | 'review' }) {
     if (IS_SPA_MODE) {
       import('../lib/dataRepository').then(({ getQuestionsClient, getAttemptsClient }) => {
         getQuestionsClient().then(allQs => {
-          let candidates = allQs.filter(q => q.content && !['平成26年', '平成27年', '平成28年', '平成29年', '平成30年'].includes(q.year));
+          let candidates = allQs.filter(q => q.content && !['平成26年', '平成27年', '平成28年', '平成29年', '平成30年'].includes(q.year || ''));
           
           const bookmarks = (() => { try { return JSON.parse(localStorage.getItem('unkan_spa_bookmarks') || '{}'); } catch { return {}; } })();
           const debates = (() => { try { return JSON.parse(localStorage.getItem('unkan_spa_debates') || '{}'); } catch { return {}; } })();
@@ -96,7 +100,10 @@ export default function Quiz({ mode }: { mode: 'random' | 'review' }) {
 
   const currentQ = questions[currentIndex];
 
+  const isMultiMode = currentQ?.format === 'MULTI_GROUP';
+
   const checkIsVoided = (q: Question) => {
+    if (isMultiMode) return false;
     return q.correctAnswer === null && (!q.options || q.options.every((o: any) => !o.isCorrect));
   };
 
@@ -110,13 +117,22 @@ export default function Quiz({ mode }: { mode: 'random' | 'review' }) {
     return optionNum === q.correctAnswer;
   };
 
-  const isPointAwarded = (q: Question, optionNum: number) => {
+  const isPointAwarded = (q: Question) => {
     if (checkIsVoided(q)) return true;
-    return isOptionFactuallyCorrect(q, optionNum);
+    if (isMultiMode) {
+      const correctOpts = q.correctOptions || [];
+      const opts = q.options || [];
+      if (correctOpts.length === 0) return false;
+      return opts.every((opt, i) => selectedMultiOptions[opt.optionNumber] === correctOpts[i]);
+    }
+    return isOptionFactuallyCorrect(q, selectedOption!);
   };
 
   const getCorrectAnswersText = (q: Question) => {
     if (checkIsVoided(q)) return '解なし(不適切問題)';
+    if (isMultiMode) {
+      return q.correctOptions ? q.correctOptions.join(', ') : '不明';
+    }
     if (q.options && q.options.length > 0) {
       const corrects = q.options.filter((o: any) => o.isCorrect).map((o: any) => o.optionNumber);
       if (corrects.length > 0) return corrects.join(', ');
@@ -125,20 +141,46 @@ export default function Quiz({ mode }: { mode: 'random' | 'review' }) {
   };
 
   const handleSelect = async (optionNumber: number) => {
-    if (isAnswered) return;
+    if (isAnswered || isMultiMode) return;
     setSelectedOption(optionNumber);
     setIsAnswered(true);
-    const isCorrect = isPointAwarded(currentQ, optionNumber);
     
-    if (isCorrect) {
-      setScore(score + 1);
+    // Simulate setting score synchronously for simple option
+    let correct = false;
+    if (checkIsVoided(currentQ) || isOptionFactuallyCorrect(currentQ, optionNumber)) {
+       correct = true;
+       setScore(score + 1);
     }
 
-    // ログ記録
     await apiClient.saveAttempt({
       questionId: currentQ.id,
       selectedOptions: optionNumber.toString(),
-      isCorrect
+      isCorrect: correct
+    });
+  };
+
+  const handleMultiSelect = (optionNumber: number, choiceNum: number) => {
+    if (isAnswered) return;
+    setSelectedMultiOptions(prev => ({
+      ...prev,
+      [optionNumber]: choiceNum
+    }));
+  };
+
+  const submitMultiAnswer = async () => {
+    setIsAnswered(true);
+    let correct = false;
+    const correctOpts = currentQ.correctOptions || [];
+    const opts = currentQ.options || [];
+    if (correctOpts.length > 0 && opts.every((opt, i) => selectedMultiOptions[opt.optionNumber] === correctOpts[i])) {
+      correct = true;
+      setScore(score + 1);
+    }
+
+    await apiClient.saveAttempt({
+      questionId: currentQ.id,
+      selectedOptions: JSON.stringify(selectedMultiOptions),
+      isCorrect: correct
     });
   };
 
@@ -153,8 +195,6 @@ export default function Quiz({ mode }: { mode: 'random' | 'review' }) {
 
   const toggleDebate = async () => {
     const newStatus = !currentQ.isDebated;
-    
-    // Update local state for current question
     const updatedQuestions = [...questions];
     updatedQuestions[currentIndex] = { ...currentQ, isDebated: newStatus };
     setQuestions(updatedQuestions);
@@ -164,6 +204,7 @@ export default function Quiz({ mode }: { mode: 'random' | 'review' }) {
 
   const nextQuestion = () => {
     setSelectedOption(null);
+    setSelectedMultiOptions({});
     setIsAnswered(false);
     setCurrentIndex(currentIndex + 1);
   };
@@ -201,6 +242,8 @@ export default function Quiz({ mode }: { mode: 'random' | 'review' }) {
       console.error("Copy failed", err);
     }
   };
+
+  const isReadyToSubmit = isMultiMode && currentQ.options && Object.keys(selectedMultiOptions).length === currentQ.options.length;
 
   return (
     <div className="container animate-fade-in-up" style={{ maxWidth: '800px' }}>
@@ -255,57 +298,35 @@ export default function Quiz({ mode }: { mode: 'random' | 'review' }) {
           </h3>
         )}
 
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-          {(currentQ.options && currentQ.options.length > 0 ? currentQ.options : [
-            { optionNumber: 1, content: '' },
-            { optionNumber: 2, content: '' },
-            { optionNumber: 3, content: '' },
-            { optionNumber: 4, content: '' }
-          ]).sort((a, b) => a.optionNumber - b.optionNumber).map(opt => {
-            let btnStyle: React.CSSProperties = { justifyContent: 'flex-start', padding: '1.2rem', width: '100%', textAlign: 'left', fontSize: '1.1rem' };
-            let btnClass = "btn btn-secondary";
-            
-            if (isAnswered) {
-              if (isOptionFactuallyCorrect(currentQ, opt.optionNumber)) {
-                btnStyle.background = 'var(--success-glow)';
-                btnStyle.borderColor = 'var(--success)';
-                btnStyle.color = '#fff';
-              } else if (selectedOption === opt.optionNumber) {
-                if (checkIsVoided(currentQ)) {
-                  btnStyle.background = 'var(--success-glow)';
-                  btnStyle.borderColor = 'var(--success)';
-                  btnStyle.color = '#fff';
-                } else {
-                  btnStyle.background = 'var(--error-glow)';
-                  btnStyle.borderColor = 'var(--error)';
-                  btnStyle.color = '#fff';
-                }
-              }
-            } else if (selectedOption === opt.optionNumber) {
-              btnClass = "btn btn-primary";
-            }
+        <QuestionOptionsRenderer
+          currentQ={currentQ}
+          selectedOptions={selectedOption !== null ? [selectedOption] : []}
+          isAnswered={isAnswered}
+          onSelectOption={handleSelect}
+          onSelectMultiOption={handleMultiSelect}
+          selectedMultiOptions={selectedMultiOptions}
+          isOptionFactuallyCorrect={isOptionFactuallyCorrect}
+          checkIsVoided={checkIsVoided}
+        />
 
-            return (
-              <button 
-                key={opt.optionNumber} 
-                className={btnClass}
-                style={btnStyle}
-                onClick={() => handleSelect(opt.optionNumber)}
-              >
-                <span style={{ fontWeight: 'bold', marginRight: '1rem', opacity: 0.7 }}>{opt.optionNumber}.</span> 
-                {opt.content || `選択肢 ${opt.optionNumber}`}
-              </button>
-            )
-          })}
-        </div>
+        {isMultiMode && !isAnswered && (
+          <button 
+            className="btn btn-primary" 
+            style={{ width: '100%', padding: '1.2rem', marginTop: '2rem', fontSize: '1.2rem', opacity: isReadyToSubmit ? 1 : 0.5 }}
+            disabled={!isReadyToSubmit}
+            onClick={submitMultiAnswer}
+          >
+            解答する
+          </button>
+        )}
       </div>
 
       {isAnswered && (
-        <div className="glass-panel animate-fade-in-up" style={{ padding: '2rem', borderTop: `4px solid ${isPointAwarded(currentQ, selectedOption!) ? 'var(--success)' : 'var(--error)'}` }}>
-          <h3 style={{ color: isPointAwarded(currentQ, selectedOption!) ? 'var(--success)' : 'var(--error)', marginBottom: '1rem' }}>
+        <div className="glass-panel animate-fade-in-up" style={{ padding: '2rem', borderTop: `4px solid ${isPointAwarded(currentQ) ? 'var(--success)' : 'var(--error)'}` }}>
+          <h3 style={{ color: isPointAwarded(currentQ) ? 'var(--success)' : 'var(--error)', marginBottom: '1rem' }}>
             {checkIsVoided(currentQ)
               ? '🎉 正解！（不適切問題のため全員正解）'
-              : isPointAwarded(currentQ, selectedOption!) 
+              : isPointAwarded(currentQ) 
                 ? '🎉 正解！' 
                 : `❌ 不正解... (正答: ${getCorrectAnswersText(currentQ)})`}
           </h3>

@@ -6,3 +6,9 @@ out/
 *.log
 scratch/
 takken_userdata_backup.json
+data/pdf/
+data/json/
+data/images/
+*.db
+*.db-journal
+*.sqlite

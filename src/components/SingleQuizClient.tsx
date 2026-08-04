@@ -11,6 +11,7 @@ import EmbeddedFlowchart, { FlowchartData } from './EmbeddedFlowchart';
 import { INITIAL_PRESETS } from './FlowchartStudio';
 import FlowchartLibraryModal from './FlowchartLibraryModal';
 import { saveFlowchartToLibrary, getFlowchartLibrary, SavedFlowchartItem } from '@/lib/flowchartLibrary';
+import QuestionOptionsRenderer from './QuestionOptionsRenderer';
 
 type ExpSegment = 
   | { type: 'text'; content: string }
@@ -93,7 +94,9 @@ export default function SingleQuizClient({
   groupQuestionIds?: number[]
 }) {
   const [currentQ, setCurrentQ] = useState(initialQuestion);
+  const isMultiMode = currentQ.format === 'MULTI_GROUP';
   const [selectedOptions, setSelectedOptions] = useState<number[]>([]);
+  const [selectedMultiOptions, setSelectedMultiOptions] = useState<Record<number, number>>({});
   const [isAnswered, setIsAnswered] = useState(mode === 'explain');
   const [copied, setCopied] = useState(false);
   const [isEditingExp, setIsEditingExp] = useState(false);
@@ -236,6 +239,9 @@ export default function SingleQuizClient({
   };
 
   const getCorrectAnswersText = (q: any) => {
+    if (q.format === 'MULTI_GROUP' && q.correctOptions) {
+      return q.correctOptions.join(', ');
+    }
     if (checkIsVoided(q)) return '解なし(不適切問題)';
     if (q.options && q.options.length > 0) {
       const corrects = q.options.filter((o: any) => o.isCorrect).map((o: any) => o.optionNumber);
@@ -251,17 +257,58 @@ export default function SingleQuizClient({
     );
   };
 
+  const handleMultiSelect = (optionNumber: number, choiceNum: number) => {
+    if (isAnswered) return;
+    setSelectedMultiOptions(prev => ({
+      ...prev,
+      [optionNumber]: choiceNum
+    }));
+  };
+
   const correctOptionNumbers = (currentQ.options || []).filter((o: any) => o.isCorrect).map((o: any) => o.optionNumber).sort();
-  const isActuallyCorrect = checkIsVoided(currentQ) ? true : (correctOptionNumbers.length > 0 && selectedOptions.length === correctOptionNumbers.length && selectedOptions.every(n => correctOptionNumbers.includes(n)));
+  // Find unique groups for correct evaluation
+  let multiGroupsCount = 0;
+  let uniqueGroupOptNumbers: number[] = [];
+  if (currentQ.format === 'MULTI_GROUP' && currentQ.options) {
+    const seen = new Set();
+    currentQ.options.forEach((o: any) => {
+      if (o.structuredData) {
+        try { const p = JSON.parse(o.structuredData); if (!seen.has(p.title)) { seen.add(p.title); uniqueGroupOptNumbers.push(o.optionNumber); } } catch(e){}
+      }
+    });
+    multiGroupsCount = uniqueGroupOptNumbers.length;
+  }
+
+  const isActuallyCorrect = (() => {
+    if (typeof window !== 'undefined') {
+      console.log('--- DEBUG INFO ---');
+      console.log('format:', currentQ?.format);
+      console.log('correctOptions:', currentQ?.correctOptions);
+      console.log('selectedMultiOptions:', selectedMultiOptions);
+      if (currentQ?.format === 'MULTI_GROUP') {
+        const derivedSelected = Object.entries(selectedMultiOptions).map(([base, choiceNum]) => parseInt(base) + choiceNum - 1);
+        console.log('derivedSelected:', derivedSelected);
+      }
+    }
+
+    if (checkIsVoided(currentQ)) return true;
+    if (currentQ.format === 'MULTI_GROUP') {
+      if (!correctOptionNumbers || correctOptionNumbers.length === 0) return false;
+      const derivedSelected = Object.entries(selectedMultiOptions).map(([base, choiceNum]) => parseInt(base) + choiceNum - 1);
+      return derivedSelected.length === correctOptionNumbers.length && correctOptionNumbers.every((c: number) => derivedSelected.includes(c));
+    }
+    return correctOptionNumbers.length > 0 && selectedOptions.length === correctOptionNumbers.length && selectedOptions.every(n => correctOptionNumbers.includes(n));
+  })();
 
   const submitAnswer = async () => {
-    if (isAnswered || selectedOptions.length === 0) return;
+    if (isAnswered) return;
+    if (isMultiMode && Object.keys(selectedMultiOptions).length === 0) return;
+    if (!isMultiMode && selectedOptions.length === 0) return;
     setIsAnswered(true);
-    
     try {
       const attemptData = await apiClient.saveAttempt({
         questionId: currentQ.id,
-        selectedOptions: selectedOptions.join(','),
+        selectedOptions: isMultiMode ? JSON.stringify(selectedMultiOptions) : selectedOptions.join(','),
         isCorrect: isActuallyCorrect,
         judgments
       });
@@ -286,7 +333,7 @@ export default function SingleQuizClient({
         // Create new attempt with reasoning (for incorrect answers)
         savedAttempt = await apiClient.saveAttempt({
           questionId: currentQ.id,
-          selectedOptions: selectedOptions.join(','),
+        selectedOptions: isMultiMode ? JSON.stringify(selectedMultiOptions) : selectedOptions.join(','),
           isCorrect: isActuallyCorrect,
           reasoning: reasoningText,
           judgments
@@ -299,7 +346,7 @@ export default function SingleQuizClient({
         attempts: [
           {
             id: savedAttempt?.id || Date.now(),
-            selectedOptions: selectedOptions.join(','),
+        selectedOptions: isMultiMode ? JSON.stringify(selectedMultiOptions) : selectedOptions.join(','),
             isCorrect: isActuallyCorrect,
             attemptedAt: savedAttempt?.attemptedAt || new Date().toISOString(),
             reasoning: reasoningText,
@@ -483,9 +530,16 @@ export default function SingleQuizClient({
         </div>
         
         {currentQ.content ? (
+          <>
           <h3 style={{ marginBottom: '2rem', lineHeight: '1.8', whiteSpace: 'pre-wrap' }}>
             {currentQ.content}
           </h3>
+          {currentQ.imageUrl && (
+            <div style={{ textAlign: 'center', margin: '2rem 0' }}>
+              <img src={currentQ.imageUrl} alt="問題の図・標識" style={{ maxWidth: '100%', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.15)' }} />
+            </div>
+          )}
+          </>
         ) : (
           <h3 style={{ marginBottom: '2rem', lineHeight: '1.8' }}>
             ※問題データはExcelに登録されていないため、お手元の過去問題集（{currentQ.year}年度 問{currentQ.questionNumber}）をご参照ください。
@@ -536,97 +590,24 @@ export default function SingleQuizClient({
                 </div>
               )}
 
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-                {[...(currentQ.options && currentQ.options.length > 0 ? currentQ.options : [
-                  { optionNumber: 1, content: '' },
-                  { optionNumber: 2, content: '' },
-                  { optionNumber: 3, content: '' },
-                  { optionNumber: 4, content: '' }
-                ])].sort((a: any, b: any) => a.optionNumber - b.optionNumber).map((opt: any) => {
-                  let btnStyle: React.CSSProperties = { justifyContent: 'flex-start', padding: '1.2rem', width: '100%', textAlign: 'left', fontSize: '1.1rem' };
-                  let btnClass = "btn btn-secondary";
-                  
-                  const isSelected = selectedOptions.includes(opt.optionNumber);
-                  if (isAnswered) {
-                    if (isOptionFactuallyCorrect(currentQ, opt.optionNumber)) {
-                      btnStyle.background = 'rgba(5, 150, 105, 0.12)';
-                      btnStyle.borderColor = 'var(--success)';
-                      btnStyle.color = 'var(--success)';
-                      btnStyle.fontWeight = 'bold';
-                    } else if (isSelected) {
-                      if (checkIsVoided(currentQ)) {
-                        btnStyle.background = 'rgba(5, 150, 105, 0.12)';
-                        btnStyle.borderColor = 'var(--success)';
-                        btnStyle.color = 'var(--success)';
-                        btnStyle.fontWeight = 'bold';
-                      } else {
-                        btnStyle.background = 'rgba(220, 38, 38, 0.12)';
-                        btnStyle.borderColor = 'var(--error)';
-                        btnStyle.color = 'var(--error)';
-                        btnStyle.fontWeight = 'bold';
-                      }
-                    }
-                  } else if (isSelected) {
-                    btnClass = "btn btn-primary";
-                  }
-
-                  return (
-                    <div key={opt.optionNumber} style={{ display: 'flex', gap: '0.5rem', alignItems: 'stretch' }}>
-                      {!isCombinationQuestion && (
-                        <div style={{ display: 'flex', flexDirection: 'column', gap: '0.2rem', justifyContent: 'center' }}>
-                          <button
-                            onClick={(e) => toggleJudgment(e, opt.optionNumber.toString(), 'O')}
-                            disabled={isAnswered}
-                            style={{
-                              padding: '0.3rem 0.5rem',
-                              background: judgments[opt.optionNumber.toString()] === 'O' ? 'rgba(16, 185, 129, 0.2)' : 'var(--surface-color)',
-                              border: `1px solid ${judgments[opt.optionNumber.toString()] === 'O' ? 'var(--success)' : 'var(--surface-border)'}`,
-                              color: judgments[opt.optionNumber.toString()] === 'O' ? 'var(--success)' : 'var(--text-secondary)',
-                              borderRadius: '8px',
-                              cursor: isAnswered ? 'default' : 'pointer',
-                              fontWeight: 'bold',
-                              fontSize: '0.9rem',
-                              flex: 1
-                            }}
-                          >
-                            ◯
-                          </button>
-                          <button
-                            onClick={(e) => toggleJudgment(e, opt.optionNumber.toString(), 'X')}
-                            disabled={isAnswered}
-                            style={{
-                              padding: '0.3rem 0.5rem',
-                              background: judgments[opt.optionNumber.toString()] === 'X' ? 'rgba(239, 68, 68, 0.2)' : 'var(--surface-color)',
-                              border: `1px solid ${judgments[opt.optionNumber.toString()] === 'X' ? 'var(--error)' : 'var(--surface-border)'}`,
-                              color: judgments[opt.optionNumber.toString()] === 'X' ? 'var(--error)' : 'var(--text-secondary)',
-                              borderRadius: '8px',
-                              cursor: isAnswered ? 'default' : 'pointer',
-                              fontWeight: 'bold',
-                              fontSize: '0.9rem',
-                              flex: 1
-                            }}
-                          >
-                            ×
-                          </button>
-                        </div>
-                      )}
-                      <button 
-                        className={btnClass}
-                        style={btnStyle}
-                        onClick={() => handleSelect(opt.optionNumber)}
-                      >
-                        <span style={{ fontWeight: 'bold', marginRight: '1rem', opacity: 0.7 }}>{opt.optionNumber}.</span> 
-                        {opt.content || `選択肢 ${opt.optionNumber}`}
-                      </button>
-                    </div>
-                  );
-                })}
-              </div>
+              <QuestionOptionsRenderer
+                currentQ={currentQ}
+                selectedOptions={selectedOptions}
+                isAnswered={isAnswered}
+                onSelectOption={handleSelect}
+                onSelectMultiOption={handleMultiSelect}
+                selectedMultiOptions={selectedMultiOptions}
+                isOptionFactuallyCorrect={isOptionFactuallyCorrect}
+                checkIsVoided={checkIsVoided}
+                showJudgments={!isCombinationQuestion}
+                judgments={judgments}
+                toggleJudgment={toggleJudgment}
+              />
 
               {/* 解答せずに正解・解説を見るボタン */}
               {!isAnswered && (
                 <div style={{ marginTop: '1.5rem', display: 'flex', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap' }}>
-                  {selectedOptions.length > 0 && (
+                  {(selectedOptions.length > 0 || (isMultiMode && Object.keys(selectedMultiOptions).length > 0)) && (
                     <button 
                       onClick={submitAnswer} 
                       className="btn btn-primary" 
@@ -645,6 +626,7 @@ export default function SingleQuizClient({
                     onClick={() => {
                       setIsAnswered(true);
                       setSelectedOptions([]); // 解答なし閲覧
+                      if (isMultiMode) setSelectedMultiOptions({});
                     }} 
                     className="btn" 
                     style={{ 
@@ -671,9 +653,9 @@ export default function SingleQuizClient({
       </div>
 
       {isAnswered && (
-        <div className="glass-panel animate-fade-in-up" style={{ padding: '2rem', borderTop: `4px solid ${selectedOptions.length === 0 ? '#38bdf8' : isActuallyCorrect ? 'var(--success)' : 'var(--error)'}` }}>
-          <h3 style={{ color: selectedOptions.length === 0 ? '#38bdf8' : isActuallyCorrect ? 'var(--success)' : 'var(--error)', marginBottom: '1rem' }}>
-            {selectedOptions.length === 0
+        <div className="glass-panel animate-fade-in-up" style={{ padding: '2rem', borderTop: `4px solid ${(selectedOptions.length === 0 && Object.keys(selectedMultiOptions).length === 0) ? '#38bdf8' : isActuallyCorrect ? 'var(--success)' : 'var(--error)'}` }}>
+          <h3 style={{ color: (selectedOptions.length === 0 && Object.keys(selectedMultiOptions).length === 0) ? '#38bdf8' : isActuallyCorrect ? 'var(--success)' : 'var(--error)', marginBottom: '1rem' }}>
+            {(selectedOptions.length === 0 && Object.keys(selectedMultiOptions).length === 0)
               ? `📖 解説閲覧モード（正答: ${getCorrectAnswersText(currentQ)}）`
               : checkIsVoided(currentQ)
                 ? '🎉 正解！（不適切問題のため全員正解）'
