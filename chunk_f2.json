@@ -1,0 +1,1004 @@
+[
+  {
+    "id": 130,
+    "content": "自動車の登録等についての次の記述のうち、【誤っているものを１つ】選びなさい。なお、解答にあたっては、各選択肢に記載されている事項以外は考慮しないものとする。",
+    "options": [
+      {
+        "id": 496,
+        "questionId": 130,
+        "optionNumber": 1,
+        "content": "登録自動車は、自動車登録番号標を国土交通省令で定める位置に、かつ、被覆しないことその他当該自動車登録番号標に記載された自動車登録番号の識別に支障が生じないものとして国土交通省令で定める方法により表示しなければ、運行の用に供してはならない。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 497,
+        "questionId": 130,
+        "optionNumber": 2,
+        "content": "臨時運行の許可を受けた者は、臨時運行許可証の有効期間が満了したときは、その日から5日以内に、当該臨時運行許可証及び臨時運行許可番号標を当該行政庁に返納しなければならない。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 498,
+        "questionId": 130,
+        "optionNumber": 3,
+        "content": "登録自動車の使用者は、当該自動車が滅失し、解体し（整備又は改造のために解体する場合を除く。）、又は自動車の用途を廃止したときは、その事由があった日（使用済自動車の解体である場合には解体報告記録がなされたことを知った日）から15日以内に、当該自動車検査証を国土交通大臣に返納しなければならない。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 499,
+        "questionId": 130,
+        "optionNumber": 4,
+        "content": "登録自動車の所有者は、当該自動車の使用の本拠の位置に変更があったときは、道路運送車両法で定める場合を除き、その事由があった日から30日以内に、国土交通大臣の行う変更登録の申請をしなければならない。",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": null
+      }
+    ]
+  },
+  {
+    "id": 131,
+    "content": "自動車（検査対象外軽自動車及び小型特殊自動車を除く。）の検査等についての次の記述のうち、【正しいものを２つ】選びなさい。なお、解答にあたっては、各選択肢に記載されている事項以外は考慮しないものとする。（※法改正により一部改変）",
+    "options": [
+      {
+        "id": 500,
+        "questionId": 131,
+        "optionNumber": 1,
+        "content": "自動車は、指定自動車整備事業者が継続検査の際に交付した有効な保安基準適合標章を表示している場合であっても、自動車検査証を備え付けなければ、運行の用に供してはならない。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 501,
+        "questionId": 131,
+        "optionNumber": 2,
+        "content": "初めて自動車検査証の交付を受ける車両総重量8,990キログラムの貨物の運送の用に供する自動車については、当該自動車検査証の有効期間は1年である。",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 502,
+        "questionId": 131,
+        "optionNumber": 3,
+        "content": "国土交通大臣は、一定の地域に使用の本拠の位置を有する自動車の使用者が、天災その他やむを得ない事由により、継続検査を受けることができないと認めるときは、当該地域に使用の本拠の位置を有する自動車の自動車検査証の有効期間を、期間を定めて伸長する旨を公示することができる。",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 503,
+        "questionId": 131,
+        "optionNumber": 4,
+        "content": "自動車の使用者は、自動車の長さ、幅又は高さを変更したときは、道路運送車両法で定める場合を除き、その事由があった日から30日以内に、当該変更について、国土交通大臣が行う自動車検査証の変更記録を受けなければならない。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      }
+    ]
+  },
+  {
+    "id": 132,
+    "content": "道路運送車両法に定める自動車の点検整備等に関する次の文中、A、B、C、Dに入るべき字句として【いずれか正しいもの】を選びなさい。\n\n1. 自動車運送事業の用に供する自動車の使用者又は当該自動車を運行する者は、[ A ]、その運行の開始前において、国土交通省令で定める技術上の基準により、自動車を点検しなければならない。\n2. 車両総重量8トン以上又は乗車定員30人以上の自動車の使用者は、スペアタイヤの取付状態等について、[ B ]ごとに国土交通省令で定める技術上の基準により自動車を点検しなければならない。\n3. 自動車の使用者は、自動車の点検及び整備等に関する事項を処理させるため、車両総重量8トン以上の自動車その他の国土交通省令で定める自動車であって国土交通省令で定める台数以上のものの使用の本拠ごとに、自動車の点検及び整備に関する実務の経験その他について国土交通省令で定める一定の要件を備える者のうちから、[ C ]を選任しなければならない。\n4. 地方運輸局長は、自動車の[ D ]が道路運送車両法第54条（整備命令等）の規定による命令又は指示に従わない場合において、当該自動車が道路運送車両の保安基準に適合しない状態にあるときは、当該自動車の使用を停止することができる。",
+    "options": [
+      {
+        "id": 1313,
+        "questionId": 132,
+        "optionNumber": 1,
+        "content": "A : ① 1日1回",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": "{\"title\":\"A\",\"choices\":[{\"num\":1,\"text\":\"1日1回\"},{\"num\":2,\"text\":\"必要に応じて\"}]}"
+      },
+      {
+        "id": 1314,
+        "questionId": 132,
+        "optionNumber": 2,
+        "content": "A : ② 必要に応じて",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\":\"A\",\"choices\":[{\"num\":1,\"text\":\"1日1回\"},{\"num\":2,\"text\":\"必要に応じて\"}]}"
+      },
+      {
+        "id": 1315,
+        "questionId": 132,
+        "optionNumber": 3,
+        "content": "B : ① 3ヵ月",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": "{\"title\":\"B\",\"choices\":[{\"num\":1,\"text\":\"3ヵ月\"},{\"num\":2,\"text\":\"6ヵ月\"}]}"
+      },
+      {
+        "id": 1316,
+        "questionId": 132,
+        "optionNumber": 4,
+        "content": "B : ② 6ヵ月",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\":\"B\",\"choices\":[{\"num\":1,\"text\":\"3ヵ月\"},{\"num\":2,\"text\":\"6ヵ月\"}]}"
+      },
+      {
+        "id": 1317,
+        "questionId": 132,
+        "optionNumber": 5,
+        "content": "C : ① 安全統括管理者",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\":\"C\",\"choices\":[{\"num\":1,\"text\":\"安全統括管理者\"},{\"num\":2,\"text\":\"整備管理者\"}]}"
+      },
+      {
+        "id": 1318,
+        "questionId": 132,
+        "optionNumber": 6,
+        "content": "C : ② 整備管理者",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": "{\"title\":\"C\",\"choices\":[{\"num\":1,\"text\":\"安全統括管理者\"},{\"num\":2,\"text\":\"整備管理者\"}]}"
+      },
+      {
+        "id": 1319,
+        "questionId": 132,
+        "optionNumber": 7,
+        "content": "D : ① 所有者",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\":\"D\",\"choices\":[{\"num\":1,\"text\":\"所有者\"},{\"num\":2,\"text\":\"使用者\"}]}"
+      },
+      {
+        "id": 1320,
+        "questionId": 132,
+        "optionNumber": 8,
+        "content": "D : ② 使用者",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": "{\"title\":\"D\",\"choices\":[{\"num\":1,\"text\":\"所有者\"},{\"num\":2,\"text\":\"使用者\"}]}"
+      }
+    ]
+  },
+  {
+    "id": 133,
+    "content": "道路運送車両の保安基準及びその細目を定める告示についての次の記述のうち、【誤っているものを1つ】選びなさい。なお、解答にあたっては、各選択肢に記載されている事項以外は考慮しないものとする。\n\n1. 自動車の前面ガラス及び側面ガラス（告示で定める部分を除く。）は、フィルムが貼り付けられた場合、当該フィルムが貼り付けられた状態においても、透明であり、かつ、運転者が交通状況を確認するために必要な視野の範囲に係る部分における可視光線の透過率が70%以上であることが確保できるものでなければならない。\n2. 貨物の運送の用に供する普通自動車であって、車両総重量が7トン以上のものの後面には、所定の後部反射器を備えるほか、反射光の色、明るさ等に関し告示で定める基準に適合する大型後部反射器を備えなければならない。\n3. 自動車（法令に規定する自動車を除く。）の後面には、他の自動車が追突した場合に追突した自動車の車体前部が突入することを有効に防止することができるものとして、強度、形状等に関し告示で定める基準に適合する突入防止装置を備えなければならない。ただし、告示で定める構造の自動車にあっては、この限りでない。\n4. 自動車は、告示で定める方法により測定した場合において、長さ（セミトレーラにあっては、連結装置中心から当該セミトレーラの後端までの水平距離）12メートル（セミトレーラのうち告示で定めるものにあっては、13メートル）、幅2.6メートル、高さ3.8メートルを超えてはならない。",
+    "options": [
+      {
+        "id": 504,
+        "questionId": 133,
+        "optionNumber": 1,
+        "content": "自動車の前面ガラス及び側面ガラス（告示で定める部分を除く。）は、フィルムが貼り付けられた場合、当該フィルムが貼り付けられた状態においても、透明であり、かつ、運転者が交通状況を確認するために必要な視野の範囲に係る部分における可視光線の透過率が70%以上であることが確保できるものでなければならない。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 505,
+        "questionId": 133,
+        "optionNumber": 2,
+        "content": "貨物の運送の用に供する普通自動車であって、車両総重量が7トン以上のものの後面には、所定の後部反射器を備えるほか、反射光の色、明るさ等に関し告示で定める基準に適合する大型後部反射器を備えなければならない。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 506,
+        "questionId": 133,
+        "optionNumber": 3,
+        "content": "自動車（法令に規定する自動車を除く。）の後面には、他の自動車が追突した場合に追突した自動車の車体前部が突入することを有効に防止することができるものとして、強度、形状等に関し告示で定める基準に適合する突入防止装置を備えなければならない。ただし、告示で定める構造の自動車にあっては、この限りでない。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 507,
+        "questionId": 133,
+        "optionNumber": 4,
+        "content": "自動車は、告示で定める方法により測定した場合において、長さ（セミトレーラにあっては、連結装置中心から当該セミトレーラの後端までの水平距離）12メートル（セミトレーラのうち告示で定めるものにあっては、13メートル）、幅2.6メートル、高さ3.8メートルを超えてはならない。",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": null
+      }
+    ]
+  },
+  {
+    "id": 166,
+    "content": "自動車の登録等についての次の記述のうち、誤っているものを1つ選び、解答用紙の該当する欄にマークしなさい。なお、解答にあたっては、各選択肢に記載されている事項以外は考慮しないものとする。",
+    "options": [
+      {
+        "id": 655,
+        "questionId": 166,
+        "optionNumber": 1,
+        "content": "1: 一時抹消登録を受けた自動車（国土交通省令で定めるものを除く。）の所有者は、自動車の用途を廃止したときには、その事由があった日から15日以内に、国土交通省令で定めるところにより、その旨を国土交通大臣に届け出なければならない。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 656,
+        "questionId": 166,
+        "optionNumber": 2,
+        "content": "2: 臨時運行の許可を受けた者は、臨時運行許可証の有効期間が満了したときは、その日から15日以内に、当該臨時運行許可証及び臨時運行許可番号標を行政庁に返納しなければならない。",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 657,
+        "questionId": 166,
+        "optionNumber": 3,
+        "content": "3: 登録自動車の使用者は、当該自動車が滅失し、解体し（整備又は改造のために解体する場合を除く。）、又は自動車の用途を廃止したときは、その事由があった日（使用済自動車の解体である場合には解体報告記録がなされたことを知った日）から15日以内に、当該自動車検査証を国土交通大臣に返納しなければならない。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 658,
+        "questionId": 166,
+        "optionNumber": 4,
+        "content": "4: 自動車の所有者は、当該自動車の使用の本拠の位置に変更があったときは、道路運送車両法で定める場合を除き、その事由があった日から15日以内に、国土交通大臣の行う変更登録の申請をしなければならない。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      }
+    ]
+  },
+  {
+    "id": 167,
+    "content": "自動車の検査等についての次の記述のうち、誤っているものを1つ選び、解答用紙の該当する欄にマークしなさい。なお、解答にあたっては、各選択肢に記載されている事項以外は考慮しないものとする。",
+    "options": [
+      {
+        "id": 659,
+        "questionId": 167,
+        "optionNumber": 1,
+        "content": "1: 自動車は、指定自動車整備事業者が継続検査の際に交付した有効な保安基準適合標章を表示しているときは、自動車検査証を備え付けていなくても、運行の用に供することができる。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 660,
+        "questionId": 167,
+        "optionNumber": 2,
+        "content": "2: 初めて自動車検査証の交付を受ける車両総重量7,990キログラムの貨物の運送の用に供する自動車については、当該自動車検査証の有効期間は1年である。",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 661,
+        "questionId": 167,
+        "optionNumber": 3,
+        "content": "3: 自動車の使用者は、自動車検査証又は検査標章が滅失し、き損し、又はその識別が困難となった場合には、その再交付を受けることができる。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 662,
+        "questionId": 167,
+        "optionNumber": 4,
+        "content": "4: 検査標章は、自動車検査証がその効力を失ったとき、又は継続検査、臨時検査若しくは構造等変更検査の結果、当該自動車検査証の返付を受けることができなかったときは、当該自動車に表示してはならない。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      }
+    ]
+  },
+  {
+    "id": 168,
+    "content": "道路運送車両法に定める検査等についての次の文中、A、B、C、Dに入るべき字句を下の枠内の選択肢（①〜⑥）から選び、解答用紙の該当する欄にマークしなさい。（※法改正により一部改変）\n1. 登録を受けていない道路運送車両法第4条に規定する自動車又は同法第60条第1項の規定による車両番号の指定を受けていない検査対象軽自動車若しくは二輪の小型自動車を運行の用に供しようとするときは、当該自動車の使用者は、当該自動車を提示して、国土交通大臣の行う[ A ]を受けなければならない。\n2. 登録自動車又は車両番号の指定を受けた検査対象軽自動車若しくは二輪の小型自動車の使用者は、自動車検査証の有効期間の満了後も当該自動車を使用しようとするときは、当該自動車を提示して、国土交通大臣の行う[ B ]を受けなければならない。この場合において、当該自動車の使用者は、当該自動車検査証を国土交通大臣に提出しなければならない。\n3. 自動車の使用者は、自動車検査証記録事項について変更があったときは、法令で定める場合を除き、その事由があった日から[ C ]以内に、当該変更について、国土交通大臣が行う自動車検査証の変更記録を受けなければならない。\n4. 国土交通大臣は、一定の地域に使用の本拠の位置を有する自動車の使用者が、天災その他やむを得ない事由により、[ D ]を受けることができないと認めるときは、当該地域に使用の本拠の位置を有する自動車の自動車検査証の有効期間を、期間を定めて伸長する旨を公示することができる。",
+    "options": [
+      {
+        "id": 663,
+        "questionId": 168,
+        "optionNumber": 1,
+        "content": "1: 新規検査",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 664,
+        "questionId": 168,
+        "optionNumber": 2,
+        "content": "2: 継続検査",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 665,
+        "questionId": 168,
+        "optionNumber": 3,
+        "content": "3: 構造等変更検査",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 666,
+        "questionId": 168,
+        "optionNumber": 4,
+        "content": "4: 予備検査",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 667,
+        "questionId": 168,
+        "optionNumber": 5,
+        "content": "5: 15日",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 668,
+        "questionId": 168,
+        "optionNumber": 6,
+        "content": "6: 30日",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      }
+    ]
+  },
+  {
+    "id": 169,
+    "content": "道路運送車両の保安基準及びその細目を定める告示についての次の記述のうち、誤っているものを1つ選び、解答用紙の該当する欄にマークしなさい。なお、解答にあたっては、各選択肢に記載されている事項以外は考慮しないものとする。",
+    "options": [
+      {
+        "id": 669,
+        "questionId": 169,
+        "optionNumber": 1,
+        "content": "1: 自動車の前面ガラス及び側面ガラス（告示で定める部分を除く。）は、フィルムが貼り付けられた場合、当該フィルムが貼り付けられた状態においても、透明であり、かつ、運転者が交通状況を確認するために必要な視野の範囲に係る部分における可視光線の透過率が60%以上であることが確保できるものでなければならない。",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 670,
+        "questionId": 169,
+        "optionNumber": 2,
+        "content": "2: 貨物の運送の用に供する普通自動車であって、車両総重量が8トン以上又は最大積載量が5トン以上のものの原動機には、自動車が時速90キロメートルを超えて走行しないよう燃料の供給を調整し、かつ、自動車の速度の制御を円滑に行うことができるものとして、告示で定める基準に適合する速度抑制装置を備えなければならない。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 671,
+        "questionId": 169,
+        "optionNumber": 3,
+        "content": "3: 自動車の後面には、夜間にその後方150メートルの距離から走行用前照灯で照射した場合にその反射光を照射位置から確認できる赤色の後部反射器を備えなければならない。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 672,
+        "questionId": 169,
+        "optionNumber": 4,
+        "content": "4: 自動車は、告示で定める方法により測定した場合において、長さ（セミトレーラにあっては、連結装置中心から当該セミトレーラの後端までの水平距離）12メートル（セミトレーラのうち告示で定めるものにあっては、13メートル）、幅2.5メートル、高さ3.8メートルを超えてはならない。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      }
+    ]
+  },
+  {
+    "id": 256,
+    "content": "【道路運送車両法関係】\n\n自動車の登録等についての次の記述のうち、誤っているものを１つ選びなさい。なお、解答にあたっては、各選択肢に記載されている事項以外は考慮しないものとする。",
+    "options": [
+      {
+        "id": 1011,
+        "questionId": 256,
+        "optionNumber": 1,
+        "content": "臨時運行の許可を受けた者は、臨時運行許可証の有効期間が満了したときは、その日から５日以内に、臨時運行許可証及び臨時運行許可番号標を許可に係る行政庁に返納しなければならない。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1012,
+        "questionId": 256,
+        "optionNumber": 2,
+        "content": "登録自動車の所有者は、当該自動車の使用の本拠の位置に変更があったときは、道路運送車両法で定める場合を除き、その事由があった日から 30 日以内に、国土交通大臣の行う変更登録の申請をしなければならない。",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1013,
+        "questionId": 256,
+        "optionNumber": 3,
+        "content": "何人も、国土交通大臣の許可を受けたときなどを除き、自動車の車台番号又は原動機の型式の打刻を塗まつし、その他車台番号又は原動機の型式の識別を困難にするような行為をしてはならない。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1014,
+        "questionId": 256,
+        "optionNumber": 4,
+        "content": "登録自動車の所有者は、当該自動車の使用者が道路運送車両法の規定により自動車の使用の停止を命ぜられ自動車検査証を返納したときは、同法の規定により、遅滞なく、当該自動車登録番号標及び封印を取りはずし、自動車登録番号標について国土交通大臣の領置を受けなければならない。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      }
+    ]
+  },
+  {
+    "id": 257,
+    "content": "【道路運送車両法関係】\n\n自動車の検査等についての次の記述のうち、正しいものを２つ選びなさい。なお、解答にあたっては、各選択肢に記載されている事項以外は考慮しないものとする。",
+    "options": [
+      {
+        "id": 1015,
+        "questionId": 257,
+        "optionNumber": 1,
+        "content": "自動車に表示されている検査標章には、当該自動車の自動車検査証の有効期間の満了する時期が表示されている。",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1016,
+        "questionId": 257,
+        "optionNumber": 2,
+        "content": "初めて自動車検査証の交付を受ける車両総重量 7,990 キログラムの貨物の運送の用に供する自動車については、当該自動車検査証の有効期間は２年である。",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1017,
+        "questionId": 257,
+        "optionNumber": 3,
+        "content": "自動車検査証の有効期間の起算日は、自動車検査証の有効期間が満了する日の３ヵ月前（離島に使用の本拠の位置を有する自動車を除く。）から当該期間が満了する日までの間に継続検査を行い、当該自動車検査証に係る有効期間を法令の規定により記録する場合は、当該自動車検査証の有効期間が満了する日の翌日とする。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1018,
+        "questionId": 257,
+        "optionNumber": 4,
+        "content": "自動車運送事業の用に供する自動車は、自動車検査証を当該自動車又は当該自動車の所属する営業所に備え付けなければ、運行の用に供してはならない。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      }
+    ]
+  },
+  {
+    "id": 258,
+    "content": "【道路運送車両法関係】\n\n道路運送車両法に定める自動車の点検整備等に関する次の文中、A、B、C、D に入るべき字句としていずれか正しいものを１つ選びなさい。\n\n1．自動車運送事業の用に供する自動車の使用者は、[ A ]ごとに国土交通省令で定める技術上の基準により、自動車を点検しなければならない。\n\n2．自動車運送事業の用に供する自動車の日常点検の結果に基づく運行可否の決定は、自動車の使用者のより与えられた権限に基づき、[ B ]が行わなければならない。\n\n3．地方運輸局長は、保安基準に適合しない状態にある自動車の使用者のに対し、当該自動車が保安基準に適合するに至るまでの間の運行に関し、当該自動車の使用の方法又は経路の制限その他の保安上又は[ C ]その他の環境保全上必要な指示をすることができる。\n\n4．地方運輸局長は、自動車の[ D ]が道路運送車両法第 54 条（整備命令等）の規定による命令又は指示に従わない場合において、当該自動車が保安基準に適合しない状態にあるときは、当該自動車の使用を停止することができる。",
+    "options": [
+      {
+        "id": 1369,
+        "questionId": 258,
+        "optionNumber": 1,
+        "content": "A : ① ３ヵ月",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": "{\"title\":\"A\",\"choices\":[{\"num\":1,\"text\":\"３ヵ月\"},{\"num\":2,\"text\":\"６ヵ月\"}]}"
+      },
+      {
+        "id": 1370,
+        "questionId": 258,
+        "optionNumber": 2,
+        "content": "A : ② ６ヵ月",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\":\"A\",\"choices\":[{\"num\":1,\"text\":\"３ヵ月\"},{\"num\":2,\"text\":\"６ヵ月\"}]}"
+      },
+      {
+        "id": 1371,
+        "questionId": 258,
+        "optionNumber": 3,
+        "content": "B : ① 運行管理者",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": "{\"title\":\"B\",\"choices\":[{\"num\":1,\"text\":\"運行管理者\"},{\"num\":2,\"text\":\"整備管理者\"}]}"
+      },
+      {
+        "id": 1372,
+        "questionId": 258,
+        "optionNumber": 4,
+        "content": "B : ② 整備管理者",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\":\"B\",\"choices\":[{\"num\":1,\"text\":\"運行管理者\"},{\"num\":2,\"text\":\"整備管理者\"}]}"
+      },
+      {
+        "id": 1373,
+        "questionId": 258,
+        "optionNumber": 5,
+        "content": "C : ① 事故防止",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\":\"C\",\"choices\":[{\"num\":1,\"text\":\"事故防止\"},{\"num\":2,\"text\":\"公害防止\"}]}"
+      },
+      {
+        "id": 1374,
+        "questionId": 258,
+        "optionNumber": 6,
+        "content": "C : ② 公害防止",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": "{\"title\":\"C\",\"choices\":[{\"num\":1,\"text\":\"事故防止\"},{\"num\":2,\"text\":\"公害防止\"}]}"
+      },
+      {
+        "id": 1375,
+        "questionId": 258,
+        "optionNumber": 7,
+        "content": "D : ① 所有者",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\":\"D\",\"choices\":[{\"num\":1,\"text\":\"所有者\"},{\"num\":2,\"text\":\"使用者\"}]}"
+      },
+      {
+        "id": 1376,
+        "questionId": 258,
+        "optionNumber": 8,
+        "content": "D : ② 使用者",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": "{\"title\":\"D\",\"choices\":[{\"num\":1,\"text\":\"所有者\"},{\"num\":2,\"text\":\"使用者\"}]}"
+      }
+    ]
+  },
+  {
+    "id": 259,
+    "content": "【道路運送車両法関係】\n\n道路運送車両の保安基準及びその細目を定める告示についての次の記述のうち、誤っているものを１つ選びなさい。なお、解答にあたっては、各選択肢に記載されている事項以外は考慮しないものとする。",
+    "options": [
+      {
+        "id": 1023,
+        "questionId": 259,
+        "optionNumber": 1,
+        "content": "火薬類（保安基準に掲げる数量以下のものを除く。）を運送する自動車、指定重量以上の高圧ガス（可燃性ガス及び酸素に限る。）を運送する自動車及び危険物の規制に関する政令に掲げる指定数量以上の危険物を運送する自動車には、消火器を備えなければならない（被けん引自動車を除く。）。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1024,
+        "questionId": 259,
+        "optionNumber": 2,
+        "content": "自動車（二輪自動車等を除く。）の空気入ゴムタイヤの接地部は滑り止めを施したものであり、滑り止めの溝は、空気入ゴムタイヤの接地部の全幅にわたり滑り止めのために施されている凹部（サイピング、プラットフォーム及びウエア・インジケータの部分を除く。）のいずれの部分においても 1.6 ミリメートル以上の深さを有すること。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1025,
+        "questionId": 259,
+        "optionNumber": 3,
+        "content": "自動車の後面には、夜間にその後方 200 メートルの距離から走行用前照灯で照射した場合にその反射光を照射位置から確認できる赤色の後部反射器を備えなければならない。",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1026,
+        "questionId": 259,
+        "optionNumber": 4,
+        "content": "貨物の運送の用に供する普通自動車であって、車両総重量が 8 トン以上又は最大積載量が 5 トン以上のものの原動機には、自動車が 90 キロメートル毎時を超えて走行しないよう燃料の供給を調整し、かつ、自動車の速度の制御を円滑に行うことができるものとして、告示で定める基準に適合する速度抑制装置を備えなければならない。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      }
+    ]
+  },
+  {
+    "id": 286,
+    "content": "【道路運送車両法関係】\n\n自動車の登録等についての次の記述のうち、誤っているものを1つ選びなさい。なお、解答にあたっては、各選択肢に記載されている事項以外は考慮しないものとする。",
+    "options": [
+      {
+        "id": 1130,
+        "questionId": 286,
+        "optionNumber": 1,
+        "content": "登録を受けた自動車（自動車抵当法第2条ただし書きに規定する大型特殊自動車を除く。）の所有権の得喪は、登録を受けなければ、第三者に対抗することができない。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1131,
+        "questionId": 286,
+        "optionNumber": 2,
+        "content": "登録自動車の所有者は、当該自動車が滅失し、解体し（整備又は改造のために解体する場合を除く。）、又は自動車の用途を廃止したときは、その事由があった日（使用済自動車の解体である場合には解体報告記録がなされたことを知った日）から15日以内に、永久抹消登録の申請をしなければならない。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1132,
+        "questionId": 286,
+        "optionNumber": 3,
+        "content": "登録自動車の所有者は、当該自動車の自動車登録番号標の封印が滅失した場合には、国土交通大臣又は封印取付受託者の行う封印の取付けを受けなければならない。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1133,
+        "questionId": 286,
+        "optionNumber": 4,
+        "content": "臨時運行の許可を受けた者は、臨時運行許可証の有効期間が満了したときは、その日から15日以内に、臨時運行許可証及び臨時運行許可番号標を許可に係る行政庁に返納しなければならない。",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": null
+      }
+    ]
+  },
+  {
+    "id": 287,
+    "content": "【道路運送車両法関係】\n\n自動車の検査等についての次の記述のうち、正しいものを2つ選びなさい。なお、解答にあたっては、各選択肢に記載されている事項以外は考慮しないものとする。",
+    "options": [
+      {
+        "id": 1134,
+        "questionId": 287,
+        "optionNumber": 1,
+        "content": "国土交通大臣は、一定の地域に使用の本拠の位置を有する自動車の使用者が、天災その他やむを得ない事由により、継続検査を受けることができないと認めるときは、当該地域に使用の本拠の位置を有する自動車の自動車検査証の有効期間を、期間を定めて伸長する旨を公示することができる。",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1135,
+        "questionId": 287,
+        "optionNumber": 2,
+        "content": "自動車の使用者は、自動車の長さ、幅又は高さを変更したときは、法令で定める場合を除き、その事由があった日から30日以内に、当該変更について、国土交通大臣が行う自動車検査証の変更記録を受けなければならない。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1136,
+        "questionId": 287,
+        "optionNumber": 3,
+        "content": "自動車（検査対象外軽自動車及び小型特殊自動車を除く。）は、国土交通大臣の行う検査を受け、有効な自動車検査証の交付を受けているものでなければ、これを運行の用に供してはならない。",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1137,
+        "questionId": 287,
+        "optionNumber": 4,
+        "content": "自動車は、自動車検査証又は当該自動車検査証の写しを備え付け、かつ、検査標章を表示しなければ、運行の用に供してはならない。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      }
+    ]
+  },
+  {
+    "id": 288,
+    "content": "【道路運送車両法関係】\n\n道路運送車両法に定める自動車の点検整備等に関する次の文中、A、B、C、Dに入るべき字句としていずれか正しいものを１つ選びなさい。\n\n1. 自動車運送事業の用に供する自動車の使用者は、点検整備記録簿を当該自動車に備え置き、道路運送車両法の規定により定期点検整備を実施したときは、遅滞なく、点検の結果、整備の概要等所定事項を記載して、その記載の日から A 間保存しなければならない。\n\n2. 自動車の使用者は、自動車の点検をし、及び必要に応じ B をすることにより、当該自動車を保安基準に適合するように維持しなければならない。\n\n3. 大型自動車使用者等は、整備管理者を選任したときは、その日から C 以内に、地方運輸局長にその旨を届け出なければならない。これを変更したときも同様である。\n\n4. 道路運送車両法第54条の2の規定による整備命令を受けた自動車の D は、当該命令を受けた日から15日以内に、地方運輸局長に対し、保安基準に適合させるために必要な整備を行った当該自動車及び当該自動車に係る自動車検査証を提示しなければならない。",
+    "options": [
+      {
+        "id": 1410,
+        "questionId": 288,
+        "optionNumber": 1,
+        "content": "A : ① 1年",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": "{\"title\":\"A\",\"choices\":[{\"num\":1,\"text\":\"1年\"},{\"num\":2,\"text\":\"2年\"}]}"
+      },
+      {
+        "id": 1411,
+        "questionId": 288,
+        "optionNumber": 2,
+        "content": "A : ② 2年",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\":\"A\",\"choices\":[{\"num\":1,\"text\":\"1年\"},{\"num\":2,\"text\":\"2年\"}]}"
+      },
+      {
+        "id": 1412,
+        "questionId": 288,
+        "optionNumber": 3,
+        "content": "B : ① 整備",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": "{\"title\":\"B\",\"choices\":[{\"num\":1,\"text\":\"整備\"},{\"num\":2,\"text\":\"検査\"}]}"
+      },
+      {
+        "id": 1413,
+        "questionId": 288,
+        "optionNumber": 4,
+        "content": "B : ② 検査",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\":\"B\",\"choices\":[{\"num\":1,\"text\":\"整備\"},{\"num\":2,\"text\":\"検査\"}]}"
+      },
+      {
+        "id": 1414,
+        "questionId": 288,
+        "optionNumber": 5,
+        "content": "C : ① 15日",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": "{\"title\":\"C\",\"choices\":[{\"num\":1,\"text\":\"15日\"},{\"num\":2,\"text\":\"30日\"}]}"
+      },
+      {
+        "id": 1415,
+        "questionId": 288,
+        "optionNumber": 6,
+        "content": "C : ② 30日",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\":\"C\",\"choices\":[{\"num\":1,\"text\":\"15日\"},{\"num\":2,\"text\":\"30日\"}]}"
+      },
+      {
+        "id": 1416,
+        "questionId": 288,
+        "optionNumber": 7,
+        "content": "D : ① 所有者",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\":\"D\",\"choices\":[{\"num\":1,\"text\":\"所有者\"},{\"num\":2,\"text\":\"使用者\"}]}"
+      },
+      {
+        "id": 1417,
+        "questionId": 288,
+        "optionNumber": 8,
+        "content": "D : ② 使用者",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": "{\"title\":\"D\",\"choices\":[{\"num\":1,\"text\":\"所有者\"},{\"num\":2,\"text\":\"使用者\"}]}"
+      }
+    ]
+  },
+  {
+    "id": 289,
+    "content": "【道路運送車両法関係】\n\n道路運送車両の保安基準及びその細目を定める告示についての次の記述のうち、誤っているものを１つ選びなさい。なお、解答にあたっては、各選択肢に記載されている事項以外は考慮しないものとする。",
+    "options": [
+      {
+        "id": 1142,
+        "questionId": 289,
+        "optionNumber": 1,
+        "content": "貨物の運送の用に供する普通自動車であって、車両総重量が8トン以上又は最大積載量が5トン以上のものの原動機には、自動車が時速100キロメートルを超えて走行しないよう燃料の供給を調整し、かつ、自動車の速度の制御を円滑に行うことができるものとして、告示で定める基準に適合する速度抑制装置を備えなければならない。",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1143,
+        "questionId": 289,
+        "optionNumber": 2,
+        "content": "貨物の運送の用に供する普通自動車であって車両総重量が7トン以上のものの後面には、所定の後部反射器を備えるほか、反射光の色、明るさ等に関し告示で定める基準に適合する大型後部反射器を備えなければならない。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1144,
+        "questionId": 289,
+        "optionNumber": 3,
+        "content": "自動車（法令に規定する自動車を除く。）の後面には、他の自動車が追突した場合に追突した自動車の車体前部が突入することを有効に防止することができるものとして、強度、形状等に関し告示で定める基準に適合する突入防止装置を備えなければならない。ただし、告示で定める構造の自動車にあっては、この限りでない。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1145,
+        "questionId": 289,
+        "optionNumber": 4,
+        "content": "自動車に備える停止表示器材は、夜間200メートルの距離から走行用前照灯で照射した場合にその反射光を照射位置から確認できるものであることなど告示で定める基準に適合するものでなければならない。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      }
+    ]
+  },
+  {
+    "id": 320,
+    "content": "自動車の登録等についての次の記述のうち、【誤っているものを 1 つ】選びなさい。なお、解答にあたっては、各選択肢に記載されている事項以外は考慮しないものとする。",
+    "options": [
+      {
+        "id": 1463,
+        "questionId": 320,
+        "optionNumber": 1,
+        "content": "登録自動車の所有者は、当該自動車の使用者が道路運送車両法の規定により自動車の使用の停止を命ぜられ、同法の規定により自動車検査証を返納したときは、その事由があった日から 30 日以内に、当該自動車登録番号標及び封印を取りはずし、自動車登録番号標について国土交通大臣に届け出なければならない。",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1464,
+        "questionId": 320,
+        "optionNumber": 2,
+        "content": "自動車は、自動車登録番号標を国土交通省令で定める位置に、かつ、被覆しないことその他当該自動車登録番号標に記載された自動車登録番号の識別に支障が生じないものとして国土交通省令で定める方法により表示しなければ、運行の用に供してはならない。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1465,
+        "questionId": 320,
+        "optionNumber": 3,
+        "content": "道路運送車両法に規定する自動車の種別は、自動車の大きさ及び構造並びに原動機の種類及び総排気量又は定格出力を基準として定められ、その種別は、普通自動車、小型自動車、軽自動車、大型特殊自動車、小型特殊自動車である。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1466,
+        "questionId": 320,
+        "optionNumber": 4,
+        "content": "登録自動車について所有者の変更があったときは、新所有者は、その事由があった日から 15 日以内に、国土交通大臣の行う移転登録の申請をしなければならない。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      }
+    ]
+  },
+  {
+    "id": 321,
+    "content": "自動車の検査等についての次の記述のうち、【正しいものを 2 つ】選びなさい。なお、解答にあたっては、各選択肢に記載されている事項以外は考慮しないものとする。（※法改正により一部改変）",
+    "options": [
+      {
+        "id": 1467,
+        "questionId": 321,
+        "optionNumber": 1,
+        "content": "自動車は、指定自動車整備事業者が継続検査の際に交付した有効な保安基準適合標章を表示している場合であっても、自動車検査証を備え付けなければ、運行の用に供してはならない。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1468,
+        "questionId": 321,
+        "optionNumber": 2,
+        "content": "自動車の使用者は、継続検査を申請する場合において、道路運送車両法第 67 条（自動車検査証記録事項の変更及び構造等変更検査）の規定による自動車検査証の変更記録の申請をすべき事由があるときは、あらかじめ、その申請をしなければならない。",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1469,
+        "questionId": 321,
+        "optionNumber": 3,
+        "content": "国土交通大臣は、一定の地域に使用の本拠の位置を有する自動車の使用者が、天災その他やむを得ない事由により、継続検査を受けることができないと認めるときは、当該地域に使用の本拠の位置を有する自動車の自動車検査証の有効期間を、期間を定めて伸長する旨を公示することができる。",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1470,
+        "questionId": 321,
+        "optionNumber": 4,
+        "content": "自動車に表示されている検査標章には、当該自動車の自動車検査証の有効期間の起算日が表示されている。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      }
+    ]
+  },
+  {
+    "id": 322,
+    "content": "道路運送車両法に定める自動車の点検整備等に関する次の文中、Ａ、Ｂ、Ｃ、Ｄに入るべき字句として【いずれか正しいものを 1 つ】選びなさい。\n1．初めて自動車検査証の交付を受ける車両総重量 8,990 キログラムの貨物の運送の用に供する自動車については、当該自動車検査証の有効期間は Ａ である。\n2．車両総重量 Ｂ 以上又は乗車定員 30 人以上の自動車は、日常点検において「ディスク・ホイールの取付状態が不良でないこと。」について点検しなければならない。\n3．自動車運送事業の用に供する自動車の日常点検の結果に基づく運行可否の決定は、自動車の使用者より与えられた権限に基づき、 Ｃ が行わなければならない。\n4．事業用自動車の使用者は、点検の結果、当該自動車が保安基準に適合しなくなるおそれがある状態又は適合しない状態にあるときは、保安基準に適合しなくなるおそれをなくするため、又は保安基準に適合させるために当該自動車について必要な Ｄ をしなければならない。",
+    "options": [
+      {
+        "id": 1556,
+        "questionId": 322,
+        "optionNumber": 1,
+        "content": "Ａ : 1 年",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": "{\"title\":\"Ａ\",\"choices\":[{\"num\":1,\"text\":\"1 年\"},{\"num\":2,\"text\":\"2 年\"}]}"
+      },
+      {
+        "id": 1557,
+        "questionId": 322,
+        "optionNumber": 2,
+        "content": "Ａ : 2 年",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\":\"Ａ\",\"choices\":[{\"num\":1,\"text\":\"1 年\"},{\"num\":2,\"text\":\"2 年\"}]}"
+      },
+      {
+        "id": 1558,
+        "questionId": 322,
+        "optionNumber": 3,
+        "content": "Ｂ : 7 トン",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\":\"Ｂ\",\"choices\":[{\"num\":1,\"text\":\"7 トン\"},{\"num\":2,\"text\":\"8 トン\"}]}"
+      },
+      {
+        "id": 1559,
+        "questionId": 322,
+        "optionNumber": 4,
+        "content": "Ｂ : 8 トン",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": "{\"title\":\"Ｂ\",\"choices\":[{\"num\":1,\"text\":\"7 トン\"},{\"num\":2,\"text\":\"8 トン\"}]}"
+      },
+      {
+        "id": 1560,
+        "questionId": 322,
+        "optionNumber": 5,
+        "content": "Ｃ : 運行管理者",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\":\"Ｃ\",\"choices\":[{\"num\":1,\"text\":\"運行管理者\"},{\"num\":2,\"text\":\"整備管理者\"}]}"
+      },
+      {
+        "id": 1561,
+        "questionId": 322,
+        "optionNumber": 6,
+        "content": "Ｃ : 整備管理者",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": "{\"title\":\"Ｃ\",\"choices\":[{\"num\":1,\"text\":\"運行管理者\"},{\"num\":2,\"text\":\"整備管理者\"}]}"
+      },
+      {
+        "id": 1562,
+        "questionId": 322,
+        "optionNumber": 7,
+        "content": "Ｄ : 検査",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\":\"Ｄ\",\"choices\":[{\"num\":1,\"text\":\"検査\"},{\"num\":2,\"text\":\"整備\"}]}"
+      },
+      {
+        "id": 1563,
+        "questionId": 322,
+        "optionNumber": 8,
+        "content": "Ｄ : 整備",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": "{\"title\":\"Ｄ\",\"choices\":[{\"num\":1,\"text\":\"検査\"},{\"num\":2,\"text\":\"整備\"}]}"
+      }
+    ]
+  },
+  {
+    "id": 323,
+    "content": "道路運送車両の保安基準及びその細目を定める告示についての次の記述のうち、【誤っているものを 1 つ】選びなさい。なお、解答にあたっては、各選択肢に記載されている事項以外は考慮しないものとする。",
+    "options": [
+      {
+        "id": 1475,
+        "questionId": 323,
+        "optionNumber": 1,
+        "content": "路線を定めて定期に運行する一般乗合旅客自動車運送事業用自動車に備える旅客が乗降中であることを後方に表示する電光表示器には、点滅する灯火又は光度が増減する灯火を備えることができる。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1476,
+        "questionId": 323,
+        "optionNumber": 2,
+        "content": "自動車に備えなければならない後写鏡は、取付部付近の自動車の最外側より突出している部分の最下部が地上 2.0 メートル以下のものは、当該部分が歩行者等に接触した場合に衝撃を緩衝できる構造でなければならない。",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1477,
+        "questionId": 323,
+        "optionNumber": 3,
+        "content": "自動車に備えなければならない非常信号用具は、夜間 200 メートルの距離から確認できる赤色の灯光を発するものでなければならない。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1478,
+        "questionId": 323,
+        "optionNumber": 4,
+        "content": "自動車（大型特殊自動車、小型特殊自動車を除く。）の車体の外形その他自動車の形状については、鋭い突起がないこと、回転部分が突出していないこと等他の交通の安全を妨げるおそれがないものとして、告示で定める基準に適合するものでなければならない。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      }
+    ]
+  }
+]

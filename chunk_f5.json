@@ -1,0 +1,1994 @@
+[
+  {
+    "id": 145,
+    "content": "運行管理に関する次の記述のうち、【適切なものをすべて】選びなさい。なお、解答にあたっては、各選択肢に記載されている事項以外は考慮しないものとする。（※法改正により一部改変）",
+    "options": [
+      {
+        "id": 544,
+        "questionId": 145,
+        "optionNumber": 1,
+        "content": "運行管理者は、自動車運送事業者の代理人として事業用自動車の輸送の安全確保に関する業務全般を行い、交通事故を防止する役割を担っている。したがって、事故が発生した場合には、自動車運送事業者に代わって責任を負うこととなる。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 545,
+        "questionId": 145,
+        "optionNumber": 2,
+        "content": "運行管理者は、運行管理業務に精通し、確実に遂行しなければならない。そのためにも自動車輸送に関連する諸規制を理解し、実務知識を身につけると共に、日頃から運転者と積極的にコミュニケーションを図り、必要な場合にあっては運転者の声を自動車運送事業者に伝え、常に安全で明るい職場環境を築いていくことも重要な役割である。",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 546,
+        "questionId": 145,
+        "optionNumber": 3,
+        "content": "運行管理者は、業務開始及び業務終了後の運転者に対し、原則、対面又は対面と同等の効果を有するものとして国土交通大臣が定める方法により点呼を実施しなければならないが、遠隔地で業務を開始又は終了する場合、車庫と営業所が離れている場合、又は運転者の出庫・帰庫が早朝・深夜であり、点呼を行う運行管理者が営業所に出勤していない場合等、運行上やむを得ない場合には、電話、その他の方法で行う必要がある。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 547,
+        "questionId": 145,
+        "optionNumber": 4,
+        "content": "運行管理者は、事業用自動車が運行しているときにおいては、運行管理業務に従事している必要がある。しかし、1 人の運行管理者が毎日、24 時間営業所に勤務することは不可能である。そのため自動車運送事業者は、複数の運行管理者を選任して交替制で行わせるか、又は、運行管理者の補助者を選任し、点呼の一部を実施させるなど、確実な運行管理業務を遂行させる必要がある。",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": null
+      }
+    ]
+  },
+  {
+    "id": 146,
+    "content": "一般貨物自動車運送事業者が事業用自動車の運転者に対して行う指導・監督に関する次の記述のうち、【適切なものをすべて】選びなさい。なお、解答にあたっては、各選択肢に記載されている事項以外は考慮しないものとする。",
+    "options": [
+      {
+        "id": 548,
+        "questionId": 146,
+        "optionNumber": 1,
+        "content": "時速 36 キロメートルで走行中の自動車を例に取り、運転者が前車との追突の危険を認知しブレーキ操作を行い、ブレーキが効きはじめるまでに要する空走時間を 1 秒間とし、ブレーキが効きはじめてから停止するまでに走る制動距離を 8 メートルとすると、当該自動車の停止距離は約 13 メートルとなるなど、危険が発生した場合でも安全に止まれるような速度と車間距離を保って運転するよう指導している。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 549,
+        "questionId": 146,
+        "optionNumber": 2,
+        "content": "運転者は貨物の積載を確実に行い、積載物の転落防止や、転落させたときに危険を防止するために必要な措置をとることが遵守事項として法令で定められている。出発前に、スペアタイヤや車両に備えられている工具箱等も含め、車両に積載されているものが転落のおそれがないことを確認しなければならないことを指導している。",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 550,
+        "questionId": 146,
+        "optionNumber": 3,
+        "content": "運転者の目は、車の速度が速いほど、周辺の景色が視界から消え、物の形を正確に捉えることができなくなるため、周辺の危険要因の発見が遅れ、事故につながるおそれが高まることを理解させるよう指導している。",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 551,
+        "questionId": 146,
+        "optionNumber": 4,
+        "content": "飲酒により体内に摂取されたアルコールを処理するために必要な時間の目安については、例えばビール 500 ミリリットル（アルコール 5%）の場合、概ね 4 時間とされている。事業者は、これを参考に個人差も考慮して、体質的にお酒に弱い運転者のみを対象として、飲酒が運転に及ぼす影響等について指導を行っている。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      }
+    ]
+  },
+  {
+    "id": 147,
+    "content": "事業用自動車の運転者の健康管理に関する次の記述のうち、【適切なものをすべて】選びなさい。なお、解答にあたっては、各選択肢に記載されている事項以外は考慮しないものとする。",
+    "options": [
+      {
+        "id": 552,
+        "questionId": 147,
+        "optionNumber": 1,
+        "content": "事業者は、運転者が医師の診察を受ける際は、自身が職業運転者で勤務時間が不規則であることを伝え、薬を処方されたときは、服薬のタイミングと運転に支障を及ぼす副作用の有無について確認するよう指導している。",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 553,
+        "questionId": 147,
+        "optionNumber": 2,
+        "content": "事業者は、法令により定められた健康診断を実施することが義務づけられているが、運転者が自ら受けた健康診断（人間ドックなど）において、法令で必要な定期健康診断の項目を充足している場合であっても、法定健診として代用することができない。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 554,
+        "questionId": 147,
+        "optionNumber": 3,
+        "content": "事業者は、健康診断の結果、運転者に心疾患の前兆となる症状がみられたので、当該運転者に医師の診察を受けさせた。その結果、医師より「直ちに入院治療の必要はないが、より軽度な勤務において経過観察することが必要」との所見が出されたが、繁忙期であったことから、運行管理者の判断で短期間に限り従来と同様の乗務を続けさせた。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 555,
+        "questionId": 147,
+        "optionNumber": 4,
+        "content": "平成 29 年中のすべての事業用自動車の乗務員に起因する重大事故報告件数は約2,000 件であり、このうち、運転者の健康状態に起因する事故件数は約 300 件となっている。病名別に見てみると、心筋梗塞等の心臓疾患と脳内出血等の脳疾患が多く発生している。",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": null
+      }
+    ]
+  },
+  {
+    "id": 148,
+    "content": "自動車の運転に関する次の記述のうち、【適切なものをすべて】選びなさい。なお、解答にあたっては、各選択肢に記載されている事項以外は考慮しないものとする。",
+    "options": [
+      {
+        "id": 556,
+        "questionId": 148,
+        "optionNumber": 1,
+        "content": "運転中の車外への脇見だけでなく、車内にあるカーナビ等の画像表示用装置を注視したり、スマートフォン等を使用することによって追突事故等の危険性が増加することについて、日頃から運転者に対して指導する必要がある。",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 557,
+        "questionId": 148,
+        "optionNumber": 2,
+        "content": "自動車がカーブを走行するとき、自動車の重量及びカーブの半径が同一の場合には、速度が2倍になると遠心力の大きさも2倍になることから、カーブを走行する場合の横転などの危険性について運転者に対し指導する必要がある。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 558,
+        "questionId": 148,
+        "optionNumber": 3,
+        "content": "自動車の夜間の走行時においては、自車のライトと対向車のライトで、お互いの光が反射し合い、その間にいる歩行者や自転車が見えなくなることがあり、これを蒸発現象という。蒸発現象は暗い道路で特に起こりやすいので、夜間の走行の際には十分注意するよう運転者に対し指導する必要がある。",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 559,
+        "questionId": 148,
+        "optionNumber": 4,
+        "content": "四輪車を運転する場合、二輪車との衝突事故を防止するための注意点として、①二輪車は死角に入りやすいため、その存在に気づきにくく、また、②二輪車は速度が実際より遅く感じたり、距離が実際より遠くに見えたりする特性がある。したがって、運転者に対してこのような点に注意するよう指導する必要がある。",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": null
+      }
+    ]
+  },
+  {
+    "id": 149,
+    "content": "交通事故防止対策に関する次の記述のうち、【適切なものをすべて】選びなさい。なお、解答にあたっては、各選択肢に記載されている事項以外は考慮しないものとする。",
+    "options": [
+      {
+        "id": 560,
+        "questionId": 149,
+        "optionNumber": 1,
+        "content": "大型トラックの原動機に備えなければならない「速度抑制装置」とは、当該トラックが時速100キロメートルを超えて走行しないよう燃料の供給を調整し、かつ、自動車の速度の制御を円滑に行うためのものである。したがって、運行管理者はこの速度を考慮して運行の計画を立てる必要があり、運転者に対しては、速度抑制装置の機能等を理解させるとともに、追突事故の防止等安全運転に努めさせる必要がある。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 561,
+        "questionId": 149,
+        "optionNumber": 2,
+        "content": "指差呼称は、運転者の錯覚、誤判断、誤操作等を防止するための手段であり、信号や標識などを指で差し、その対象が持つ名称や状態を声に出して確認することをいうが、安全確認に重要な運転者の意識レベルは、個人差があるため有効な交通事故防止対策の手段となっていない。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 562,
+        "questionId": 149,
+        "optionNumber": 3,
+        "content": "交通事故の防止対策を効率的かつ効果的に講じていくためには、事故情報を多角的に分析し、事故実態を把握したうえで、①計画の策定、②対策の実施、③効果の評価、④対策の見直し及び改善、という一連の交通安全対策のPDCAサイクルを繰り返すことが重要である。",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 563,
+        "questionId": 149,
+        "optionNumber": 4,
+        "content": "デジタル式運行記録計は、自動車の運行中、交通事故や急ブレーキ、急ハンドルなどにより当該自動車が一定以上の衝撃を受けると、その前後数十秒の映像などを記録する装置、または、自動車の運行中常時記録する装置であり、事故防止対策の有効な手段の一つとして活用されている。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      }
+    ]
+  },
+  {
+    "id": 150,
+    "content": "荷主から貨物自動車運送事業者に対し、往路と復路において、それぞれ荷積みと荷下ろしを行うよう運送の依頼があった。これを受けて運行管理者は下の図に示す運行計画を立てた。この運行に関する次の1～3の記述について、解答しなさい。なお、解答にあたっては、<運行計画>及び各選択肢に記載されている事項以外は考慮しないものとする。(※法改正により一部改変)\n\n<運行計画>\nB地点から、重量が5,500キログラムの荷物をC地点に運び、その後、戻りの便にて、D地点から5,250キログラムの荷物をF地点に運ぶ行程とする。当該運行は、最大積載量6,250キログラムの中型トラックを使用し、運転者1人乗務とする。\n\n1. 当該運行においてC地点に11時50分に到着させるためにふさわしいA営業所の出庫時刻について、次の①～③の中から【正しいものを1つ】選びなさい。\n2. 当該運転者は前日の運転時間が9時間10分であり、また、翌日の運転時間を9時間20分とした場合、当日を特定の日とした場合の2日を平均して1日当たりの運転時間が自動車運転者の労働時間等の改善のための基準告示(以下「改善基準告示」という。)に違反しているか否かについて、【正しいものを1つ】選びなさい。\n3. 当日の全運行において、連続運転時間は「改善基準告示」に、違反しているか否かについて、【正しいものを1つ】選びなさい。",
+    "options": [
+      {
+        "id": 1584,
+        "questionId": 150,
+        "optionNumber": 1,
+        "content": "1 : 7時30分",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": "{\"title\":\"1\",\"choices\":[{\"num\":1,\"text\":\"7時30分\"},{\"num\":2,\"text\":\"7時40分\"},{\"num\":3,\"text\":\"7時50分\"}]}"
+      },
+      {
+        "id": 1585,
+        "questionId": 150,
+        "optionNumber": 2,
+        "content": "1 : 7時40分",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\":\"1\",\"choices\":[{\"num\":1,\"text\":\"7時30分\"},{\"num\":2,\"text\":\"7時40分\"},{\"num\":3,\"text\":\"7時50分\"}]}"
+      },
+      {
+        "id": 1586,
+        "questionId": 150,
+        "optionNumber": 3,
+        "content": "1 : 7時50分",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\":\"1\",\"choices\":[{\"num\":1,\"text\":\"7時30分\"},{\"num\":2,\"text\":\"7時40分\"},{\"num\":3,\"text\":\"7時50分\"}]}"
+      },
+      {
+        "id": 1587,
+        "questionId": 150,
+        "optionNumber": 4,
+        "content": "2 : 違反していない",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": "{\"title\":\"2\",\"choices\":[{\"num\":1,\"text\":\"違反していない\"},{\"num\":2,\"text\":\"違反している\"}]}"
+      },
+      {
+        "id": 1588,
+        "questionId": 150,
+        "optionNumber": 5,
+        "content": "2 : 違反している",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\":\"2\",\"choices\":[{\"num\":1,\"text\":\"違反していない\"},{\"num\":2,\"text\":\"違反している\"}]}"
+      },
+      {
+        "id": 1589,
+        "questionId": 150,
+        "optionNumber": 6,
+        "content": "3 : 違反していない",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": "{\"title\":\"3\",\"choices\":[{\"num\":1,\"text\":\"違反していない\"},{\"num\":2,\"text\":\"違反している\"}]}"
+      },
+      {
+        "id": 1590,
+        "questionId": 150,
+        "optionNumber": 7,
+        "content": "3 : 違反している",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\":\"3\",\"choices\":[{\"num\":1,\"text\":\"違反していない\"},{\"num\":2,\"text\":\"違反している\"}]}"
+      }
+    ]
+  },
+  {
+    "id": 151,
+    "content": "運行管理者が運転者に対し実施する危険予知訓練に関し、下図の交通場面の状況において考えられる＜運転者が予知すべき危険要因＞とそれに対応する＜運行管理者による指導事項＞として、【最もふさわしい＜選択肢の組み合わせ＞1～10 の中から3つ】選びなさい。\n\n【交通場面の状況】\n・住宅街の道路を走行している。\n・前方に二輪車が走行している。\n・右側の脇道から車や自転車が出ようとしている。\n・前方の駐車車両の向こうに人影が見える。\n\n1. ＜運転者が予知すべき危険要因＞\n① 二輪車を避けようとしてセンターラインをはみ出すと、対向車と衝突する危険がある。\n② 駐車車両に進路を塞がれた二輪車が右に進路を変更してくることが予測されるので、このまま進行すると二輪車と衝突する危険がある。\n③ 前方右側の脇道から左折しようとしている車の影に見える自転車が道路を横断してくると衝突する危険がある。\n④ 後方の状況を確認せずに右側に進路変更をすると、後続の二輪車と接触する危険がある。\n⑤ 駐車車両の先に歩行者が見えるが、この歩行者が道路を横断してくるとはねる危険がある。\n\n2. ＜運行管理者による指導事項＞\nア 住宅街を走行する際に駐車車両があるときは、その付近の歩行者の動きにも注意しスピードを落として走行する。\nイ 単路でも、いつ前車が進路変更などのために減速や停止をするかわからないので、常に車間距離を保持しておく。\nウ 進路変更するときは、必ず後続車の有無を確認するとともに、後続車があるときは、決して強引な進路変更はしない。\nエ 右側の脇道から自転車が出ようとしているので、周辺の交通状況を確認のうえ、脇道の自転車の動きに注意し走行する。仮に出てきた場合は先に行かせる。\nオ 二輪車は、後方の確認をしないまま進路を変更することがよくあるので、二輪車を追い越そうとはせず先に行かせる。",
+    "options": [
+      {
+        "id": 567,
+        "questionId": 151,
+        "optionNumber": 1,
+        "content": "①－イ",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 568,
+        "questionId": 151,
+        "optionNumber": 2,
+        "content": "①－ウ",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 569,
+        "questionId": 151,
+        "optionNumber": 3,
+        "content": "②－エ",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 570,
+        "questionId": 151,
+        "optionNumber": 4,
+        "content": "②－オ",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 571,
+        "questionId": 151,
+        "optionNumber": 5,
+        "content": "③－ア",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 572,
+        "questionId": 151,
+        "optionNumber": 6,
+        "content": "③－エ",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 573,
+        "questionId": 151,
+        "optionNumber": 7,
+        "content": "④－イ",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 574,
+        "questionId": 151,
+        "optionNumber": 8,
+        "content": "④－オ",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 575,
+        "questionId": 151,
+        "optionNumber": 9,
+        "content": "⑤－ア",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 576,
+        "questionId": 151,
+        "optionNumber": 10,
+        "content": "⑤－ウ",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      }
+    ]
+  },
+  {
+    "id": 181,
+    "content": "運行管理者の日常業務の記録等に関する次の記述のうち、適切なものには解答用紙の「適」の欄に、適切でないものには解答用紙の「不適」の欄にマークしなさい。なお、解答にあたっては、各選択肢に記載されている事項以外は考慮しないものとする。（※法改正により一部改変）",
+    "options": [
+      {
+        "id": 719,
+        "questionId": 181,
+        "optionNumber": 1,
+        "content": "1: 運行管理者は、事業用自動車の運転者が他の営業所に転出し当該営業所の運転者でなくなったときは、直ちに、運転者等台帳に運転者でなくなった年月日及び理由を記載して1年間保存している。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 720,
+        "questionId": 181,
+        "optionNumber": 2,
+        "content": "2: 運行管理者は、運行記録計により記録される「瞬間速度」、「運行距離」及び「運行時間」等により運転者の運行の実態や車両の運行の実態を分析し、運転者の日常の乗務を把握し、過労運転の防止及び運行の適正化を図る資料として活用しており、この運行記録計の記録を1年間保存している。",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 721,
+        "questionId": 181,
+        "optionNumber": 3,
+        "content": "3: 運行管理者は、事業用自動車の運転者に対し、事業用自動車の構造上の特性、貨物の正しい積載方法など事業用自動車の運行の安全を確保するために必要な運転の技術及び自動車の運転に関して遵守すべき事項等について、適切に指導を行うとともに、その内容等について記録し、かつ、その記録を営業所において1年間保存している。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 722,
+        "questionId": 181,
+        "optionNumber": 4,
+        "content": "4: 運行管理者は、事業用自動車の運転者に対する業務前点呼において、酒気帯びの有無については、目視等で確認するほか、アルコール検知器を用いて確認するとともに、点呼を行った旨並びに報告及び指示の内容等を記録し、かつ、その記録を1年間保存している。",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": null
+      }
+    ]
+  },
+  {
+    "id": 182,
+    "content": "一般貨物自動車運送事業者が事業用自動車の運転者に対して行う指導・監督に関する次の記述のうち、適切なものをすべて選び、解答用紙の該当する欄にマークしなさい。なお、解答にあたっては、各選択肢に記載されている事項以外は考慮しないものとする。",
+    "options": [
+      {
+        "id": 723,
+        "questionId": 182,
+        "optionNumber": 1,
+        "content": "1: 車長が長い自動車は、①内輪差が大きく、左折時に左側方のバイクや歩行者を巻き込んでしまう、②狭い道路への左折時には、車体がふくらみ、センターラインをはみ出してしまう、③右折時には、車体後部のオーバーハング部が隣接する車線へはみ出して車体後部が後続車に接触する、などの事故の要因となり得る危険性を有していることを運転者に対し指導している。",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 724,
+        "questionId": 182,
+        "optionNumber": 2,
+        "content": "2: 鉄道車両など関係法令の制限を超えた積載物を運搬する場合は、関係当局から発行された許可証を携行するとともに、許可の際に付された通行経路・通行時間等の条件を遵守し、運送するよう指導している。また、運行前には、必ず、通行経路の事前情報を入手し、許可された経路の道路状況を確認するよう指導している。",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 725,
+        "questionId": 182,
+        "optionNumber": 3,
+        "content": "3: 国土交通大臣が認定する適性診断（以下「適性診断」という。）を受診した運転者の診断結果において、「感情の安定性」の項目で、「すぐかっとするなど衝動的な傾向」との判定が出た。適性診断は、性格等を客観的に把握し、運転の適性を判定することにより、運転業務に適さない者を選任しないようにするためのものであるため、運行管理者は、当該運転者は運転業務に適さないと判断し、他の業務へ配置替えを行った。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 726,
+        "questionId": 182,
+        "optionNumber": 4,
+        "content": "4: 飲酒により体内に摂取されたアルコールを処理するために必要な時間の目安については、個人差はあるが、例えばチューハイ350ミリリットル（アルコール7%）の場合、概ね2時間とされている。事業者は、これらを参考に、社内教育の中で酒気帯び運転防止の観点から飲酒が運転に及ぼす影響等について指導している。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      }
+    ]
+  },
+  {
+    "id": 183,
+    "content": "事業用自動車の運転者の健康管理及び就業における判断・対処に関する次の記述のうち、適切なものには解答用紙の「適」の欄に、適切でないものには解答用紙の「不適」の欄にマークしなさい。なお、解答にあたっては、各選択肢に記載されている事項以外は考慮しないものとする。",
+    "options": [
+      {
+        "id": 727,
+        "questionId": 183,
+        "optionNumber": 1,
+        "content": "1: 自動車の運転中に、心臓疾患（心筋梗塞、心不全等）や、大血管疾患（急性大動脈解離、大動脈瘤破裂等）が起こると、ショック状態、意識障害、心停止等を生じ、運転者が事故を回避するための行動をとることができなくなり、重大事故を引き起こすおそれがある。そのため、健康起因事故を防止するためにも発症する前の早期発見や予防が重要となってくる。",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 728,
+        "questionId": 183,
+        "optionNumber": 2,
+        "content": "2: 事業者は、業務に従事する運転者に対し法令で定める健康診断を受診させ、その結果に基づいて健康診断個人票を作成して5年間保存している。また、運転者が自ら受けた健康診断の結果を提出したものについても同様に保存している。",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 729,
+        "questionId": 183,
+        "optionNumber": 3,
+        "content": "3: 自動車事故報告規則に基づく平成29年中のすべての事業用自動車の乗務員に起因する重大事故報告件数約2,000件の中で、健康起因による事故件数は約300件を占めている。そのうち運転者が死亡に至った事案は60件あり、原因病名別にみると、心臓疾患が半数以上を占めている。",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 730,
+        "questionId": 183,
+        "optionNumber": 4,
+        "content": "4: 睡眠時無呼吸症候群（SAS）は、大きないびきや昼間の強い眠気など容易に自覚症状を感じやすいので、事業者は、自覚症状を感じていると自己申告をした運転者に限定して、SASスクリーニング検査を実施している。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      }
+    ]
+  },
+  {
+    "id": 184,
+    "content": "自動車の運転に関する次の記述のうち、適切なものには解答用紙の「適」の欄に、適切でないものには解答用紙の「不適」の欄にマークしなさい。なお、解答にあたっては、各選択肢に記載されている事項以外は考慮しないものとする。",
+    "options": [
+      {
+        "id": 731,
+        "questionId": 184,
+        "optionNumber": 1,
+        "content": "1: 四輪車を運転する場合、二輪車との衝突事故を防止するための注意点として、①二輪車は死角に入りやすいため、その存在に気づきにくく、また、②二輪車は速度が実際より速く感じたり、距離が近くに見えたりする特性がある。したがって、運転者に対してこのような点に注意するよう指導する必要がある。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 732,
+        "questionId": 184,
+        "optionNumber": 2,
+        "content": "2: アンチロック・ブレーキシステム（ABS）は、急ブレーキをかけた時などにタイヤがロック（回転が止まること）するのを防ぐことにより、車両の進行方向の安定性を保ち、また、ハンドル操作で障害物を回避できる可能性を高める装置である。ABSを効果的に作動させるためには、できるだけ強くブレーキペダルを踏み続けることが重要であり、この点を運転者に指導する必要がある。",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 733,
+        "questionId": 184,
+        "optionNumber": 3,
+        "content": "3: バン型トラックの後方は、ほとんど死角となって見えない状態となることから、後退時の事故の要因となることがある。その対策として、バックアイカメラを装着して、死角を大きく減少させることができるが、その使用にあたっては、バックアイカメラにも限界があり、過信しないよう運転者に指導する必要がある。",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 734,
+        "questionId": 184,
+        "optionNumber": 4,
+        "content": "4: 車両の重量が重い自動車は、スピードを出すことにより、カーブでの遠心力が大きくなるため横転などの危険性が高くなり、また、制動距離が長くなるため追突の危険性も高くなる。このため、法定速度を遵守し、十分な車間距離を保つことを運転者に指導する必要がある。",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": null
+      }
+    ]
+  },
+  {
+    "id": 185,
+    "content": "高速自動車国道において、A自動車（車両総重量8トンの事業用トラック）が前方のB自動車とともにほぼ同じ速度で50メートルの車間距離を保ちながらB自動車に追従して走行していたところ、突然、前方のB自動車が急ブレーキをかけたのを認め、A自動車も直ちに急ブレーキをかけ、A自動車、B自動車とも停止した。A自動車、B自動車とも安全を確認した後、走行を開始した。この運行に関する次のア～ウについて解答しなさい。\nなお、下図は、A自動車に備えられたデジタル式運行記録計で上記運行に関して記録された6分間記録図表の一部を示す。\n[図表省略]\nア　上の記録図表からA自動車の急ブレーキを操作する直前の速度を読み取ったうえで、当該速度における空走距離（危険認知から、その状況を判断してブレーキを操作するという動作に至る間（空走時間）に自動車が走行した距離）を求めるとおよそ何メートルか。次の①～②の中から正しいものを1つ選び、解答用紙の該当する欄にマークしなさい。なお、この場合の空走時間は1秒間とする。\nイ　A自動車の急ブレーキを操作する直前の速度における制動距離（ブレーキが実際に効き始めてから止まるまでに走行した距離）を40メートルとした場合、A自動車が危険を認知してから停止するまでに走行した距離は、およそ何メートルか。次の①～②の中から正しいものを1つ選び、解答用紙の該当する欄にマークしなさい。なお、この場合の空走時間は1秒間とする。\nウ　B自動車が急ブレーキをかけA自動車、B自動車とも停止した際の、A自動車とB自動車の車間距離は、およそ何メートルか。次の①～②の中から正しいものを1つ選び、解答用紙の該当する欄にマークしなさい。なお、この場合において、A自動車の制動距離及び空走時間は上記イに示すとおりであり、また、B自動車の制動距離は35メートルとする。",
+    "options": [
+      {
+        "id": 1347,
+        "questionId": 185,
+        "optionNumber": 1,
+        "content": "1 : ① ア:",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\":\"1\",\"choices\":[{\"num\":1,\"text\":\"ア:\"},{\"num\":2,\"text\":\"15メートル\"},{\"num\":3,\"text\":\"20メートル\"}]}"
+      },
+      {
+        "id": 1348,
+        "questionId": 185,
+        "optionNumber": 2,
+        "content": "1 : ② 15メートル",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": "{\"title\":\"1\",\"choices\":[{\"num\":1,\"text\":\"ア:\"},{\"num\":2,\"text\":\"15メートル\"},{\"num\":3,\"text\":\"20メートル\"}]}"
+      },
+      {
+        "id": 1349,
+        "questionId": 185,
+        "optionNumber": 3,
+        "content": "1 : ② 20メートル",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\":\"1\",\"choices\":[{\"num\":1,\"text\":\"ア:\"},{\"num\":2,\"text\":\"15メートル\"},{\"num\":3,\"text\":\"20メートル\"}]}"
+      },
+      {
+        "id": 1350,
+        "questionId": 185,
+        "optionNumber": 4,
+        "content": "2 : ① イ:",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\":\"2\",\"choices\":[{\"num\":1,\"text\":\"イ:\"},{\"num\":2,\"text\":\"55メートル\"},{\"num\":3,\"text\":\"60メートル\"}]}"
+      },
+      {
+        "id": 1351,
+        "questionId": 185,
+        "optionNumber": 5,
+        "content": "2 : ② 55メートル",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": "{\"title\":\"2\",\"choices\":[{\"num\":1,\"text\":\"イ:\"},{\"num\":2,\"text\":\"55メートル\"},{\"num\":3,\"text\":\"60メートル\"}]}"
+      },
+      {
+        "id": 1352,
+        "questionId": 185,
+        "optionNumber": 6,
+        "content": "2 : ② 60メートル",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\":\"2\",\"choices\":[{\"num\":1,\"text\":\"イ:\"},{\"num\":2,\"text\":\"55メートル\"},{\"num\":3,\"text\":\"60メートル\"}]}"
+      },
+      {
+        "id": 1353,
+        "questionId": 185,
+        "optionNumber": 7,
+        "content": "3 : ① ウ:",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": "{\"title\":\"3\",\"choices\":[{\"num\":1,\"text\":\"ウ:\"},{\"num\":2,\"text\":\"25メートル\"},{\"num\":3,\"text\":\"30メートル\"}]}"
+      },
+      {
+        "id": 1354,
+        "questionId": 185,
+        "optionNumber": 8,
+        "content": "3 : ② 25メートル",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\":\"3\",\"choices\":[{\"num\":1,\"text\":\"ウ:\"},{\"num\":2,\"text\":\"25メートル\"},{\"num\":3,\"text\":\"30メートル\"}]}"
+      },
+      {
+        "id": 1355,
+        "questionId": 185,
+        "optionNumber": 9,
+        "content": "3 : ② 30メートル",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\":\"3\",\"choices\":[{\"num\":1,\"text\":\"ウ:\"},{\"num\":2,\"text\":\"25メートル\"},{\"num\":3,\"text\":\"30メートル\"}]}"
+      }
+    ]
+  },
+  {
+    "id": 186,
+    "content": "荷主から貨物自動車運送事業者に対し、往路と復路において、それぞれ荷積みと荷下ろしを行うよう運送の依頼があった。これを受けて、運行管理者は次に示す「当日の運行計画」を立てた。\nこの事業用自動車の運行に関する次のア～ウについて解答しなさい。なお、解答にあたっては、「当日の運行計画」及び各選択肢に記載されている事項以外は考慮しないものとする。（※法改正により一部改変）\n\n「当日の運行計画」\n往路\n○ A営業所を出庫し、30キロメートル離れたB地点まで平均時速30キロメートルで走行する。\n○ B地点にて20分間の荷積みを行う。\n○ B地点から165キロメートル離れたC地点までの間、一部高速自動車国道を利用し、平均時速55キロメートルで走行して、C地点に12時に到着する。1時間の休憩後、15分間の荷下ろしを行う。\n\n復路\n○ C地点にて15分間の荷積みを行い、13時30分に出発し、60キロメートル離れたD地点まで平均時速30キロメートルで走行する。D地点で30分間の休憩をとる。\n○ 休憩後、D地点からE地点まで平均時速25キロメートルで走行して、E地点に18時に到着し、20分間の荷下ろしを行う。\n○ E地点から20キロメートル離れたA営業所まで平均時速30キロメートルで走行し、19時に帰庫する。\n[図表省略]\n（注）「高速自動車国道のサービスエリア等に駐車又は停車できないため、やむを得ず連続運転時間を延長できる場合」には該当しないものとする。\n\nア　C地点に12時に到着させるためにふさわしいA営業所の出庫時刻[ ア ]について、次の①～④の中から正しいものを1つ選び、解答用紙の該当する欄にマークしなさい。\nイ　D地点とE地点間の距離[ イ ]について、次の①～④の中から正しいものを1つ選び、解答用紙の該当する欄にマークしなさい。\nウ　当日の全運行において、連続運転時間は「自動車運転者の労働時間等の改善のための基準」に照らし、違反しているか否かについて、次の①～②の中から正しいものを1つ選び、解答用紙の該当する欄にマークしなさい。",
+    "options": [
+      {
+        "id": 1356,
+        "questionId": 186,
+        "optionNumber": 1,
+        "content": "1 : ① ア:",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\":\"1\",\"choices\":[{\"num\":1,\"text\":\"ア:\"},{\"num\":2,\"text\":\"7時00分\"},{\"num\":3,\"text\":\"7時20分\"},{\"num\":4,\"text\":\"7時40分\"},{\"num\":5,\"text\":\"8時00分\"}]}"
+      },
+      {
+        "id": 1357,
+        "questionId": 186,
+        "optionNumber": 2,
+        "content": "1 : ② 7時00分",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\":\"1\",\"choices\":[{\"num\":1,\"text\":\"ア:\"},{\"num\":2,\"text\":\"7時00分\"},{\"num\":3,\"text\":\"7時20分\"},{\"num\":4,\"text\":\"7時40分\"},{\"num\":5,\"text\":\"8時00分\"}]}"
+      },
+      {
+        "id": 1358,
+        "questionId": 186,
+        "optionNumber": 3,
+        "content": "1 : ② 7時20分",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": "{\"title\":\"1\",\"choices\":[{\"num\":1,\"text\":\"ア:\"},{\"num\":2,\"text\":\"7時00分\"},{\"num\":3,\"text\":\"7時20分\"},{\"num\":4,\"text\":\"7時40分\"},{\"num\":5,\"text\":\"8時00分\"}]}"
+      },
+      {
+        "id": 1359,
+        "questionId": 186,
+        "optionNumber": 4,
+        "content": "1 : ② 7時40分",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\":\"1\",\"choices\":[{\"num\":1,\"text\":\"ア:\"},{\"num\":2,\"text\":\"7時00分\"},{\"num\":3,\"text\":\"7時20分\"},{\"num\":4,\"text\":\"7時40分\"},{\"num\":5,\"text\":\"8時00分\"}]}"
+      },
+      {
+        "id": 1360,
+        "questionId": 186,
+        "optionNumber": 5,
+        "content": "1 : ② 8時00分",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\":\"1\",\"choices\":[{\"num\":1,\"text\":\"ア:\"},{\"num\":2,\"text\":\"7時00分\"},{\"num\":3,\"text\":\"7時20分\"},{\"num\":4,\"text\":\"7時40分\"},{\"num\":5,\"text\":\"8時00分\"}]}"
+      },
+      {
+        "id": 1361,
+        "questionId": 186,
+        "optionNumber": 6,
+        "content": "2 : ① イ:",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\":\"2\",\"choices\":[{\"num\":1,\"text\":\"イ:\"},{\"num\":2,\"text\":\"45キロメートル\"},{\"num\":3,\"text\":\"50キロメートル\"},{\"num\":4,\"text\":\"55キロメートル\"},{\"num\":5,\"text\":\"60キロメートル\"}]}"
+      },
+      {
+        "id": 1362,
+        "questionId": 186,
+        "optionNumber": 7,
+        "content": "2 : ② 45キロメートル",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": "{\"title\":\"2\",\"choices\":[{\"num\":1,\"text\":\"イ:\"},{\"num\":2,\"text\":\"45キロメートル\"},{\"num\":3,\"text\":\"50キロメートル\"},{\"num\":4,\"text\":\"55キロメートル\"},{\"num\":5,\"text\":\"60キロメートル\"}]}"
+      },
+      {
+        "id": 1363,
+        "questionId": 186,
+        "optionNumber": 8,
+        "content": "2 : ② 50キロメートル",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\":\"2\",\"choices\":[{\"num\":1,\"text\":\"イ:\"},{\"num\":2,\"text\":\"45キロメートル\"},{\"num\":3,\"text\":\"50キロメートル\"},{\"num\":4,\"text\":\"55キロメートル\"},{\"num\":5,\"text\":\"60キロメートル\"}]}"
+      },
+      {
+        "id": 1364,
+        "questionId": 186,
+        "optionNumber": 9,
+        "content": "2 : ② 55キロメートル",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\":\"2\",\"choices\":[{\"num\":1,\"text\":\"イ:\"},{\"num\":2,\"text\":\"45キロメートル\"},{\"num\":3,\"text\":\"50キロメートル\"},{\"num\":4,\"text\":\"55キロメートル\"},{\"num\":5,\"text\":\"60キロメートル\"}]}"
+      },
+      {
+        "id": 1365,
+        "questionId": 186,
+        "optionNumber": 10,
+        "content": "2 : ② 60キロメートル",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\":\"2\",\"choices\":[{\"num\":1,\"text\":\"イ:\"},{\"num\":2,\"text\":\"45キロメートル\"},{\"num\":3,\"text\":\"50キロメートル\"},{\"num\":4,\"text\":\"55キロメートル\"},{\"num\":5,\"text\":\"60キロメートル\"}]}"
+      },
+      {
+        "id": 1366,
+        "questionId": 186,
+        "optionNumber": 11,
+        "content": "3 : ① ウ:",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": "{\"title\":\"3\",\"choices\":[{\"num\":1,\"text\":\"ウ:\"},{\"num\":2,\"text\":\"違反していない\"},{\"num\":3,\"text\":\"違反している\"}]}"
+      },
+      {
+        "id": 1367,
+        "questionId": 186,
+        "optionNumber": 12,
+        "content": "3 : ② 違反していない",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\":\"3\",\"choices\":[{\"num\":1,\"text\":\"ウ:\"},{\"num\":2,\"text\":\"違反していない\"},{\"num\":3,\"text\":\"違反している\"}]}"
+      },
+      {
+        "id": 1368,
+        "questionId": 186,
+        "optionNumber": 13,
+        "content": "3 : ② 違反している",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\":\"3\",\"choices\":[{\"num\":1,\"text\":\"ウ:\"},{\"num\":2,\"text\":\"違反していない\"},{\"num\":3,\"text\":\"違反している\"}]}"
+      }
+    ]
+  },
+  {
+    "id": 187,
+    "content": "平成28年中のトラック（最大積載量5トン以上）による死亡・重傷事故について、事業用自動車の交通事故統計及び自動車事故報告規則により提出された事故報告書に基づき、下記のとおり、事故の特徴やその要因についての分析結果が導かれた。この分析結果をもとに、【事業者及び運行管理者が実施すべき事故低減対策のポイント】の中から【事故防止のための指導】として、A、B、Cに当てはまる最も直接的に有効と考えられる組合せを下の枠内の選択肢（①～⑧）からそれぞれ1つ選び、解答用紙の該当する欄にマークしなさい。なお、解答にあたっては、下記に記載されている事項以外は考慮しないものとする。\n\n【死亡・重傷事故の特徴】\n[表省略]\n【事故の主な要因】\n[表省略]\n【事故防止のための指導】\n[ A | B | C ]",
+    "options": [
+      {
+        "id": 1591,
+        "questionId": 187,
+        "optionNumber": 1,
+        "content": "A : 1",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\":\"A\",\"choices\":[{\"num\":1,\"text\":\"1\"},{\"num\":2,\"text\":\"2\"},{\"num\":3,\"text\":\"3\"},{\"num\":4,\"text\":\"4\"},{\"num\":5,\"text\":\"5\"},{\"num\":6,\"text\":\"6\"},{\"num\":7,\"text\":\"7\"},{\"num\":8,\"text\":\"8\"}]}"
+      },
+      {
+        "id": 1592,
+        "questionId": 187,
+        "optionNumber": 2,
+        "content": "A : 2",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\":\"A\",\"choices\":[{\"num\":1,\"text\":\"1\"},{\"num\":2,\"text\":\"2\"},{\"num\":3,\"text\":\"3\"},{\"num\":4,\"text\":\"4\"},{\"num\":5,\"text\":\"5\"},{\"num\":6,\"text\":\"6\"},{\"num\":7,\"text\":\"7\"},{\"num\":8,\"text\":\"8\"}]}"
+      },
+      {
+        "id": 1593,
+        "questionId": 187,
+        "optionNumber": 3,
+        "content": "A : 3",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\":\"A\",\"choices\":[{\"num\":1,\"text\":\"1\"},{\"num\":2,\"text\":\"2\"},{\"num\":3,\"text\":\"3\"},{\"num\":4,\"text\":\"4\"},{\"num\":5,\"text\":\"5\"},{\"num\":6,\"text\":\"6\"},{\"num\":7,\"text\":\"7\"},{\"num\":8,\"text\":\"8\"}]}"
+      },
+      {
+        "id": 1594,
+        "questionId": 187,
+        "optionNumber": 4,
+        "content": "A : 4",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\":\"A\",\"choices\":[{\"num\":1,\"text\":\"1\"},{\"num\":2,\"text\":\"2\"},{\"num\":3,\"text\":\"3\"},{\"num\":4,\"text\":\"4\"},{\"num\":5,\"text\":\"5\"},{\"num\":6,\"text\":\"6\"},{\"num\":7,\"text\":\"7\"},{\"num\":8,\"text\":\"8\"}]}"
+      },
+      {
+        "id": 1595,
+        "questionId": 187,
+        "optionNumber": 5,
+        "content": "A : 5",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": "{\"title\":\"A\",\"choices\":[{\"num\":1,\"text\":\"1\"},{\"num\":2,\"text\":\"2\"},{\"num\":3,\"text\":\"3\"},{\"num\":4,\"text\":\"4\"},{\"num\":5,\"text\":\"5\"},{\"num\":6,\"text\":\"6\"},{\"num\":7,\"text\":\"7\"},{\"num\":8,\"text\":\"8\"}]}"
+      },
+      {
+        "id": 1596,
+        "questionId": 187,
+        "optionNumber": 6,
+        "content": "A : 6",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\":\"A\",\"choices\":[{\"num\":1,\"text\":\"1\"},{\"num\":2,\"text\":\"2\"},{\"num\":3,\"text\":\"3\"},{\"num\":4,\"text\":\"4\"},{\"num\":5,\"text\":\"5\"},{\"num\":6,\"text\":\"6\"},{\"num\":7,\"text\":\"7\"},{\"num\":8,\"text\":\"8\"}]}"
+      },
+      {
+        "id": 1597,
+        "questionId": 187,
+        "optionNumber": 7,
+        "content": "A : 7",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\":\"A\",\"choices\":[{\"num\":1,\"text\":\"1\"},{\"num\":2,\"text\":\"2\"},{\"num\":3,\"text\":\"3\"},{\"num\":4,\"text\":\"4\"},{\"num\":5,\"text\":\"5\"},{\"num\":6,\"text\":\"6\"},{\"num\":7,\"text\":\"7\"},{\"num\":8,\"text\":\"8\"}]}"
+      },
+      {
+        "id": 1598,
+        "questionId": 187,
+        "optionNumber": 8,
+        "content": "A : 8",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\":\"A\",\"choices\":[{\"num\":1,\"text\":\"1\"},{\"num\":2,\"text\":\"2\"},{\"num\":3,\"text\":\"3\"},{\"num\":4,\"text\":\"4\"},{\"num\":5,\"text\":\"5\"},{\"num\":6,\"text\":\"6\"},{\"num\":7,\"text\":\"7\"},{\"num\":8,\"text\":\"8\"}]}"
+      },
+      {
+        "id": 1599,
+        "questionId": 187,
+        "optionNumber": 9,
+        "content": "B : 1",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\":\"B\",\"choices\":[{\"num\":1,\"text\":\"1\"},{\"num\":2,\"text\":\"2\"},{\"num\":3,\"text\":\"3\"},{\"num\":4,\"text\":\"4\"},{\"num\":5,\"text\":\"5\"},{\"num\":6,\"text\":\"6\"},{\"num\":7,\"text\":\"7\"},{\"num\":8,\"text\":\"8\"}]}"
+      },
+      {
+        "id": 1600,
+        "questionId": 187,
+        "optionNumber": 10,
+        "content": "B : 2",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\":\"B\",\"choices\":[{\"num\":1,\"text\":\"1\"},{\"num\":2,\"text\":\"2\"},{\"num\":3,\"text\":\"3\"},{\"num\":4,\"text\":\"4\"},{\"num\":5,\"text\":\"5\"},{\"num\":6,\"text\":\"6\"},{\"num\":7,\"text\":\"7\"},{\"num\":8,\"text\":\"8\"}]}"
+      },
+      {
+        "id": 1601,
+        "questionId": 187,
+        "optionNumber": 11,
+        "content": "B : 3",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": "{\"title\":\"B\",\"choices\":[{\"num\":1,\"text\":\"1\"},{\"num\":2,\"text\":\"2\"},{\"num\":3,\"text\":\"3\"},{\"num\":4,\"text\":\"4\"},{\"num\":5,\"text\":\"5\"},{\"num\":6,\"text\":\"6\"},{\"num\":7,\"text\":\"7\"},{\"num\":8,\"text\":\"8\"}]}"
+      },
+      {
+        "id": 1602,
+        "questionId": 187,
+        "optionNumber": 12,
+        "content": "B : 4",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\":\"B\",\"choices\":[{\"num\":1,\"text\":\"1\"},{\"num\":2,\"text\":\"2\"},{\"num\":3,\"text\":\"3\"},{\"num\":4,\"text\":\"4\"},{\"num\":5,\"text\":\"5\"},{\"num\":6,\"text\":\"6\"},{\"num\":7,\"text\":\"7\"},{\"num\":8,\"text\":\"8\"}]}"
+      },
+      {
+        "id": 1603,
+        "questionId": 187,
+        "optionNumber": 13,
+        "content": "B : 5",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\":\"B\",\"choices\":[{\"num\":1,\"text\":\"1\"},{\"num\":2,\"text\":\"2\"},{\"num\":3,\"text\":\"3\"},{\"num\":4,\"text\":\"4\"},{\"num\":5,\"text\":\"5\"},{\"num\":6,\"text\":\"6\"},{\"num\":7,\"text\":\"7\"},{\"num\":8,\"text\":\"8\"}]}"
+      },
+      {
+        "id": 1604,
+        "questionId": 187,
+        "optionNumber": 14,
+        "content": "B : 6",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\":\"B\",\"choices\":[{\"num\":1,\"text\":\"1\"},{\"num\":2,\"text\":\"2\"},{\"num\":3,\"text\":\"3\"},{\"num\":4,\"text\":\"4\"},{\"num\":5,\"text\":\"5\"},{\"num\":6,\"text\":\"6\"},{\"num\":7,\"text\":\"7\"},{\"num\":8,\"text\":\"8\"}]}"
+      },
+      {
+        "id": 1605,
+        "questionId": 187,
+        "optionNumber": 15,
+        "content": "B : 7",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\":\"B\",\"choices\":[{\"num\":1,\"text\":\"1\"},{\"num\":2,\"text\":\"2\"},{\"num\":3,\"text\":\"3\"},{\"num\":4,\"text\":\"4\"},{\"num\":5,\"text\":\"5\"},{\"num\":6,\"text\":\"6\"},{\"num\":7,\"text\":\"7\"},{\"num\":8,\"text\":\"8\"}]}"
+      },
+      {
+        "id": 1606,
+        "questionId": 187,
+        "optionNumber": 16,
+        "content": "B : 8",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\":\"B\",\"choices\":[{\"num\":1,\"text\":\"1\"},{\"num\":2,\"text\":\"2\"},{\"num\":3,\"text\":\"3\"},{\"num\":4,\"text\":\"4\"},{\"num\":5,\"text\":\"5\"},{\"num\":6,\"text\":\"6\"},{\"num\":7,\"text\":\"7\"},{\"num\":8,\"text\":\"8\"}]}"
+      },
+      {
+        "id": 1607,
+        "questionId": 187,
+        "optionNumber": 17,
+        "content": "C : 1",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\":\"C\",\"choices\":[{\"num\":1,\"text\":\"1\"},{\"num\":2,\"text\":\"2\"},{\"num\":3,\"text\":\"3\"},{\"num\":4,\"text\":\"4\"},{\"num\":5,\"text\":\"5\"},{\"num\":6,\"text\":\"6\"},{\"num\":7,\"text\":\"7\"},{\"num\":8,\"text\":\"8\"}]}"
+      },
+      {
+        "id": 1608,
+        "questionId": 187,
+        "optionNumber": 18,
+        "content": "C : 2",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\":\"C\",\"choices\":[{\"num\":1,\"text\":\"1\"},{\"num\":2,\"text\":\"2\"},{\"num\":3,\"text\":\"3\"},{\"num\":4,\"text\":\"4\"},{\"num\":5,\"text\":\"5\"},{\"num\":6,\"text\":\"6\"},{\"num\":7,\"text\":\"7\"},{\"num\":8,\"text\":\"8\"}]}"
+      },
+      {
+        "id": 1609,
+        "questionId": 187,
+        "optionNumber": 19,
+        "content": "C : 3",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\":\"C\",\"choices\":[{\"num\":1,\"text\":\"1\"},{\"num\":2,\"text\":\"2\"},{\"num\":3,\"text\":\"3\"},{\"num\":4,\"text\":\"4\"},{\"num\":5,\"text\":\"5\"},{\"num\":6,\"text\":\"6\"},{\"num\":7,\"text\":\"7\"},{\"num\":8,\"text\":\"8\"}]}"
+      },
+      {
+        "id": 1610,
+        "questionId": 187,
+        "optionNumber": 20,
+        "content": "C : 4",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\":\"C\",\"choices\":[{\"num\":1,\"text\":\"1\"},{\"num\":2,\"text\":\"2\"},{\"num\":3,\"text\":\"3\"},{\"num\":4,\"text\":\"4\"},{\"num\":5,\"text\":\"5\"},{\"num\":6,\"text\":\"6\"},{\"num\":7,\"text\":\"7\"},{\"num\":8,\"text\":\"8\"}]}"
+      },
+      {
+        "id": 1611,
+        "questionId": 187,
+        "optionNumber": 21,
+        "content": "C : 5",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\":\"C\",\"choices\":[{\"num\":1,\"text\":\"1\"},{\"num\":2,\"text\":\"2\"},{\"num\":3,\"text\":\"3\"},{\"num\":4,\"text\":\"4\"},{\"num\":5,\"text\":\"5\"},{\"num\":6,\"text\":\"6\"},{\"num\":7,\"text\":\"7\"},{\"num\":8,\"text\":\"8\"}]}"
+      },
+      {
+        "id": 1612,
+        "questionId": 187,
+        "optionNumber": 22,
+        "content": "C : 6",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\":\"C\",\"choices\":[{\"num\":1,\"text\":\"1\"},{\"num\":2,\"text\":\"2\"},{\"num\":3,\"text\":\"3\"},{\"num\":4,\"text\":\"4\"},{\"num\":5,\"text\":\"5\"},{\"num\":6,\"text\":\"6\"},{\"num\":7,\"text\":\"7\"},{\"num\":8,\"text\":\"8\"}]}"
+      },
+      {
+        "id": 1613,
+        "questionId": 187,
+        "optionNumber": 23,
+        "content": "C : 7",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\":\"C\",\"choices\":[{\"num\":1,\"text\":\"1\"},{\"num\":2,\"text\":\"2\"},{\"num\":3,\"text\":\"3\"},{\"num\":4,\"text\":\"4\"},{\"num\":5,\"text\":\"5\"},{\"num\":6,\"text\":\"6\"},{\"num\":7,\"text\":\"7\"},{\"num\":8,\"text\":\"8\"}]}"
+      },
+      {
+        "id": 1614,
+        "questionId": 187,
+        "optionNumber": 24,
+        "content": "C : 8",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": "{\"title\":\"C\",\"choices\":[{\"num\":1,\"text\":\"1\"},{\"num\":2,\"text\":\"2\"},{\"num\":3,\"text\":\"3\"},{\"num\":4,\"text\":\"4\"},{\"num\":5,\"text\":\"5\"},{\"num\":6,\"text\":\"6\"},{\"num\":7,\"text\":\"7\"},{\"num\":8,\"text\":\"8\"}]}"
+      }
+    ]
+  },
+  {
+    "id": 271,
+    "content": "【実務上の知識及び能力関係】\n\n事業用自動車の運転者に対する点呼の実施に関する次の記述のうち、適切なものをすべて選びなさい。なお、解答にあたっては、各選択肢に記載されている事項以外は考慮しないものとする。",
+    "options": [
+      {
+        "id": 1070,
+        "questionId": 271,
+        "optionNumber": 1,
+        "content": "運行管理者は、業務前及び業務後の運転者に対し、原則、対面又は対面と同等の効果を有するものとして国土交通大臣が定める方法により点呼を実施しなければならないが、遠隔地で業務を開始又は終了する場合は「運行上やむを得ない場合」に該当するため、「電話その他の方法」により点呼を実施することができる。この場合、運転者と直接対話ができる携帯電話も「電話その他の方法」に該当するため点呼の実施に使用することができる。",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1071,
+        "questionId": 271,
+        "optionNumber": 2,
+        "content": "運行管理者は、点呼に用いるアルコール検知器を常時有効に保持するため、確実に酒気を帯びていない者が当該アルコール検知器を使用した場合に、アルコールを検知しないことを1ヵ月に1回確認している。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1072,
+        "questionId": 271,
+        "optionNumber": 3,
+        "content": "運行管理者は、業務後の点呼において、業務を終了した運転者からの当該業務に係る事業用自動車、道路及び運行の状況についての報告は、特に異常がない場合には運転者から求めないこととしており、点呼記録簿に「異常なし」と記録している。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1073,
+        "questionId": 271,
+        "optionNumber": 4,
+        "content": "運行管理者は、業務後の点呼において酒気帯びの有無を確認する場合、運転者の状態を目視等で確認するほか、アルコール検知器を使用し、道路交通法施行令で定める呼気中のアルコール濃度 1 リットル当たり 0.15 ミリグラム以上であるか否かを確認している。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      }
+    ]
+  },
+  {
+    "id": 272,
+    "content": "【実務上の知識及び能力関係】\n\n一般貨物自動車運送事業者が事業用自動車の運転者に対して行う指導・監督に関する次の記述のうち、適切なものをすべて選びなさい。なお、解答にあたっては、各選択肢に記載されている事項以外は考慮しないものとする。",
+    "options": [
+      {
+        "id": 1074,
+        "questionId": 272,
+        "optionNumber": 1,
+        "content": "自動車が追越しをするときは、前の自動車の走行速度に応じた追越し距離、追越し時間が必要になる。前の自動車と追越しをする自動車の速度差が小さい場合には追越しに長い時間と距離が必要になることから、無理な追越しをしないよう運転者に対し指導する必要がある。",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1075,
+        "questionId": 272,
+        "optionNumber": 2,
+        "content": "運転者は、積載物の転落防止や、転落させたときに危険を防止するために必要な措置をとることが遵守事項として法令で定められている。出発前に、スペアタイヤや車両に備えられている工具箱等も含め、車両に積載されているものが転落のおそれがないことを確認しなければならないことを指導している。",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1076,
+        "questionId": 272,
+        "optionNumber": 3,
+        "content": "飲酒は、速度感覚の麻痺、視力の低下、反応時間の遅れ、眠気が生じるなど自動車の運転に極めて深刻な影響を及ぼす。飲酒により摂取されたアルコールを体内で分解処理するために必要な時間は、個人差はあるが、例えば日本酒（アルコール 15%）を 2 合（360mℓ）飲んだ時には、男性の場合で概ね 4 時間、女性の場合で概ね 5 時間が目安とされていることから、乗務前日の飲酒・酒量については、運転に影響のないよう十分気をつけることを運転者に指導している。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1077,
+        "questionId": 272,
+        "optionNumber": 4,
+        "content": "国土交通大臣が認定する適性診断（以下「適性診断」という。）を受診した運転者の診断結果において、「感情の安定性」の項目で、「すぐかっとするなどの衝動的な傾向」との判定が出た。適性診断は、性格等を客観的に把握し、運転の適性を判定することにより、運転業務に適さない者を選任しないようにするためのものであるため、運行管理者は、当該運転者は運転業務に適さないと判断し、他の業務へ配置替えを行った。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      }
+    ]
+  },
+  {
+    "id": 273,
+    "content": "【実務上の知識及び能力関係】\n\n一般貨物自動車運送事業者（以下「事業者」という。）が行う事業用自動車の運転者の健康管理に関する次の記述のうち、適切なものをすべて選びなさい。なお、解答にあたっては、各選択肢に記載されている事項以外は考慮しないものとする。",
+    "options": [
+      {
+        "id": 1078,
+        "questionId": 273,
+        "optionNumber": 1,
+        "content": "健康起因事故の防止には心臓疾患や大血管疾患の予防や早期発見が重要となる。事業者は、重篤な心臓疾患、大血管疾患を見逃さないためには、その前兆や自覚症状のうち 4 大症状といわれている胸痛、めまい・失神、動悸、呼吸困難の有無について、日頃から点呼等で運転者に確認し、早めに把握することが重要である。",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1079,
+        "questionId": 273,
+        "optionNumber": 2,
+        "content": "事業者は、法令により定められた健康診断を実施することが義務づけられているが、運転者が自ら受けた健康診断（人間ドックなど）において、法令で必要な定期健康診断の項目を充足している場合であっても、法定健診として代用することができない。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1080,
+        "questionId": 273,
+        "optionNumber": 3,
+        "content": "運転者が脳検診において、異常所見の疑いが認められたため、当該運転者に脳検診を再受診させたところ、医師から診断結果に基づき、乗務時間を減らすなど、乗務の際の配慮が必要であるとの意見があった。このため、事業者は、医師からの意見等を勘案し、当該運転者について、乗務時間の短縮、夜間乗務の回数の削減等の就業上の措置を決定している。",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1081,
+        "questionId": 273,
+        "optionNumber": 4,
+        "content": "事業者は、深夜業（22 時〜 5 時）を含む業務に常時従事する運転者に対し、法令に定める定期健康診断を 6 ヵ月以内ごとに 1 回、必ず、定期的に受診させるようにしている。",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": null
+      }
+    ]
+  },
+  {
+    "id": 274,
+    "content": "【実務上の知識及び能力関係】\n\n交通事故防止対策に関する次の記述のうち、適切なものをすべて選びなさい。なお、解答にあたっては、各選択肢に記載されている事項以外は考慮しないものとする。",
+    "options": [
+      {
+        "id": 1082,
+        "questionId": 274,
+        "optionNumber": 1,
+        "content": "自動車のハンドルを左に切り旋回した場合、左側の後輪が左側の前輪の軌跡に対し外側を通ることとなり、この前後輪の軌跡の差を内輪差という。大型車などホイールベースが長いほど内輪差が小さくなることから、運転者に対し、交差点での左折時には、内輪差による歩行者や自転車等との接触、巻き込み事故に注意するよう指導する必要がある。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1083,
+        "questionId": 274,
+        "optionNumber": 2,
+        "content": "輸送の安全に関する教育及び研修については、知識を普及させることに重点を置く手法に加えて、問題を解決することに重点を置く手法を取り入れるとともに、グループ討議や参加体験型研修等、運転者が参加する手法を取り入れることも交通事故防止対策の有効な手段となっている。",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1084,
+        "questionId": 274,
+        "optionNumber": 3,
+        "content": "アンチロック・ブレーキシステム（ABS）は、急ブレーキをかけた時などにタイヤがロック（回転が止まること）するのを防ぐことにより、車両の進行方向の安定性を保ち、また、ハンドル操作で障害物を回避できる可能性を高める装置である。ABS を効果的に作動させるためには、運転者はポンピングブレーキ操作（ブレーキペダルを踏み込んだり緩めたりを繰り返す操作）を行うことが必要であり、この点を運転者に指導する必要がある。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1085,
+        "questionId": 274,
+        "optionNumber": 4,
+        "content": "トラックは視点が高いことから、手前の路面もよく見え、先行車両との車間距離が長く感じられるため、車間距離を短くとりがちになり、追突事故の要因ともなる。そのため、走行中は安全な速度と十分な車間距離を保つことが重要であることを、運転者に指導する必要がある。",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": null
+      }
+    ]
+  },
+  {
+    "id": 275,
+    "content": "【実務上の知識及び能力関係】\n\n自動車の運転等に関する次の記述のうち、適切なものを２つ選びなさい。なお、解答にあたっては、各選択肢に記載されている事項以外は考慮しないものとする。",
+    "options": [
+      {
+        "id": 1086,
+        "questionId": 275,
+        "optionNumber": 1,
+        "content": "連結車両（トラクタとトレーラを連結した車両）が、滑りやすい路面で急ハンドルや急ブレーキなどの急激な運転操作を行ったりすると、車輪がロックしてタイヤが滑り、トラクタとトレーラが連結部で折れ曲がり、「くの字」になることを「ジャックナイフ現象」という。",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1087,
+        "questionId": 275,
+        "optionNumber": 2,
+        "content": "フット・ブレーキを使い過ぎると、ブレーキ・ドラムやブレーキ・ライニングなどが摩擦のため過熱してその熱がブレーキ液に伝わり、液内に気泡が発生することによりブレーキが正常に作用しなくなり制動力が低下することを「ベーパー・ロック現象」という。",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1088,
+        "questionId": 275,
+        "optionNumber": 3,
+        "content": "自動車の夜間の走行時において、自車のライトと対向車のライトで、お互いの光が重なり合い、その間にいる歩行者や自転車が見えなくなることを「クリープ現象」という。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1089,
+        "questionId": 275,
+        "optionNumber": 4,
+        "content": "自動車がカーブを走行するときに自動車に対しカーブの外側へ向かう力が働く。この力を「遠心力」といい、自動車の走行速度に比例し変化する。例えば、自動車の重量及びカーブの半径が同じ条件の場合、自動車の走行速度が 2 倍になると、遠心力の大きさも 2 倍になる。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      }
+    ]
+  },
+  {
+    "id": 276,
+    "content": "【実務上の知識及び能力関係】\n\n自動車の追越しに関する次の 1～2 の記述について、解答しなさい。\nなお、この場合の「追越し」とは、A 車が前走する B 車の後方 40 メートル（ア）の位置から始まり、B 車を追い越して B 車との車間距離が 40 メートル（イ）の位置に達するまでのすべての行程をいう。\n\n追越距離 : D = 〔((c1+b)+(c2+a))×(追越速度)〕 / (速度差)\n(単位) 速度 : km/h\n距離と車長 : m\n\n(注1) 追越車両の左右の移動量は、考慮しないものとする。\n(注2) 各々の車両は、一定速度で走行しているものとする。\n\n1. 一般道を車両の長さ 10 メートルの A 車が時速 60 キロメートルで走行中、上図のとおり、時速 40 キロメートルで前方を走行中の車両の長さが 10 メートルの B 車を追い越すために要する追越距離を次の①～②の中から正しいものを１つ選びなさい。\n\n2. 「1」の場合において追越しに要する時間を次の①～②の中から正しいものを１つ選びなさい。",
+    "options": [
+      {
+        "id": 1391,
+        "questionId": 276,
+        "optionNumber": 1,
+        "content": "1 : ① 200 メートル",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\":\"1\",\"choices\":[{\"num\":1,\"text\":\"200 メートル\"},{\"num\":2,\"text\":\"300 メートル\"}]}"
+      },
+      {
+        "id": 1392,
+        "questionId": 276,
+        "optionNumber": 2,
+        "content": "1 : ② 300 メートル",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": "{\"title\":\"1\",\"choices\":[{\"num\":1,\"text\":\"200 メートル\"},{\"num\":2,\"text\":\"300 メートル\"}]}"
+      },
+      {
+        "id": 1393,
+        "questionId": 276,
+        "optionNumber": 3,
+        "content": "2 : ① 12 秒",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": "{\"title\":\"2\",\"choices\":[{\"num\":1,\"text\":\"12 秒\"},{\"num\":2,\"text\":\"18 秒\"}]}"
+      },
+      {
+        "id": 1394,
+        "questionId": 276,
+        "optionNumber": 4,
+        "content": "2 : ② 18 秒",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\":\"2\",\"choices\":[{\"num\":1,\"text\":\"12 秒\"},{\"num\":2,\"text\":\"18 秒\"}]}"
+      }
+    ]
+  },
+  {
+    "id": 277,
+    "content": "【実務上の知識及び能力関係】\n\n運行管理者が、次の大型トラックの事故報告に基づき、この事故の要因分析を行ったうえで、事業者又は運行管理者にとって、最も直接的に有効と考えられる＜事故の再発防止対策＞ア～カの組合せを、＜選択肢＞（1～6）から1つ選びなさい。なお、解答にあたっては、＜事故の概要＞及び＜事故関連情報＞に記載されている事項以外は考慮しないものとする。\n\n＜事故の概要＞\n大型トラックが信号交差点を左折した際、交差点内で、横断歩道を右から横断中の自転車の通過待ちをした後に発進したが、同横断歩道を左から横断中の車いす利用者に気付かず衝突し、路上に転倒させた後、車両で轢過した。\n\n＜事故関連情報＞\n① 運行管理者は、当該運転者に対する業務前の点呼において、昨日は、就寝時間がいつもより遅かったとの事であったが、疲労等に問題がないことを確認していた。\n② 運転者は、事故地点において、右方向から来る自転車のみに気を取られ、左方の安全確認を十分に行わなかったため、同横断歩道を左側から横断していた車いす利用者に全く気付かず進行し、車両の前部に衝突転倒させ轢過した。\n③ 当該運転者は、3ヵ月前に定期健康診断を受診した際、肥満及び高血圧を指摘され、精密検査の受診を勧められ、まだ、精密検査は受診していなかったが、睡眠時無呼吸症候群（SAS）検査は受診していた。\n④ 当該運転者の適性診断結果で、「信号の変化や他の交通の動きを予測した運転を行うことや、歩行者や自転車のそばを通過する際は思いやりのある運転を心がける」こと等について指摘されていた。\n⑤ 当該営業所においては、運行管理者の補助者（以下「補助者」という。）は選任されておらず、運行管理者により運行管理業務を行っていた。\n⑥ 当該営業所では、事故が発生しやすい箇所、交差点での左右折時における留意事項等について指導を行っていなかった。\n\n＜事故の再発防止対策＞\nア 運転者に対し、大型車を運転して交差点で左折又は右折する場合は、直接視界及び間接視界により、車両の左右及び前方下方に歩行者等がないか十分確認した上で通過するよう指導を徹底すること。\nイ SAS 取扱規定を作成し、雇い入れ時等のタイミングで医療機器による SAS スクリーニング検査を受けさせ、SAS 検査後のフォローや乗務可否、治療の継続的なチェックなど目的を明確にすること。\nウ 運行の主な経路における事故が発生しやすい箇所や具体的な注意事項など、安全運行を行うために必要な情報を運転者に伝え、適切な運行指示を行うこと。\nエ 点呼の際に点呼実施者が不在にならないよう、適正な数の運行管理者又は補助者を配置するなど、運行管理を適切に実施するための体制を整備すること。\nオ 適性診断の結果をもとに、運転者に対して、歩行者等の安全に配慮した「思いやり運転」を身につけるよう継続的に指導すること。\nカ 運転者に対し、十分な睡眠時間の確保等、勤務に影響を及ぼさない日常生活の過ごし方についても指導すること。",
+    "options": [
+      {
+        "id": 1092,
+        "questionId": 277,
+        "optionNumber": 1,
+        "content": "ア イ エ",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1093,
+        "questionId": 277,
+        "optionNumber": 2,
+        "content": "ア ウ オ",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1094,
+        "questionId": 277,
+        "optionNumber": 3,
+        "content": "ア エ カ",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1095,
+        "questionId": 277,
+        "optionNumber": 4,
+        "content": "イ ウ エ",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1096,
+        "questionId": 277,
+        "optionNumber": 5,
+        "content": "イ オ カ",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1097,
+        "questionId": 277,
+        "optionNumber": 6,
+        "content": "ウ エ カ",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      }
+    ]
+  },
+  {
+    "id": 301,
+    "content": "【実務上の知識及び能力】\n事業用自動車の運転者に対する点呼の実施に関する次の記述のうち、適切なものをすべて選びなさい。なお、解答にあたっては、各選択肢に記載されている事項以外は考慮しないものとする。",
+    "options": [
+      {
+        "id": 1186,
+        "questionId": 301,
+        "optionNumber": 1,
+        "content": "運行の業務前の点呼においてアルコール検知器を使用するのは、身体に保有している酒気帯びの有無を確認するためのものであり、道路交通法施行令で定める呼気中のアルコール濃度1リットル当たり0.15ミリグラム以上であるか否かを判定するためのものではない。",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1187,
+        "questionId": 301,
+        "optionNumber": 2,
+        "content": "運行管理者は、業務前及び業務後の運転者に対し、原則、対面で点呼を実施しなければならないが、遠隔地で業務を開始又は終了する場合、車庫と営業所が離れている場合、又は運転者の出庫・帰庫が早朝・深夜であり、点呼を行う運行管理者が営業所に出勤していない場合等、運行上やむを得ず、対面での点呼が実施できないときには、電話、その他の方法で行っている。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1188,
+        "questionId": 301,
+        "optionNumber": 3,
+        "content": "通常は、運行管理者又は補助者による対面点呼が実施されているが、両者が休暇等で不在の時には、社内の運行管理体制に明記されていない事務員が代わりに点呼を行い、運行管理者にその内容を報告している。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1189,
+        "questionId": 301,
+        "optionNumber": 4,
+        "content": "運行管理者が業務前の点呼において、運転者に対して酒気帯びの有無を確認しようとしたところ、営業所に設置されているアルコール検知器が停電により全て使用できなかったことから、当該運行管理者は、運転者に携帯させるために営業所に備えてある携帯型アルコール検知器を使用して酒気帯びの有無を確認した。",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": null
+      }
+    ]
+  },
+  {
+    "id": 302,
+    "content": "【実務上の知識及び能力】\n運行管理者の役割等に関する次の記述のうち、適切なものをすべて選びなさい。なお、解答にあたっては、各選択肢に記載されている事項以外は考慮しないものとする。",
+    "options": [
+      {
+        "id": 1190,
+        "questionId": 302,
+        "optionNumber": 1,
+        "content": "事業者が、事業用自動車の定期点検を怠ったことが原因で重大事故を起こしたことにより、行政処分を受けることになった。この場合に、運行管理者は当該重大事故を含む運行管理業務上に一切問題がなくても、事業者に代わって事業用自動車の運行管理を行っていることから、運行管理者資格者証の返納を命じられる。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1191,
+        "questionId": 302,
+        "optionNumber": 2,
+        "content": "運行管理者は、運行管理業務に精通し、確実に遂行しなければならない。そのためにも自動車輸送に関連する諸規制を理解し、実務知識を身につけると共に、日頃から運転者と積極的にコミュニケーションを図り、必要な場合にあっては運転者の声を自動車運送事業者に伝え、常に安全で明るい職場環境を築いていくことも重要な役割である。",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1192,
+        "questionId": 302,
+        "optionNumber": 3,
+        "content": "運行管理者は、運転者の指導教育を実施していく際、運転者一人ひとりの個性に応じた助言・指導（カウンセリング）を行うことも重要である。そのためには、日頃から運転者の性格や能力、事故歴のほか、場合によっては個人的な事情についても把握し、そして、これらに基づいて助言・指導を積み重ねることによって事故防止を図ることも重要な役割である。",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1193,
+        "questionId": 302,
+        "optionNumber": 4,
+        "content": "運行管理者は、事業者に代わって法令に定められた事業用自動車の運行の安全確保に関する業務を行い、交通事故を防止するという重要な役割を果たすことが求められていることから、運行管理者以外に複数の補助者を選任し運行管理業務に当たらせ、運行管理者は運行管理に関し、これらの補助者の指導・監督のみを行っている。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      }
+    ]
+  },
+  {
+    "id": 303,
+    "content": "【実務上の知識及び能力】\n一般貨物自動車運送事業者（以下「事業者」という。）が行う事業用自動車の運転者の健康管理に関する次の記述のうち、適切なものをすべて選びなさい。なお、解答にあたっては、各選択肢に記載されている事項以外は考慮しないものとする。",
+    "options": [
+      {
+        "id": 1194,
+        "questionId": 303,
+        "optionNumber": 1,
+        "content": "事業者は、深夜業（22時～5時）を含む業務に常時従事する運転者に対し、法令に定める定期健康診断を6ヵ月以内ごとに1回、必ず、定期的に受診させるようにしている。",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1195,
+        "questionId": 303,
+        "optionNumber": 2,
+        "content": "睡眠時無呼吸症候群(SAS)は、大きないびきや昼間の強い眠気など容易に自覚症状を感じやすいので、事業者は、自覚症状を感じていると自己申告をした運転者に限定して、SASスクリーニング検査を実施している。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1196,
+        "questionId": 303,
+        "optionNumber": 3,
+        "content": "トラック運転者は、単独で判断する、連続作業をする、とっさの対応が必要、同じ姿勢で何時間も過ごすなどから、心身の状態が運行に及ぼす影響は大きく、健康な状態を保持することが必要不可欠である。このため、事業者は、運転者が運転中に体調の異常を感じたときには、運行継続の可否を自らの判断で行うよう指導している。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1197,
+        "questionId": 303,
+        "optionNumber": 4,
+        "content": "運転者が脳検診において、異常所見の疑いが認められたため、当該運転者に脳検診を再受診させたところ、医師から診断結果に基づき、乗務時間を減らすなど、乗務の際の配慮が必要であるとの意見があった。このため、事業者は、医師からの意見等を勘案し、当該運転者について、乗務時間の短縮、夜間乗務の回数の削減等の就業上の措置を決定している。",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": null
+      }
+    ]
+  },
+  {
+    "id": 304,
+    "content": "【実務上の知識及び能力】\n交通事故防止対策に関する次の記述のうち、適切なものをすべて選びなさい。なお、解答にあたっては、各選択肢に記載されている事項以外は考慮しないものとする。",
+    "options": [
+      {
+        "id": 1198,
+        "questionId": 304,
+        "optionNumber": 1,
+        "content": "交通事故は、そのほとんどが運転者等のヒューマンエラーにより発生するものである。したがって、事故惹起運転者の社内処分を行うことが、交通事故の再発を未然に防止するには最も有効である。そのため、発生した事故の要因の調査・分析を行うことなく、事故惹起運転者及び運行管理者に対する特別講習を確実に受講させる等、ヒューマンエラーの再発防止を中心とした対策に努めるべきである。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1199,
+        "questionId": 304,
+        "optionNumber": 2,
+        "content": "ドライブレコーダーは、事故時の映像だけでなく、運転者のブレーキ操作やハンドル操作などの運転状況を記録し、解析することにより運転のクセ等を読み取ることができるものがあり、運行管理者が行う運転者の安全運転の指導に活用されている。",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1200,
+        "questionId": 304,
+        "optionNumber": 3,
+        "content": "いわゆる「ヒヤリ・ハット体験」とは、運転者が運転中に他の自動車等と衝突又は接触するおそれがあったと認識した状態をいい、1件の重大な事故（死亡・重傷事故等）が発生する背景には多くのヒヤリ・ハットがあるとされており、このヒヤリ・ハット体験情報を収集・活用していくことは、交通事故防止対策に有効な手段となっている。",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1201,
+        "questionId": 304,
+        "optionNumber": 4,
+        "content": "適性診断は、運転者の運転能力、運転態度及び性格等を客観的に把握し、運転の適性を判定することにより、運転に適さない者を運転者として選任しないようにするためのものであり、ヒューマンエラーによる交通事故の発生を未然に防止するための有効な手段となっている。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      }
+    ]
+  },
+  {
+    "id": 305,
+    "content": "【実務上の知識及び能力】\n自動車の運転等に関する次の記述のA、B、Cに入るべき字句としていずれか正しいものを1つ選びなさい。\n1. 自動車がカーブを走行するとき、自動車の重量及びカーブの半径が同じ条件の場合に、速度を2分の1に落として走行すると遠心力の大きさは A になる。\n2. フット・ブレーキを使い過ぎると、ブレーキ・ドラムやブレーキ・ライニングなどが摩擦のため過熱してその熱がブレーキ液に伝わり、液内に気泡が発生することによりブレーキが正常に作用しなくなり制動力が低下することを B という。\n3. 雨の降りはじめに、路面の油や土砂などの微粒子が雨と混じって滑りやすい膜を形成するため、タイヤと路面との摩擦係数が低下し急ブレーキをかけたときなどにスリップすることを C という。",
+    "options": [
+      {
+        "id": 1202,
+        "questionId": 305,
+        "optionNumber": 1,
+        "content": "A : ① 4分の1",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": "{\"title\":\"A\",\"choices\":[{\"num\":1,\"text\":\"4分の1\"},{\"num\":2,\"text\":\"2分の1\"}]}"
+      },
+      {
+        "id": 1203,
+        "questionId": 305,
+        "optionNumber": 2,
+        "content": "A : ② 2分の1",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\":\"A\",\"choices\":[{\"num\":1,\"text\":\"4分の1\"},{\"num\":2,\"text\":\"2分の1\"}]}"
+      },
+      {
+        "id": 1204,
+        "questionId": 305,
+        "optionNumber": 3,
+        "content": "B : ① フェード現象",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\":\"B\",\"choices\":[{\"num\":1,\"text\":\"フェード現象\"},{\"num\":2,\"text\":\"ベーパー・ロック現象\"}]}"
+      },
+      {
+        "id": 1205,
+        "questionId": 305,
+        "optionNumber": 4,
+        "content": "B : ② ベーパー・ロック現象",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": "{\"title\":\"B\",\"choices\":[{\"num\":1,\"text\":\"フェード現象\"},{\"num\":2,\"text\":\"ベーパー・ロック現象\"}]}"
+      },
+      {
+        "id": 1206,
+        "questionId": 305,
+        "optionNumber": 5,
+        "content": "C : ① ウェット・スキッド現象",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": "{\"title\":\"C\",\"choices\":[{\"num\":1,\"text\":\"ウェット・スキッド現象\"},{\"num\":2,\"text\":\"クリープ現象\"}]}"
+      },
+      {
+        "id": 1207,
+        "questionId": 305,
+        "optionNumber": 6,
+        "content": "C : ② クリープ現象",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\":\"C\",\"choices\":[{\"num\":1,\"text\":\"ウェット・スキッド現象\"},{\"num\":2,\"text\":\"クリープ現象\"}]}"
+      }
+    ]
+  },
+  {
+    "id": 306,
+    "content": "【実務上の知識及び能力】\n荷主から貨物自動車運送事業者に対し、往路と復路において、それぞれ荷積みと荷下ろしを行うよう運送の依頼があった。これを受けて運行管理者は下の図に示す運行計画を立てた。この運行に関する次の1～3の記述について、解答しなさい。なお、解答にあたっては、＜運行計画＞及び各選択肢に記載されている事項以外は考慮しないものとする。\n\n＜運行計画＞\nB地点から、重量が5,500 キログラムの荷物を C 地点に運び、その後、戻りの便にて、D地点から 5,250 キログラムの荷物を F 地点に運ぶ行程とする。当該運行は、最大積載量 6,250 キログラムの貨物自動車を使用し、運転者 1人乗務とする。\n\n1. 当該運行においてA営業所を7時00分に出庫し、C地点に11時50分に到着するとした場合、B地点とC地点の距離 ア は何キロメートルになるか、次の①～③の中から正しいものを1つ選びなさい。\n\n2. 当該運転者は前日の運転時間が8時間40分であり、また、翌日の運転時間を8時間40分とした場合、当日を特定の日とした場合の2日を平均して1日当たりの運転時間が「自動車運転者の労働時間等の改善のための基準」(以下「改善基準告示」という。)に違反しているか否かについて、正しいものを1つ選びなさい。\n\n3. 当日の全運行において、連続運転時間は「改善基準告示」に、違反しているか否かについて、正しいものを1つ選びなさい。",
+    "options": [
+      {
+        "id": 1403,
+        "questionId": 306,
+        "optionNumber": 1,
+        "content": "1 : ① 280 キロメートル",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": "{\"title\":\"1\",\"choices\":[{\"num\":1,\"text\":\"280 キロメートル\"},{\"num\":2,\"text\":\"294 キロメートル\"},{\"num\":3,\"text\":\"315 キロメートル\"}]}"
+      },
+      {
+        "id": 1404,
+        "questionId": 306,
+        "optionNumber": 2,
+        "content": "1 : ② 294 キロメートル",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\":\"1\",\"choices\":[{\"num\":1,\"text\":\"280 キロメートル\"},{\"num\":2,\"text\":\"294 キロメートル\"},{\"num\":3,\"text\":\"315 キロメートル\"}]}"
+      },
+      {
+        "id": 1405,
+        "questionId": 306,
+        "optionNumber": 3,
+        "content": "1 : ② 315 キロメートル",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\":\"1\",\"choices\":[{\"num\":1,\"text\":\"280 キロメートル\"},{\"num\":2,\"text\":\"294 キロメートル\"},{\"num\":3,\"text\":\"315 キロメートル\"}]}"
+      },
+      {
+        "id": 1406,
+        "questionId": 306,
+        "optionNumber": 4,
+        "content": "2 : ① 違反していない",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": "{\"title\":\"2\",\"choices\":[{\"num\":1,\"text\":\"違反していない\"},{\"num\":2,\"text\":\"違反している\"}]}"
+      },
+      {
+        "id": 1407,
+        "questionId": 306,
+        "optionNumber": 5,
+        "content": "2 : ② 違反している",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\":\"2\",\"choices\":[{\"num\":1,\"text\":\"違反していない\"},{\"num\":2,\"text\":\"違反している\"}]}"
+      },
+      {
+        "id": 1408,
+        "questionId": 306,
+        "optionNumber": 6,
+        "content": "3 : ① 違反していない",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\":\"3\",\"choices\":[{\"num\":1,\"text\":\"違反していない\"},{\"num\":2,\"text\":\"違反している\"}]}"
+      },
+      {
+        "id": 1409,
+        "questionId": 306,
+        "optionNumber": 7,
+        "content": "3 : ② 違反している",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": "{\"title\":\"3\",\"choices\":[{\"num\":1,\"text\":\"違反していない\"},{\"num\":2,\"text\":\"違反している\"}]}"
+      }
+    ]
+  },
+  {
+    "id": 307,
+    "content": "【実務上の知識及び能力】\n運行管理者が運転者に対し実施する危険予知訓練に関し、下図の交通場面の状況において考えられる＜運転者が予知すべき危険要因＞とそれに対応する＜運行管理者による指導事項＞として、最もふさわしいものを＜選択肢の組み合わせ＞1～8の中から3つ選びなさい。なお、解答にあたっては、【交通場面の状況等】に記載されている事項及び下図の状況以外は考慮しないものとする。\n\n【交通場面の状況等】\n・雨が降り始めた片側1車線の道路を走行している。\n・対向自動二輪車が右折の合図を出している。\n・歩行者と自転車が前方に見えている。\n\n＜運転者が予知すべき危険要因＞\n① 右折の合図を出している自動二輪車が右折をしてくると衝突する危険がある。\n② 左折する時に自転車に気づくのが遅れると衝突する危険がある。\n③ 道路の左側にいる歩行者が、雨が降り始めたので早く行こうと道路を横断してくるとはねる危険がある。\n④ 急停止すると後続車に追突される危険がある。\n⑤ 雨が降り始めたので、道路右側にいる自転車があわてて道路を横断してくると衝突する危険がある。\n\n＜運行管理者による指導事項＞\nア 雨天時は、視界が悪くなり見にくくなるため、ヘッドライトを点灯させること。\nイ 雨の降り始めは路面が滑りやすく停止距離が長くなるため、速度を落とし、対向車線の他車の動向に注意して走行すること。\nウ 雨の降り始めは傘を持たない歩行者が、早く行こうとして安全を確認しないまま道路を横断してくることがあるので、いつでも停止できる速度に落として進行すること。\nエ 歩行者の動きに気をとられることで、自転車を見落とすおそれがあるので、左右の動向に注意して進行すること。\nオ 雨が降り始めたら速度を落とし、先行車と十分に車間距離をとって進行すること。",
+    "options": [
+      {
+        "id": 1211,
+        "questionId": 307,
+        "optionNumber": 1,
+        "content": "①－イ",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1212,
+        "questionId": 307,
+        "optionNumber": 2,
+        "content": "②－ウ",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1213,
+        "questionId": 307,
+        "optionNumber": 3,
+        "content": "③－オ",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1214,
+        "questionId": 307,
+        "optionNumber": 4,
+        "content": "④－エ",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1215,
+        "questionId": 307,
+        "optionNumber": 5,
+        "content": "⑤－ア",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1216,
+        "questionId": 307,
+        "optionNumber": 6,
+        "content": "③－ウ",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1217,
+        "questionId": 307,
+        "optionNumber": 7,
+        "content": "④－ア",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1218,
+        "questionId": 307,
+        "optionNumber": 8,
+        "content": "⑤－エ",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": null
+      }
+    ]
+  },
+  {
+    "id": 335,
+    "content": "運行管理者の日常業務の記録等に関する次の記述のうち、【適切なものをすべて】選びなさい。なお、解答にあたっては、各選択肢に記載されている事項以外は考慮しないものとする。（※法改正により一部改変）",
+    "options": [
+      {
+        "id": 1521,
+        "questionId": 335,
+        "optionNumber": 1,
+        "content": "運行管理者は、事業用自動車の運転者が他の営業所に転出し当該営業所の運転者でなくなったときは、直ちに、運転者等台帳に運転者でなくなった年月日及び理由を記載して 1 年間保存している。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1522,
+        "questionId": 335,
+        "optionNumber": 2,
+        "content": "運行管理者は、運行記録計により記録される「瞬間速度」、「運行距離」及び「運行時間」等により運転者の運行の実態や車両の運行の実態を分析し、運転者の日常の乗務を把握し、過労運転の防止及び運行の適正化を図る資料として活用しており、この運行記録計の記録を 1 年間保存している。",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1523,
+        "questionId": 335,
+        "optionNumber": 3,
+        "content": "運行管理者は、事業用自動車の運転者に対し、事業用自動車の構造上の特性、貨物の正しい積載方法など事業用自動車の運行の安全を確保するために必要な運転の技術及び自動車の運転に関して遵守すべき事項等について、適切に指導を行うとともに、その内容等について記録し、かつ、その記録を営業所において 3 年間保存している。",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1524,
+        "questionId": 335,
+        "optionNumber": 4,
+        "content": "運行管理者は、事業者が定めた勤務時間及び乗務時間の範囲内で、運転者が過労とならないよう十分考慮しながら、天候や道路状況などを勘案しつつ、乗務割を作成している。なお、乗務については、早めに運転者に知らせるため、事前に予定を示すことにしている。",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": null
+      }
+    ]
+  },
+  {
+    "id": 336,
+    "content": "一般貨物自動車運送事業者が事業用自動車の運転者に対して行う指導・監督に関する次の記述のうち、【適切なものをすべて】選びなさい。なお、解答にあたっては、各選択肢に記載されている事項以外は考慮しないものとする。",
+    "options": [
+      {
+        "id": 1525,
+        "questionId": 336,
+        "optionNumber": 1,
+        "content": "時速 36 キロメートルで走行中の自動車を例に取り、運転者が前車との追突の危険を認知しブレーキ操作を行い、ブレーキが効きはじめるまでに要する空走時間を 1秒間とし、ブレーキが効きはじめてから停止するまでに走る制動距離を 8 メートルとすると、当該自動車の停止距離は約 13 メートルとなるなど、危険が発生した場合でも安全に止まれるような速度と車間距離を保って運転するよう指導している。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1526,
+        "questionId": 336,
+        "optionNumber": 2,
+        "content": "危険ドラッグ等の薬物を使用して運転した場合には、重大な事故を引き起こす危険性が高まり、その結果取り返しのつかない被害を生じることもあることから、運行管理者は、常日頃からこれらの薬物を使用しないよう、運転者等に対し強く指導している。",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1527,
+        "questionId": 336,
+        "optionNumber": 3,
+        "content": "大雨、大雪、土砂災害などの異常気象時の措置については、異常気象時等処理要領を作成し運転者全員に周知させておくとともに、運転者とも速やかに連絡がとれるよう緊急時における連絡体制を整えているので、普段から事業用自動車の運行の中断、待避所の確保、徐行運転等の運転に関わることについてはすべて運転者の判断に任せ、中断、待避したときは報告するよう指導している。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1528,
+        "questionId": 336,
+        "optionNumber": 4,
+        "content": "実際の事故事例やヒヤリハット事例のドライブレコーダー映像を活用して、事故前にどのような危険が潜んでいるか、それを回避するにはどのような運転をすべきかなどを運転者に考えさせる等、実事例に基づいた危険予知訓練を実施している。",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": null
+      }
+    ]
+  },
+  {
+    "id": 337,
+    "content": "一般貨物自動車運送事業者（以下「事業者」という。）が行う事業用自動車の運転者の健康管理に関する次の記述のうち、【適切なものをすべて】選びなさい。なお、解答にあたっては、各選択肢に記載されている事項以外は考慮しないものとする。",
+    "options": [
+      {
+        "id": 1529,
+        "questionId": 337,
+        "optionNumber": 1,
+        "content": "事業者は、業務に従事する運転者に対し法令で定める健康診断を受診させ、その結果に基づいて健康診断個人票を作成して 5 年間保存している。また、運転者が自ら受けた健康診断の結果を提出したものについても同様に保存している。",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1530,
+        "questionId": 337,
+        "optionNumber": 2,
+        "content": "事業者は、日頃から運転者の健康状態を把握し、点呼において、意識の異常、眼の異常、めまい、頭痛、言葉の異常、手足の異常等の申告又はその症状が見られたら、脳血管疾患の初期症状とも考えられるためすぐに専門医療機関で受診させるよう対応している。",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1531,
+        "questionId": 337,
+        "optionNumber": 3,
+        "content": "トラック運転者は、単独で判断する、連続作業をする、とっさの対応が必要、同じ姿勢で何時間も過ごすなどから、心身の状態が運行に及ぼす影響は大きく、健康状態を保持することが必要不可欠である。このため、事業者は、運転者が運転中に異常を感じたときには、運行継続の可否を自らの判断で行うよう指導している。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1532,
+        "questionId": 337,
+        "optionNumber": 4,
+        "content": "睡眠時無呼吸症候群（ＳＡＳ）は、大きないびきや昼間の強い眠気などの症状があるが、必ずしも眠気を感じることがない場合もある。ＳＡＳスクリーニング検査を実施する場合には、本人の自覚症状による問診票だけで検査対象者を絞ってしまうと、重症のＳＡＳ患者を見過ごしてしまうリスクがあるため、定期的に、また、雇い入れ時等のタイミングで医療機器によるＳＡＳスクリーニング検査を受けることが重要である。",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": null
+      }
+    ]
+  },
+  {
+    "id": 338,
+    "content": "交通事故防止対策に関する次の記述のうち、【適切なものをすべて】選びなさい。なお、解答にあたっては、各選択肢に記載されている事項以外は考慮しないものとする。",
+    "options": [
+      {
+        "id": 1533,
+        "questionId": 338,
+        "optionNumber": 1,
+        "content": "交通事故は、そのほとんどが運転者等のヒューマンエラーにより発生するものである。したがって、事故惹起運転者の社内処分及び再教育に特化した対策を講ずることが、交通事故の再発を未然に防止するには最も有効である。そのためには、発生した事故の要因の調査・分析を行うことなく、事故惹起運転者及び運行管理者に対する特別講習を確実に受講させる等、ヒューマンエラーの再発防止を中心とした対策に努めるべきである。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1534,
+        "questionId": 338,
+        "optionNumber": 2,
+        "content": "ドライブレコーダーは、事故時の映像だけでなく、運転者のブレーキ操作やハンドル操作などの運転状況を記録し、解析することにより運転のクセ等を読み取ることができるものがあり、運行管理者が行う運転者の安全運転の指導に活用されている。",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1535,
+        "questionId": 338,
+        "optionNumber": 3,
+        "content": "指差呼称は、運転者の錯覚、誤判断、誤操作等を防止するための手段であり、道路の信号や標識などを指で差し、その対象が持つ名称や状態を声に出して確認することをいい、安全確認に重要な運転者の意識レベルを高めるなど交通事故防止対策に有効な手段の一つとして活用されている。",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1536,
+        "questionId": 338,
+        "optionNumber": 4,
+        "content": "適性診断は、運転者の運転能力、運転態度及び性格等を客観的に把握し、運転の適性を判定することにより、運転に適さない者を運転者として選任しないようにするためのものであり、ヒューマンエラーによる交通事故の発生を未然に防止するための有効な手段となっている。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      }
+    ]
+  },
+  {
+    "id": 339,
+    "content": "自動車の運転等に関する次の記述のうち、【適切なものを 2 つ】選びなさい。なお、解答にあたっては、各選択肢に記載されている事項以外は考慮しないものとする。",
+    "options": [
+      {
+        "id": 1537,
+        "questionId": 339,
+        "optionNumber": 1,
+        "content": "自動車の夜間の走行時において、自車のライトと対向車のライトで、お互いの光が重なり合い、その間にいる歩行者や自転車が見えなくなることをクリープ現象という。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1538,
+        "questionId": 339,
+        "optionNumber": 2,
+        "content": "自動車の乗員が自分の両手両足で支えられる力は、自分の体重のせいぜい 2～3 倍が限度といわれている。これは、自動車が時速 7 キロメートル程度で衝突したときの力に相当することになる。このため、危険から自身を守るためにシートベルトを着用することが必要である。",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1539,
+        "questionId": 339,
+        "optionNumber": 3,
+        "content": "自動車がカーブを走行するとき、自動車の重量及びカーブの半径が同一の場合に、速度を 2 分の 1 に落として走行すると遠心力の大きさは 2 分の 1 になる。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1540,
+        "questionId": 339,
+        "optionNumber": 4,
+        "content": "自動車が衝突するときの衝撃力は、速度が 2 倍になると 4 倍になる。",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": null
+      }
+    ]
+  },
+  {
+    "id": 340,
+    "content": "運行管理者は、荷主からの運送依頼を受けて、下の図に示す運行計画を立てた。この運行に関する次の 1～3 の記述について、解答しなさい。なお、解答にあたっては､＜運行計画＞及び各選択肢に記載されている事項以外は考慮しないものとする。（※法改正により一部改変）",
+    "options": [
+      {
+        "id": 1578,
+        "questionId": 340,
+        "optionNumber": 1,
+        "content": "1．Ｅ料金所からＦ料金所までの間の高速自動車国道（本線車道に限る。以下同じ。）の運転時間を 2 時間、及びＧ料金所からＨ料金所までの間の高速自動車国道の運転時間を 2 時間 30 分と設定したことは、道路交通法令に定める制限速度に照らし適切か否かについて、【正しいものを 1 つ】選びなさい。 : 適切",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": "{\"title\":\"1．Ｅ料金所からＦ料金所までの間の高速自動車国道（本線車道に限る。以下同じ。）の運転時間を 2 時間、及びＧ料金所からＨ料金所までの間の高速自動車国道の運転時間を 2 時間 30 分と設定したことは、道路交通法令に定める制限速度に照らし適切か否かについて、【正しいものを 1 つ】選びなさい。\",\"choices\":[{\"num\":1,\"text\":\"適切\"},{\"num\":2,\"text\":\"不適切\"}]}"
+      },
+      {
+        "id": 1579,
+        "questionId": 340,
+        "optionNumber": 2,
+        "content": "1．Ｅ料金所からＦ料金所までの間の高速自動車国道（本線車道に限る。以下同じ。）の運転時間を 2 時間、及びＧ料金所からＨ料金所までの間の高速自動車国道の運転時間を 2 時間 30 分と設定したことは、道路交通法令に定める制限速度に照らし適切か否かについて、【正しいものを 1 つ】選びなさい。 : 不適切",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\":\"1．Ｅ料金所からＦ料金所までの間の高速自動車国道（本線車道に限る。以下同じ。）の運転時間を 2 時間、及びＧ料金所からＨ料金所までの間の高速自動車国道の運転時間を 2 時間 30 分と設定したことは、道路交通法令に定める制限速度に照らし適切か否かについて、【正しいものを 1 つ】選びなさい。\",\"choices\":[{\"num\":1,\"text\":\"適切\"},{\"num\":2,\"text\":\"不適切\"}]}"
+      },
+      {
+        "id": 1580,
+        "questionId": 340,
+        "optionNumber": 3,
+        "content": "2．当該運転者は前日の運転時間が 8 時間 30 分であり、また、翌日の運転時間を 8 時間 30 分とした場合、当日を特定の日とした場合の 2 日を平均して 1 日当たりの運転時間が「自動車運転者の労働時間等の改善のための基準」（以下「改善基準告示」という。）に違反しているか否について、【正しいものを 1 つ】選びなさい。 : 違反していない",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\":\"2．当該運転者は前日の運転時間が 8 時間 30 分であり、また、翌日の運転時間を 8 時間 30 分とした場合、当日を特定の日とした場合の 2 日を平均して 1 日当たりの運転時間が「自動車運転者の労働時間等の改善のための基準」（以下「改善基準告示」という。）に違反しているか否について、【正しいものを 1 つ】選びなさい。\",\"choices\":[{\"num\":1,\"text\":\"違反していない\"},{\"num\":2,\"text\":\"違反している\"}]}"
+      },
+      {
+        "id": 1581,
+        "questionId": 340,
+        "optionNumber": 4,
+        "content": "2．当該運転者は前日の運転時間が 8 時間 30 分であり、また、翌日の運転時間を 8 時間 30 分とした場合、当日を特定の日とした場合の 2 日を平均して 1 日当たりの運転時間が「自動車運転者の労働時間等の改善のための基準」（以下「改善基準告示」という。）に違反しているか否について、【正しいものを 1 つ】選びなさい。 : 違反している",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": "{\"title\":\"2．当該運転者は前日の運転時間が 8 時間 30 分であり、また、翌日の運転時間を 8 時間 30 分とした場合、当日を特定の日とした場合の 2 日を平均して 1 日当たりの運転時間が「自動車運転者の労働時間等の改善のための基準」（以下「改善基準告示」という。）に違反しているか否について、【正しいものを 1 つ】選びなさい。\",\"choices\":[{\"num\":1,\"text\":\"違反していない\"},{\"num\":2,\"text\":\"違反している\"}]}"
+      },
+      {
+        "id": 1582,
+        "questionId": 340,
+        "optionNumber": 5,
+        "content": "3．当該運行の連続運転時間の中断方法について「改善基準告示」に照らし、違反しているか否かについて、【正しいものを 1 つ】選びなさい。 : 違反していない",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\":\"3．当該運行の連続運転時間の中断方法について「改善基準告示」に照らし、違反しているか否かについて、【正しいものを 1 つ】選びなさい。\",\"choices\":[{\"num\":1,\"text\":\"違反していない\"},{\"num\":2,\"text\":\"違反している\"}]}"
+      },
+      {
+        "id": 1583,
+        "questionId": 340,
+        "optionNumber": 6,
+        "content": "3．当該運行の連続運転時間の中断方法について「改善基準告示」に照らし、違反しているか否かについて、【正しいものを 1 つ】選びなさい。 : 違反している",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": "{\"title\":\"3．当該運行の連続運転時間の中断方法について「改善基準告示」に照らし、違反しているか否かについて、【正しいものを 1 つ】選びなさい。\",\"choices\":[{\"num\":1,\"text\":\"違反していない\"},{\"num\":2,\"text\":\"違反している\"}]}"
+      }
+    ]
+  },
+  {
+    "id": 341,
+    "content": "運行管理者が次の事業用普通トラックの事故報告に基づき、事故の要因分析を行ったうえで、同種事故の再発を防止するための対策として、【最も直接的に有効と考えられるものを＜事故の再発防止対策＞から 3 つ】選びなさい。なお、解答にあたっては、＜事故の概要＞及び＜事故関連情報＞に記載されている事項以外は考慮しないものとする。（※法改正により一部改変）",
+    "options": [
+      {
+        "id": 1544,
+        "questionId": 341,
+        "optionNumber": 1,
+        "content": "① 運行管理者は、運転者に対して、交通事故を惹起した場合の社会的影響の大きさや過労が運転に及ぼす危険性を認識させ、疲労や眠気を感じた場合は直ちに運転を中止し、休憩するよう指導を徹底する。",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1545,
+        "questionId": 341,
+        "optionNumber": 2,
+        "content": "② 事業者は、運転者に対して、疾病が交通事故の要因となるおそれがあることを理解させ、健康診断結果に基づき、生活習慣の改善を図るなど、適切な心身の健康管理を行うことを理解させる。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1546,
+        "questionId": 341,
+        "optionNumber": 3,
+        "content": "③ 運行管理者は、「改善基準告示」に違反しないよう、適切な乗務割を作成するとともに、点呼の際適切な運行指示を行う。",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1547,
+        "questionId": 341,
+        "optionNumber": 4,
+        "content": "④ 運行管理者は、法定等に定められた適齢診断を運転者に確実に受診させるとともに、その結果を活用し、個々の運転者の特性に応じた指導を行う。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1548,
+        "questionId": 341,
+        "optionNumber": 5,
+        "content": "⑤ 運行管理者は、点呼を実施する際、運転者の体調や疲労の蓄積などをきちんと確認し、疲労等により安全な運転を継続することができないおそれがあるときは、当該運転者を交替させる措置をとる。",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": null
+      },
+      {
+        "id": 1549,
+        "questionId": 341,
+        "optionNumber": 6,
+        "content": "⑥ 法令で定められた日常点検及び定期点検整備を確実に実施する。その際、速度抑制装置の正常な作動についても、警告灯により確認する。",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": null
+      }
+    ]
+  }
+]

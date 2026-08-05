@@ -1,0 +1,177 @@
+[
+  {
+    "id": 145,
+    "knowledgeTags": "#運行管理者の業務・選任",
+    "situationCategory": ""
+  },
+  {
+    "id": 146,
+    "knowledgeTags": "#交通事故の要因・防止策,#物理的特性(遠心力・制動距離・衝撃力)",
+    "situationCategory": ""
+  },
+  {
+    "id": 147,
+    "knowledgeTags": "#健康管理・疾病・睡眠",
+    "situationCategory": ""
+  },
+  {
+    "id": 148,
+    "knowledgeTags": "#物理的特性(遠心力・制動距離・衝撃力),#交通事故の要因・防止策",
+    "situationCategory": ""
+  },
+  {
+    "id": 149,
+    "knowledgeTags": "#交通事故の要因・防止策,#乗務記録・タコグラフ",
+    "situationCategory": ""
+  },
+  {
+    "id": 150,
+    "knowledgeTags": "#距離・速度計算,#改善基準(拘束・休息・運転時間)",
+    "situationCategory": "#計算問題,#図表・写真問題"
+  },
+  {
+    "id": 151,
+    "knowledgeTags": "#交通事故の要因・防止策",
+    "situationCategory": "#図表・写真問題,#事故事例・実務ケース"
+  },
+  {
+    "id": 181,
+    "knowledgeTags": "#帳票類・記録の保存,#乗務記録・タコグラフ",
+    "situationCategory": ""
+  },
+  {
+    "id": 182,
+    "knowledgeTags": "#交通事故の要因・防止策",
+    "situationCategory": ""
+  },
+  {
+    "id": 183,
+    "knowledgeTags": "#健康管理・疾病・睡眠",
+    "situationCategory": ""
+  },
+  {
+    "id": 184,
+    "knowledgeTags": "#物理的特性(遠心力・制動距離・衝撃力),#交通事故の要因・防止策",
+    "situationCategory": ""
+  },
+  {
+    "id": 185,
+    "knowledgeTags": "#距離・速度計算,#物理的特性(遠心力・制動距離・衝撃力)",
+    "situationCategory": "#計算問題,#図表・写真問題"
+  },
+  {
+    "id": 186,
+    "knowledgeTags": "#距離・速度計算,#改善基準(拘束・休息・運転時間)",
+    "situationCategory": "#計算問題,#図表・写真問題"
+  },
+  {
+    "id": 187,
+    "knowledgeTags": "#交通事故の要因・防止策",
+    "situationCategory": "#図表・写真問題"
+  },
+  {
+    "id": 271,
+    "knowledgeTags": "#点呼・乗務制限(安全規則)",
+    "situationCategory": ""
+  },
+  {
+    "id": 272,
+    "knowledgeTags": "#交通事故の要因・防止策",
+    "situationCategory": ""
+  },
+  {
+    "id": 273,
+    "knowledgeTags": "#健康管理・疾病・睡眠",
+    "situationCategory": ""
+  },
+  {
+    "id": 274,
+    "knowledgeTags": "#交通事故の要因・防止策",
+    "situationCategory": ""
+  },
+  {
+    "id": 275,
+    "knowledgeTags": "#物理的特性(遠心力・制動距離・衝撃力),#交通事故の要因・防止策",
+    "situationCategory": ""
+  },
+  {
+    "id": 276,
+    "knowledgeTags": "#距離・速度計算",
+    "situationCategory": "#計算問題,#図表・写真問題"
+  },
+  {
+    "id": 277,
+    "knowledgeTags": "#交通事故の要因・防止策",
+    "situationCategory": "#事故事例・実務ケース"
+  },
+  {
+    "id": 301,
+    "knowledgeTags": "#点呼・乗務制限(安全規則)",
+    "situationCategory": ""
+  },
+  {
+    "id": 302,
+    "knowledgeTags": "#運行管理者の業務・選任",
+    "situationCategory": ""
+  },
+  {
+    "id": 303,
+    "knowledgeTags": "#健康管理・疾病・睡眠",
+    "situationCategory": ""
+  },
+  {
+    "id": 304,
+    "knowledgeTags": "#交通事故の要因・防止策",
+    "situationCategory": ""
+  },
+  {
+    "id": 305,
+    "knowledgeTags": "#物理的特性(遠心力・制動距離・衝撃力),#悪天候・異常気象時の運転",
+    "situationCategory": ""
+  },
+  {
+    "id": 306,
+    "knowledgeTags": "#距離・速度計算,#改善基準(拘束・休息・運転時間)",
+    "situationCategory": "#計算問題,#図表・写真問題"
+  },
+  {
+    "id": 307,
+    "knowledgeTags": "#悪天候・異常気象時の運転,#交通事故の要因・防止策",
+    "situationCategory": "#図表・写真問題,#事故事例・実務ケース"
+  },
+  {
+    "id": 335,
+    "knowledgeTags": "#帳票類・記録の保存,#乗務記録・タコグラフ",
+    "situationCategory": ""
+  },
+  {
+    "id": 336,
+    "knowledgeTags": "#交通事故の要因・防止策",
+    "situationCategory": ""
+  },
+  {
+    "id": 337,
+    "knowledgeTags": "#健康管理・疾病・睡眠",
+    "situationCategory": ""
+  },
+  {
+    "id": 338,
+    "knowledgeTags": "#交通事故の要因・防止策",
+    "situationCategory": ""
+  },
+  {
+    "id": 339,
+    "knowledgeTags": "#物理的特性(遠心力・制動距離・衝撃力),#交通事故の要因・防止策",
+    "situationCategory": ""
+  },
+  {
+    "id": 340,
+    "knowledgeTags": "#距離・速度計算,#改善基準(拘束・休息・運転時間)",
+    "situationCategory": "#計算問題,#図表・写真問題"
+  },
+  {
+    "id": 341,
+    "knowledgeTags": "#交通事故の要因・防止策",
+    "situationCategory": "#事故事例・実務ケース"
+  }
+]
