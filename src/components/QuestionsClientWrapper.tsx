@@ -52,7 +52,7 @@ export default function QuestionsClientWrapper({
   });
 
   const years = Array.from(new Set(mappedQuestions.map(q => q.year).filter(Boolean)));
-  const fields = Array.from(new Set(mappedQuestions.map(q => q.majorField || '分野不明').filter(Boolean)));
+  const fields = Array.from(new Set(mappedQuestions.map(q => q.field || '分野不明').filter(Boolean)));
   const subFields = Array.from(new Set(mappedQuestions.map(q => q.subField || '小分類不明').filter(Boolean)));
 
   const groups = groupBy === 'subField' ? subFields : (groupBy === 'field' ? fields : years);

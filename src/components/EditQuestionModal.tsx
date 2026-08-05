@@ -14,8 +14,9 @@ interface QuestionData {
   id: number;
   year?: string | null;
   questionNumber?: number | null;
-  majorField?: string | null;
-  subField?: string | null;
+  field?: string | null;
+  situationCategory?: string | null;
+  knowledgeTags?: string | null;
   content?: string | null;
   correctAnswer?: number | null;
   explanation?: string | null;
@@ -35,10 +36,11 @@ export default function EditQuestionModal({
   onClose,
   onSaveSuccess,
 }: EditQuestionModalProps) {
-  const [majorField, setMajorField] = useState<string>(
-    question.majorField || ''
+  const [field, setField] = useState<string>(
+    question.field || ''
   );
-  const [subField, setSubField] = useState<string>(question.subField || '');
+  const [situationCategory, setSituationCategory] = useState<string>(question.situationCategory || '');
+  const [knowledgeTags, setKnowledgeTags] = useState<string>(question.knowledgeTags || '');
   const [content, setContent] = useState<string>(question.content || '');
   const [explanation, setExplanation] = useState<string>(
     question.explanation || ''
@@ -82,8 +84,9 @@ export default function EditQuestionModal({
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           correctAnswer: computedCorrectAnswer,
-          majorField,
-          subField,
+          field,
+          situationCategory,
+          knowledgeTags,
           content,
           explanation,
           options,
@@ -126,19 +129,31 @@ export default function EditQuestionModal({
               <label>分野 (大分類)</label>
               <input
                 type="text"
-                value={majorField}
-                onChange={(e) => setMajorField(e.target.value)}
-                placeholder="例: 権利関係, 貨物自動車運送事業法"
+                value={field}
+                onChange={(e) => setField(e.target.value)}
+                placeholder="例: 労働基準法"
+                className="text-input"
+              />
+            </div>
+          </div>
+          <div className="form-group row">
+            <div className="field-half">
+              <label>形式・アプローチタグ (カンマ区切り)</label>
+              <input
+                type="text"
+                value={situationCategory}
+                onChange={(e) => setSituationCategory(e.target.value)}
+                placeholder="例: #表・グラフ,#時間計算(改善基準等)"
                 className="text-input"
               />
             </div>
             <div className="field-half">
-              <label>中分類・テーマ</label>
+              <label>重要テーマタグ (カンマ区切り)</label>
               <input
                 type="text"
-                value={subField}
-                onChange={(e) => setSubField(e.target.value)}
-                placeholder="例: 意思表示, 代理, 37条書面"
+                value={knowledgeTags}
+                onChange={(e) => setKnowledgeTags(e.target.value)}
+                placeholder="例: #改善基準(拘束・休息)"
                 className="text-input"
               />
             </div>

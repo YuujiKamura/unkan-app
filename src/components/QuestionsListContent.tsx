@@ -10,6 +10,7 @@ type QuestionItem = {
   id: number;
   year: string | null;
   questionNumber: number | null;
+  field: string | null;
   majorField: string | null;
   subField: string | null;
   isDebated: boolean;
@@ -81,7 +82,7 @@ export default function QuestionsListContent({
   const renderTable = (groupKey: string) => {
     const qsForGroup = mappedQuestions.filter(q => {
       if (groupBy === 'year') return q.year === groupKey;
-      if (groupBy === 'field') return (q.majorField || '分野不明') === groupKey;
+      if (groupBy === 'field') return (q.field || '分野不明') === groupKey;
       if (groupBy === 'subField') return (q.subField || '小分類不明') === groupKey;
       if (groupBy === 'risk') return (q.riskCategory || '未分類') === groupKey;
       if (groupBy === 'situation') return (q.situationCategory || '未分類') === groupKey;
@@ -112,7 +113,7 @@ export default function QuestionsListContent({
           <thead>
             <tr style={{ borderBottom: '1px solid var(--surface-border)', color: 'var(--text-secondary)' }}>
               <th style={{ padding: '0.4rem 0.5rem', whiteSpace: 'nowrap' }}>年度・番号</th>
-              <th style={{ padding: '0.4rem 0.5rem', whiteSpace: 'nowrap' }}>分野</th>
+              <th style={{ padding: '0.4rem 0.5rem', whiteSpace: 'nowrap' }}>分野・タグ</th>
               <th style={{ padding: '0.4rem 0.5rem', whiteSpace: 'nowrap' }}>状態</th>
               <th style={{ padding: '0.4rem 0.5rem', whiteSpace: 'nowrap' }}>
                 <select 
@@ -164,7 +165,7 @@ export default function QuestionsListContent({
 
               let quizHref = `/quiz/${q.id}?groupBy=${groupBy}`;
               if (groupBy === 'subField') quizHref += `&subField=${encodeURIComponent(groupKey)}`;
-              else if (groupBy === 'field') quizHref += `&majorField=${encodeURIComponent(groupKey)}`;
+              else if (groupBy === 'field') quizHref += `&field=${encodeURIComponent(groupKey)}`;
               else if (groupBy === 'year') quizHref += `&year=${encodeURIComponent(groupKey)}`;
 
               return (
@@ -174,7 +175,13 @@ export default function QuestionsListContent({
                       {q.year} 問{q.questionNumber}
                     </a>
                   </td>
-                  <td style={{ padding: '0.2rem 0.5rem', whiteSpace: 'nowrap' }}>{q.majorField || '不明'} - {q.subField || '未分類'}</td>
+                  <td style={{ padding: '0.2rem 0.5rem' }}>
+                    <div style={{ fontWeight: 'bold', fontSize: '0.9rem' }}>{q.field || '未分類'}</div>
+                    <div style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>
+                      {q.situationCategory?.split(',').map(t => <span key={t} style={{ display: 'inline-block', marginRight: '6px', color: '#60a5fa' }}>{t}</span>)}
+                      {q.knowledgeTags?.split(',').map(t => <span key={t} style={{ display: 'inline-block', marginRight: '6px', color: '#34d399' }}>{t}</span>)}
+                    </div>
+                  </td>
                   <td style={{ padding: '0.2rem 0.5rem', whiteSpace: 'nowrap' }}>
                     <div style={{ color: statusColor, fontWeight: isDebated ? 'bold' : 'normal' }}>
                       {statusLabel}

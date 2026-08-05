@@ -51,7 +51,7 @@ export async function PATCH(
     }
 
     const body = await request.json();
-    const { correctAnswer, content, majorField, subField, explanation, options } = body;
+    const { correctAnswer, content, field, situationCategory, knowledgeTags, explanation, options } = body;
 
     // 1. Questionの更新データ構築
     const updateData: any = {};
@@ -62,8 +62,9 @@ export async function PATCH(
       }
     }
     if (content !== undefined) updateData.content = content;
-    if (majorField !== undefined) updateData.majorField = majorField;
-    if (subField !== undefined) updateData.subField = subField;
+    if (field !== undefined) updateData.field = field;
+    if (situationCategory !== undefined) updateData.situationCategory = situationCategory;
+    if (knowledgeTags !== undefined) updateData.knowledgeTags = knowledgeTags;
 
     const updatedQuestion = await prisma.question.update({
       where: { id },

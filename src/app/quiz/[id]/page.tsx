@@ -61,10 +61,10 @@ export default async function SingleQuizPage({
   searchParams,
 }: {
   params: Promise<{ id: string }>;
-  searchParams: Promise<{ groupBy?: string; subField?: string; majorField?: string; year?: string; mode?: string }>;
+  searchParams: Promise<{ groupBy?: string; subField?: string; field?: string; year?: string; mode?: string }>;
 }) {
   const resolvedParams = await params;
-  let sParams: { groupBy?: string; subField?: string; majorField?: string; year?: string; mode?: string } = {};
+  let sParams: { groupBy?: string; subField?: string; field?: string; year?: string; mode?: string } = {};
   try {
     if (searchParams) {
       sParams = (await searchParams) || {};
@@ -177,14 +177,14 @@ export default async function SingleQuizPage({
     questionNumber: q.questionNumber,
     isDebated: q.isDebated,
     score: Math.round(q.similarityScore * 100),
-    field: `${q.majorField || '不明'} - ${q.subField || '未分類'}`,
+    field: q.field || '分野不明',
     sharedKeywords: q.sharedKeywords.slice(0, 8)
   }));
 
   // クエリパラメータの安全な取得とデコード
-  const groupBy = sParams.groupBy || (sParams.subField ? 'subField' : sParams.majorField ? 'field' : sParams.year ? 'year' : 'year');
+  const groupBy = sParams.groupBy || (sParams.subField ? 'subField' : sParams.field ? 'field' : sParams.year ? 'year' : 'year');
   const subField = sParams.subField ? decodeURIComponent(sParams.subField) : (groupBy === 'subField' ? (questionRaw.subField || '小分類不明') : null);
-  const majorField = sParams.majorField ? decodeURIComponent(sParams.majorField) : (groupBy === 'field' ? (questionRaw.majorField || '分野不明') : null);
+  const field = sParams.field ? decodeURIComponent(sParams.field) : (groupBy === 'field' ? (questionRaw.field || '分野不明') : null);
   const year = sParams.year ? decodeURIComponent(sParams.year) : (groupBy === 'year' ? questionRaw.year : null);
 
   let whereClause: any = {
@@ -197,10 +197,10 @@ export default async function SingleQuizPage({
     whereClause.subField = subField;
     contextModeLabel = '🏷️ テーマ別演習';
     groupTitle = subField;
-  } else if (groupBy === 'field' && majorField) {
-    whereClause.majorField = majorField;
+  } else if (groupBy === 'field' && field) {
+    whereClause.field = field;
     contextModeLabel = '📚 大分類別演習';
-    groupTitle = majorField;
+    groupTitle = field;
   } else {
     const targetYear = year || questionRaw.year;
     if (targetYear) {
@@ -237,7 +237,7 @@ export default async function SingleQuizPage({
         const questions: any[] = JSON.parse(raw);
         groupQuestions = questions.filter(q => {
           if (whereClause.subField && q.subField !== whereClause.subField) return false;
-          if (whereClause.majorField && q.majorField !== whereClause.majorField) return false;
+          if (whereClause.field && q.field !== whereClause.field) return false;
           if (whereClause.year && q.year !== whereClause.year) return false;
           return true;
         }).map(q => ({
@@ -335,7 +335,7 @@ export default async function SingleQuizPage({
   const qParams = new URLSearchParams();
   if (groupBy) qParams.set('groupBy', groupBy);
   if (subField) qParams.set('subField', subField);
-  if (majorField) qParams.set('majorField', majorField);
+  if (field) qParams.set('field', field);
   const activeYear = year || questionRaw.year;
   if (activeYear && !groupBy) qParams.set('year', activeYear);
   const navQueryStr = qParams.toString() ? `?${qParams.toString()}` : '';

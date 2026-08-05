@@ -377,7 +377,7 @@ export default function SingleQuizClient({
   const copyToClipboard = async () => {
     if (!currentQ) return;
     
-    let text = `【${currentQ.year}年度 問${currentQ.questionNumber}】 ${currentQ.majorField || '不明'} - ${currentQ.subField || '未分類'}\n\n`;
+    let text = `【${currentQ.year}年度 問${currentQ.questionNumber}】 ${currentQ.field || '分野不明'}\n\n`;
     text += `${currentQ.content || ''}\n\n`;
     
     if (currentQ.options && currentQ.options.length > 0) {
@@ -511,8 +511,20 @@ export default function SingleQuizClient({
       <div className="glass-panel" style={{ padding: '2rem', marginBottom: '2rem' }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.5rem', flexWrap: 'wrap', gap: '1rem' }}>
           <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
-            <div style={{ display: 'inline-block', padding: '0.3rem 1rem', background: 'var(--surface-border)', borderRadius: '20px', fontSize: '0.9rem', color: 'var(--text-secondary)' }}>
-              {currentQ.majorField || '不明'} - {currentQ.subField || '未分類'}
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
+              <div style={{ display: 'inline-block', padding: '0.3rem 1rem', background: 'var(--surface-border)', borderRadius: '20px', fontSize: '0.9rem', color: 'var(--text-secondary)' }}>
+                {currentQ.field || '分野不明'}
+              </div>
+              {currentQ.situationCategory && currentQ.situationCategory.split(',').map((t: string) => (
+                <div key={t} style={{ display: 'inline-block', padding: '0.3rem 0.8rem', background: 'rgba(96, 165, 250, 0.1)', border: '1px solid #60a5fa', borderRadius: '20px', fontSize: '0.8rem', color: '#60a5fa' }}>
+                  {t}
+                </div>
+              ))}
+              {currentQ.knowledgeTags && currentQ.knowledgeTags.split(',').map((t: string) => (
+                <div key={t} style={{ display: 'inline-block', padding: '0.3rem 0.8rem', background: 'rgba(52, 211, 153, 0.1)', border: '1px solid #34d399', borderRadius: '20px', fontSize: '0.8rem', color: '#34d399' }}>
+                  {t}
+                </div>
+              ))}
             </div>
             <button onClick={copyToClipboard} className="btn" style={{ padding: '0.3rem 0.8rem', background: 'transparent', border: '1px solid var(--surface-border)', borderRadius: '20px', fontSize: '0.9rem', color: 'var(--text-secondary)' }}>
               {copied ? '✓ コピー完了' : '📋 クリップボードにコピー'}
@@ -863,7 +875,7 @@ export default function SingleQuizClient({
                             </span>
                             <button
                               onClick={() => {
-                                const cat = currentQ.subField || currentQ.majorField || '貨物自動車運送事業法';
+                                const cat = currentQ.field || '貨物自動車運送事業法';
                                 const title = prompt('共通ライブラリに保存するタイトルを入力してください:', `図解: ${currentQ.questionNumber || '問題'} 用フローチャート`);
                                 if (title) {
                                   saveFlowchartToLibrary({

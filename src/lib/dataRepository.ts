@@ -2,13 +2,12 @@ export interface Question {
   id: number;
   year: string;
   questionNumber: number;
-  majorField: string | null;
-  subField: string | null;
   field: string | null;
+  situationCategory: string | null;
+  knowledgeTags: string | null;
   content: string;
   options: any[];
   correctAnswer: number;
-  knowledgeTags?: string | null;
   explanation?: string | null;
   isDebated?: boolean;
 }

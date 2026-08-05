@@ -96,8 +96,9 @@ export function extractTags(q: any): string[] {
   const text = getCombinedText(q);
   const concepts = Array.from(getTakkenConcepts(text));
   const tags = [...concepts];
-  if (q.majorField) tags.push(`field:${q.majorField}`);
-  if (q.subField) tags.push(`subfield:${q.subField}`);
+  if (q.field) tags.push(`field:${q.field}`);
+  if (q.situationCategory) q.situationCategory.split(',').forEach((t: string) => tags.push(`situation:${t}`));
+  if (q.knowledgeTags) q.knowledgeTags.split(',').forEach((t: string) => tags.push(`knowledge:${t}`));
   return tags;
 }
 
