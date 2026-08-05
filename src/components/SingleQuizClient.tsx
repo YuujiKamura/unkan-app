@@ -531,23 +531,33 @@ export default function SingleQuizClient({
           <h3 style={{ marginBottom: '2rem', lineHeight: '1.8', whiteSpace: 'pre-wrap' }}>
             {currentQ.content}
           </h3>
-          {currentQ.imageUrl && (
+          {(currentQ.imageUrl || currentQ.knowledgeTags?.includes('#NEEDS_IMAGE')) && (
             <div style={{ textAlign: 'center', margin: '2rem 0' }}>
               {(() => {
                 const isLocal = isLocalEnv;
-                const hasLocalImage = currentQ.knowledgeTags?.includes('#NEEDS_IMAGE') && currentQ.imageUrl?.endsWith('.pdf');
+                const needsImage = currentQ.knowledgeTags?.includes('#NEEDS_IMAGE');
                 
                 let localImageSrc = null;
-                if (hasLocalImage && currentQ.imageUrl) {
+                let pdfUrl = currentQ.imageUrl;
+                let pdfName = 'unknown';
+                
+                if (currentQ.imageUrl) {
                   const pdfMatch = currentQ.imageUrl.match(/\/([^/]+)\.pdf$/);
-                  const pdfName = pdfMatch ? pdfMatch[1] : 'unknown';
+                  if (pdfMatch) pdfName = pdfMatch[1];
+                } else if (currentQ.id) {
+                  const yearMatch = currentQ.id.match(/^([^_]+)/);
+                  if (yearMatch) pdfName = yearMatch[1];
+                  pdfUrl = `https://www.unkan-net.com/kakomon/${pdfName}.pdf`;
+                }
+
+                if (needsImage) {
                   localImageSrc = `/extracted_images/${pdfName}_Q${currentQ.questionNumber}.png`;
                 }
 
-                const pdfLinkNode = currentQ.imageUrl?.endsWith('.pdf') ? (
+                const pdfLinkNode = (pdfUrl?.endsWith('.pdf')) ? (
                   <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.5rem', marginTop: '1rem' }}>
                     <a 
-                      href={currentQ.imageUrl} 
+                      href={pdfUrl} 
                       target="_blank" 
                       rel="noopener noreferrer" 
                       className="btn btn-primary"
@@ -603,7 +613,7 @@ export default function SingleQuizClient({
                   );
                 }
 
-                if (currentQ.imageUrl.endsWith('.pdf')) {
+                if (pdfUrl?.endsWith('.pdf')) {
                   return pdfLinkNode;
                 }
 
