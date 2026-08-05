@@ -111,8 +111,10 @@ export default function SingleQuizClient({
   const [isLibraryModalOpen, setIsLibraryModalOpen] = useState(false);
   const [selectedFilterKeyword, setSelectedFilterKeyword] = useState<string | null>(null);
   const [effectiveNextIncorrectId, setEffectiveNextIncorrectId] = useState<number | null>(nextIncorrectId || null);
+  const [isLocalEnv, setIsLocalEnv] = useState(false);
 
   useEffect(() => {
+    setIsLocalEnv(typeof window !== 'undefined' && (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'));
     (async () => {
       try {
         // 解答履歴（LocalStorage / DB）を取得
@@ -530,7 +532,7 @@ export default function SingleQuizClient({
           {currentQ.imageUrl && (
             <div style={{ textAlign: 'center', margin: '2rem 0' }}>
               {(() => {
-                const isLocal = typeof window !== 'undefined' && (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1');
+                const isLocal = isLocalEnv;
                 const hasLocalImage = currentQ.knowledgeTags?.includes('#NEEDS_IMAGE') && currentQ.imageUrl?.endsWith('.pdf');
                 
                 let localImageSrc = null;
