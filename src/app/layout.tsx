@@ -64,8 +64,7 @@ export default function RootLayout({
               ・<a href="https://www.unkan-net.com/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary-color)', textDecoration: 'none' }}>運行管理者試験対策.net</a>
             </p>
             <p style={{ opacity: 0.8 }}>
-              ※本サイトは個人の学習目的で作成された非公式の解説・演習用アプリケーションであり、上記機関・サイトとは一切関係ありません。<br />
-              試験問題の著作権は公益財団法人 運行管理者試験センターに帰属します。
+              ※本サイトは個人の学習目的で作成された非公式の解説・演習用アプリケーションであり、上記機関・サイトとは一切関係ありません。
             </p>
           </footer>
         </AutoSaveSyncProvider>
