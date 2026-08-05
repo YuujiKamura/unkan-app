@@ -44,7 +44,29 @@ export default function RootLayout({
               <SaveLoadUI />
             </div>
           </nav>
-          {children}
+          <main style={{ minHeight: 'calc(100vh - 150px)' }}>
+            {children}
+          </main>
+          
+          <footer style={{
+            marginTop: '4rem',
+            padding: '2rem',
+            background: 'var(--surface-color)',
+            borderTop: '1px solid var(--surface-border)',
+            textAlign: 'center',
+            fontSize: '0.85rem',
+            color: 'var(--text-secondary)',
+            lineHeight: '1.6'
+          }}>
+            <p style={{ marginBottom: '0.5rem' }}>
+              本アプリケーションに収録されている運行管理者試験（貨物）の過去問題、図表および解説の出典は以下の通りです。<br />
+              出典：<a href="https://www.unkan-net.com/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary-color)', textDecoration: 'none' }}>公益財団法人 運行管理者試験センター</a>
+            </p>
+            <p style={{ opacity: 0.8 }}>
+              ※本サイトは個人の学習目的で作成された非公式の解説・演習用アプリケーションであり、公式機関とは一切関係ありません。<br />
+              問題データの著作権は上記出典元に帰属します。
+            </p>
+          </footer>
         </AutoSaveSyncProvider>
       </body>
     </html>
