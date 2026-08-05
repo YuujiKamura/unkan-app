@@ -103,9 +103,10 @@ export default function QuestionsClientWrapper({
         </div>
       </details>
 
-      <details style={{ marginBottom: '2rem', background: 'var(--surface-color)', borderRadius: '12px', border: '1px solid var(--surface-border)', overflow: 'hidden' }}>
-        <summary style={{ padding: '0.8rem 1rem', cursor: 'pointer', fontWeight: 'bold', color: 'var(--text-secondary)' }}>
+      <details open style={{ marginBottom: '2rem', background: 'var(--surface-color)', borderRadius: '12px', border: '1px solid var(--surface-border)', overflow: 'hidden' }}>
+        <summary style={{ padding: '0.8rem 1rem', cursor: 'pointer', fontWeight: 'bold', color: 'var(--text-secondary)', display: 'flex', alignItems: 'center' }}>
           📅 学習カレンダー
+          <span style={{ fontSize: '0.85rem', fontWeight: 'normal', color: 'var(--text-muted, #666)', marginLeft: '1rem' }}>※色が付いている日付を押すと、解答時刻のタイムライン履歴を見ることができます</span>
         </summary>
         <div style={{ padding: '0 1rem 1rem 1rem' }}>
           <HistoryCalendar attemptsByDate={attemptsByDate} />
