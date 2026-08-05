@@ -36,6 +36,15 @@ npm run dev
 問題データ（`public/data/questions.json`）は、元のPDFまたは画像（`data/images/`）からOCRを通じてパースされ、スクリプト（`scripts/io/fix_*.ts` 等）によって正規化されたものが格納されています。
 新しい年度の問題を追加する場合は、画像からJSONを抽出し、正規化スクリプトで変換した上で `public/data/questions.json` を更新してください。
 
+### 🖼️ ローカルでのPDF画像表示（開発者向け）
+
+GitHub Pages上では直接の画像埋め込みを避けていますが、ローカル開発環境で問題ごとの画像をインライン表示したい場合は以下の手順で画像を抽出できます。
+
+1. 対象年度の過去問PDFをプロジェクトのルートディレクトリに配置します（例: `R06.CBT.pdf`, `R04.CBT.pdf`）。
+2. Python環境で `PyMuPDF` をインストールします（`pip install PyMuPDF`）。
+3. 抽出スクリプトを実行します: `python scripts/io/extract_all_pdf_pages.py`
+4. `public/pdf_pages/` に問題ごとのPNG画像が生成され、`npm run dev` 起動時に自動で画像付きで表示されるようになります。
+
 ## ⚠️ 免責事項・データ出典
 
 本アプリケーションで取り扱っている試験問題（テキストデータおよび抽出されたPDF画像データ）の出典および参照元は以下の通りです。

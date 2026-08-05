@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "exportedAt": "2026-08-05T20:07:46.142Z",
+  "exportedAt": "2026-08-05T20:25:50.684Z",
   "summary": {
-    "totalAttempts": 162,
+    "totalAttempts": 165,
     "totalBookmarks": 0,
     "totalExplanations": 55,
     "totalDebated": 55
@@ -1153,6 +1153,27 @@
       "selectedOptions": "2,4",
       "isCorrect": true,
       "attemptedAt": "2026-08-05T19:35:41.870Z"
+    },
+    {
+      "id": 163,
+      "questionId": 337,
+      "selectedOptions": "1,2,4",
+      "isCorrect": true,
+      "attemptedAt": "2026-08-05T20:22:57.128Z"
+    },
+    {
+      "id": 164,
+      "questionId": 338,
+      "selectedOptions": "2,3",
+      "isCorrect": true,
+      "attemptedAt": "2026-08-05T20:23:56.893Z"
+    },
+    {
+      "id": 165,
+      "questionId": 339,
+      "selectedOptions": "2,4",
+      "isCorrect": true,
+      "attemptedAt": "2026-08-05T20:24:37.962Z"
     }
   ],
   "bookmarks": [],
