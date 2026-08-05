@@ -112,6 +112,7 @@ export default function SingleQuizClient({
   const [selectedFilterKeyword, setSelectedFilterKeyword] = useState<string | null>(null);
   const [effectiveNextIncorrectId, setEffectiveNextIncorrectId] = useState<number | null>(nextIncorrectId || null);
   const [isLocalEnv, setIsLocalEnv] = useState(false);
+  const [isImageMaximized, setIsImageMaximized] = useState(false);
 
   useEffect(() => {
     setIsLocalEnv(typeof window !== 'undefined' && (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'));
@@ -545,8 +546,38 @@ export default function SingleQuizClient({
                 if (isLocal && localImageSrc) {
                   return (
                     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.5rem' }}>
-                      <img src={localImageSrc} alt="問題の図・標識" style={{ maxWidth: '100%', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.15)' }} />
+                      <img 
+                        src={localImageSrc} 
+                        alt="問題の図・標識" 
+                        onClick={() => setIsImageMaximized(true)}
+                        style={{ maxWidth: '100%', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.15)', cursor: 'zoom-in' }} 
+                      />
                       <span style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>※ローカル環境専用の抽出画像</span>
+                      
+                      {isImageMaximized && (
+                        <div 
+                          onClick={() => setIsImageMaximized(false)}
+                          style={{
+                            position: 'fixed',
+                            top: 0,
+                            left: 0,
+                            width: '100vw',
+                            height: '100vh',
+                            backgroundColor: 'rgba(0,0,0,0.8)',
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            zIndex: 9999,
+                            cursor: 'zoom-out'
+                          }}
+                        >
+                          <img 
+                            src={localImageSrc} 
+                            alt="問題の図・標識 (拡大)" 
+                            style={{ maxWidth: '95%', maxHeight: '95%', borderRadius: '8px', boxShadow: '0 4px 20px rgba(0,0,0,0.5)', objectFit: 'contain' }} 
+                          />
+                        </div>
+                      )}
                     </div>
                   );
                 }
@@ -571,7 +602,38 @@ export default function SingleQuizClient({
                 }
 
                 return (
-                  <img src={currentQ.imageUrl} alt="問題の図・標識" style={{ maxWidth: '100%', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.15)' }} />
+                  <>
+                    <img 
+                      src={currentQ.imageUrl} 
+                      alt="問題の図・標識" 
+                      onClick={() => setIsImageMaximized(true)}
+                      style={{ maxWidth: '100%', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.15)', cursor: 'zoom-in' }} 
+                    />
+                    {isImageMaximized && (
+                        <div 
+                          onClick={() => setIsImageMaximized(false)}
+                          style={{
+                            position: 'fixed',
+                            top: 0,
+                            left: 0,
+                            width: '100vw',
+                            height: '100vh',
+                            backgroundColor: 'rgba(0,0,0,0.8)',
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            zIndex: 9999,
+                            cursor: 'zoom-out'
+                          }}
+                        >
+                          <img 
+                            src={currentQ.imageUrl} 
+                            alt="問題の図・標識 (拡大)" 
+                            style={{ maxWidth: '95%', maxHeight: '95%', borderRadius: '8px', boxShadow: '0 4px 20px rgba(0,0,0,0.5)', objectFit: 'contain' }} 
+                          />
+                        </div>
+                    )}
+                  </>
                 );
               })()}
             </div>
