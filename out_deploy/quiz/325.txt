@@ -1,0 +1,81 @@
+1:"$Sreact.fragment"
+2:I[11434,["/unkan-app/_next/static/chunks/1-qj17ss_eoom.js","/unkan-app/_next/static/chunks/2oejna66087rc.js"],"default"]
+3:I[98000,["/unkan-app/_next/static/chunks/1-qj17ss_eoom.js","/unkan-app/_next/static/chunks/2oejna66087rc.js","/unkan-app/_next/static/chunks/43_z4zs-xyu0_.js","/unkan-app/_next/static/chunks/3rp-g6dqtbbm0.js","/unkan-app/_next/static/chunks/30xk5g0he03sk.js"],""]
+4:I[64209,["/unkan-app/_next/static/chunks/1-qj17ss_eoom.js","/unkan-app/_next/static/chunks/2oejna66087rc.js"],"default"]
+5:I[50441,["/unkan-app/_next/static/chunks/1-qj17ss_eoom.js","/unkan-app/_next/static/chunks/2oejna66087rc.js"],"default"]
+6:I[55665,["/unkan-app/_next/static/chunks/1-qj17ss_eoom.js","/unkan-app/_next/static/chunks/2oejna66087rc.js"],"default"]
+8:I[52827,["/unkan-app/_next/static/chunks/1-qj17ss_eoom.js","/unkan-app/_next/static/chunks/2oejna66087rc.js"],"OutletBoundary"]
+9:"$Sreact.suspense"
+c:I[52827,["/unkan-app/_next/static/chunks/1-qj17ss_eoom.js","/unkan-app/_next/static/chunks/2oejna66087rc.js"],"ViewportBoundary"]
+e:I[52827,["/unkan-app/_next/static/chunks/1-qj17ss_eoom.js","/unkan-app/_next/static/chunks/2oejna66087rc.js"],"MetadataBoundary"]
+10:I[25844,["/unkan-app/_next/static/chunks/1-qj17ss_eoom.js","/unkan-app/_next/static/chunks/2oejna66087rc.js"],"default",1]
+:HL["/unkan-app/_next/static/chunks/3yu0u4btddnts.css","style"]
+0:{"P":null,"c":["","quiz","325"],"q":"","i":false,"f":[[["",{"children":["quiz",{"children":[["id","325","d",null],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/unkan-app/_next/static/chunks/3yu0u4btddnts.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/unkan-app/_next/static/chunks/1-qj17ss_eoom.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/unkan-app/_next/static/chunks/2oejna66087rc.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"ja","children":["$","body",null,{"children":["$","$L2",null,{"children":[["$","nav",null,{"style":{"padding":"0.8rem 2rem","background":"var(--surface-color)","borderBottom":"1px solid var(--surface-border)","display":"flex","position":"sticky","top":0,"zIndex":100,"backdropFilter":"blur(12px)","WebkitBackdropFilter":"blur(12px)"},"children":["$","div",null,{"style":{"display":"flex","gap":"1rem","justifyContent":"space-between","width":"100%","alignItems":"center","flexWrap":"wrap"},"children":[["$","$L3",null,{"href":"/questions","style":{"textDecoration":"none","color":"var(--text-primary)","fontWeight":"bold","display":"flex","alignItems":"center","gap":"0.5rem","fontSize":"1.2rem"},"children":"🏠 運行管理者過去問ダッシュボード"}],["$","$L4",null,{}]]}]}],["$","main",null,{"style":{"minHeight":"calc(100vh - 150px)"},"children":["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"style":{"marginTop":"4rem","padding":"2rem","background":"var(--surface-color)","borderTop":"1px solid var(--surface-border)","textAlign":"center","fontSize":"0.85rem","color":"var(--text-secondary)","lineHeight":"1.6"},"children":[["$","p",null,{"style":{"marginBottom":"0.5rem"},"children":["本アプリケーションに収録されている運行管理者試験（貨物）の過去問題および図表等の出典・参照元は以下の通りです。",["$","br",null,{}],"・",["$","a",null,{"href":"https://www.unkan.or.jp/","target":"_blank","rel":"noopener noreferrer","style":{"color":"var(--primary-color)","textDecoration":"none"},"children":"公益財団法人 運行管理者試験センター"}],["$","br",null,{}],"・",["$","a",null,{"href":"https://www.unkan-net.com/","target":"_blank","rel":"noopener noreferrer","style":{"color":"var(--primary-color)","textDecoration":"none"},"children":"運行管理者試験対策.net"}]]}],["$","p",null,{"style":{"opacity":0.8},"children":"※本サイトは個人の学習目的で作成された非公式の解説・演習用アプリケーションであり、上記機関・サイトとは一切関係ありません。"}]]}]]}]}]}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":["$L7",[["$","script","script-0",{"src":"/unkan-app/_next/static/chunks/43_z4zs-xyu0_.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/unkan-app/_next/static/chunks/3rp-g6dqtbbm0.js","async":true,"nonce":"$undefined"}],["$","script","script-2",{"src":"/unkan-app/_next/static/chunks/30xk5g0he03sk.js","async":true,"nonce":"$undefined"}]],["$","$L8",null,{"children":["$","$9",null,{"name":"Next.MetadataOutlet","children":"$@a"}]}]]}],{},null,false,null]},null,false,"$@b"]},null,false,"$@b"]},null,false,null],["$","$1","h",{"children":[null,["$","$Lc",null,{"children":"$Ld"}],["$","div",null,{"hidden":true,"children":["$","$Le",null,{"children":"$Lf"}]}],null]}],false]],"m":"$undefined","G":["$10",["$L11"]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"nUAI0UWuIwYRO0tBeExv4"}
+12:[]
+b:"$W12"
+f:["$","$9",null,{"name":"Next.Metadata","children":"$L13"}]
+11:["$","link","0",{"rel":"stylesheet","href":"/unkan-app/_next/static/chunks/3yu0u4btddnts.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+d:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+14:I[70367,["/unkan-app/_next/static/chunks/1-qj17ss_eoom.js","/unkan-app/_next/static/chunks/2oejna66087rc.js"],"IconMark"]
+a:null
+13:[["$","title","0",{"children":"運行管理者 過去問演習・学習ダッシュボード"}],["$","meta","1",{"name":"description","content":"運行管理者の過去問演習・進捗管理アプリ"}],["$","link","2",{"rel":"icon","href":"/unkan-app/favicon.ico?favicon.2vob68tjqpejf.ico","sizes":"256x256","type":"image/x-icon"}],["$","$L14","3",{}]]
+15:I[33316,["/unkan-app/_next/static/chunks/1-qj17ss_eoom.js","/unkan-app/_next/static/chunks/2oejna66087rc.js","/unkan-app/_next/static/chunks/43_z4zs-xyu0_.js","/unkan-app/_next/static/chunks/3rp-g6dqtbbm0.js","/unkan-app/_next/static/chunks/30xk5g0he03sk.js"],"default"]
+16:T10b5,
+車両等は、夜間(日没時から日出時までの時間をいう。)、道路にあるときは、道路交通法施行令で定めるところにより、前照灯、車幅灯、尾灯その他の灯火をつけなければならない。ただし、高速自動車国道及び自動車専用道路においては前方 200 メートル、その他の道路においては前方 50 メートルまで明りょうに見える程度に照明が行われているトンネルを通行する場合は、この限りではない。
+ご提示いただいた文章は、道路交通法第52条第1項に規定されている、夜間の灯火義務についての条文です。日没から日の出までの夜間はライト点灯が義務付けられますが、十分な明るさがある特定条件のトンネルでは除外されます。 
+
+おもいやりライト
+ +1
+夜間の定義と基本ルール
+夜間の時間: 日没時から日出時まで
+義務: 前照灯・車幅灯・尾灯などを点灯
+原則: 走行時はハイビーム（前方約100m）が基本 
+
+おもいやりライト
+ +2
+トンネルでの例外規定
+高速道路・自動車専用道路: 前方 200 メートルまで見える照明
+その他の道路: 前方 50 メートルまで見える照明
+免除: 上記の明るさが満たされるトンネル内ではライトを消して（または減光して）もよい 
+この条文のハイビーム・ロービームの使い分けや、夕暮れ時の早めのライト点灯（トワイライト・オン）について詳しく知りたいですか？
+
+
+
+
+
+7 sites
+車両の灯火義務が発生する「夜間」は日没時から日の出時まで
+第五十二条 車両等は、夜間（日没時から日出時までの時間をいう。以下この条及び第六十三条の九第二項において同じ。）、道路に...
+
+
+おもいやりライト
+前照灯、尾灯、自転車用ライトの選び方
+第五十二条 車両等は、夜間（日没時から日出時までの時間をいう。以下この条及び第六十三条の九第二項において同じ。）、道路に...
+
+
+cyclelife.jp
+違反しがちな道路交通法違反（ハイビーム） | スタッフブログ
+道路交通法上、夜間における自動車の走行については、ハイビームで走行することが基本となっています（道路交通法５２条１項、２...
+
+www.koutsujiko-iizuka.jp
+Show all
+灯火を付けるってのが、ライトを設置するの意味だと思ったんだが違った
+その直感、実はとても自然な誤解です！しかし、法律（道路交通法）における「灯火を付ける（とうかを つける）」は、「ライトを点灯する（スイッチを入れる）」という意味になります。
+「設置する」ではない理由は以下の通りです。
+なぜ「点灯する」の意味になるのか
+「付ける」の漢字の意味
+器具を固定する「取り付ける（附ける）」
+火や明かりを灯す「点ける」
+この条文の「付ける」は、後者の「明かりを点（つ）ける」を指します。
+設置は別の法律の管轄
+車にライトを設置（装備）する義務は、道路運送車両法という別の法律で定められています。
+道路交通法は「すでにライトが付いている車を、どう運転するか」のルールを定めています。
+条文のシチュエーション
+条文には「夜間、道路にあるとき」と書かれています。
+「夜になったから、その場で工具を使ってライトを取り付けなさい」という意味ではなく、「夜暗くなったから、ライトのスイッチを入れなさい」という意味になります。
+まとめ
+灯火を付ける ＝ ライトのスイッチを入れて、光らせる（点灯）
+灯火を備える ＝ ライトを車に取り付ける（設置）※別の法律の表現
+日本の法律用語には、日常会話と少しズレていて紛らわしい表現がたくさんあります。
+この夜間の点灯ルールについて、ハイビームとロービームのどちらを点けるのが原則かなど、さらに気になる点などはありますか？
+7:["$","$L15",null,{"initialQuestion":{"id":325,"year":"令和4年 (CBT)","questionNumber":14,"field":"道路交通法","majorField":null,"subField":null,"content":"道路交通法に定める灯火及び合図等についての次の記述のうち、【正しいものを 2 つ】選びなさい。なお、解答にあたっては、各選択肢に記載されている事項以外は考慮しないものとする。","imageUrl":null,"sourceSheet":null,"knowledgeTags":null,"riskCategory":null,"situationCategory":null,"format":"SINGLE","pdfUrl":"https://www.unkan-net.com/kakomon/R04.CBT.pdf","pdfPage":7,"options":[{"id":1483,"questionId":325,"optionNumber":1,"content":"車両等は、夜間（日没時から日出時までの時間をいう。）、道路にあるときは、道路交通法施行令で定めるところにより、前照灯、車幅灯、尾灯その他の灯火をつけなければならない。ただし、高速自動車国道及び自動車専用道路においては前方 200 メートル、その他の道路においては前方 50 メートルまで明りょうに見える程度に照明が行われているトンネルを通行する場合は、この限りではない。","isCorrect":true,"explanation":null,"structuredData":null},{"id":1484,"questionId":325,"optionNumber":2,"content":"停留所において乗客の乗降のため停車していた乗合自動車が発進するため進路を変更しようとして手又は方向指示器により合図をした場合においては、その後方にある車両は、その速度を急に変更しなければならないこととなる場合にあっても、当該合図をした乗合自動車の進路の変更を妨げてはならない。","isCorrect":false,"explanation":null,"structuredData":null},{"id":1485,"questionId":325,"optionNumber":3,"content":"車両等の運転者は、山地部の道路その他曲折が多い道路について道路標識等により指定された区間以外であっても、見とおしのきかない道路のまがりかど又は見とおしのきかない上り坂の頂上を通行しようとするときは、必ず警音器を鳴らさなければならない。","isCorrect":false,"explanation":null,"structuredData":null},{"id":1486,"questionId":325,"optionNumber":4,"content":"車両の運転者が同一方向に進行しながら進路を左方又は右方に変えるときの合図を行う時期は、その行為をしようとする時の 3 秒前のときである。","isCorrect":true,"explanation":null,"structuredData":null}],"explanation":{"id":106,"questionId":325,"content":"$16","isDebated":true},"correctOptions":[],"userMeta":null,"attempts":[],"isDebated":false,"isBookmarked":false,"keywords":["道路交通法","灯火及","合図等","各選択肢","事項以外","車両等","日没時","日出時","道路交通法施行令","前照灯","車幅灯","高速自動車国道及","自動車専用道路","停留所","乗合自動車","方向指示器","当該合図","運転者","山地部","他曲折","道路標識等","区間以外","警音器","同一方向","左方又","メートル","トンネル"]},"similarQuestions":[{"id":294,"year":"令和5年 (CBT)","questionNumber":17,"isDebated":true,"score":25,"field":"道路交通法","sharedKeywords":["分野: 道路交通法","道路交通法施行令","道路交通法","乗合自動車","方向指示器","各選択肢","事項以外","当該合図"]},{"id":264,"year":"令和6年 (CBT)","questionNumber":17,"isDebated":true,"score":15,"field":"道路交通法","sharedKeywords":["分野: 道路交通法","道路交通法","乗合自動車","方向指示器","各選択肢","事項以外","当該合図","運転者"]},{"id":324,"year":"令和4年 (CBT)","questionNumber":13,"isDebated":false,"score":13,"field":"道路交通法","sharedKeywords":["分野: 道路交通法","道路交通法施行令","道路交通法","各選択肢","事項以外"]},{"id":173,"year":"令和2年 第1回","questionNumber":16,"isDebated":false,"score":11,"field":"道路交通法","sharedKeywords":["分野: 道路交通法","道路交通法","道路標識等","方向指示器","各選択肢","事項以外","当該合図"]},{"id":138,"year":"令和2年 (CBT)","questionNumber":17,"isDebated":false,"score":10,"field":"道路交通法","sharedKeywords":["分野: 道路交通法","道路交通法施行令","道路交通法","各選択肢","事項以外","運転者","車両等"]},{"id":262,"year":"令和6年 (CBT)","questionNumber":15,"isDebated":true,"score":8,"field":"道路交通法","sharedKeywords":["分野: 道路交通法","道路交通法","道路標識等","各選択肢","事項以外","メートル","トンネル"]},{"id":170,"year":"令和2年 第1回","questionNumber":13,"isDebated":false,"score":8,"field":"道路交通法","sharedKeywords":["分野: 道路交通法","道路交通法","道路標識等","各選択肢","事項以外","車両等"]},{"id":271,"year":"令和6年 (CBT)","questionNumber":24,"isDebated":true,"score":8,"field":"実務上の知識及び能力","sharedKeywords":["道路交通法施行令","各選択肢","事項以外","運転者"]},{"id":301,"year":"令和5年 (CBT)","questionNumber":24,"isDebated":true,"score":8,"field":"実務上の知識及び能力","sharedKeywords":["道路交通法施行令","各選択肢","事項以外","運転者"]},{"id":326,"year":"令和4年 (CBT)","questionNumber":15,"isDebated":true,"score":7,"field":"道路交通法","sharedKeywords":["分野: 道路交通法","道路交通法施行令","車両等"]}],"nextQuestionId":326,"prevQuestionId":324,"nextIncorrectId":340,"contextModeLabel":"📅 年度別演習","groupTitle":"令和4年 (CBT)","currentPosition":14,"totalInGroup":30,"navQueryStr":"?groupBy=year","mode":"","groupQuestionIds":[312,313,314,315,316,317,318,319,320,321,322,323,324,325,326,327,328,329,330,331,332,333,334,335,336,337,338,339,340,341]}]

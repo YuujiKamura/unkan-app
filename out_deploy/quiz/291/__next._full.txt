@@ -1,0 +1,106 @@
+1:"$Sreact.fragment"
+2:I[11434,["/unkan-app/_next/static/chunks/1-qj17ss_eoom.js","/unkan-app/_next/static/chunks/2oejna66087rc.js"],"default"]
+3:I[98000,["/unkan-app/_next/static/chunks/1-qj17ss_eoom.js","/unkan-app/_next/static/chunks/2oejna66087rc.js","/unkan-app/_next/static/chunks/43_z4zs-xyu0_.js","/unkan-app/_next/static/chunks/3rp-g6dqtbbm0.js","/unkan-app/_next/static/chunks/30xk5g0he03sk.js"],""]
+4:I[64209,["/unkan-app/_next/static/chunks/1-qj17ss_eoom.js","/unkan-app/_next/static/chunks/2oejna66087rc.js"],"default"]
+5:I[50441,["/unkan-app/_next/static/chunks/1-qj17ss_eoom.js","/unkan-app/_next/static/chunks/2oejna66087rc.js"],"default"]
+6:I[55665,["/unkan-app/_next/static/chunks/1-qj17ss_eoom.js","/unkan-app/_next/static/chunks/2oejna66087rc.js"],"default"]
+8:I[52827,["/unkan-app/_next/static/chunks/1-qj17ss_eoom.js","/unkan-app/_next/static/chunks/2oejna66087rc.js"],"OutletBoundary"]
+9:"$Sreact.suspense"
+c:I[52827,["/unkan-app/_next/static/chunks/1-qj17ss_eoom.js","/unkan-app/_next/static/chunks/2oejna66087rc.js"],"ViewportBoundary"]
+e:I[52827,["/unkan-app/_next/static/chunks/1-qj17ss_eoom.js","/unkan-app/_next/static/chunks/2oejna66087rc.js"],"MetadataBoundary"]
+10:I[25844,["/unkan-app/_next/static/chunks/1-qj17ss_eoom.js","/unkan-app/_next/static/chunks/2oejna66087rc.js"],"default",1]
+:HL["/unkan-app/_next/static/chunks/3yu0u4btddnts.css","style"]
+0:{"P":null,"c":["","quiz","291"],"q":"","i":false,"f":[[["",{"children":["quiz",{"children":[["id","291","d",null],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/unkan-app/_next/static/chunks/3yu0u4btddnts.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/unkan-app/_next/static/chunks/1-qj17ss_eoom.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/unkan-app/_next/static/chunks/2oejna66087rc.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"ja","children":["$","body",null,{"children":["$","$L2",null,{"children":[["$","nav",null,{"style":{"padding":"0.8rem 2rem","background":"var(--surface-color)","borderBottom":"1px solid var(--surface-border)","display":"flex","position":"sticky","top":0,"zIndex":100,"backdropFilter":"blur(12px)","WebkitBackdropFilter":"blur(12px)"},"children":["$","div",null,{"style":{"display":"flex","gap":"1rem","justifyContent":"space-between","width":"100%","alignItems":"center","flexWrap":"wrap"},"children":[["$","$L3",null,{"href":"/questions","style":{"textDecoration":"none","color":"var(--text-primary)","fontWeight":"bold","display":"flex","alignItems":"center","gap":"0.5rem","fontSize":"1.2rem"},"children":"🏠 運行管理者過去問ダッシュボード"}],["$","$L4",null,{}]]}]}],["$","main",null,{"style":{"minHeight":"calc(100vh - 150px)"},"children":["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"style":{"marginTop":"4rem","padding":"2rem","background":"var(--surface-color)","borderTop":"1px solid var(--surface-border)","textAlign":"center","fontSize":"0.85rem","color":"var(--text-secondary)","lineHeight":"1.6"},"children":[["$","p",null,{"style":{"marginBottom":"0.5rem"},"children":["本アプリケーションに収録されている運行管理者試験（貨物）の過去問題および図表等の出典・参照元は以下の通りです。",["$","br",null,{}],"・",["$","a",null,{"href":"https://www.unkan.or.jp/","target":"_blank","rel":"noopener noreferrer","style":{"color":"var(--primary-color)","textDecoration":"none"},"children":"公益財団法人 運行管理者試験センター"}],["$","br",null,{}],"・",["$","a",null,{"href":"https://www.unkan-net.com/","target":"_blank","rel":"noopener noreferrer","style":{"color":"var(--primary-color)","textDecoration":"none"},"children":"運行管理者試験対策.net"}]]}],["$","p",null,{"style":{"opacity":0.8},"children":"※本サイトは個人の学習目的で作成された非公式の解説・演習用アプリケーションであり、上記機関・サイトとは一切関係ありません。"}]]}]]}]}]}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":["$L7",[["$","script","script-0",{"src":"/unkan-app/_next/static/chunks/43_z4zs-xyu0_.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/unkan-app/_next/static/chunks/3rp-g6dqtbbm0.js","async":true,"nonce":"$undefined"}],["$","script","script-2",{"src":"/unkan-app/_next/static/chunks/30xk5g0he03sk.js","async":true,"nonce":"$undefined"}]],["$","$L8",null,{"children":["$","$9",null,{"name":"Next.MetadataOutlet","children":"$@a"}]}]]}],{},null,false,null]},null,false,"$@b"]},null,false,"$@b"]},null,false,null],["$","$1","h",{"children":[null,["$","$Lc",null,{"children":"$Ld"}],["$","div",null,{"hidden":true,"children":["$","$Le",null,{"children":"$Lf"}]}],null]}],false]],"m":"$undefined","G":["$10",["$L11"]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"nUAI0UWuIwYRO0tBeExv4"}
+12:[]
+b:"$W12"
+f:["$","$9",null,{"name":"Next.Metadata","children":"$L13"}]
+11:["$","link","0",{"rel":"stylesheet","href":"/unkan-app/_next/static/chunks/3yu0u4btddnts.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+d:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+14:I[70367,["/unkan-app/_next/static/chunks/1-qj17ss_eoom.js","/unkan-app/_next/static/chunks/2oejna66087rc.js"],"IconMark"]
+a:null
+13:[["$","title","0",{"children":"運行管理者 過去問演習・学習ダッシュボード"}],["$","meta","1",{"name":"description","content":"運行管理者の過去問演習・進捗管理アプリ"}],["$","link","2",{"rel":"icon","href":"/unkan-app/favicon.ico?favicon.2vob68tjqpejf.ico","sizes":"256x256","type":"image/x-icon"}],["$","$L14","3",{}]]
+15:I[33316,["/unkan-app/_next/static/chunks/1-qj17ss_eoom.js","/unkan-app/_next/static/chunks/2oejna66087rc.js","/unkan-app/_next/static/chunks/43_z4zs-xyu0_.js","/unkan-app/_next/static/chunks/3rp-g6dqtbbm0.js","/unkan-app/_next/static/chunks/30xk5g0he03sk.js"],"default"]
+16:T18ed,なぜその距離なのかを聞いてる
+それぞれの場所で「なぜその距離（3m・5m・3.5m）として定められているのか」、交通安全上の理由・目的から解説します。
+
+1. 自動車の出入口：3メートル以内
+目的：出入りする車両の視界（死角）の確保
+
+理由
+駐車場や車庫から道路へ出ようとする車は、道路上の歩行者や他の車を確認しながら慎重に進入する必要があります。
+もし出入口のすぐ脇（3m未満）に車が止められていると、出ようとする運転手から左右の安全が一切見えなくなってしまいます。
+
+なぜ3mか
+車両の先端が少し道路に出る手前の位置から、左右の交通状況を視認・確認できる最小限の安全視界ゾーンとして3メートルが設定されています。
+
+2. 道路工事区域・消防施設：5メートル以内
+目的：作業スペースの確保と、大型車両の移動・旋回半径の確保
+
+消防関係（消防器具置場・防火水槽・出入口）
+火災発生時、消防車などの大型車両が素早く到着し、作業スペース（ホースの接続やポンプロード）を広げる必要があります。また、大型の消防車が出入り・旋回するための広い回転半径を確保するため、自動車の出入口（3m）よりも広い5メートルが必要とされています。
+
+道路工事区域
+工事作業員の安全確保、大型工事車両の出入り、資材の積み下ろしスペースを確保するため、同様に5メートルの離隔が義務付けられています。
+
+3. 無余地駐車：右側に3.5メートル以上
+目的：他の車両（特に大型車）が安全に通行できるようにするため
+
+理由
+道路の車線幅は、一般的に1車線あたり約2.75m～3.25m程度で設計されています。大型トラックやバスの車幅は最大で2.5メートルあります。
+
+なぜ3.5mか
+車幅2.5mの大型車が、横に止まっている車を避けて安全に通過するためには、車両の左右にそれぞれ50cm程度の余裕が必要です（2.5m ＋ 0.5m ＋ 0.5m ＝ 3.5m）。
+そのため、右側に3.5m以上の隙間が残らないような場所に駐車すると、後続のトラックや救急車が通り抜けられなくなってしまいます。
+
+まとめ
+対象場所	距離	主な理由・目的
+自動車の出入口	3m	出入りする車の左右の死角（安全視界）をなくすため
+消防施設・工事区域	5m	大型車（消防車等）の旋回・作業スペースを確保するため
+車両右側の余地	3.5m	大型車（幅2.5m）が接触せずに安全にすれ違うため
+数字にはすべて「事故を防ぐための視界確保」や「大型車の車体サイズ・動線」といった明確な技術的理由がつけられています。
+
+Gemini との会話
+解説
+表示されている【道路交通法関係】の駐車禁止場所に関する問題について解説します。
+
+正解（誤っている記述）は 3 です。
+
+各選択肢の解説
+選択肢1：正しい記述
+道路工事が行われている工事区域の側端から5メートル以内の道路部分は、駐車禁止場所として定められています。
+
+選択肢2：正しい記述
+消防用機械器具の置場や消防用防火水槽の側端、またはそれらの出入口から5メートル以内の部分は駐車禁止場所です。これは緊急時の消火活動等を妨げないようにするためです。
+
+選択肢3：誤った記述（これが正解）
+駐車場や車庫など、自動車用の出入口付近で駐車が禁止される範囲は「5メートル以内」ではなく、正しくは「3メートル以内」です。距離の数字が誤っているため、この選択肢が間違いとなります。
+
+選択肢4：正しい記述
+いわゆる「無余地駐車の禁止」についての記述です。駐車した際に、車両の右側の道路上に3.5メートル以上の余地（ほかの車が通り抜けられるスペース）が確保できない場所では、原則として駐車してはなりません。
+
+💡 学習のポイント
+「自動車用の出入口（駐車場など）」は3メートル、「道路工事区域」や「消防関係の施設」は5メートルです。駐車禁止場所に関する問題では、このように距離（数字）をすり替える引っかけ問題が頻出するため、対象と距離の組み合わせを整理して覚えるのがおすすめです。
+
+根拠は
+それぞれの解説の根拠となる法律は、道路交通法 第45条（駐車を禁止する場所）です。
+
+各選択肢に対応する条文は以下の通りです。
+
+選択肢1の根拠（工事区域から5メートル）
+道路交通法 第45条第1項第3号
+「道路工事が行なわれている場合における当該工事区域の側端から五メートル以内の部分」
+
+選択肢2の根拠（消防関係施設から5メートル）
+道路交通法 第45条第1項第4号
+「消防用機械器具の置場若しくは消防用防火水槽の側端又はこれらの道路に接する出入口から五メートル以内の部分」
+
+選択肢3の根拠（自動車用の出入口から正しくは3メートル）
+道路交通法 第45条第1項第1号
+「人の乗降、貨物の積卸し、駐車又は自動車の格納若しくは修理のため道路外に設けられた施設又は場所の道路に接する自動車用の出入口から三メートル以内の部分」
+
+選択肢4の根拠（無余地駐車の禁止・3.5メートル以上の余地）
+道路交通法 第45条第2項
+「車両は、公安委員会が交通がひんぱんでないと認めて指定した区域を除き、法令の規定により駐車する場合に当該車両の右側の道路上に三・五メートル（道路標識等により距離が指定されているときは、その距離）以上の余地がないこととなる場所においては、駐車してはならない。」
+
+このように、自動車の出入口付近における駐車禁止の範囲（選択肢3）については、第45条第1項第1号にて「3メートル以内」と明確に規定されています。
+7:["$","$L15",null,{"initialQuestion":{"id":291,"year":"令和5年 (CBT)","questionNumber":14,"field":"道路交通法","majorField":null,"subField":null,"content":"【道路交通法関係】\n\n道路交通法に定める駐車を禁止する場所についての次の記述のうち、誤っているものを１つ選びなさい。なお、解答にあたっては、各選択肢に記載されている事項以外は考慮しないものとする。","imageUrl":null,"sourceSheet":null,"knowledgeTags":"#駐停車禁止ルール","riskCategory":null,"situationCategory":null,"format":"SINGLE","pdfUrl":null,"pdfPage":null,"options":[{"id":1150,"questionId":291,"optionNumber":1,"content":"車両は、道路工事が行なわれている場合における当該工事区域の側端から5メートル以内の道路の部分においては、駐車してはならない。","isCorrect":false,"explanation":null,"structuredData":null},{"id":1151,"questionId":291,"optionNumber":2,"content":"車両は、消防用機械器具の置場若しくは消防用防火水槽の側端又はこれらの道路に接する出入口から5メートル以内の道路の部分においては、駐車してはならない。","isCorrect":false,"explanation":null,"structuredData":null},{"id":1152,"questionId":291,"optionNumber":3,"content":"車両は、人の乗降、貨物の積卸し、駐車又は自動車の格納若しくは修理のため道路外に設けられた施設又は場所の道路に接する自動車用の出入口から5メートル以内の道路の部分においては、駐車してはならない。","isCorrect":true,"explanation":null,"structuredData":null},{"id":1153,"questionId":291,"optionNumber":4,"content":"車両は、都道府県公安委員会が交通がひんぱんでないと認めて指定した区域を除き、法令の規定により駐車する場合に当該車両の右側の道路上に3.5メートル（道路標識等により距離が指定されているときは、その距離）以上の余地がないこととなる場所においては、駐車してはならない。","isCorrect":false,"explanation":null,"structuredData":null}],"explanation":{"id":62,"questionId":291,"content":"$16","isDebated":true},"correctOptions":[],"userMeta":null,"attempts":[],"isDebated":false,"isBookmarked":false,"keywords":["道路交通法関係","道路交通法","各選択肢","事項以外","道路工事","当該工事区域","消防用機械器具","置場若","消防用防火水槽","側端又","出入口","駐車又","格納若","道路外","施設又","自動車用","都道府県公安委員会","当該車両","道路上","道路標識等","メートル"]},"similarQuestions":[{"id":135,"year":"令和2年 (CBT)","questionNumber":14,"isDebated":false,"score":72,"field":"道路交通法","sharedKeywords":["knowledge:#駐停車禁止ルール","分野: 道路交通法","消防用機械器具","消防用防火水槽","当該工事区域","道路交通法","道路標識等","各選択肢"]},{"id":179,"year":"令和2年 第1回","questionNumber":22,"isDebated":false,"score":41,"field":"労働基準法","sharedKeywords":["knowledge:#駐停車禁止ルール","駐車又"]},{"id":186,"year":"令和2年 第1回","questionNumber":29,"isDebated":false,"score":38,"field":"実務上の知識及び能力","sharedKeywords":["knowledge:#駐停車禁止ルール","各選択肢","事項以外","駐車又"]},{"id":137,"year":"令和2年 (CBT)","questionNumber":16,"isDebated":false,"score":35,"field":"道路交通法","sharedKeywords":["knowledge:#駐停車禁止ルール","分野: 道路交通法"]},{"id":151,"year":"令和2年 (CBT)","questionNumber":30,"isDebated":false,"score":34,"field":"実務上の知識及び能力","sharedKeywords":["knowledge:#駐停車禁止ルール"]},{"id":134,"year":"令和2年 (CBT)","questionNumber":13,"isDebated":false,"score":33,"field":"道路交通法","sharedKeywords":["knowledge:#駐停車禁止ルール","分野: 道路交通法","道路交通法","道路標識等","各選択肢","事項以外","道路外","施設又"]},{"id":333,"year":"令和4年 (CBT)","questionNumber":22,"isDebated":true,"score":32,"field":"労働基準法","sharedKeywords":["knowledge:#駐停車禁止ルール","駐車又"]},{"id":294,"year":"令和5年 (CBT)","questionNumber":17,"isDebated":true,"score":18,"field":"道路交通法","sharedKeywords":["分野: 道路交通法","都道府県公安委員会","道路交通法関係","道路交通法","各選択肢","事項以外","メートル"]},{"id":264,"year":"令和6年 (CBT)","questionNumber":17,"isDebated":true,"score":13,"field":"道路交通法","sharedKeywords":["分野: 道路交通法","都道府県公安委員会","道路交通法","各選択肢","事項以外"]},{"id":260,"year":"令和6年 (CBT)","questionNumber":13,"isDebated":true,"score":13,"field":"道路交通法","sharedKeywords":["分野: 道路交通法","道路交通法関係","道路交通法","各選択肢","事項以外"]}],"nextQuestionId":292,"prevQuestionId":290,"nextIncorrectId":300,"contextModeLabel":"📅 年度別演習","groupTitle":"令和5年 (CBT)","currentPosition":14,"totalInGroup":30,"navQueryStr":"?groupBy=year","mode":"","groupQuestionIds":[278,279,280,281,282,283,284,285,286,287,288,289,290,291,292,293,294,295,296,297,298,299,300,301,302,303,304,305,306,307]}]

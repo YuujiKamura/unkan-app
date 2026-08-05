@@ -1,0 +1,6 @@
+1:"$Sreact.fragment"
+2:I[52827,["/unkan-app/_next/static/chunks/1-qj17ss_eoom.js","/unkan-app/_next/static/chunks/2oejna66087rc.js"],"ViewportBoundary"]
+3:I[52827,["/unkan-app/_next/static/chunks/1-qj17ss_eoom.js","/unkan-app/_next/static/chunks/2oejna66087rc.js"],"MetadataBoundary"]
+4:"$Sreact.suspense"
+5:I[70367,["/unkan-app/_next/static/chunks/1-qj17ss_eoom.js","/unkan-app/_next/static/chunks/2oejna66087rc.js"],"IconMark"]
+0:{"rsc":["$","$1","h",{"children":[null,["$","$L2",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$L3",null,{"children":["$","$4",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"運行管理者ビジュアル・法務フローチャート | 運行管理者過去問"}],["$","meta","1",{"name":"description","content":"国土利用計画法、貨物自動車運送事業法などの法律手続きフローをビジュアル描画・学習"}],["$","link","2",{"rel":"icon","href":"/unkan-app/favicon.ico?favicon.2vob68tjqpejf.ico","sizes":"256x256","type":"image/x-icon"}],["$","$L5","3",{}]]}]}]}],null]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"nUAI0UWuIwYRO0tBeExv4"}

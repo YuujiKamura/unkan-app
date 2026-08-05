@@ -1,0 +1,75 @@
+1:"$Sreact.fragment"
+2:I[11434,["/unkan-app/_next/static/chunks/1-qj17ss_eoom.js","/unkan-app/_next/static/chunks/2oejna66087rc.js"],"default"]
+3:I[98000,["/unkan-app/_next/static/chunks/1-qj17ss_eoom.js","/unkan-app/_next/static/chunks/2oejna66087rc.js","/unkan-app/_next/static/chunks/43_z4zs-xyu0_.js","/unkan-app/_next/static/chunks/3rp-g6dqtbbm0.js","/unkan-app/_next/static/chunks/30xk5g0he03sk.js"],""]
+4:I[64209,["/unkan-app/_next/static/chunks/1-qj17ss_eoom.js","/unkan-app/_next/static/chunks/2oejna66087rc.js"],"default"]
+5:I[50441,["/unkan-app/_next/static/chunks/1-qj17ss_eoom.js","/unkan-app/_next/static/chunks/2oejna66087rc.js"],"default"]
+6:I[55665,["/unkan-app/_next/static/chunks/1-qj17ss_eoom.js","/unkan-app/_next/static/chunks/2oejna66087rc.js"],"default"]
+8:I[52827,["/unkan-app/_next/static/chunks/1-qj17ss_eoom.js","/unkan-app/_next/static/chunks/2oejna66087rc.js"],"OutletBoundary"]
+9:"$Sreact.suspense"
+c:I[52827,["/unkan-app/_next/static/chunks/1-qj17ss_eoom.js","/unkan-app/_next/static/chunks/2oejna66087rc.js"],"ViewportBoundary"]
+e:I[52827,["/unkan-app/_next/static/chunks/1-qj17ss_eoom.js","/unkan-app/_next/static/chunks/2oejna66087rc.js"],"MetadataBoundary"]
+10:I[25844,["/unkan-app/_next/static/chunks/1-qj17ss_eoom.js","/unkan-app/_next/static/chunks/2oejna66087rc.js"],"default",1]
+:HL["/unkan-app/_next/static/chunks/3yu0u4btddnts.css","style"]
+0:{"P":null,"c":["","quiz","301"],"q":"","i":false,"f":[[["",{"children":["quiz",{"children":[["id","301","d",null],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/unkan-app/_next/static/chunks/3yu0u4btddnts.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/unkan-app/_next/static/chunks/1-qj17ss_eoom.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/unkan-app/_next/static/chunks/2oejna66087rc.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"ja","children":["$","body",null,{"children":["$","$L2",null,{"children":[["$","nav",null,{"style":{"padding":"0.8rem 2rem","background":"var(--surface-color)","borderBottom":"1px solid var(--surface-border)","display":"flex","position":"sticky","top":0,"zIndex":100,"backdropFilter":"blur(12px)","WebkitBackdropFilter":"blur(12px)"},"children":["$","div",null,{"style":{"display":"flex","gap":"1rem","justifyContent":"space-between","width":"100%","alignItems":"center","flexWrap":"wrap"},"children":[["$","$L3",null,{"href":"/questions","style":{"textDecoration":"none","color":"var(--text-primary)","fontWeight":"bold","display":"flex","alignItems":"center","gap":"0.5rem","fontSize":"1.2rem"},"children":"🏠 運行管理者過去問ダッシュボード"}],["$","$L4",null,{}]]}]}],["$","main",null,{"style":{"minHeight":"calc(100vh - 150px)"},"children":["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"style":{"marginTop":"4rem","padding":"2rem","background":"var(--surface-color)","borderTop":"1px solid var(--surface-border)","textAlign":"center","fontSize":"0.85rem","color":"var(--text-secondary)","lineHeight":"1.6"},"children":[["$","p",null,{"style":{"marginBottom":"0.5rem"},"children":["本アプリケーションに収録されている運行管理者試験（貨物）の過去問題および図表等の出典・参照元は以下の通りです。",["$","br",null,{}],"・",["$","a",null,{"href":"https://www.unkan.or.jp/","target":"_blank","rel":"noopener noreferrer","style":{"color":"var(--primary-color)","textDecoration":"none"},"children":"公益財団法人 運行管理者試験センター"}],["$","br",null,{}],"・",["$","a",null,{"href":"https://www.unkan-net.com/","target":"_blank","rel":"noopener noreferrer","style":{"color":"var(--primary-color)","textDecoration":"none"},"children":"運行管理者試験対策.net"}]]}],["$","p",null,{"style":{"opacity":0.8},"children":"※本サイトは個人の学習目的で作成された非公式の解説・演習用アプリケーションであり、上記機関・サイトとは一切関係ありません。"}]]}]]}]}]}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":["$L7",[["$","script","script-0",{"src":"/unkan-app/_next/static/chunks/43_z4zs-xyu0_.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/unkan-app/_next/static/chunks/3rp-g6dqtbbm0.js","async":true,"nonce":"$undefined"}],["$","script","script-2",{"src":"/unkan-app/_next/static/chunks/30xk5g0he03sk.js","async":true,"nonce":"$undefined"}]],["$","$L8",null,{"children":["$","$9",null,{"name":"Next.MetadataOutlet","children":"$@a"}]}]]}],{},null,false,null]},null,false,"$@b"]},null,false,"$@b"]},null,false,null],["$","$1","h",{"children":[null,["$","$Lc",null,{"children":"$Ld"}],["$","div",null,{"hidden":true,"children":["$","$Le",null,{"children":"$Lf"}]}],null]}],false]],"m":"$undefined","G":["$10",["$L11"]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"nUAI0UWuIwYRO0tBeExv4"}
+12:[]
+b:"$W12"
+f:["$","$9",null,{"name":"Next.Metadata","children":"$L13"}]
+11:["$","link","0",{"rel":"stylesheet","href":"/unkan-app/_next/static/chunks/3yu0u4btddnts.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+d:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+14:I[70367,["/unkan-app/_next/static/chunks/1-qj17ss_eoom.js","/unkan-app/_next/static/chunks/2oejna66087rc.js"],"IconMark"]
+a:null
+13:[["$","title","0",{"children":"運行管理者 過去問演習・学習ダッシュボード"}],["$","meta","1",{"name":"description","content":"運行管理者の過去問演習・進捗管理アプリ"}],["$","link","2",{"rel":"icon","href":"/unkan-app/favicon.ico?favicon.2vob68tjqpejf.ico","sizes":"256x256","type":"image/x-icon"}],["$","$L14","3",{}]]
+15:I[33316,["/unkan-app/_next/static/chunks/1-qj17ss_eoom.js","/unkan-app/_next/static/chunks/2oejna66087rc.js","/unkan-app/_next/static/chunks/43_z4zs-xyu0_.js","/unkan-app/_next/static/chunks/3rp-g6dqtbbm0.js","/unkan-app/_next/static/chunks/30xk5g0he03sk.js"],"default"]
+16:T174a,Gemini との会話
+解説
+運行管理者試験（貨物）の実務上の知識および能力に関する「点呼の実施」についての解説です。
+
+問題の概要
+事業用自動車の運転者に対する点呼の実施ルール（原則と例外、実施者、アルコール検知器の扱いなど）に関する各選択肢の正誤は以下の通りです。
+
+各選択肢の解説
+選択肢1：適切 (◯)
+
+解説: 業務前点呼におけるアルコール検知器の使用は、運転者が身体にアルコールを保有しているかどうかの「酒気帯びの有無」を確認するためのものです。道路交通法で定められている違反判定基準（呼気1リットル中0.15ミリグラム以上）であるかを判定するためのものではありません。事業用自動車の運行では微量であってもアルコールが検出されれば乗務禁止となるため、有無の確認が目的となります。
+
+選択肢2：適切 (◯)
+
+解説: 点呼は原則として「対面」で行う義務がありますが、遠隔地での業務開始・終了、車庫と営業所が離れている場合、早朝・深夜で運行管理者が営業所に出勤していない場合など、運行上やむを得ない事情がある場合には、電話その他の方法（電話点呼やIT点呼など）による実施が認められています。
+
+選択肢3：不適切 (✕)
+
+解説: 点呼を実施できるのは、原則として運行管理者または法規・社内体制に基づき適切に配置された補助者に限られます。社内の運行管理体制に明記されていない一般の事務員が代理で点呼を行うことは認められません。
+
+選択肢4：適切 (◯)
+
+解説: 営業所に設置されている通常のアルコール検知器が停電等によりすべて使用できなくなった場合において、運転者に携帯させるために備えてある携帯型アルコール検知器を活用して酒気帯びの有無を確認することは、安全確保の観点から適切な対応となります。
+
+運行管理者は原則として対面で点呼を...場合や、
+選択したテキスト
+運行管理者は原則として対面で点呼を行いますが、遠隔地での業務開始・終了など「運行上やむを得ない場合」には、携帯電話や無線などの直接対話できる方法で実施できます。ただし、車庫と営業所が離れている場合や、早朝・深夜に管理者が不在であるという理由だけでは、原則として「やむを得ない場合」に該当せず、電話点呼は認められていません。点呼の原則と例外原則: 営業所において、運行管理者が運転者と対面で実施する。認められる例: 宿泊を伴う運行など、遠隔地で業務を開始・終了する場合。認められない例: 単に車庫が営業所から離れていることや、早朝・深夜に管理者が通勤していないという理由。代替手段と近年の動向電話・無線: 遠隔地などやむを得ない場合は、直接意思疎通ができる携帯電話等を使用する。新しい手法: 国土交通省の規定に基づき、一定の要件を満たす遠隔点呼や自動点呼の導入も進んでいる。さらに詳しく知りたい場合は、以下の中からお知らせください：遠隔点呼やIT点呼の導入要件点呼記録の保存期間や記載事項該当する事業の種類（貨物または旅客）
+ご提示いただいた通り、先ほどの解説における選択肢2の判定に誤りがありました。訂正してお詫びいたします。
+
+車庫と営業所が離れていることや、早朝・深夜に管理者が営業所に出勤していないという理由だけでは、原則として「運行上やむを得ない場合」には該当せず、電話等による点呼は認められていません。   
+
+改めて、当該問題の各選択肢の正しい正誤判定と解説は以下の通りです。
+
+各選択肢の解説
+選択肢1：適切 (◯)
+
+解説: 業務前点呼におけるアルコール検知器の使用は、身体にアルコールを保有しているかどうかの「酒気帯びの有無」を確認するためのものであり、道路交通法施行令で定める違反基準（呼気1リットル中0.15ミリグラム以上）に達しているかを判定するためのものではありません。事業用自動車の運行では微量であってもアルコールが検出されれば乗務禁止となります。   
+
+選択肢2：不適切 (✕)
+
+解説: 「遠隔地で業務を開始又は終了する場合（宿泊を伴う運行など）」は運行上やむを得ない場合に該当し電話点呼が認められますが、「単に車庫が営業所から離れている場合」や「早朝・深夜に管理者が営業所に出勤していない場合」という理由だけでは、運行上やむを得ない場合に該当せず、電話等による点呼は認められません。営業所の体制を整えて対面で実施する必要があります。
+
+選択肢3：不適切 (✕)
+
+解説: 点呼を実施できるのは、原則として運行管理者または法規・社内体制に基づき適切に配置された補助者に限られます。社内の運行管理体制に明記されていない一般の事務員が代理で点呼を行うことは認められません。
+
+選択肢4：適切 (◯)
+
+解説: 営業所のメインのアルコール検知器が停電等により使用できない場合において、安全確保のために運転者用として備えられている携帯型アルコール検知器を活用して酒気帯びの有無を確認することは、適切な措置といえます。
+
+正解となる選択肢
+選択肢1 および 選択肢4
+7:["$","$L15",null,{"initialQuestion":{"id":301,"year":"令和5年 (CBT)","questionNumber":24,"field":"実務上の知識及び能力","majorField":null,"subField":null,"content":"【実務上の知識及び能力】\n事業用自動車の運転者に対する点呼の実施に関する次の記述のうち、適切なものをすべて選びなさい。なお、解答にあたっては、各選択肢に記載されている事項以外は考慮しないものとする。","imageUrl":null,"sourceSheet":null,"knowledgeTags":"#点呼・乗務制限(管理者義務)","riskCategory":null,"situationCategory":null,"format":"SINGLE","pdfUrl":null,"pdfPage":null,"options":[{"id":1186,"questionId":301,"optionNumber":1,"content":"運行の業務前の点呼においてアルコール検知器を使用するのは、身体に保有している酒気帯びの有無を確認するためのものであり、道路交通法施行令で定める呼気中のアルコール濃度1リットル当たり0.15ミリグラム以上であるか否かを判定するためのものではない。","isCorrect":true,"explanation":null,"structuredData":null},{"id":1187,"questionId":301,"optionNumber":2,"content":"運行管理者は、業務前及び業務後の運転者に対し、原則、対面で点呼を実施しなければならないが、遠隔地で業務を開始又は終了する場合、車庫と営業所が離れている場合、又は運転者の出庫・帰庫が早朝・深夜であり、点呼を行う運行管理者が営業所に出勤していない場合等、運行上やむを得ず、対面での点呼が実施できないときには、電話、その他の方法で行っている。","isCorrect":false,"explanation":null,"structuredData":null},{"id":1188,"questionId":301,"optionNumber":3,"content":"通常は、運行管理者又は補助者による対面点呼が実施されているが、両者が休暇等で不在の時には、社内の運行管理体制に明記されていない事務員が代わりに点呼を行い、運行管理者にその内容を報告している。","isCorrect":false,"explanation":null,"structuredData":null},{"id":1189,"questionId":301,"optionNumber":4,"content":"運行管理者が業務前の点呼において、運転者に対して酒気帯びの有無を確認しようとしたところ、営業所に設置されているアルコール検知器が停電により全て使用できなかったことから、当該運行管理者は、運転者に携帯させるために営業所に備えてある携帯型アルコール検知器を使用して酒気帯びの有無を確認した。","isCorrect":true,"explanation":null,"structuredData":null}],"explanation":{"id":82,"questionId":301,"content":"$16","isDebated":true},"correctOptions":[],"userMeta":null,"attempts":[],"isDebated":false,"isBookmarked":false,"keywords":["運行管理者","実務上","知識及","事業用自動車","運転者","各選択肢","事項以外","検知器","酒気帯","道路交通法施行令","呼気中","業務前及","業務後","遠隔地","開始又","営業所","場合等","運行上","運行管理者又","補助者","対面点呼","休暇等","運行管理体制","事務員","当該運行管理者","携帯型","アルコール","リットル","ミリグラム"]},"similarQuestions":[{"id":271,"year":"令和6年 (CBT)","questionNumber":24,"isDebated":true,"score":82,"field":"実務上の知識及び能力","sharedKeywords":["knowledge:#点呼・乗務制限(管理者義務)","分野: 実務上の知識及び能力","道路交通法施行令","事業用自動車","運行管理者","アルコール","ミリグラム","各選択肢"]},{"id":281,"year":"令和5年 (CBT)","questionNumber":4,"isDebated":false,"score":62,"field":"貨物自動車運送事業法","sharedKeywords":["knowledge:#点呼・乗務制限(管理者義務)","事業用自動車","運行管理者","アルコール","各選択肢","事項以外","運転者","検知器"]},{"id":253,"year":"令和6年 (CBT)","questionNumber":6,"isDebated":true,"score":60,"field":"貨物自動車運送事業法","sharedKeywords":["knowledge:#点呼・乗務制限(管理者義務)","事業用自動車","各選択肢","事項以外"]},{"id":317,"year":"令和4年 (CBT)","questionNumber":6,"isDebated":true,"score":59,"field":"貨物自動車運送事業法","sharedKeywords":["knowledge:#点呼・乗務制限(管理者義務)","事業用自動車","各選択肢","事項以外"]},{"id":159,"year":"令和2年 第1回","questionNumber":2,"isDebated":false,"score":59,"field":"貨物自動車運送事業法","sharedKeywords":["knowledge:#点呼・乗務制限(管理者義務)","各選択肢","事項以外"]},{"id":127,"year":"令和2年 (CBT)","questionNumber":6,"isDebated":false,"score":58,"field":"貨物自動車運送事業法","sharedKeywords":["knowledge:#点呼・乗務制限(管理者義務)","事業用自動車","各選択肢","事項以外"]},{"id":283,"year":"令和5年 (CBT)","questionNumber":6,"isDebated":false,"score":55,"field":"貨物自動車運送事業法","sharedKeywords":["knowledge:#点呼・乗務制限(管理者義務)","事業用自動車","各選択肢","事項以外"]},{"id":251,"year":"令和6年 (CBT)","questionNumber":4,"isDebated":true,"score":52,"field":"貨物自動車運送事業法","sharedKeywords":["knowledge:#点呼・乗務制限(管理者義務)","事業用自動車","アルコール","各選択肢","事項以外","運転者","酒気帯","検知器"]},{"id":315,"year":"令和4年 (CBT)","questionNumber":4,"isDebated":false,"score":49,"field":"貨物自動車運送事業法","sharedKeywords":["knowledge:#点呼・乗務制限(管理者義務)","事業用自動車","各選択肢","事項以外","運転者","運行上","酒気帯","遠隔地"]},{"id":123,"year":"令和2年 (CBT)","questionNumber":2,"isDebated":false,"score":48,"field":"貨物自動車運送事業法","sharedKeywords":["knowledge:#点呼・乗務制限(管理者義務)","事業用自動車"]}],"nextQuestionId":302,"prevQuestionId":300,"nextIncorrectId":300,"contextModeLabel":"📅 年度別演習","groupTitle":"令和5年 (CBT)","currentPosition":24,"totalInGroup":30,"navQueryStr":"?groupBy=year","mode":"","groupQuestionIds":[278,279,280,281,282,283,284,285,286,287,288,289,290,291,292,293,294,295,296,297,298,299,300,301,302,303,304,305,306,307]}]
