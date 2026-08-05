@@ -1,47 +1,53 @@
 import json
-import glob
 import os
 import fitz
+import re
 
 os.makedirs("public/pdf_pages", exist_ok=True)
 pdf_cache = {}
 
-for json_file in glob.glob("data/json/*.json"):
-    with open(json_file, "r", encoding="utf-8") as f:
-        data = json.load(f)
+json_file = "public/data/questions.json"
+with open(json_file, "r", encoding="utf-8") as f:
+    data = json.load(f)
+
+for q in data:
+    pdf_url = q.get("pdfUrl")
+    pdf_page = q.get("pdfPage")
+    q_num = q.get("questionNumber")
     
-    basename = os.path.basename(json_file).replace(".json", "")
-    parts = basename.split("_")
-    year = parts[0]
-    
-    pdf_name = f"{year}.pdf"
+    if not pdf_url or pdf_page is None or q_num is None:
+        continue
+        
+    # Extract PDF filename from URL (e.g. "R06.CBT.pdf")
+    pdf_name = pdf_url.split("/")[-1]
+    year = pdf_name.replace(".pdf", "")
     
     if pdf_name not in pdf_cache:
-        if not os.path.exists(pdf_name):
-            print(f"Skipping {pdf_name} - not found.")
-            continue
-        pdf_cache[pdf_name] = fitz.open(pdf_name)
+        pdf_path = pdf_name
+        h_drive_path = os.path.join(r"H:\マイドライブ\試験系\うんかん", pdf_name)
+        if not os.path.exists(pdf_path):
+            if os.path.exists(h_drive_path):
+                pdf_path = h_drive_path
+            else:
+                print(f"Skipping {pdf_name} - not found.")
+                pdf_cache[pdf_name] = None
+                continue
+        pdf_cache[pdf_name] = fitz.open(pdf_path)
     
     doc = pdf_cache[pdf_name]
-    
-    for q in data:
-        q_num = q.get("questionNumber")
-        pdf_page = q.get("pdfPage")
+    if doc is None:
+        continue
         
-        if pdf_page is None:
-            continue
-            
-        out_path = f"public/pdf_pages/{year}_Q{q_num}.png"
-        if os.path.exists(out_path):
-            continue
-            
-        page_index = pdf_page - 1
-        if 0 <= page_index < len(doc):
-            print(f"Extracting {year} Q{q_num} from page {pdf_page}")
-            page = doc[page_index]
-            # Standard resolution is fine for thumbnail/reference
-            matrix = fitz.Matrix(2.0, 2.0)
-            pix = page.get_pixmap(matrix=matrix)
-            pix.save(out_path)
+    out_path = f"public/pdf_pages/{year}_Q{q_num}.png"
+    if os.path.exists(out_path):
+        continue
+        
+    page_index = pdf_page - 1
+    if 0 <= page_index < len(doc):
+        print(f"Extracting {year} Q{q_num} from page {pdf_page}")
+        page = doc[page_index]
+        matrix = fitz.Matrix(2.0, 2.0)
+        pix = page.get_pixmap(matrix=matrix)
+        pix.save(out_path)
 
 print("Finished extracting all PDF pages.")
