@@ -11,8 +11,8 @@ type QuestionItem = {
   year: string | null;
   questionNumber: number | null;
   field: string | null;
-  majorField: string | null;
-  subField: string | null;
+  knowledgeTags?: string | null;
+  situationCategory?: string | null;
   isDebated: boolean;
   content: string | null;
   correctAnswer?: number | null;
@@ -20,9 +20,6 @@ type QuestionItem = {
   options?: any[];
   attempts: any[];
   _count: { attempts: number };
-  riskCategory?: string | null;
-  situationCategory?: string | null;
-  knowledgeTags?: string | null;
 };
 
 export default function QuestionsListContent({
@@ -32,29 +29,29 @@ export default function QuestionsListContent({
 }: {
   groups: string[];
   mappedQuestions: QuestionItem[];
-  groupBy: 'year' | 'field' | 'subField' | 'risk' | 'situation';
+  groupBy: 'year' | 'field' | 'knowledge' | 'situation';
 }) {
   const router = useRouter();
   const searchParams = useSearchParams();
-  const querySubField = searchParams.get('subField');
+  const queryParam = searchParams.get('knowledge') || searchParams.get('situation') || searchParams.get('field') || searchParams.get('year');
   const storageKey = `takken_active_tab_${groupBy}`;
 
-  const [activeTab, setActiveTab] = useState<string>(querySubField || groups[0] || '');
+  const [activeTab, setActiveTab] = useState<string>(queryParam || groups[0] || '');
   const [selectedIteration, setSelectedIteration] = useState<number | 'latest'>('latest');
   const [isMounted, setIsMounted] = useState(false);
   const [editingQuestion, setEditingQuestion] = useState<QuestionItem | null>(null);
 
   useEffect(() => {
     setIsMounted(true);
-    if (querySubField && groups.includes(querySubField)) {
-      setActiveTab(querySubField);
+    if (queryParam && groups.includes(queryParam)) {
+      setActiveTab(queryParam);
       return;
     }
     const saved = sessionStorage.getItem(storageKey);
     if (saved && groups.includes(saved)) {
       setActiveTab(saved);
     }
-  }, [groups, storageKey, querySubField]);
+  }, [groups, storageKey, queryParam]);
 
   useEffect(() => {
     if (isMounted && activeTab) {
@@ -83,9 +80,14 @@ export default function QuestionsListContent({
     const qsForGroup = mappedQuestions.filter(q => {
       if (groupBy === 'year') return q.year === groupKey;
       if (groupBy === 'field') return (q.field || '分野不明') === groupKey;
-      if (groupBy === 'subField') return (q.subField || '小分類不明') === groupKey;
-      if (groupBy === 'risk') return (q.riskCategory || '未分類') === groupKey;
-      if (groupBy === 'situation') return (q.situationCategory || '未分類') === groupKey;
+      if (groupBy === 'knowledge') {
+        if (groupKey === 'テーマ未分類') return !q.knowledgeTags;
+        return !!(q.knowledgeTags && q.knowledgeTags.split(',').map(t => t.trim()).includes(groupKey));
+      }
+      if (groupBy === 'situation') {
+        if (groupKey === '形式未分類') return !q.situationCategory;
+        return !!(q.situationCategory && q.situationCategory.split(',').map(t => t.trim()).includes(groupKey));
+      }
       return false;
     });
     if (qsForGroup.length === 0) return null;
@@ -164,7 +166,8 @@ export default function QuestionsListContent({
               }
 
               let quizHref = `/quiz/${q.id}?groupBy=${groupBy}`;
-              if (groupBy === 'subField') quizHref += `&subField=${encodeURIComponent(groupKey)}`;
+              if (groupBy === 'knowledge') quizHref += `&knowledge=${encodeURIComponent(groupKey)}`;
+              else if (groupBy === 'situation') quizHref += `&situation=${encodeURIComponent(groupKey)}`;
               else if (groupBy === 'field') quizHref += `&field=${encodeURIComponent(groupKey)}`;
               else if (groupBy === 'year') quizHref += `&year=${encodeURIComponent(groupKey)}`;
 

@@ -22,7 +22,7 @@ interface SubFieldStat {
   unansweredCount?: number;
 }
 
-export default function SubFieldChart({ stats }: { stats: SubFieldStat[] }) {
+export default function SubFieldChart({ stats, groupBy = 'knowledge' }: { stats: SubFieldStat[], groupBy?: 'knowledge' | 'situation' | 'field' }) {
   const router = useRouter();
 
   // 全分野・全テーマの到達度を集計（ソート順: 問題数が多い順）
@@ -65,7 +65,7 @@ export default function SubFieldChart({ stats }: { stats: SubFieldStat[] }) {
         const index = elements[0].index;
         const stat = topStats[index];
         if (stat) {
-          router.push(`/questions?groupBy=subField&subField=${encodeURIComponent(stat.field)}#questions-list`);
+          router.push(`/questions?groupBy=${groupBy}&${groupBy}=${encodeURIComponent(stat.field)}#questions-list`);
         }
       }
     },
@@ -144,7 +144,7 @@ export default function SubFieldChart({ stats }: { stats: SubFieldStat[] }) {
       {/* サマリーバー */}
       <div className="summary-header">
         <div className="summary-title">
-          <span>📊 テーマ別 正答率ランキング (クリックして問題一覧を表示 📋)</span>
+          <span>📊 {groupBy === 'knowledge' ? 'テーマ別' : groupBy === 'situation' ? '形式別' : '分野別'} 正答率ランキング (クリックして問題一覧を表示 📋)</span>
         </div>
         <div className="legend-pills">
           <span className="pill pill-green">🟢 得意 (80%以上)</span>
@@ -172,7 +172,7 @@ export default function SubFieldChart({ stats }: { stats: SubFieldStat[] }) {
               <div 
                 key={stat.field} 
                 className="stat-card clickable"
-                onClick={() => router.push(`/questions?groupBy=subField&subField=${encodeURIComponent(stat.field)}#questions-list`)}
+                onClick={() => router.push(`/questions?groupBy=${groupBy}&${groupBy}=${encodeURIComponent(stat.field)}#questions-list`)}
               >
                 <div className="stat-header">
                   <span className="field-name">{stat.field}</span>

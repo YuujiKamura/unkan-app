@@ -16,8 +16,8 @@ export default function QuestionsClientWrapper({
 }) {
   const searchParams = useSearchParams();
   const groupByParam = searchParams.get('groupBy');
-  const selectedSubField = searchParams.get('subField');
-  const groupBy = ['field', 'subField'].includes(groupByParam || '') ? groupByParam : 'year';
+  const selectedField = searchParams.get('field');
+  const groupBy = ['field', 'knowledge', 'situation'].includes(groupByParam || '') ? groupByParam : 'year';
 
   let mappedQuestions = [...initialQuestions];
 
@@ -53,11 +53,41 @@ export default function QuestionsClientWrapper({
 
   const years = Array.from(new Set(mappedQuestions.map(q => q.year).filter(Boolean)));
   const fields = Array.from(new Set(mappedQuestions.map(q => q.field || '分野不明').filter(Boolean)));
-  const subFields = Array.from(new Set(mappedQuestions.map(q => q.subField || '小分類不明').filter(Boolean)));
+  
+  // knowledgeTags のユニークなリストを取得 (カンマ区切り対応)
+  const knowledgeTagSet = new Set<string>();
+  mappedQuestions.forEach(q => {
+    if (q.knowledgeTags) {
+      q.knowledgeTags.split(',').forEach((t: string) => knowledgeTagSet.add(t.trim()));
+    } else {
+      knowledgeTagSet.add('テーマ未分類');
+    }
+  });
+  const knowledgeTagsList = Array.from(knowledgeTagSet);
 
-  const groups = groupBy === 'subField' ? subFields : (groupBy === 'field' ? fields : years);
-  const subFieldStats = subFields.map(sf => {
-    const qs = mappedQuestions.filter(q => (q.subField || '小分類不明') === sf);
+  // situationCategory のユニークなリストを取得
+  const situationSet = new Set<string>();
+  mappedQuestions.forEach(q => {
+    if (q.situationCategory) {
+      q.situationCategory.split(',').forEach((t: string) => situationSet.add(t.trim()));
+    } else {
+      situationSet.add('形式未分類');
+    }
+  });
+  const situationList = Array.from(situationSet);
+
+  let groups: string[];
+  if (groupBy === 'knowledge') groups = knowledgeTagsList;
+  else if (groupBy === 'situation') groups = situationList;
+  else if (groupBy === 'field') groups = fields;
+  else groups = years;
+
+  // テーマ別（knowledgeTags）の進捗ダッシュボード用データ
+  const knowledgeStats = knowledgeTagsList.map(tag => {
+    const qs = mappedQuestions.filter(q => {
+      if (tag === 'テーマ未分類') return !q.knowledgeTags;
+      return q.knowledgeTags && q.knowledgeTags.split(',').map((t: string) => t.trim()).includes(tag);
+    });
     const total = qs.length;
     const correct = qs.filter(q => q.attempts && q.attempts[q.attempts.length - 1]?.isCorrect).length;
     
@@ -69,7 +99,7 @@ export default function QuestionsClientWrapper({
     const unansweredCount = qs.filter(q => !q.attempts || q.attempts.length === 0).length;
 
     return { 
-      field: sf as string, 
+      field: tag as string, 
       total, 
       correct, 
       nextId: targetQ ? targetQ.id : null,
@@ -86,10 +116,13 @@ export default function QuestionsClientWrapper({
             📅 年度別
           </a>
           <a href={`${basePath}/questions?groupBy=field`} className={`btn ${groupBy === 'field' ? 'btn-primary' : 'btn-secondary'}`} style={{ padding: '0.5rem 1.2rem', fontSize: '0.95rem', fontWeight: 'bold', textDecoration: 'none' }}>
-            📚 大分類別 (4大分野)
+            📚 大分類別 (分野)
           </a>
-          <a href={`${basePath}/questions?groupBy=subField`} className={`btn ${groupBy === 'subField' ? 'btn-primary' : 'btn-secondary'}`} style={{ padding: '0.5rem 1.2rem', fontSize: '0.95rem', fontWeight: 'bold', textDecoration: 'none' }}>
-            🏷️ テーマ別 (小分類)
+          <a href={`${basePath}/questions?groupBy=knowledge`} className={`btn ${groupBy === 'knowledge' ? 'btn-primary' : 'btn-secondary'}`} style={{ padding: '0.5rem 1.2rem', fontSize: '0.95rem', fontWeight: 'bold', textDecoration: 'none' }}>
+            🏷️ テーマ別 (重要テーマタグ)
+          </a>
+          <a href={`${basePath}/questions?groupBy=situation`} className={`btn ${groupBy === 'situation' ? 'btn-primary' : 'btn-secondary'}`} style={{ padding: '0.5rem 1.2rem', fontSize: '0.95rem', fontWeight: 'bold', textDecoration: 'none' }}>
+            🔍 形式・アプローチ別
           </a>
         </div>
       </header>
@@ -99,7 +132,7 @@ export default function QuestionsClientWrapper({
           📊 学習到達度ダッシュボード
         </summary>
         <div style={{ padding: '1rem' }}>
-          <SubFieldChart stats={subFieldStats} />
+          <SubFieldChart stats={knowledgeStats} groupBy="knowledge" />
         </div>
       </details>
 

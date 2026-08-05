@@ -61,10 +61,10 @@ export default async function SingleQuizPage({
   searchParams,
 }: {
   params: Promise<{ id: string }>;
-  searchParams: Promise<{ groupBy?: string; subField?: string; field?: string; year?: string; mode?: string }>;
+  searchParams: Promise<{ groupBy?: string; knowledge?: string; situation?: string; field?: string; year?: string; mode?: string }>;
 }) {
   const resolvedParams = await params;
-  let sParams: { groupBy?: string; subField?: string; field?: string; year?: string; mode?: string } = {};
+  let sParams: { groupBy?: string; knowledge?: string; situation?: string; field?: string; year?: string; mode?: string } = {};
   try {
     if (searchParams) {
       sParams = (await searchParams) || {};
@@ -138,7 +138,7 @@ export default async function SingleQuizPage({
     explanation: questionRaw.explanation?.content || null,
     isDebated: questionRaw.explanation?.isDebated || false,
     isBookmarked: questionRaw.userMeta?.isBookmarked || false,
-    keywords: baseTags.filter(t => !t.startsWith('field:') && !t.startsWith('subfield:')) 
+    keywords: baseTags.filter(t => !t.startsWith('field:') && !t.startsWith('situation:') && !t.startsWith('knowledge:')) 
   };
 
   // 類似問題の抽出
@@ -182,8 +182,9 @@ export default async function SingleQuizPage({
   }));
 
   // クエリパラメータの安全な取得とデコード
-  const groupBy = sParams.groupBy || (sParams.subField ? 'subField' : sParams.field ? 'field' : sParams.year ? 'year' : 'year');
-  const subField = sParams.subField ? decodeURIComponent(sParams.subField) : (groupBy === 'subField' ? (questionRaw.subField || '小分類不明') : null);
+  const groupBy = sParams.groupBy || (sParams.knowledge ? 'knowledge' : sParams.situation ? 'situation' : sParams.field ? 'field' : sParams.year ? 'year' : 'year');
+  const knowledge = sParams.knowledge ? decodeURIComponent(sParams.knowledge) : null;
+  const situation = sParams.situation ? decodeURIComponent(sParams.situation) : null;
   const field = sParams.field ? decodeURIComponent(sParams.field) : (groupBy === 'field' ? (questionRaw.field || '分野不明') : null);
   const year = sParams.year ? decodeURIComponent(sParams.year) : (groupBy === 'year' ? questionRaw.year : null);
 
@@ -193,10 +194,14 @@ export default async function SingleQuizPage({
   let contextModeLabel = '';
   let groupTitle = '';
 
-  if (groupBy === 'subField' && subField) {
-    whereClause.subField = subField;
+  if (groupBy === 'knowledge' && knowledge) {
+    whereClause.knowledgeTags = { contains: knowledge };
     contextModeLabel = '🏷️ テーマ別演習';
-    groupTitle = subField;
+    groupTitle = knowledge;
+  } else if (groupBy === 'situation' && situation) {
+    whereClause.situationCategory = { contains: situation };
+    contextModeLabel = '🔍 形式別演習';
+    groupTitle = situation;
   } else if (groupBy === 'field' && field) {
     whereClause.field = field;
     contextModeLabel = '📚 大分類別演習';
@@ -236,7 +241,8 @@ export default async function SingleQuizPage({
         const raw = fs.readFileSync(jsonPath, 'utf-8');
         const questions: any[] = JSON.parse(raw);
         groupQuestions = questions.filter(q => {
-          if (whereClause.subField && q.subField !== whereClause.subField) return false;
+          if (whereClause.knowledgeTags && !(q.knowledgeTags && q.knowledgeTags.includes(knowledge))) return false;
+          if (whereClause.situationCategory && !(q.situationCategory && q.situationCategory.includes(situation))) return false;
           if (whereClause.field && q.field !== whereClause.field) return false;
           if (whereClause.year && q.year !== whereClause.year) return false;
           return true;
@@ -334,7 +340,8 @@ export default async function SingleQuizPage({
 
   const qParams = new URLSearchParams();
   if (groupBy) qParams.set('groupBy', groupBy);
-  if (subField) qParams.set('subField', subField);
+  if (knowledge) qParams.set('knowledge', knowledge);
+  if (situation) qParams.set('situation', situation);
   if (field) qParams.set('field', field);
   const activeYear = year || questionRaw.year;
   if (activeYear && !groupBy) qParams.set('year', activeYear);
