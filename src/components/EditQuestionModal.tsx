@@ -35,9 +35,6 @@ export default function EditQuestionModal({
   onClose,
   onSaveSuccess,
 }: EditQuestionModalProps) {
-  const [correctAnswer, setCorrectAnswer] = useState<number>(
-    question.correctAnswer || 1
-  );
   const [majorField, setMajorField] = useState<string>(
     question.majorField || ''
   );
@@ -77,11 +74,14 @@ export default function EditQuestionModal({
         throw new Error('Github PagesなどのSPA環境からは問題文の編集はできません。');
       }
 
+      const firstCorrect = options.find((o) => o.isCorrect);
+      const computedCorrectAnswer = firstCorrect ? firstCorrect.optionNumber : 1;
+
       const res = await fetch(`/api/questions/${question.id}`, {
         method: 'PATCH',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          correctAnswer,
+          correctAnswer: computedCorrectAnswer,
           majorField,
           subField,
           content,
@@ -123,20 +123,6 @@ export default function EditQuestionModal({
 
           <div className="form-group row">
             <div className="field-half">
-              <label>正答肢 (正解)</label>
-              <select
-                value={correctAnswer}
-                onChange={(e) => setCorrectAnswer(Number(e.target.value))}
-                className="select-input highlight-select"
-              >
-                <option value={1}>肢 1 が正解</option>
-                <option value={2}>肢 2 が正解</option>
-                <option value={3}>肢 3 が正解</option>
-                <option value={4}>肢 4 が正解</option>
-              </select>
-            </div>
-
-            <div className="field-half">
               <label>分野 (大分類)</label>
               <input
                 type="text"
@@ -146,17 +132,16 @@ export default function EditQuestionModal({
                 className="text-input"
               />
             </div>
-          </div>
-
-          <div className="form-group">
-            <label>中分類・テーマ</label>
-            <input
-              type="text"
-              value={subField}
-              onChange={(e) => setSubField(e.target.value)}
-              placeholder="例: 意思表示, 代理, 37条書面"
-              className="text-input"
-            />
+            <div className="field-half">
+              <label>中分類・テーマ</label>
+              <input
+                type="text"
+                value={subField}
+                onChange={(e) => setSubField(e.target.value)}
+                placeholder="例: 意思表示, 代理, 37条書面"
+                className="text-input"
+              />
+            </div>
           </div>
 
           <div className="form-group">
@@ -170,12 +155,29 @@ export default function EditQuestionModal({
           </div>
 
           <div className="form-group">
-            <label>選択肢の本文</label>
+            <label>選択肢の本文と正解設定</label>
+            <div style={{ fontSize: '0.8rem', color: '#94a3b8', marginBottom: '0.5rem' }}>
+              ※ 複数選択問題（二項目選択など）の場合は、該当するすべての選択肢を「正解」に設定してください。
+            </div>
             {options.map((opt, idx) => (
               <div key={opt.optionNumber} className="option-edit-row">
-                <span className={`opt-badge ${correctAnswer === opt.optionNumber ? 'correct' : ''}`}>
-                  肢{opt.optionNumber} {correctAnswer === opt.optionNumber ? ' (正解)' : ''}
-                </span>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+                  <span className={`opt-badge ${opt.isCorrect ? 'correct' : ''}`}>
+                    肢{opt.optionNumber} {opt.isCorrect ? ' (正解)' : ''}
+                  </span>
+                  <label style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', cursor: 'pointer', color: opt.isCorrect ? '#4ade80' : '#cbd5e1' }}>
+                    <input 
+                      type="checkbox" 
+                      checked={!!opt.isCorrect} 
+                      onChange={(e) => {
+                        const next = [...options];
+                        next[idx].isCorrect = e.target.checked;
+                        setOptions(next);
+                      }} 
+                    />
+                    正解にする
+                  </label>
+                </div>
                 <textarea
                   rows={2}
                   value={opt.content || ''}

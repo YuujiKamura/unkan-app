@@ -373,14 +373,7 @@ export default function SingleQuizClient({
   const copyToClipboard = async () => {
     if (!currentQ) return;
     
-    let text = "";
-    if (currentQ.explanation && currentQ.explanation.trim() !== "") {
-      text += `以下の運行管理者試験の過去問と、それに対する【ある解説者の解説】の内容が法的に正確か、論理に飛躍や誤りがないかを厳しく検証・添削してください。\n`;
-      text += `もし誤りや、運行管理者試験的基準に照らし合わせて不適切な部分があれば指摘し、正しい解説を提示してください。\n\n`;
-      text += `=== 問題 ===\n`;
-    }
-
-    text += `【${currentQ.year}年度 問${currentQ.questionNumber}】 ${currentQ.majorField || '不明'} - ${currentQ.subField || '未分類'}\n\n`;
+    let text = `【${currentQ.year}年度 問${currentQ.questionNumber}】 ${currentQ.majorField || '不明'} - ${currentQ.subField || '未分類'}\n\n`;
     text += `${currentQ.content || ''}\n\n`;
     
     if (currentQ.options && currentQ.options.length > 0) {
@@ -391,7 +384,7 @@ export default function SingleQuizClient({
     }
 
     if (currentQ.explanation && currentQ.explanation.trim() !== "") {
-      text += `\n=== 解説者の解説 ===\n`;
+      text += `\n【解説】\n`;
       text += `${currentQ.explanation}\n`;
     }
 
@@ -518,7 +511,7 @@ export default function SingleQuizClient({
               {currentQ.majorField || '不明'} - {currentQ.subField || '未分類'}
             </div>
             <button onClick={copyToClipboard} className="btn" style={{ padding: '0.3rem 0.8rem', background: 'transparent', border: '1px solid var(--surface-border)', borderRadius: '20px', fontSize: '0.9rem', color: 'var(--text-secondary)' }}>
-              {copied ? '✓ コピー完了' : '📋 コピーしてAIに検証依頼'}
+              {copied ? '✓ コピー完了' : '📋 クリップボードにコピー'}
             </button>
             <button onClick={() => setIsEditModalOpen(true)} className="btn" style={{ padding: '0.3rem 0.8rem', background: 'rgba(56, 189, 248, 0.15)', border: '1px solid #38bdf8', borderRadius: '20px', fontSize: '0.9rem', color: '#38bdf8', fontWeight: 'bold', cursor: 'pointer' }}>
               ✏️ 正解・データを修正
@@ -536,24 +529,49 @@ export default function SingleQuizClient({
           </h3>
           {currentQ.imageUrl && (
             <div style={{ textAlign: 'center', margin: '2rem 0' }}>
-              {currentQ.imageUrl.endsWith('.pdf') ? (
-                <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.5rem' }}>
-                  <a 
-                    href={currentQ.imageUrl} 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className="btn btn-primary"
-                    style={{ display: 'inline-block', padding: '0.8rem 1.5rem', fontWeight: 'bold' }}
-                  >
-                    📄 この問題の図表・元PDFを開く
-                  </a>
-                  <span style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>
-                    ※外部サイトのPDFが開きます
-                  </span>
-                </div>
-              ) : (
-                <img src={currentQ.imageUrl} alt="問題の図・標識" style={{ maxWidth: '100%', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.15)' }} />
-              )}
+              {(() => {
+                const isLocal = typeof window !== 'undefined' && (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1');
+                const hasLocalImage = currentQ.knowledgeTags?.includes('#NEEDS_IMAGE') && currentQ.imageUrl?.endsWith('.pdf');
+                
+                let localImageSrc = null;
+                if (hasLocalImage && currentQ.imageUrl) {
+                  const pdfMatch = currentQ.imageUrl.match(/\/([^/]+)\.pdf$/);
+                  const pdfName = pdfMatch ? pdfMatch[1] : 'unknown';
+                  localImageSrc = `/extracted_images/${pdfName}_Q${currentQ.questionNumber}.png`;
+                }
+
+                if (isLocal && localImageSrc) {
+                  return (
+                    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.5rem' }}>
+                      <img src={localImageSrc} alt="問題の図・標識" style={{ maxWidth: '100%', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.15)' }} />
+                      <span style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>※ローカル環境専用の抽出画像</span>
+                    </div>
+                  );
+                }
+
+                if (currentQ.imageUrl.endsWith('.pdf')) {
+                  return (
+                    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.5rem' }}>
+                      <a 
+                        href={currentQ.imageUrl} 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="btn btn-primary"
+                        style={{ display: 'inline-block', padding: '0.8rem 1.5rem', fontWeight: 'bold' }}
+                      >
+                        📄 この問題の図表・元PDFを開く
+                      </a>
+                      <span style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>
+                        ※外部サイトのPDFが開きます
+                      </span>
+                    </div>
+                  );
+                }
+
+                return (
+                  <img src={currentQ.imageUrl} alt="問題の図・標識" style={{ maxWidth: '100%', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.15)' }} />
+                );
+              })()}
             </div>
           )}
           </>

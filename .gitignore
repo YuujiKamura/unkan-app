@@ -12,3 +12,4 @@ data/images/
 *.db
 *.db-journal
 *.sqlite
+public/extracted_images/

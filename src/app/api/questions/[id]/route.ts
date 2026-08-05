@@ -86,8 +86,10 @@ export async function PATCH(
       }
     }
 
-    // 3. Optionの個別の内容・解説更新があれば処理
+    // 3. Optionの個別の内容・解説・正解更新があれば処理
     if (Array.isArray(options)) {
+      // フロントエンドから複数の正解（二項目選択など）が設定された場合、
+      // 従来の correctAnswer による一括更新を上書きする
       for (const optInput of options) {
         if (optInput.id) {
           await prisma.option.update({
@@ -95,6 +97,7 @@ export async function PATCH(
             data: {
               content: optInput.content !== undefined ? optInput.content : undefined,
               explanation: optInput.explanation !== undefined ? optInput.explanation : undefined,
+              isCorrect: optInput.isCorrect !== undefined ? optInput.isCorrect : undefined,
             }
           });
         }
