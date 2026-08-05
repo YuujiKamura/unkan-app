@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from 'react';
+import { createPortal } from 'react-dom';
 import Link from 'next/link';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
@@ -554,7 +555,7 @@ export default function SingleQuizClient({
                       />
                       <span style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>※ローカル環境専用の抽出画像</span>
                       
-                      {isImageMaximized && (
+                      {isImageMaximized && typeof document !== 'undefined' ? createPortal(
                         <div 
                           onClick={() => setIsImageMaximized(false)}
                           style={{
@@ -576,8 +577,9 @@ export default function SingleQuizClient({
                             alt="問題の図・標識 (拡大)" 
                             style={{ maxWidth: '95%', maxHeight: '95%', borderRadius: '8px', boxShadow: '0 4px 20px rgba(0,0,0,0.5)', objectFit: 'contain' }} 
                           />
-                        </div>
-                      )}
+                        </div>,
+                        document.body
+                      ) : null}
                     </div>
                   );
                 }
@@ -609,7 +611,7 @@ export default function SingleQuizClient({
                       onClick={() => setIsImageMaximized(true)}
                       style={{ maxWidth: '100%', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.15)', cursor: 'zoom-in' }} 
                     />
-                    {isImageMaximized && (
+                    {isImageMaximized && typeof document !== 'undefined' ? createPortal(
                         <div 
                           onClick={() => setIsImageMaximized(false)}
                           style={{
@@ -631,8 +633,9 @@ export default function SingleQuizClient({
                             alt="問題の図・標識 (拡大)" 
                             style={{ maxWidth: '95%', maxHeight: '95%', borderRadius: '8px', boxShadow: '0 4px 20px rgba(0,0,0,0.5)', objectFit: 'contain' }} 
                           />
-                        </div>
-                    )}
+                        </div>,
+                        document.body
+                    ) : null}
                   </>
                 );
               })()}
