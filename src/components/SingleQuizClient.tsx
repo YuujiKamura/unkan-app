@@ -306,7 +306,7 @@ export default function SingleQuizClient({
 
   const submitAnswer = async () => {
     if (isAnswered) return;
-    if (isMultiMode && Object.keys(selectedMultiOptions).length === 0) return;
+    if (isMultiMode && Object.keys(selectedMultiOptions).length !== multiGroupsCount) return;
     if (!isMultiMode && selectedOptions.length === 0) return;
     setIsAnswered(true);
     try {
@@ -694,7 +694,7 @@ export default function SingleQuizClient({
               {/* 解答せずに正解・解説を見るボタン */}
               {!isAnswered && (
                 <div style={{ marginTop: '1.5rem', display: 'flex', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap' }}>
-                  {(selectedOptions.length > 0 || (isMultiMode && Object.keys(selectedMultiOptions).length > 0)) && (
+                  {(selectedOptions.length > 0 || (isMultiMode && multiGroupsCount > 0 && Object.keys(selectedMultiOptions).length === multiGroupsCount)) && (
                     <button 
                       onClick={submitAnswer} 
                       className="btn btn-primary" 
