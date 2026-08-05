@@ -13,3 +13,4 @@ data/images/
 *.db-journal
 *.sqlite
 public/extracted_images/
+public/pdf_pages/

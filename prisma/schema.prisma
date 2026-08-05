@@ -21,6 +21,8 @@ model Question {
   riskCategory    String?   // 法律家の視点: 取引リスク対応型分類
   situationCategory String? // 講師の視点: シチュエーション型分類
   format          String    @default("SINGLE") // 出題形式 (SINGLE, MULTI_GROUP 等)
+  pdfUrl          String?   // 元PDFのURL
+  pdfPage         Int?      // 元PDFの対応ページ番号
 
   options         Option[]
   attempts        Attempt[]

@@ -528,133 +528,93 @@ export default function SingleQuizClient({
         
         {currentQ.content ? (
           <>
-          <h3 style={{ marginBottom: '2rem', lineHeight: '1.8', whiteSpace: 'pre-wrap' }}>
-            {currentQ.content}
-          </h3>
-          {(currentQ.imageUrl || currentQ.knowledgeTags?.includes('#NEEDS_IMAGE')) && (
-            <div style={{ textAlign: 'center', margin: '2rem 0' }}>
-              {(() => {
-                const isLocal = isLocalEnv;
-                const needsImage = currentQ.knowledgeTags?.includes('#NEEDS_IMAGE');
-                
-                let localImageSrc = null;
-                let pdfUrl = currentQ.imageUrl;
-                let pdfName = 'unknown';
-                
-                if (currentQ.imageUrl) {
-                  const pdfMatch = currentQ.imageUrl.match(/\/([^/]+)\.pdf$/);
-                  if (pdfMatch) pdfName = pdfMatch[1];
-                } else if (currentQ.id) {
-                  const yearMatch = currentQ.id.match(/^([^_]+)/);
-                  if (yearMatch) pdfName = yearMatch[1];
-                  pdfUrl = `https://www.unkan-net.com/kakomon/${pdfName}.pdf`;
-                }
+          {(() => {
+            const isLocal = isLocalEnv;
+            const needsImage = currentQ.knowledgeTags?.includes('#NEEDS_IMAGE');
+            
+            let pdfName = 'unknown';
+            let pdfUrl = currentQ.imageUrl;
+            
+            if (currentQ.imageUrl) {
+              const pdfMatch = currentQ.imageUrl.match(/\/([^/]+)\.pdf$/);
+              if (pdfMatch) pdfName = pdfMatch[1];
+            } else if (currentQ.id) {
+              const yearMatch = currentQ.id.match(/^([^_]+)/);
+              if (yearMatch) pdfName = yearMatch[1];
+              pdfUrl = `https://www.unkan-net.com/kakomon/${pdfName}.pdf`;
+            }
 
-                if (needsImage) {
-                  localImageSrc = `/extracted_images/${pdfName}_Q${currentQ.questionNumber}.png`;
-                }
+            // In local dev, we have images for ALL pages now (pdf_pages/)
+            const hasLocalImage = isLocal && currentQ.id;
+            const localImageSrc = hasLocalImage ? `/pdf_pages/${pdfName}_Q${currentQ.questionNumber}.png` : null;
 
-                const pdfLinkNode = (pdfUrl?.endsWith('.pdf')) ? (
-                  <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.5rem', marginTop: '1rem' }}>
-                    <a 
-                      href={pdfUrl} 
-                      target="_blank" 
-                      rel="noopener noreferrer" 
-                      className="btn btn-primary"
-                      style={{ display: 'inline-block', padding: '0.8rem 1.5rem', fontWeight: 'bold' }}
-                    >
-                      📄 この問題の図表・元PDFを開く
-                    </a>
-                    <span style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>
-                      ※外部サイトのPDFが開きます
-                    </span>
-                  </div>
-                ) : null;
-
-                if (isLocal && localImageSrc) {
-                  return (
-                    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.5rem' }}>
-                      <img 
-                        src={localImageSrc} 
-                        alt="問題の図・標識" 
-                        onClick={() => setIsImageMaximized(true)}
-                        style={{ maxWidth: '100%', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.15)', cursor: 'zoom-in' }} 
-                      />
-                      <span style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>※ローカル環境専用の抽出画像</span>
-                      
-                      {isImageMaximized && typeof document !== 'undefined' ? createPortal(
-                        <div 
-                          onClick={() => setIsImageMaximized(false)}
-                          style={{
-                            position: 'fixed',
-                            top: 0,
-                            left: 0,
-                            width: '100vw',
-                            height: '100vh',
-                            backgroundColor: 'rgba(0,0,0,0.8)',
-                            display: 'flex',
-                            alignItems: 'center',
-                            justifyContent: 'center',
-                            zIndex: 9999,
-                            cursor: 'zoom-out'
-                          }}
-                        >
-                          <img 
-                            src={localImageSrc} 
-                            alt="問題の図・標識 (拡大)" 
-                            style={{ maxWidth: '95%', maxHeight: '95%', borderRadius: '8px', boxShadow: '0 4px 20px rgba(0,0,0,0.5)', objectFit: 'contain' }} 
-                          />
-                        </div>,
-                        document.body
-                      ) : null}
-
-                      {pdfLinkNode}
+            return (
+              <div style={{ display: 'flex', flexDirection: 'row', gap: '2rem', flexWrap: 'wrap', alignItems: 'flex-start' }}>
+                <div style={{ flex: '1 1 400px' }}>
+                  <h3 style={{ marginBottom: '2rem', lineHeight: '1.8', whiteSpace: 'pre-wrap' }}>
+                    {currentQ.content}
+                  </h3>
+                  
+                  {!hasLocalImage && pdfUrl?.endsWith('.pdf') && (
+                    <div style={{ marginTop: '1rem' }}>
+                      <a 
+                        href={pdfUrl} 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="btn btn-primary"
+                        style={{ display: 'inline-block', padding: '0.8rem 1.5rem', fontWeight: 'bold' }}
+                      >
+                        📄 この問題の図表・元PDFを開く
+                      </a>
+                      <div style={{ fontSize: '0.8rem', color: 'var(--text-secondary)', marginTop: '0.5rem' }}>
+                        ※外部サイトのPDFが開きます
+                      </div>
                     </div>
-                  );
-                }
+                  )}
+                </div>
 
-                if (pdfUrl?.endsWith('.pdf')) {
-                  return pdfLinkNode;
-                }
-
-                return (
-                  <>
+                {hasLocalImage && localImageSrc && (
+                  <div style={{ flex: '0 0 auto', width: needsImage ? '100%' : '300px', maxWidth: '100%', margin: needsImage ? '0 auto 2rem' : '0' }}>
+                    <div style={{ textAlign: 'center', marginBottom: '0.5rem', fontSize: '0.8rem', color: 'var(--text-secondary)' }}>
+                      📄 PDF元データ ({needsImage ? '画像問題' : 'テキスト問題・参考サムネイル'})
+                    </div>
                     <img 
-                      src={currentQ.imageUrl} 
+                      src={localImageSrc} 
                       alt="問題の図・標識" 
                       onClick={() => setIsImageMaximized(true)}
-                      style={{ maxWidth: '100%', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.15)', cursor: 'zoom-in' }} 
+                      style={{ width: '100%', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.15)', cursor: 'zoom-in' }} 
                     />
+                    
                     {isImageMaximized && typeof document !== 'undefined' ? createPortal(
-                        <div 
-                          onClick={() => setIsImageMaximized(false)}
-                          style={{
-                            position: 'fixed',
-                            top: 0,
-                            left: 0,
-                            width: '100vw',
-                            height: '100vh',
-                            backgroundColor: 'rgba(0,0,0,0.8)',
-                            display: 'flex',
-                            alignItems: 'center',
-                            justifyContent: 'center',
-                            zIndex: 9999,
-                            cursor: 'zoom-out'
-                          }}
-                        >
-                          <img 
-                            src={currentQ.imageUrl} 
-                            alt="問題の図・標識 (拡大)" 
-                            style={{ maxWidth: '95%', maxHeight: '95%', borderRadius: '8px', boxShadow: '0 4px 20px rgba(0,0,0,0.5)', objectFit: 'contain' }} 
-                          />
-                        </div>,
-                        document.body
+                      <div 
+                        onClick={() => setIsImageMaximized(false)}
+                        style={{
+                          position: 'fixed',
+                          top: 0,
+                          left: 0,
+                          width: '100vw',
+                          height: '100vh',
+                          backgroundColor: 'rgba(0,0,0,0.8)',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          zIndex: 9999,
+                          cursor: 'zoom-out'
+                        }}
+                      >
+                        <img 
+                          src={localImageSrc} 
+                          alt="問題の図・標識 (拡大)" 
+                          style={{ maxWidth: '95%', maxHeight: '95%', borderRadius: '8px', boxShadow: '0 4px 20px rgba(0,0,0,0.5)', objectFit: 'contain' }} 
+                        />
+                      </div>,
+                      document.body
                     ) : null}
-                  </>
-                );
-              })()}
-            </div>
-          )}
+                  </div>
+                )}
+              </div>
+            );
+          })()}
           </>
         ) : (
           <h3 style={{ marginBottom: '2rem', lineHeight: '1.8' }}>
