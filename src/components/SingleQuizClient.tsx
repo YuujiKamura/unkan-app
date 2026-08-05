@@ -605,19 +605,20 @@ export default function SingleQuizClient({
                     {currentQ.content}
                   </h3>
                   
-                  {!hasLocalImage && pdfUrl?.endsWith('.pdf') && (
+                  {!hasLocalImage && needsImage && (
                     <div style={{ marginTop: '1rem' }}>
                       <a 
-                        href={pdfUrl} 
+                        href="https://www.unkan-net.com/kakomon/" 
                         target="_blank" 
                         rel="noopener noreferrer" 
                         className="btn btn-primary"
                         style={{ display: 'inline-block', padding: '0.8rem 1.5rem', fontWeight: 'bold' }}
                       >
-                        📄 この問題の図表・元PDFを開く
+                        📄 この問題の図表を確認する（外部サイト）
                       </a>
                       <div style={{ fontSize: '0.8rem', color: 'var(--text-secondary)', marginTop: '0.5rem' }}>
-                        ※外部サイトのPDFが開きます
+                        ※外部サイト（運行管理者試験対策.net）の過去問一覧ページが開きます。<br/>
+                        該当年度（{currentQ.year}）のPDFを開き、問{currentQ.questionNumber}をご参照ください。
                       </div>
                     </div>
                   )}
