@@ -608,7 +608,7 @@ export default function SingleQuizClient({
                   {!hasLocalImage && needsImage && (
                     <div style={{ marginTop: '1rem' }}>
                       <a 
-                        href="https://www.unkan-net.com/kakomon/" 
+                        href="https://www.unkan-net.com/" 
                         target="_blank" 
                         rel="noopener noreferrer" 
                         className="btn btn-primary"
@@ -617,7 +617,7 @@ export default function SingleQuizClient({
                         📄 この問題の図表を確認する（外部サイト）
                       </a>
                       <div style={{ fontSize: '0.8rem', color: 'var(--text-secondary)', marginTop: '0.5rem' }}>
-                        ※外部サイト（運行管理者試験対策.net）の過去問一覧ページが開きます。<br/>
+                        ※外部サイト（運行管理者試験対策.net）のトップページが開きます。<br/>
                         該当年度（{currentQ.year}）のPDFを開き、問{currentQ.questionNumber}をご参照ください。
                       </div>
                     </div>
