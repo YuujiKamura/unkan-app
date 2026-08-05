@@ -536,7 +536,24 @@ export default function SingleQuizClient({
           </h3>
           {currentQ.imageUrl && (
             <div style={{ textAlign: 'center', margin: '2rem 0' }}>
-              <img src={currentQ.imageUrl} alt="問題の図・標識" style={{ maxWidth: '100%', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.15)' }} />
+              {currentQ.imageUrl.endsWith('.pdf') ? (
+                <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.5rem' }}>
+                  <a 
+                    href={currentQ.imageUrl} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="btn btn-primary"
+                    style={{ display: 'inline-block', padding: '0.8rem 1.5rem', fontWeight: 'bold' }}
+                  >
+                    📄 この問題の図表・元PDFを開く
+                  </a>
+                  <span style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>
+                    ※外部サイトのPDFが開きます
+                  </span>
+                </div>
+              ) : (
+                <img src={currentQ.imageUrl} alt="問題の図・標識" style={{ maxWidth: '100%', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.15)' }} />
+              )}
             </div>
           )}
           </>
