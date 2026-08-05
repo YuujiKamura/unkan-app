@@ -560,29 +560,6 @@ export default function SingleQuizClient({
 
             return (
               <div style={{ display: 'flex', flexDirection: 'row', gap: '2rem', flexWrap: 'wrap', alignItems: 'flex-start' }}>
-                <div style={{ flex: '1 1 400px' }}>
-                  <h3 style={{ marginBottom: '2rem', lineHeight: '1.8', whiteSpace: 'pre-wrap' }}>
-                    {currentQ.content}
-                  </h3>
-                  
-                  {!hasLocalImage && pdfUrl?.endsWith('.pdf') && (
-                    <div style={{ marginTop: '1rem' }}>
-                      <a 
-                        href={pdfUrl} 
-                        target="_blank" 
-                        rel="noopener noreferrer" 
-                        className="btn btn-primary"
-                        style={{ display: 'inline-block', padding: '0.8rem 1.5rem', fontWeight: 'bold' }}
-                      >
-                        📄 この問題の図表・元PDFを開く
-                      </a>
-                      <div style={{ fontSize: '0.8rem', color: 'var(--text-secondary)', marginTop: '0.5rem' }}>
-                        ※外部サイトのPDFが開きます
-                      </div>
-                    </div>
-                  )}
-                </div>
-
                 {hasLocalImage && localImageSrc && (
                   <div style={{ flex: '0 0 auto', width: needsImage ? '100%' : '300px', maxWidth: '100%', margin: needsImage ? '0 auto 2rem' : '0' }}>
                     <div style={{ textAlign: 'center', marginBottom: '0.5rem', fontSize: '0.8rem', color: 'var(--text-secondary)' }}>
@@ -622,6 +599,29 @@ export default function SingleQuizClient({
                     ) : null}
                   </div>
                 )}
+
+                <div style={{ flex: '1 1 400px' }}>
+                  <h3 style={{ marginBottom: '2rem', lineHeight: '1.8', whiteSpace: 'pre-wrap' }}>
+                    {currentQ.content}
+                  </h3>
+                  
+                  {!hasLocalImage && pdfUrl?.endsWith('.pdf') && (
+                    <div style={{ marginTop: '1rem' }}>
+                      <a 
+                        href={pdfUrl} 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="btn btn-primary"
+                        style={{ display: 'inline-block', padding: '0.8rem 1.5rem', fontWeight: 'bold' }}
+                      >
+                        📄 この問題の図表・元PDFを開く
+                      </a>
+                      <div style={{ fontSize: '0.8rem', color: 'var(--text-secondary)', marginTop: '0.5rem' }}>
+                        ※外部サイトのPDFが開きます
+                      </div>
+                    </div>
+                  )}
+                </div>
               </div>
             );
           })()}
