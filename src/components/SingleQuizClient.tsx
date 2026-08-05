@@ -544,6 +544,23 @@ export default function SingleQuizClient({
                   localImageSrc = `/extracted_images/${pdfName}_Q${currentQ.questionNumber}.png`;
                 }
 
+                const pdfLinkNode = currentQ.imageUrl?.endsWith('.pdf') ? (
+                  <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.5rem', marginTop: '1rem' }}>
+                    <a 
+                      href={currentQ.imageUrl} 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="btn btn-primary"
+                      style={{ display: 'inline-block', padding: '0.8rem 1.5rem', fontWeight: 'bold' }}
+                    >
+                      📄 この問題の図表・元PDFを開く
+                    </a>
+                    <span style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>
+                      ※外部サイトのPDFが開きます
+                    </span>
+                  </div>
+                ) : null;
+
                 if (isLocal && localImageSrc) {
                   return (
                     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.5rem' }}>
@@ -580,27 +597,14 @@ export default function SingleQuizClient({
                         </div>,
                         document.body
                       ) : null}
+
+                      {pdfLinkNode}
                     </div>
                   );
                 }
 
                 if (currentQ.imageUrl.endsWith('.pdf')) {
-                  return (
-                    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.5rem' }}>
-                      <a 
-                        href={currentQ.imageUrl} 
-                        target="_blank" 
-                        rel="noopener noreferrer" 
-                        className="btn btn-primary"
-                        style={{ display: 'inline-block', padding: '0.8rem 1.5rem', fontWeight: 'bold' }}
-                      >
-                        📄 この問題の図表・元PDFを開く
-                      </a>
-                      <span style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>
-                        ※外部サイトのPDFが開きます
-                      </span>
-                    </div>
-                  );
+                  return pdfLinkNode;
                 }
 
                 return (
