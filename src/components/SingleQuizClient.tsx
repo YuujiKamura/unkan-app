@@ -538,8 +538,18 @@ export default function SingleQuizClient({
             if (currentQ.imageUrl) {
               const pdfMatch = currentQ.imageUrl.match(/\/([^/]+)\.pdf$/);
               if (pdfMatch) pdfName = pdfMatch[1];
-            } else if (currentQ.id) {
-              const yearMatch = currentQ.id.match(/^([^_]+)/);
+            } else if (currentQ.year) {
+              const yearMap: Record<string, string> = {
+                "令和6年 (CBT)": "R06.CBT",
+                "令和5年 (CBT)": "R05.CBT",
+                "令和4年 (CBT)": "R04.CBT",
+                "令和2年 (CBT)": "R02.CBT",
+                "令和2年 第1回": "R02.1"
+              };
+              pdfName = yearMap[currentQ.year] || 'unknown';
+              pdfUrl = `https://www.unkan-net.com/kakomon/${pdfName}.pdf`;
+            } else if (currentQ.id && typeof currentQ.id === 'string') {
+              const yearMatch = (currentQ.id as string).match(/^([^_]+)/);
               if (yearMatch) pdfName = yearMatch[1];
               pdfUrl = `https://www.unkan-net.com/kakomon/${pdfName}.pdf`;
             }
