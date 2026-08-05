@@ -36,14 +36,26 @@ npm run dev
 問題データ（`public/data/questions.json`）は、元のPDFまたは画像（`data/images/`）からOCRを通じてパースされ、スクリプト（`scripts/io/fix_*.ts` 等）によって正規化されたものが格納されています。
 新しい年度の問題を追加する場合は、画像からJSONを抽出し、正規化スクリプトで変換した上で `public/data/questions.json` を更新してください。
 
-### 🖼️ ローカルでのPDF画像表示（開発者向け）
+### 📸 ローカル環境でのPDF画像完全再現（クローンした方向け）
 
-GitHub Pages上では直接の画像埋め込みを避けていますが、ローカル開発環境で問題ごとの画像をインライン表示したい場合は以下の手順で画像を抽出できます。
+このリポジトリをクローンした直後は、著作権とファイルサイズの関係で、問題の画像ファイル（PDFから抽出したPNG）が含まれていません。
+以下の手順で、出典サイトから過去問PDFをダウンロードして所定のフォルダに配置し、抽出スクリプトを実行することで、**誰でも現在稼働中のローカル環境（画像付きの完全な状態）を再現**できます。
 
-1. 対象年度の過去問PDFをプロジェクトのルートディレクトリに配置します（例: `R06.CBT.pdf`, `R04.CBT.pdf`）。
-2. Python環境で `PyMuPDF` をインストールします（`pip install PyMuPDF`）。
-3. 抽出スクリプトを実行します: `python scripts/io/extract_all_pdf_pages.py`
-4. `public/pdf_pages/` に問題ごとのPNG画像が生成され、`npm run dev` 起動時に自動で画像付きで表示されるようになります。
+1. プロジェクトルートに `data/raw_pdfs` フォルダを作成します。
+2. 出典サイト（運行管理者試験センター、または運行管理者試験対策.net等）から対象年度の過去問PDFをダウンロードし、以下のファイル名で `data/raw_pdfs/` に配置します。
+   - `R06.CBT.pdf` (令和6年 CBT)
+   - `R05.CBT.pdf` (令和5年 CBT)
+   - `R04.CBT.pdf` (令和4年 CBT)
+   - `R03.CBT.pdf` (令和3年 CBT)
+   - `R02.CBT.pdf` (令和2年 CBT)
+   - `R02.1.pdf` (令和2年 第1回)
+   - `R01.1.pdf` (令和元年 第1回)
+3. Python環境で `PyMuPDF` をインストールします（`pip install PyMuPDF`）。
+4. 抽出スクリプトを実行します：
+   ```bash
+   python scripts/io/extract_all_pdf_pages.py
+   ```
+5. `public/pdf_pages/` フォルダに問題ごとのPNG画像が自動生成されます。この状態で `npm run dev` を起動すると、画像付きの問題が表示されるようになります。
 
 ## ⚠️ 免責事項・データ出典
 

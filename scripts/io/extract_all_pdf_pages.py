@@ -23,15 +23,22 @@ for q in data:
     year = pdf_name.replace(".pdf", "")
     
     if pdf_name not in pdf_cache:
-        pdf_path = pdf_name
+        # First check in data/raw_pdfs (for public cloning reproducibility)
+        local_path = os.path.join("data", "raw_pdfs", pdf_name)
         h_drive_path = os.path.join(r"H:\マイドライブ\試験系\うんかん", pdf_name)
-        if not os.path.exists(pdf_path):
-            if os.path.exists(h_drive_path):
-                pdf_path = h_drive_path
-            else:
-                print(f"Skipping {pdf_name} - not found.")
-                pdf_cache[pdf_name] = None
-                continue
+        
+        pdf_path = None
+        if os.path.exists(local_path):
+            pdf_path = local_path
+        elif os.path.exists(pdf_name):
+            pdf_path = pdf_name
+        elif os.path.exists(h_drive_path):
+            pdf_path = h_drive_path
+            
+        if pdf_path is None:
+            print(f"Cannot find {pdf_name}. Please place it in data/raw_pdfs/")
+            pdf_cache[pdf_name] = None
+            continue
         pdf_cache[pdf_name] = fitz.open(pdf_path)
     
     doc = pdf_cache[pdf_name]

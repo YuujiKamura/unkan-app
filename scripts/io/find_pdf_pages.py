@@ -19,6 +19,17 @@ year_map = {
     "令和元年 第1回": "R01.1"
 }
 
+def get_pdf_path(pdf_filename):
+    local_path = os.path.join("data", "raw_pdfs", pdf_filename)
+    h_drive_path = os.path.join(r"H:\マイドライブ\試験系\うんかん", pdf_filename)
+    if os.path.exists(local_path):
+        return local_path
+    elif os.path.exists(pdf_filename):
+        return pdf_filename
+    elif os.path.exists(h_drive_path):
+        return h_drive_path
+    return None
+
 pdf_cache = {}
 updated = False
 
@@ -34,7 +45,6 @@ for q in data:
         continue
         
     pdf_filename = f"{pdf_name}.pdf"
-    pdf_path = os.path.join(pdf_dir, pdf_filename)
     
     # Update pdfUrl if missing
     if not q.get("pdfUrl"):
@@ -44,8 +54,9 @@ for q in data:
     # Update pdfPage if missing
     if q.get("pdfPage") is None:
         if pdf_filename not in pdf_cache:
-            if not os.path.exists(pdf_path):
-                print(f"Cannot find {pdf_path}")
+            pdf_path = get_pdf_path(pdf_name)
+            if not pdf_path:
+                print(f"Cannot find {pdf_filename}. Please place it in data/raw_pdfs/")
                 pdf_cache[pdf_filename] = None
                 continue
             print(f"Opening {pdf_path}")
