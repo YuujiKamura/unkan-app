@@ -59,9 +59,9 @@ export default function RootLayout({
             lineHeight: '1.6'
           }}>
             <p style={{ marginBottom: '0.5rem' }}>
-              本アプリケーションに収録されている運行管理者試験（貨物）の過去問題および図表等の参照元は以下の通りです。<br />
-              ・問題テキスト・著作権元：<a href="https://www.unkan.or.jp/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary-color)', textDecoration: 'none' }}>公益財団法人 運行管理者試験センター</a><br />
-              ・PDFデータ・解説等参照元：<a href="https://www.unkan-net.com/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary-color)', textDecoration: 'none' }}>運行管理者試験対策.net</a>
+              本アプリケーションに収録されている運行管理者試験（貨物）の過去問題および図表等の出典・参照元は以下の通りです。<br />
+              ・<a href="https://www.unkan.or.jp/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary-color)', textDecoration: 'none' }}>公益財団法人 運行管理者試験センター</a><br />
+              ・<a href="https://www.unkan-net.com/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary-color)', textDecoration: 'none' }}>運行管理者試験対策.net</a>
             </p>
             <p style={{ opacity: 0.8 }}>
               ※本サイトは個人の学習目的で作成された非公式の解説・演習用アプリケーションであり、上記機関・サイトとは一切関係ありません。<br />
