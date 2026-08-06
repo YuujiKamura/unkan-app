@@ -547,7 +547,14 @@ export default function SingleQuizClient({
             let pdfName = 'unknown';
             let pdfUrl = currentQ.pdfUrl;
             
-            if (currentQ.year) {
+            const isPdfLink = currentQ.imageUrl && currentQ.imageUrl.endsWith('.pdf');
+            const isImageLink = currentQ.imageUrl && /\.(png|jpe?g|svg|gif|webp)$/i.test(currentQ.imageUrl);
+
+            if (isPdfLink) {
+              const pdfMatch = currentQ.imageUrl.match(/\/([^/]+)\.pdf$/i);
+              if (pdfMatch) pdfName = pdfMatch[1];
+              if (!pdfUrl) pdfUrl = currentQ.imageUrl;
+            } else if (currentQ.year) {
               const yearMap: Record<string, string> = {
                 "令和6年 (CBT)": "R06.CBT",
                 "令和5年 (CBT)": "R05.CBT",
@@ -566,7 +573,7 @@ export default function SingleQuizClient({
 
             // In local dev, we have images for ALL pages now (pdf_pages/)
             const hasLocalImage = isLocal && currentQ.id;
-            const localImageSrc = currentQ.imageUrl || (hasLocalImage ? `/pdf_pages/${pdfName}_Q${currentQ.questionNumber}.png` : null);
+            const localImageSrc = isImageLink ? currentQ.imageUrl : (hasLocalImage ? `/pdf_pages/${pdfName}_Q${currentQ.questionNumber}.png` : null);
 
             return (
               <div style={{ display: 'flex', flexDirection: 'row', gap: '2rem', flexWrap: 'wrap', alignItems: 'flex-start' }}>
