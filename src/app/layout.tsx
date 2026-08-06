@@ -9,6 +9,12 @@ export const metadata: Metadata = {
   description: "運行管理者の過去問演習・進捗管理アプリ",
 };
 
+// ↓ ここを追加する
+export const viewport = {
+  width: '1200', // スマホでも強制的に幅1200pxのPC画面として描画させる
+  initialScale: 1,
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
