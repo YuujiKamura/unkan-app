@@ -23,9 +23,24 @@ export async function POST(req: Request) {
 
     fs.writeFileSync(filepath, JSON.stringify(data, null, 2), 'utf8');
 
-    // Windowsで 'npm run dev' 起動中に 'npm run build:spa' をバックグラウンドで叩くと、
-    // devサーバーが /api フォルダをロックしているため EPERM エラー（rename失敗）が発生します。
-    // そのため、ここではファイルの生成のみ行い、ユーザーに手動デプロイを促します。
+    // 自動で gh-pages ブランチに JSONファイルだけをコミットしてPushする
+    try {
+      await new Promise((resolve, reject) => {
+        exec(`pwsh -File scripts/push_share.ps1 ${filename}`, (error, stdout, stderr) => {
+          if (error) {
+            console.error('Git push error:', stderr);
+            reject(error);
+          } else {
+            console.log('Git push success:', stdout);
+            resolve(true);
+          }
+        });
+      });
+    } catch (e) {
+      console.error('Failed to auto-push share data to gh-pages:', e);
+      // エラーが起きてもローカル保存は完了しているので落とさない
+    }
+
     return NextResponse.json({ success: true, id, filename });
   } catch (error) {
     console.error('Failed to create share:', error);

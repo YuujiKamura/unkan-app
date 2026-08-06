@@ -151,8 +151,7 @@ export default function SaveLoadUI() {
             <h3 style={{ marginTop: 0, marginBottom: '1rem', color: 'var(--text-primary)' }}>共有ファイルの生成完了</h3>
             <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', marginBottom: '1rem' }}>
               以下のURLを共有すると、現在の学習データ（解答履歴など）が読み込まれた状態でアプリが開きます。<br/>
-              <strong>【重要】</strong> 現在ローカルに保存されただけです。このURLを有効にするには、開発サーバーを一度停止し、以下のコマンドを実行してデプロイしてください。<br/>
-              <code>npm run build:spa &amp;&amp; pwsh -File deploy.ps1</code>
+              （※データは自動的にGitHub Pagesへデプロイされます。反映まで数秒かかります）
             </p>
             <input 
               type="text" 
