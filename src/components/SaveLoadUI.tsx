@@ -104,7 +104,7 @@ export default function SaveLoadUI() {
       const shareData = await resShare.json();
 
       // GitHub Pagesの公開URLを直接指定する
-      const url = `https://YuujiKamura.github.io${basePath}/?share=${shareData.id}`;
+      const url = `https://yuujikamura.github.io/unkan-app/?share=${shareData.id}`;
       setShareUrl(url);
       setStatusMsg('');
     } catch (err) {

@@ -7,7 +7,7 @@ const apiHiddenDir = path.join(__dirname, '../src/app/_api_hidden');
 
 console.log('1. Exporting data to static JSON...');
 try {
-  execSync('npx tsx scripts/io/export_to_static_json.ts', { stdio: 'inherit' });
+  execSync('npx cross-env DATABASE_URL=file:./dev.db tsx scripts/io/export_to_static_json.ts', { stdio: 'inherit' });
 } catch (e) {
   console.error('Failed to export data');
   process.exit(1);
