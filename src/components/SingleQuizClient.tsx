@@ -545,30 +545,28 @@ export default function SingleQuizClient({
             const needsImage = currentQ.knowledgeTags?.includes('#NEEDS_IMAGE');
             
             let pdfName = 'unknown';
-            let pdfUrl = currentQ.imageUrl;
+            let pdfUrl = currentQ.pdfUrl;
             
-            if (currentQ.imageUrl) {
-              const pdfMatch = currentQ.imageUrl.match(/\/([^/]+)\.pdf$/);
-              if (pdfMatch) pdfName = pdfMatch[1];
-            } else if (currentQ.year) {
+            if (currentQ.year) {
               const yearMap: Record<string, string> = {
                 "令和6年 (CBT)": "R06.CBT",
                 "令和5年 (CBT)": "R05.CBT",
                 "令和4年 (CBT)": "R04.CBT",
+                "令和3年 (CBT)": "R03.CBT",
                 "令和2年 (CBT)": "R02.CBT",
                 "令和2年 第1回": "R02.1"
               };
               pdfName = yearMap[currentQ.year] || 'unknown';
-              pdfUrl = `https://www.unkan-net.com/kakomon/${pdfName}.pdf`;
+              if (!pdfUrl) pdfUrl = `https://www.unkan-net.com/kakomon/${pdfName}.pdf`;
             } else if (currentQ.id && typeof currentQ.id === 'string') {
               const yearMatch = (currentQ.id as string).match(/^([^_]+)/);
               if (yearMatch) pdfName = yearMatch[1];
-              pdfUrl = `https://www.unkan-net.com/kakomon/${pdfName}.pdf`;
+              if (!pdfUrl) pdfUrl = `https://www.unkan-net.com/kakomon/${pdfName}.pdf`;
             }
 
             // In local dev, we have images for ALL pages now (pdf_pages/)
             const hasLocalImage = isLocal && currentQ.id;
-            const localImageSrc = hasLocalImage ? `/pdf_pages/${pdfName}_Q${currentQ.questionNumber}.png` : null;
+            const localImageSrc = currentQ.imageUrl || (hasLocalImage ? `/pdf_pages/${pdfName}_Q${currentQ.questionNumber}.png` : null);
 
             return (
               <div style={{ display: 'flex', flexDirection: 'row', gap: '2rem', flexWrap: 'wrap', alignItems: 'flex-start' }}>
