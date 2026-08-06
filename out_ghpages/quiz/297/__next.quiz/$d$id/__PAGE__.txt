@@ -1,0 +1,65 @@
+1:"$Sreact.fragment"
+2:I[33316,["/unkan-app/_next/static/chunks/0duueqjzw4i7j.js","/unkan-app/_next/static/chunks/2oejna66087rc.js","/unkan-app/_next/static/chunks/43_z4zs-xyu0_.js","/unkan-app/_next/static/chunks/3rp-g6dqtbbm0.js","/unkan-app/_next/static/chunks/30xk5g0he03sk.js"],"default"]
+8:I[52827,["/unkan-app/_next/static/chunks/0duueqjzw4i7j.js","/unkan-app/_next/static/chunks/2oejna66087rc.js"],"OutletBoundary"]
+9:"$Sreact.suspense"
+3:T1631,Gemini との会話
+解説
+令和5年（CBT）問20「自動車運転者の労働時間等の改善のための基準（改善基準告示）」についての解説です。
+
+画面のシステムに表示されている正答「1, 4, 5, 7」は、上から順に数えた選択肢の通し番号（Aの①、Bの②、Cの①、Dの①）に対応しています。正しい組み合わせは以下の通りです。
+
+A: ① 1回
+
+B: ② 最大拘束時間
+
+C: ① 2週間
+
+D: ① 1ヵ月以上3ヵ月
+
+各項目の詳しい解説
+1. 休日労働の限度（A・B）
+使用者は、トラック運転者に労働基準法第35条の休日に労働させる場合は、当該労働させる休日は2週間について （A: 1回） を超えないものとし、当該休日の労働によって改善基準告示第4条第1項に定める拘束時間及び （B: 最大拘束時間） の限度を超えないものとする。
+
+【解説】
+トラック運転者を法定休日に労働させる（休日出勤させる）場合、「2週間に1回」が限度と定められています。また、たとえ休日出勤をした場合であっても、1ヶ月の「拘束時間」や、1日当たりの「最大拘束時間」の上限ルールをオーバーしてはいけません。
+※「連続運転時間」も別の重要な規制（4時間以内）ですが、休日出勤の制限と直接セットで規定されているのは全体の枠組みである「最大拘束時間」の超過防止です。
+
+2. 36協定における「一定期間」の定め（C・D）
+労使当事者は、法第36条第1項の協定（…中略…）においてトラック運転者に係る一定期間についての延長時間について協定するに当たっては、当該一定期間は、 （C: 2週間） 及び （D: 1ヵ月以上3ヵ月） 以内の一定の期間とするものとする。
+
+【解説】
+時間外労働（残業）に関するいわゆる「36（サブロク）協定」を結ぶ際、延長時間を定める「一定期間」は、運転者の過労を防ぐために「2週間」と「1ヶ月以上3ヶ月以内」の2種類の期間を定めて結ぶ必要があります。4週間や半年といったスパンだけで大まかに設定することは認められていません。
+
+💡 今後の試験対策に向けた重要ポイント
+この問題は「令和5年」の過去問ですが、今後の試験では令和6年（2024年）4月に施行された「新・改善基準告示」に基づいて出題されます。
+休日の労働が「2週間に1回」までという原則は変わりませんが、1日の最大拘束時間が「原則15時間（旧基準は16時間）」に短縮されるなど、具体的な上限の数字が変わっている部分が多々あります。過去問演習の際は、お手元の最新のテキストと照らし合わせて「現在の基準での数字」をインプットしていくと確実です。
+
+貨物自動車運送事業に従事する自動車...束時間等
+選択したテキスト
+CとDとか意味わからんのだけどこれなに
+CとD、急に「一定期間」とか「2週間」とか言われても、何の話か意味不明ですよね。お気持ちすごくわかります！
+
+このCとDは、ずばり「36協定（残業をするための会社と従業員の約束）」を結ぶときに、残業時間をどのくらいの「期間」で区切って計算・管理するか、というルールの話です。
+
+普通の会社員なら「1ヶ月で何時間まで」「1年で何時間まで」と決めるのが一般的です。しかし、トラック運転手は過酷な働き方になりやすいため、当時の法律（改善基準告示）で「残業の計算期間は、絶対にこの期間の枠組みで設定しなさいよ！」とガチガチに指定されていました。それがCとDの正体です。
+
+分かりやすく翻訳すると、以下のようになります。
+
+【C】2週間
+トラック運転手には「休日出勤は2週間に1回まで（問題文のAの部分）」という厳しいルールがあります。そのため、残業や労働時間の管理も、一般的な「1ヶ月」だけでなく、より短い「2週間」という細かいスパンで区切って計算しなさい、という意味です。
+
+【D】1ヵ月以上3ヵ月（以内）
+もう一つの区切りとして、会社は「1ヶ月」「2ヶ月」「3ヶ月」のいずれかの期間で残業の枠を決めなさい、という意味です（実務上は「1ヶ月」で結ぶ会社がほとんどです）。
+もし「半年」など長すぎる期間で設定できてしまうと、「特定の1ヶ月だけ死ぬほど働かせて、残りの期間で帳尻を合わせる」といった過労死ラインの働き方が平均化されて見えなくなってしまいます。そのため「最長でも3ヶ月以内で区切りなさい」というストッパーになっていました。
+
+💡 まとめと試験対策のアドバイス
+つまり、CとDは「法律で決められていた特定の決まり文句（期間の設定ルール）」のことです。
+
+※ちなみに、これは令和5年当時の「古いルールの条文」です。
+現在（令和6年4月以降）の新ルールでは、働き方改革に合わせて「1ヶ月」と「1年」をベースにするよう、条文がもっとスッキリと改定されています。ですので、この問題に関しては「昔はこういう決まり文句があったんだな」くらいに軽く捉えておいて大丈夫ですよ！
+0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"initialQuestion":{"id":297,"year":"令和5年 (CBT)","questionNumber":20,"field":"労働基準法","majorField":null,"subField":null,"content":"【労働基準法関係】\n\n「自動車運転者の労働時間等の改善のための基準」（以下「改善基準告示」という。）に定める貨物自動車運送事業に従事する自動車運転者（以下「トラック運転者」という。）の拘束時間等に関する次の文中、A、B、C、Dに入るべき字句としていずれか正しいものを１つ選びなさい。\n\n1. 使用者は、トラック運転者に労働基準法（以下「法」という。）第35条の休日に労働させる場合は、当該労働させる休日は2週間について A を超えないものとし、当該休日の労働によって改善基準告示第4条第1項に定める拘束時間及び B の限度を超えないものとする。\n\n2. 労使当事者は、法第36条第1項の協定（時間外労働協定（労働時間の延長に係るものに限る。））においてトラック運転者に係る一定期間についての延長時間について協定するに当たっては、当該一定期間は、 C 及び D 以内の一定の期間とするものとする。","imageUrl":null,"sourceSheet":null,"knowledgeTags":"#改善基準(拘束・休息・運転時間)","riskCategory":null,"situationCategory":"#穴埋め問題","format":"MULTI_GROUP","pdfUrl":null,"pdfPage":null,"options":[{"id":1424,"questionId":297,"optionNumber":1,"content":"A : ① 1回","isCorrect":true,"explanation":null,"structuredData":"{\"title\":\"A\",\"choices\":[{\"num\":1,\"text\":\"1回\"},{\"num\":2,\"text\":\"2回\"}]}"},{"id":1425,"questionId":297,"optionNumber":2,"content":"A : ② 2回","isCorrect":false,"explanation":null,"structuredData":"{\"title\":\"A\",\"choices\":[{\"num\":1,\"text\":\"1回\"},{\"num\":2,\"text\":\"2回\"}]}"},{"id":1426,"questionId":297,"optionNumber":3,"content":"B : ① 連続運転時間","isCorrect":false,"explanation":null,"structuredData":"{\"title\":\"B\",\"choices\":[{\"num\":1,\"text\":\"連続運転時間\"},{\"num\":2,\"text\":\"最大拘束時間\"}]}"},{"id":1427,"questionId":297,"optionNumber":4,"content":"B : ② 最大拘束時間","isCorrect":true,"explanation":null,"structuredData":"{\"title\":\"B\",\"choices\":[{\"num\":1,\"text\":\"連続運転時間\"},{\"num\":2,\"text\":\"最大拘束時間\"}]}"},{"id":1428,"questionId":297,"optionNumber":5,"content":"C : ① 2週間","isCorrect":true,"explanation":null,"structuredData":"{\"title\":\"C\",\"choices\":[{\"num\":1,\"text\":\"2週間\"},{\"num\":2,\"text\":\"4週間\"}]}"},{"id":1429,"questionId":297,"optionNumber":6,"content":"C : ② 4週間","isCorrect":false,"explanation":null,"structuredData":"{\"title\":\"C\",\"choices\":[{\"num\":1,\"text\":\"2週間\"},{\"num\":2,\"text\":\"4週間\"}]}"},{"id":1430,"questionId":297,"optionNumber":7,"content":"D : ① 1ヵ月以上3ヵ月","isCorrect":true,"explanation":null,"structuredData":"{\"title\":\"D\",\"choices\":[{\"num\":1,\"text\":\"1ヵ月以上3ヵ月\"},{\"num\":2,\"text\":\"3ヵ月以上6ヵ月\"}]}"},{"id":1431,"questionId":297,"optionNumber":8,"content":"D : ② 3ヵ月以上6ヵ月","isCorrect":false,"explanation":null,"structuredData":"{\"title\":\"D\",\"choices\":[{\"num\":1,\"text\":\"1ヵ月以上3ヵ月\"},{\"num\":2,\"text\":\"3ヵ月以上6ヵ月\"}]}"}],"explanation":{"id":75,"questionId":297,"content":"$3","isDebated":true},"correctOptions":[],"userMeta":null,"attempts":[],"isDebated":false,"isBookmarked":false,"keywords":["労働基準法関係","自動車運転者","労働時間等","改善基準告示","貨物自動車運送事業","拘束時間等","使用者","労働基準法","当該労働","当該休日","改善基準告示第","拘束時間及","労使当事者","時間外労働協定","労働時間","一定期間","延長時間","当該一定期間","連続運転時間","最大拘束時間","月以上","トラック"]},"similarQuestions":[{"id":141,"year":"令和2年 (CBT)","questionNumber":20,"isDebated":false,"score":74,"field":"労働基準法","sharedKeywords":["knowledge:#改善基準(拘束・休息・運転時間)","situation:#穴埋め問題","分野: 労働基準法","貨物自動車運送事業","自動車運転者","最大拘束時間","労働時間等","拘束時間等"]},{"id":331,"year":"令和4年 (CBT)","questionNumber":20,"isDebated":false,"score":74,"field":"労働基準法","sharedKeywords":["knowledge:#改善基準(拘束・休息・運転時間)","situation:#穴埋め問題","分野: 労働基準法","貨物自動車運送事業","自動車運転者","最大拘束時間","労働時間等","拘束時間等"]},{"id":267,"year":"令和6年 (CBT)","questionNumber":20,"isDebated":false,"score":65,"field":"労働基準法","sharedKeywords":["knowledge:#改善基準(拘束・休息・運転時間)","situation:#穴埋め問題","分野: 労働基準法","労働基準法関係","自動車運転者","労働時間等"]},{"id":142,"year":"令和2年 (CBT)","questionNumber":21,"isDebated":false,"score":63,"field":"労働基準法","sharedKeywords":["knowledge:#改善基準(拘束・休息・運転時間)","分野: 労働基準法","貨物自動車運送事業","改善基準告示第","自動車運転者","改善基準告示","最大拘束時間","連続運転時間"]},{"id":177,"year":"令和2年 第1回","questionNumber":20,"isDebated":false,"score":62,"field":"労働基準法","sharedKeywords":["knowledge:#改善基準(拘束・休息・運転時間)","situation:#穴埋め問題","分野: 労働基準法","自動車運転者","改善基準告示","労働時間等","労働時間"]},{"id":178,"year":"令和2年 第1回","questionNumber":21,"isDebated":false,"score":60,"field":"労働基準法","sharedKeywords":["knowledge:#改善基準(拘束・休息・運転時間)","分野: 労働基準法","貨物自動車運送事業","改善基準告示第","自動車運転者","改善基準告示","最大拘束時間","労働時間等"]},{"id":332,"year":"令和4年 (CBT)","questionNumber":21,"isDebated":true,"score":58,"field":"労働基準法","sharedKeywords":["knowledge:#改善基準(拘束・休息・運転時間)","分野: 労働基準法","貨物自動車運送事業","自動車運転者","改善基準告示","連続運転時間","労働時間等","拘束時間等"]},{"id":268,"year":"令和6年 (CBT)","questionNumber":21,"isDebated":true,"score":55,"field":"労働基準法","sharedKeywords":["knowledge:#改善基準(拘束・休息・運転時間)","分野: 労働基準法","貨物自動車運送事業","労働基準法関係","自動車運転者","最大拘束時間","連続運転時間","労働時間等"]},{"id":298,"year":"令和5年 (CBT)","questionNumber":21,"isDebated":true,"score":54,"field":"労働基準法","sharedKeywords":["knowledge:#改善基準(拘束・休息・運転時間)","分野: 労働基準法","貨物自動車運送事業","労働基準法関係","自動車運転者","労働時間等","拘束時間等","労働時間"]},{"id":300,"year":"令和5年 (CBT)","questionNumber":23,"isDebated":false,"score":47,"field":"労働基準法","sharedKeywords":["knowledge:#改善基準(拘束・休息・運転時間)","分野: 労働基準法","貨物自動車運送事業","労働基準法関係","自動車運転者","改善基準告示","最大拘束時間","労働時間等"]}],"nextQuestionId":298,"prevQuestionId":296,"nextIncorrectId":300,"contextModeLabel":"📅 年度別演習","groupTitle":"令和5年 (CBT)","currentPosition":20,"totalInGroup":30,"navQueryStr":"?groupBy=year","mode":"","groupQuestionIds":[278,279,280,281,282,283,284,285,286,287,288,289,290,291,292,293,294,295,296,297,298,299,300,301,302,303,304,305,306,307]}],["$L4","$L5","$L6"],"$L7"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"Spm-s-N1z2dirOtU7lfjD"}
+4:["$","script","script-0",{"src":"/unkan-app/_next/static/chunks/43_z4zs-xyu0_.js","async":true}]
+5:["$","script","script-1",{"src":"/unkan-app/_next/static/chunks/3rp-g6dqtbbm0.js","async":true}]
+6:["$","script","script-2",{"src":"/unkan-app/_next/static/chunks/30xk5g0he03sk.js","async":true}]
+7:["$","$L8",null,{"children":["$","$9",null,{"name":"Next.MetadataOutlet","children":"$@a"}]}]
+a:null
