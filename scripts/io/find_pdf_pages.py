@@ -54,7 +54,7 @@ for q in data:
     # Update pdfPage if missing
     if q.get("pdfPage") is None:
         if pdf_filename not in pdf_cache:
-            pdf_path = get_pdf_path(pdf_name)
+            pdf_path = get_pdf_path(pdf_filename)
             if not pdf_path:
                 print(f"Cannot find {pdf_filename}. Please place it in data/raw_pdfs/")
                 pdf_cache[pdf_filename] = None
