@@ -115,7 +115,7 @@ export default function QuestionsListContent({
           <thead>
             <tr style={{ borderBottom: '1px solid var(--surface-border)', color: 'var(--text-secondary)' }}>
               <th style={{ padding: '0.4rem 0.5rem', whiteSpace: 'nowrap' }}>年度・番号</th>
-              <th style={{ padding: '0.4rem 0.5rem', whiteSpace: 'nowrap' }}>分野・タグ</th>
+              <th style={{ padding: '0.4rem 0.5rem', whiteSpace: 'nowrap' }}>分野</th>
               <th style={{ padding: '0.4rem 0.5rem', whiteSpace: 'nowrap' }}>状態</th>
               <th style={{ padding: '0.4rem 0.5rem', whiteSpace: 'nowrap' }}>
                 <select 
@@ -180,10 +180,6 @@ export default function QuestionsListContent({
                   </td>
                   <td style={{ padding: '0.2rem 0.5rem' }}>
                     <div style={{ fontWeight: 'bold', fontSize: '0.9rem' }}>{q.field || '未分類'}</div>
-                    <div style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>
-                      {q.situationCategory?.split(',').map(t => <span key={t} style={{ display: 'inline-block', marginRight: '6px', color: '#60a5fa' }}>{t}</span>)}
-                      {q.knowledgeTags?.split(',').map(t => <span key={t} style={{ display: 'inline-block', marginRight: '6px', color: '#34d399' }}>{t}</span>)}
-                    </div>
                   </td>
                   <td style={{ padding: '0.2rem 0.5rem', whiteSpace: 'nowrap' }}>
                     <div style={{ color: statusColor, fontWeight: isDebated ? 'bold' : 'normal' }}>
