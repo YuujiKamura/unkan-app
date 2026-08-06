@@ -2453,7 +2453,7 @@
     "content": "一般貨物自動車運送事業者（以下「事業者」という。）の事業計画の変更に関する次の記述のうち、【正しいものを 2 つ】選びなさい。なお、解答にあたっては、各選択肢に記載されている事項以外は考慮しないものとする。（※法改正により一部改変）",
     "imageUrl": null,
     "knowledgeTags": "",
-    "format": "MULTI_GROUP",
+    "format": "SINGLE",
     "pdfUrl": "/data/R03.CBT.pdf",
     "pdfPage": 1,
     "options": [
@@ -2543,7 +2543,7 @@
     "content": "次の記述のうち、一般貨物自動車運送事業の運行管理者の行わなければならない業務として【正しいものを 2 つ】選びなさい。なお、解答にあたっては、各選択肢に記載されている事項以外は考慮しないものとする。（※法改正により一部改変）",
     "imageUrl": null,
     "knowledgeTags": "",
-    "format": "MULTI_GROUP",
+    "format": "SINGLE",
     "pdfUrl": "/data/R03.CBT.pdf",
     "pdfPage": 2,
     "options": [
@@ -2578,7 +2578,7 @@
     "content": "貨物自動車運送事業の事業用自動車の運転者に対する点呼についての法令等の定めに関する次の記述のうち、【正しいものをすべて】選びなさい。なお、解答にあたっては、各選択肢に記載されている事項以外は考慮しないものとする。（※法改正により一部改変）",
     "imageUrl": null,
     "knowledgeTags": "",
-    "format": "MULTI_GROUP",
+    "format": "SINGLE",
     "pdfUrl": "/data/R03.CBT.pdf",
     "pdfPage": 2,
     "options": [
@@ -2613,7 +2613,7 @@
     "content": "次の自動車事故に関する記述のうち、一般貨物自動車運送事業者が自動車事故報告規則に基づき国土交通大臣への【報告を要するものを 2 つ】選びなさい。なお、解答にあたっては、各選択肢に記載されている事項以外は考慮しないものとする。",
     "imageUrl": null,
     "knowledgeTags": "",
-    "format": "MULTI_GROUP",
+    "format": "SINGLE",
     "pdfUrl": "/data/R03.CBT.pdf",
     "pdfPage": 3,
     "options": [
@@ -2718,7 +2718,7 @@
     "content": "一般貨物自動車運送事業者（以下「事業者」という。）の事業用自動車の運行に係る記録等に関する次の記述のうち、【正しいものを 2 つ】選びなさい。なお、解答にあたっては、各選択肢に記載されている事項以外は考慮しないものとする。（※法改正により一部改変）",
     "imageUrl": null,
     "knowledgeTags": "",
-    "format": "MULTI_GROUP",
+    "format": "SINGLE",
     "pdfUrl": "/data/R03.CBT.pdf",
     "pdfPage": 4,
     "options": [
@@ -2753,7 +2753,7 @@
     "content": "自動車の登録等についての次の記述のうち、【正しいものを 2 つ】選びなさい。なお、解答にあたっては、各選択肢に記載されている事項以外は考慮しないものとする。",
     "imageUrl": null,
     "knowledgeTags": "",
-    "format": "MULTI_GROUP",
+    "format": "SINGLE",
     "pdfUrl": "/data/R03.CBT.pdf",
     "pdfPage": 5,
     "options": [
@@ -3168,7 +3168,7 @@
     "content": "「自動車運転者の労働時間等の改善のための基準」において定める貨物自動車運送事業に従事する自動車運転者（以下「トラック運転者」という。）の拘束時間等の規定に関する次の記述のうち、【正しいものを２つ】選びなさい。なお、解答にあたっては、各選択肢に記載されている事項以外は考慮しないものとする。",
     "imageUrl": null,
     "knowledgeTags": "",
-    "format": "MULTI_GROUP",
+    "format": "SINGLE",
     "pdfUrl": "/data/R03.CBT.pdf",
     "pdfPage": 12,
     "options": [
@@ -3203,7 +3203,7 @@
     "content": "下図は、貨物自動車運送事業に従事する自動車運転者の運転時間及び休憩時間の例を示したものであるが、このうち、連続運転の中断方法として「自動車運転者の労働時間等の改善のための基準」に【適合しているものを２つ】選びなさい。なお、解答にあたっては、下図に示された内容以外は考慮しないものとする。",
     "imageUrl": "/extracted_images/R03.CBT_Q22.png",
     "knowledgeTags": "#NEEDS_IMAGE",
-    "format": "MULTI_GROUP",
+    "format": "SINGLE",
     "pdfUrl": "/data/R03.CBT.pdf",
     "pdfPage": 13,
     "options": [
@@ -3328,7 +3328,7 @@
     "content": "一般貨物自動車運送事業者が事業用自動車の運転者に対して行う指導・監督に関する次の記述のうち、【適切なものをすべて】選びなさい。なお、解答にあたっては、各選択肢に記載されている事項以外は考慮しないものとする。",
     "imageUrl": null,
     "knowledgeTags": "",
-    "format": "MULTI_GROUP",
+    "format": "SINGLE",
     "pdfUrl": "/data/R03.CBT.pdf",
     "pdfPage": 15,
     "options": [
@@ -3363,7 +3363,7 @@
     "content": "事業用自動車の運転者の健康管理に関する次の記述のうち、【適切なものをすべて】選びなさい。なお、解答にあたっては、各選択肢に記載されている事項以外は考慮しないものとする。",
     "imageUrl": null,
     "knowledgeTags": "",
-    "format": "MULTI_GROUP",
+    "format": "SINGLE",
     "pdfUrl": "/data/R03.CBT.pdf",
     "pdfPage": 15,
     "options": [
@@ -3398,7 +3398,7 @@
     "content": "交通事故防止対策に関する次の記述のうち、【適切なものをすべて】選びなさい。なお、解答にあたっては、各選択肢に記載されている事項以外は考慮しないものとする。",
     "imageUrl": null,
     "knowledgeTags": "",
-    "format": "MULTI_GROUP",
+    "format": "SINGLE",
     "pdfUrl": "/data/R03.CBT.pdf",
     "pdfPage": 16,
     "options": [
