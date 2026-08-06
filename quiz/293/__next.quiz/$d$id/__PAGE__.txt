@@ -1,0 +1,78 @@
+1:"$Sreact.fragment"
+2:I[33316,["/unkan-app/_next/static/chunks/30-l1zkz9826t.js","/unkan-app/_next/static/chunks/2oejna66087rc.js","/unkan-app/_next/static/chunks/43_z4zs-xyu0_.js","/unkan-app/_next/static/chunks/3rp-g6dqtbbm0.js","/unkan-app/_next/static/chunks/30xk5g0he03sk.js"],"default"]
+8:I[52827,["/unkan-app/_next/static/chunks/30-l1zkz9826t.js","/unkan-app/_next/static/chunks/2oejna66087rc.js"],"OutletBoundary"]
+9:"$Sreact.suspense"
+3:T103e,Gemini との会話
+解説
+画面に表示されている令和5年（CBT）問16の正解と各選択肢の解説です。
+
+正解：3（誤っているもの）
+解説
+選択肢 1（正しい）
+内容: 「特定中型貨物自動車等通行止め」等の規制標識に関する記述です。
+
+解説: 様式・色合い等の定義（青色の文字・記号、赤色の枠・斜線、白地）および対象車両の定義として正しく記述されています。
+
+選択肢 2（正しい）
+内容: 「駐車禁止」または「停車及び駐車禁止」に関する記述です。
+
+解説: 標識の様式（地が青色、枠・斜帯が赤色、文字・縁が白色）および指示内容（指定時間内の停車・駐車の禁止）は正しく記述されています。
+
+選択肢 3（誤り ＝ 正解）
+内容: 「図の標識は、この先の道路の幅員が狭くなることを表している。」
+
+解説:
+
+記述にある「幅員が狭くなる」ことを表すのは「幅員減少」の警戒標識です。
+
+「縁線・文字・記号が黒色、縁・地が黄色」の警戒標識のうち、選択肢4の文脈等から本問の図が示しているのは「車線数減少」や「道路工事中」等の別の警戒標識（または「幅員減少」の解説・図柄との不一致）となっています。
+
+幅員減少と車線数減少は標識の意味合いが異なるため、この記述は誤りとなります。
+
+選択肢 4（正しい）
+内容: 「車両横断禁止」の規制標識に関する記述です。
+
+解説: 道路外の施設等に入るための左折を伴う横断を除き、車両の横断を禁止する標識であり、様式（青文字・記号、赤枠・斜帯、白地）も正しく記述されています。
+
+全然イメージわかないんだけど
+標識の「見た目」と「文字による説明」が一致しづらくて、ピンときづらいですよね！
+
+具体的にどの標識がどんな形・色のものなのか、視覚的なイメージに変換して整理します。
+
+1. 「特定中型貨物自動車等通行止め」（選択肢1）
+見た目: 白地に赤丸・赤斜線があり、中に青色のトラックのマークが描かれている標識です。
+
+意味: 中型トラックなどの大型寄りの貨物車が「ここは通っちゃダメ」という指定です。
+
+2. 「駐車禁止 / 停車及び駐車禁止」（選択肢2）
+見た目: 青地に赤い○と斜線（または×印）が入っているおなじみの街頭標識です。
+
+意味: 「8時〜20時」のように時間帯が指定されていて、その時間内は停めちゃダメという意味です。
+
+3. 「警戒標識（黄色と黒）」（選択肢3）
+見た目: 黄色の菱形に黒いマークが描かれた、危険や道路状況を知らせる標識です。
+
+問題点:
+
+実際のテストや問題集の「図」では、「車線数が減る（車線数減少）」や「道路工事中」などのイラストが出題されていることが多いです。
+
+テキストでは「幅員が狭くなる（幅員減少）」と説明されているため、「図のイラストと解説の意味が合っていない」というのが誤り（正解）の理由になります。
+
+ちなみに対比すると：
+
+幅員減少: 道路全体の幅がスリムに狭くなるイメージ
+
+車線数減少: 2車線が1車線に減るイメージ（片側の線が消えて合流する）
+
+4. 「車両横断禁止」（選択肢4）
+見た目: 白地に赤枠・赤斜線、中央に右折して道路を横切ろうとする車のマーク（青色）が描かれています。
+
+意味: 道路の反対側にあるお店や施設に入るために、右折して対向車線を横切るのを禁止する標識です。（※左折で入る場合は除外されます）
+
+「黄色くて菱形の標識（警戒標識）」はマークの形（車線が減るのか、幅が狭くなるのか）がひっかけポイントになりやすいので、図の矢印や線の狭まり方に注目してみてください！
+0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"initialQuestion":{"id":293,"year":"令和5年 (CBT)","questionNumber":16,"field":"道路交通法","majorField":null,"subField":null,"content":"【道路交通法関係】\n\n次に掲げる標識に関する次の記述のうち、誤っているものを１つ選びなさい。","imageUrl":"https://www.unkan-net.com/kakomon/R05.CBT.pdf","sourceSheet":null,"knowledgeTags":"#道交法(駐車・免許・罰則),#道交法(通行ルール)","riskCategory":null,"situationCategory":"#図表・写真問題, #正誤・択一(1つ選択)","format":"SINGLE","pdfUrl":null,"pdfPage":null,"options":[{"id":1156,"questionId":293,"optionNumber":1,"content":"車両総重量が9,800キログラムで最大積載量が5,500キログラムの特定中型自動車（専ら人を運搬する構造のもの以外のもの）は通行してはならない。\n「道路標識、区画線及び道路標示に関する命令」に定める様式\n文字及び記号を青色、斜めの帯及び枠を赤色、縁及び地を白色とする。","isCorrect":false,"explanation":null,"structuredData":null},{"id":1157,"questionId":293,"optionNumber":2,"content":"車両は、法令の規定若しくは警察官の命令により、又は危険を防止するため一時停止する場合のほか、8時から20時までの間は、停車し、又は駐車してはならない。\n「道路標識、区画線及び道路標示に関する命令」に定める様式\n斜めの帯及び枠を赤色、文字及び縁を白色、地を青色とする。","isCorrect":false,"explanation":null,"structuredData":null},{"id":1158,"questionId":293,"optionNumber":3,"content":"図の標識は、この先の道路の幅員が狭くなることを表している。\n「道路標識、区画線及び道路標示に関する命令」に定める様式\n縁線、文字及び記号を黒色、縁及び地を黄色とする。","isCorrect":true,"explanation":null,"structuredData":null},{"id":1159,"questionId":293,"optionNumber":4,"content":"車両は横断（道路外の施設又は場所に出入りするための左折を伴う横断を除く。）することができない。\n「道路標識、区画線及び道路標示に関する命令」に定める様式\n文字及び記号を青色、斜めの帯及び枠を赤色、縁及び地を白色とする。","isCorrect":false,"explanation":null,"structuredData":null}],"explanation":{"id":66,"questionId":293,"content":"$3","isDebated":true},"correctOptions":[],"userMeta":null,"attempts":[],"isDebated":false,"isBookmarked":false,"keywords":["道路交通法関係","車両総重量","最大積載量","特定中型自動車","道路標識","区画線及","道路標示","文字及","規定若","警察官","一時停止","道路外","施設又","キログラム"]},"similarQuestions":[{"id":137,"year":"令和2年 (CBT)","questionNumber":16,"isDebated":false,"score":65,"field":"道路交通法","sharedKeywords":["situation: #正誤・択一(1つ選択)","knowledge:#道交法(通行ルール)","situation:#図表・写真問題","分野: 道路交通法","道路標識","区画線及","道路標示","一時停止"]},{"id":291,"year":"令和5年 (CBT)","questionNumber":14,"isDebated":true,"score":54,"field":"道路交通法","sharedKeywords":["knowledge:#道交法(駐車・免許・罰則)","knowledge:#道交法(通行ルール)","分野: 道路交通法","道路交通法関係","道路外","施設又"]},{"id":135,"year":"令和2年 (CBT)","questionNumber":14,"isDebated":true,"score":53,"field":"道路交通法","sharedKeywords":["knowledge:#道交法(駐車・免許・罰則)","knowledge:#道交法(通行ルール)","分野: 道路交通法","道路外","施設又"]},{"id":174,"year":"令和2年 第1回","questionNumber":17,"isDebated":false,"score":52,"field":"道路交通法","sharedKeywords":["knowledge:#道交法(駐車・免許・罰則)","knowledge:#道交法(通行ルール)","分野: 道路交通法","道路標識"]},{"id":170,"year":"令和2年 第1回","questionNumber":13,"isDebated":false,"score":52,"field":"道路交通法","sharedKeywords":["knowledge:#道交法(駐車・免許・罰則)","knowledge:#道交法(通行ルール)","分野: 道路交通法","車両総重量","キログラム","道路外","施設又"]},{"id":134,"year":"令和2年 (CBT)","questionNumber":13,"isDebated":true,"score":46,"field":"道路交通法","sharedKeywords":["knowledge:#道交法(駐車・免許・罰則)","knowledge:#道交法(通行ルール)","分野: 道路交通法","車両総重量","キログラム","一時停止","道路外","施設又"]},{"id":294,"year":"令和5年 (CBT)","questionNumber":17,"isDebated":true,"score":46,"field":"道路交通法","sharedKeywords":["knowledge:#道交法(駐車・免許・罰則)","knowledge:#道交法(通行ルール)","分野: 道路交通法","道路交通法関係"]},{"id":260,"year":"令和6年 (CBT)","questionNumber":13,"isDebated":true,"score":46,"field":"道路交通法","sharedKeywords":["knowledge:#道交法(駐車・免許・罰則)","分野: 道路交通法","道路交通法関係","最大積載量","車両総重量","キログラム"]},{"id":264,"year":"令和6年 (CBT)","questionNumber":17,"isDebated":true,"score":45,"field":"道路交通法","sharedKeywords":["knowledge:#道交法(駐車・免許・罰則)","knowledge:#道交法(通行ルール)","分野: 道路交通法"]},{"id":138,"year":"令和2年 (CBT)","questionNumber":17,"isDebated":false,"score":34,"field":"道路交通法","sharedKeywords":["knowledge:#道交法(駐車・免許・罰則)","分野: 道路交通法"]}],"nextQuestionId":294,"prevQuestionId":292,"nextIncorrectId":300,"contextModeLabel":"📅 年度別演習","groupTitle":"令和5年 (CBT)","currentPosition":16,"totalInGroup":30,"navQueryStr":"?groupBy=year","mode":"","groupQuestionIds":[278,279,280,281,282,283,284,285,286,287,288,289,290,291,292,293,294,295,296,297,298,299,300,301,302,303,304,305,306,307]}],["$L4","$L5","$L6"],"$L7"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"70stZmIivDJ0TNnNsEmxZ"}
+4:["$","script","script-0",{"src":"/unkan-app/_next/static/chunks/43_z4zs-xyu0_.js","async":true}]
+5:["$","script","script-1",{"src":"/unkan-app/_next/static/chunks/3rp-g6dqtbbm0.js","async":true}]
+6:["$","script","script-2",{"src":"/unkan-app/_next/static/chunks/30xk5g0he03sk.js","async":true}]
+7:["$","$L8",null,{"children":["$","$9",null,{"name":"Next.MetadataOutlet","children":"$@a"}]}]
+a:null

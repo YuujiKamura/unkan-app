@@ -1,0 +1,97 @@
+1:"$Sreact.fragment"
+2:I[11434,["/unkan-app/_next/static/chunks/30-l1zkz9826t.js","/unkan-app/_next/static/chunks/2oejna66087rc.js"],"default"]
+3:I[98000,["/unkan-app/_next/static/chunks/30-l1zkz9826t.js","/unkan-app/_next/static/chunks/2oejna66087rc.js","/unkan-app/_next/static/chunks/43_z4zs-xyu0_.js","/unkan-app/_next/static/chunks/3rp-g6dqtbbm0.js","/unkan-app/_next/static/chunks/30xk5g0he03sk.js"],""]
+4:I[64209,["/unkan-app/_next/static/chunks/30-l1zkz9826t.js","/unkan-app/_next/static/chunks/2oejna66087rc.js"],"default"]
+5:I[50441,["/unkan-app/_next/static/chunks/30-l1zkz9826t.js","/unkan-app/_next/static/chunks/2oejna66087rc.js"],"default"]
+6:I[55665,["/unkan-app/_next/static/chunks/30-l1zkz9826t.js","/unkan-app/_next/static/chunks/2oejna66087rc.js"],"default"]
+8:I[52827,["/unkan-app/_next/static/chunks/30-l1zkz9826t.js","/unkan-app/_next/static/chunks/2oejna66087rc.js"],"OutletBoundary"]
+9:"$Sreact.suspense"
+c:I[52827,["/unkan-app/_next/static/chunks/30-l1zkz9826t.js","/unkan-app/_next/static/chunks/2oejna66087rc.js"],"ViewportBoundary"]
+e:I[52827,["/unkan-app/_next/static/chunks/30-l1zkz9826t.js","/unkan-app/_next/static/chunks/2oejna66087rc.js"],"MetadataBoundary"]
+10:I[25844,["/unkan-app/_next/static/chunks/30-l1zkz9826t.js","/unkan-app/_next/static/chunks/2oejna66087rc.js"],"default",1]
+:HL["/unkan-app/_next/static/chunks/3yu0u4btddnts.css","style"]
+0:{"P":null,"c":["","quiz","277"],"q":"","i":false,"f":[[["",{"children":["quiz",{"children":[["id","277","d",null],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/unkan-app/_next/static/chunks/3yu0u4btddnts.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/unkan-app/_next/static/chunks/30-l1zkz9826t.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/unkan-app/_next/static/chunks/2oejna66087rc.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"ja","children":["$","body",null,{"children":["$","$L2",null,{"children":[["$","nav",null,{"style":{"padding":"0.8rem 2rem","background":"var(--surface-color)","borderBottom":"1px solid var(--surface-border)","display":"flex","position":"sticky","top":0,"zIndex":100,"backdropFilter":"blur(12px)","WebkitBackdropFilter":"blur(12px)"},"children":["$","div",null,{"style":{"display":"flex","gap":"1rem","justifyContent":"space-between","width":"100%","alignItems":"center","flexWrap":"wrap"},"children":[["$","$L3",null,{"href":"/questions","style":{"textDecoration":"none","color":"var(--text-primary)","fontWeight":"bold","display":"flex","alignItems":"center","gap":"0.5rem","fontSize":"1.2rem"},"children":"🏠 運行管理者過去問ダッシュボード"}],["$","$L4",null,{}]]}]}],["$","main",null,{"style":{"minHeight":"calc(100vh - 150px)"},"children":["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"style":{"marginTop":"4rem","padding":"2rem","background":"var(--surface-color)","borderTop":"1px solid var(--surface-border)","textAlign":"center","fontSize":"0.85rem","color":"var(--text-secondary)","lineHeight":"1.6"},"children":[["$","p",null,{"style":{"marginBottom":"0.5rem"},"children":["本アプリケーションに収録されている運行管理者試験（貨物）の過去問題および図表等の出典・参照元は以下の通りです。",["$","br",null,{}],"・",["$","a",null,{"href":"https://www.unkan.or.jp/","target":"_blank","rel":"noopener noreferrer","style":{"color":"var(--primary-color)","textDecoration":"none"},"children":"公益財団法人 運行管理者試験センター"}],["$","br",null,{}],"・",["$","a",null,{"href":"https://www.unkan-net.com/","target":"_blank","rel":"noopener noreferrer","style":{"color":"var(--primary-color)","textDecoration":"none"},"children":"運行管理者試験対策.net"}]]}],["$","p",null,{"style":{"opacity":0.8},"children":"※本サイトは個人の学習目的で作成された非公式の解説・演習用アプリケーションであり、上記機関・サイトとは一切関係ありません。"}]]}]]}]}]}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":["$L7",[["$","script","script-0",{"src":"/unkan-app/_next/static/chunks/43_z4zs-xyu0_.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/unkan-app/_next/static/chunks/3rp-g6dqtbbm0.js","async":true,"nonce":"$undefined"}],["$","script","script-2",{"src":"/unkan-app/_next/static/chunks/30xk5g0he03sk.js","async":true,"nonce":"$undefined"}]],["$","$L8",null,{"children":["$","$9",null,{"name":"Next.MetadataOutlet","children":"$@a"}]}]]}],{},null,false,null]},null,false,"$@b"]},null,false,"$@b"]},null,false,null],["$","$1","h",{"children":[null,["$","$Lc",null,{"children":"$Ld"}],["$","div",null,{"hidden":true,"children":["$","$Le",null,{"children":"$Lf"}]}],null]}],false]],"m":"$undefined","G":["$10",["$L11"]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"70stZmIivDJ0TNnNsEmxZ"}
+12:[]
+b:"$W12"
+f:["$","$9",null,{"name":"Next.Metadata","children":"$L13"}]
+11:["$","link","0",{"rel":"stylesheet","href":"/unkan-app/_next/static/chunks/3yu0u4btddnts.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+d:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+14:I[70367,["/unkan-app/_next/static/chunks/30-l1zkz9826t.js","/unkan-app/_next/static/chunks/2oejna66087rc.js"],"IconMark"]
+a:null
+13:[["$","title","0",{"children":"運行管理者 過去問演習・学習ダッシュボード"}],["$","meta","1",{"name":"description","content":"運行管理者の過去問演習・進捗管理アプリ"}],["$","link","2",{"rel":"icon","href":"/unkan-app/favicon.ico?favicon.2vob68tjqpejf.ico","sizes":"256x256","type":"image/x-icon"}],["$","$L14","3",{}]]
+15:I[33316,["/unkan-app/_next/static/chunks/30-l1zkz9826t.js","/unkan-app/_next/static/chunks/2oejna66087rc.js","/unkan-app/_next/static/chunks/43_z4zs-xyu0_.js","/unkan-app/_next/static/chunks/3rp-g6dqtbbm0.js","/unkan-app/_next/static/chunks/30xk5g0he03sk.js"],"default"]
+16:Te5d,【実務上の知識及び能力関係】
+
+運行管理者が、次の大型トラックの事故報告に基づき、この事故の要因分析を行ったうえで、事業者又は運行管理者にとって、最も直接的に有効と考えられる＜事故の再発防止対策＞ア～カの組合せを、＜選択肢＞（1～6）から1つ選びなさい。なお、解答にあたっては、＜事故の概要＞及び＜事故関連情報＞に記載されている事項以外は考慮しないものとする。
+
+＜事故の概要＞
+大型トラックが信号交差点を左折した際、交差点内で、横断歩道を右から横断中の自転車の通過待ちをした後に発進したが、同横断歩道を左から横断中の車いす利用者に気付かず衝突し、路上に転倒させた後、車両で轢過した。
+
+＜事故関連情報＞
+① 運行管理者は、当該運転者に対する業務前の点呼において、昨日は、就寝時間がいつもより遅かったとの事であったが、疲労等に問題がないことを確認していた。
+② 運転者は、事故地点において、右方向から来る自転車のみに気を取られ、左方の安全確認を十分に行わなかったため、同横断歩道を左側から横断していた車いす利用者に全く気付かず進行し、車両の前部に衝突転倒させ轢過した。
+③ 当該運転者は、3ヵ月前に定期健康診断を受診した際、肥満及び高血圧を指摘され、精密検査の受診を勧められ、まだ、精密検査は受診していなかったが、睡眠時無呼吸症候群（SAS）検査は受診していた。
+④ 当該運転者の適性診断結果で、「信号の変化や他の交通の動きを予測した運転を行うことや、歩行者や自転車のそばを通過する際は思いやりのある運転を心がける」こと等について指摘されていた。
+⑤ 当該営業所においては、運行管理者の補助者（以下「補助者」という。）は選任されておらず、運行管理者により運行管理業務を行っていた。
+⑥ 当該営業所では、事故が発生しやすい箇所、交差点での左右折時における留意事項等について指導を行っていなかった。
+
+＜事故の再発防止対策＞
+ア 運転者に対し、大型車を運転して交差点で左折又は右折する場合は、直接視界及び間接視界により、車両の左右及び前方下方に歩行者等がないか十分確認した上で通過するよう指導を徹底すること。
+イ SAS 取扱規定を作成し、雇い入れ時等のタイミングで医療機器による SAS スクリーニング検査を受けさせ、SAS 検査後のフォローや乗務可否、治療の継続的なチェックなど目的を明確にすること。
+ウ 運行の主な経路における事故が発生しやすい箇所や具体的な注意事項など、安全運行を行うために必要な情報を運転者に伝え、適切な運行指示を行うこと。
+エ 点呼の際に点呼実施者が不在にならないよう、適正な数の運行管理者又は補助者を配置するなど、運行管理を適切に実施するための体制を整備すること。
+オ 適性診断の結果をもとに、運転者に対して、歩行者等の安全に配慮した「思いやり運転」を身につけるよう継続的に指導すること。
+カ 運転者に対し、十分な睡眠時間の確保等、勤務に影響を及ぼさない日常生活の過ごし方についても指導すること。17:Tc5a,Gemini との会話
+解説
+運行管理者試験（貨物）における問30（事故の再発防止対策）の解説です。
+
+この問題のポイントは、「事故関連情報で示された背景・原因に対して、直接的に対応する再発防止策を選べているか」です。
+
+💡 正解の組み合わせ：【 2 . ア ・ ウ ・ オ 】
+各記述が「直接的な再発防止策として適切かどうか」を照らし合わせて確認してみましょう。
+
+🔍 各記述の検証
+〇 適切（有効な対策）
+ア（適切）
+
+対応する情報： ②「右方向の自転車に気を取られ、左方の安全確認を行わなかった」
+
+解説： 交差点左折時の死角や左右・前方の安全確認（直接視界・間接視界の活用）を徹底指導することは、事故に直結する原因を防止する最も直接的で有効な対策です。
+
+ウ（適切）
+
+対応する情報： ⑥「営業所では事故が発生しやすい箇所や交差点左右折時の留意事項について指導を行っていなかった」
+
+解説： 営業所としての指導不足が明示されているため、危険箇所の情報伝達や適切な運行指示を行うことは直接的な再発防止策になります。
+
+オ（適切）
+
+対応する情報： ④「適性診断結果で、他の交通の動きの予測や思いやりのある運転について指摘されていた」
+
+解説： 運転者の適性診断結果で指摘されていた課題に対して、継続的な個別指導を行うことは個人の癖や弱点を補う直接的な対策です。
+
+✕ 不適切（今回の事案に対する直接の対策ではない）
+イ（不適切）
+
+対応する情報： ③「SAS検査は受診していた」
+
+解説： 運転者はすでにSAS検査を受診済みであり、本事故の直接的な要因としてSAS（睡眠時無呼吸症候群）が関与した記述はありません。
+
+エ（不適切）
+
+対応する情報： ⑤「補助者は選任されておらず、運行管理者により業務を行っていた」
+
+解説： 運行管理者自身が適正に業務を行っており、点呼時に実施者が不在だったなどの体制不備の記述はありません。補助者の選任は必須ではないため、今回の事故の直接原因・対策とは無関係です。
+
+カ（不適切）
+
+対応する情報： ①「業務前点呼で疲労等に問題がないことを確認していた」
+
+解説： 点呼で体調・疲労に問題がないと確認されており、睡眠不足などの日常の過ごし方が事故原因となった根拠はありません。
+
+🎯 解答のまとめ
+直接的な対策として正しいのは ア・ウ・オ の3つとなるため、選択肢 「 2 」 が正解です。
+
+💡 試験対策ワンポイント
+実務上の知識問題（事故要因分析・再発防止策）では、一般論としてどれだけ正しく見える対策であっても、「事故関連情報に書かれている事実・原因と対応していない選択肢」は除外するのが鉄則です！
+7:["$","$L15",null,{"initialQuestion":{"id":277,"year":"令和6年 (CBT)","questionNumber":30,"field":"実務上の知識及び能力","majorField":null,"subField":null,"content":"$16","imageUrl":null,"sourceSheet":null,"knowledgeTags":"#交通事故の要因・防止策","riskCategory":null,"situationCategory":"#事故事例・実務ケース, #正誤・択一(1つ選択)","format":"SINGLE","pdfUrl":null,"pdfPage":null,"options":[{"id":1092,"questionId":277,"optionNumber":1,"content":"ア イ エ","isCorrect":false,"explanation":null,"structuredData":null},{"id":1093,"questionId":277,"optionNumber":2,"content":"ア ウ オ","isCorrect":true,"explanation":null,"structuredData":null},{"id":1094,"questionId":277,"optionNumber":3,"content":"ア エ カ","isCorrect":false,"explanation":null,"structuredData":null},{"id":1095,"questionId":277,"optionNumber":4,"content":"イ ウ エ","isCorrect":false,"explanation":null,"structuredData":null},{"id":1096,"questionId":277,"optionNumber":5,"content":"イ オ カ","isCorrect":false,"explanation":null,"structuredData":null},{"id":1097,"questionId":277,"optionNumber":6,"content":"ウ エ カ","isCorrect":false,"explanation":null,"structuredData":null}],"explanation":{"id":43,"questionId":277,"content":"$17","isDebated":true},"correctOptions":[],"userMeta":null,"attempts":[],"isDebated":false,"isBookmarked":false,"keywords":["運行管理者","実務上","知識及","能力関係","事故報告","要因分析","事業者又","直接的","再発防止対策","選択肢","事故関連情報","事項以外","信号交差点","交差点内","横断歩道","横断中","自転車","通過待","同横断歩道","利用者","当該運転者","業務前","就寝時間","疲労等","事故地点","右方向","安全確認","衝突転倒","定期健康診断","肥満及","高血圧","精密検査","睡眠時無呼吸症候群","適性診断結果","当該営業所","補助者","運行管理業務","左右折時","留意事項等","大型車","左折又","直接視界及","間接視界","左右及","前方下方","歩行者等","十分確認","取扱規定","医療機器","検査後","乗務可否","継続的","具体的","注意事項","安全運行","運行指示","点呼実施者","運行管理者又","運行管理","適性診断","睡眠時間","確保等","日常生活","トラック","タイミング","スクリーニング","フォロー","チェック"]},"similarQuestions":[{"id":252,"year":"令和6年 (CBT)","questionNumber":5,"isDebated":true,"score":47,"field":"貨物自動車運送事業法","sharedKeywords":["situation: #正誤・択一(1つ選択)","situation:#事故事例・実務ケース","当該運転者","事項以外"]},{"id":341,"year":"令和4年 (CBT)","questionNumber":30,"isDebated":false,"score":47,"field":"実務上の知識及び能力","sharedKeywords":["knowledge:#交通事故の要因・防止策","situation:#事故事例・実務ケース","分野: 実務上の知識及び能力","再発防止対策","事故関連情報","運行管理者","当該運転者","事故報告"]},{"id":276,"year":"令和6年 (CBT)","questionNumber":29,"isDebated":true,"score":29,"field":"実務上の知識及び能力","sharedKeywords":["situation: #正誤・択一(1つ選択)","分野: 実務上の知識及び能力","能力関係","実務上","知識及"]},{"id":272,"year":"令和6年 (CBT)","questionNumber":25,"isDebated":true,"score":27,"field":"実務上の知識及び能力","sharedKeywords":["knowledge:#交通事故の要因・防止策","分野: 実務上の知識及び能力","運行管理者","当該運転者","能力関係","事項以外","適性診断","実務上"]},{"id":143,"year":"令和2年 (CBT)","questionNumber":22,"isDebated":false,"score":26,"field":"労働基準法","sharedKeywords":["situation: #正誤・択一(1つ選択)"]},{"id":144,"year":"令和2年 (CBT)","questionNumber":23,"isDebated":false,"score":26,"field":"労働基準法","sharedKeywords":["situation: #正誤・択一(1つ選択)"]},{"id":299,"year":"令和5年 (CBT)","questionNumber":22,"isDebated":true,"score":26,"field":"労働基準法","sharedKeywords":["situation: #正誤・択一(1つ選択)"]},{"id":338,"year":"令和4年 (CBT)","questionNumber":27,"isDebated":false,"score":25,"field":"実務上の知識及び能力","sharedKeywords":["knowledge:#交通事故の要因・防止策","分野: 実務上の知識及び能力","運行管理者","事項以外","安全確認","適性診断"]},{"id":150,"year":"令和2年 (CBT)","questionNumber":29,"isDebated":false,"score":24,"field":"実務上の知識及び能力","sharedKeywords":["situation: #正誤・択一(1つ選択)","分野: 実務上の知識及び能力","運行管理者","当該運転者","事項以外","トラック"]},{"id":182,"year":"令和2年 第1回","questionNumber":25,"isDebated":false,"score":24,"field":"実務上の知識及び能力","sharedKeywords":["knowledge:#交通事故の要因・防止策","分野: 実務上の知識及び能力","運行管理者","当該運転者","事項以外","適性診断"]}],"nextQuestionId":248,"prevQuestionId":276,"nextIncorrectId":null,"contextModeLabel":"📅 年度別演習","groupTitle":"令和6年 (CBT)","currentPosition":30,"totalInGroup":30,"navQueryStr":"?groupBy=year","mode":"","groupQuestionIds":[248,249,250,251,252,253,254,255,256,257,258,259,260,261,262,263,264,265,266,267,268,269,270,271,272,273,274,275,276,277]}]
