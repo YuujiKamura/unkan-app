@@ -9,8 +9,8 @@
     "imageUrl": "/pdf_pages/R02.CBT_Q1.png",
     "knowledgeTags": null,
     "format": "SINGLE",
-    "pdfUrl": null,
-    "pdfPage": null,
+    "pdfUrl": "/data/R02.CBT.pdf",
+    "pdfPage": 1,
     "options": [
       {
         "optionNumber": 1,
@@ -44,8 +44,8 @@
     "imageUrl": "/pdf_pages/R02.CBT_Q2.png",
     "knowledgeTags": "#点呼・乗務制限(管理者義務),#健康管理・疾病",
     "format": "MULTI_GROUP",
-    "pdfUrl": null,
-    "pdfPage": null,
+    "pdfUrl": "/data/R02.CBT.pdf",
+    "pdfPage": 1,
     "options": [
       {
         "optionNumber": 1,
@@ -89,8 +89,8 @@
     "imageUrl": "/pdf_pages/R02.CBT_Q3.png",
     "knowledgeTags": null,
     "format": "SINGLE",
-    "pdfUrl": null,
-    "pdfPage": null,
+    "pdfUrl": "/data/R02.CBT.pdf",
+    "pdfPage": 2,
     "options": [
       {
         "optionNumber": 1,
@@ -124,8 +124,8 @@
     "imageUrl": "/pdf_pages/R02.CBT_Q4.png",
     "knowledgeTags": "#点呼・乗務制限(管理者義務)",
     "format": "SINGLE",
-    "pdfUrl": null,
-    "pdfPage": null,
+    "pdfUrl": "/data/R02.CBT.pdf",
+    "pdfPage": 2,
     "options": [
       {
         "optionNumber": 1,
@@ -159,8 +159,8 @@
     "imageUrl": "/pdf_pages/R02.CBT_Q5.png",
     "knowledgeTags": null,
     "format": "SINGLE",
-    "pdfUrl": null,
-    "pdfPage": null,
+    "pdfUrl": "/data/R02.CBT.pdf",
+    "pdfPage": 3,
     "options": [
       {
         "optionNumber": 1,
@@ -194,8 +194,8 @@
     "imageUrl": "/pdf_pages/R02.CBT_Q6.png",
     "knowledgeTags": "#点呼・乗務制限(管理者義務)",
     "format": "SINGLE",
-    "pdfUrl": null,
-    "pdfPage": null,
+    "pdfUrl": "/data/R02.CBT.pdf",
+    "pdfPage": 3,
     "options": [
       {
         "optionNumber": 1,
@@ -229,8 +229,8 @@
     "imageUrl": "/pdf_pages/R02.CBT_Q7.png",
     "knowledgeTags": null,
     "format": "SINGLE",
-    "pdfUrl": null,
-    "pdfPage": null,
+    "pdfUrl": "/data/R02.CBT.pdf",
+    "pdfPage": 4,
     "options": [
       {
         "optionNumber": 1,
@@ -264,8 +264,8 @@
     "imageUrl": "/pdf_pages/R02.CBT_Q8.png",
     "knowledgeTags": "#運行管理者の要件・選任",
     "format": "SINGLE",
-    "pdfUrl": null,
-    "pdfPage": null,
+    "pdfUrl": "/data/R02.CBT.pdf",
+    "pdfPage": 4,
     "options": [
       {
         "optionNumber": 1,
@@ -299,8 +299,8 @@
     "imageUrl": "/pdf_pages/R02.CBT_Q9.png",
     "knowledgeTags": "#自動車の登録・車検",
     "format": "SINGLE",
-    "pdfUrl": null,
-    "pdfPage": null,
+    "pdfUrl": "/data/R02.CBT.pdf",
+    "pdfPage": 5,
     "options": [
       {
         "optionNumber": 1,
@@ -334,8 +334,8 @@
     "imageUrl": "/pdf_pages/R02.CBT_Q10.png",
     "knowledgeTags": "#自動車の登録・車検",
     "format": "SINGLE",
-    "pdfUrl": null,
-    "pdfPage": null,
+    "pdfUrl": "/data/R02.CBT.pdf",
+    "pdfPage": 5,
     "options": [
       {
         "optionNumber": 1,
@@ -369,8 +369,8 @@
     "imageUrl": "/pdf_pages/R02.CBT_Q11.png",
     "knowledgeTags": "#保安基準(寸法・重量・灯火)",
     "format": "MULTI_GROUP",
-    "pdfUrl": null,
-    "pdfPage": null,
+    "pdfUrl": "/data/R02.CBT.pdf",
+    "pdfPage": 6,
     "options": [
       {
         "optionNumber": 1,
@@ -424,8 +424,8 @@
     "imageUrl": "/pdf_pages/R02.CBT_Q12.png",
     "knowledgeTags": "#保安基準(寸法・重量・灯火)",
     "format": "SINGLE",
-    "pdfUrl": null,
-    "pdfPage": null,
+    "pdfUrl": "/data/R02.CBT.pdf",
+    "pdfPage": 6,
     "options": [
       {
         "optionNumber": 1,
@@ -459,8 +459,8 @@
     "imageUrl": "/pdf_pages/R02.CBT_Q13.png",
     "knowledgeTags": null,
     "format": "SINGLE",
-    "pdfUrl": null,
-    "pdfPage": null,
+    "pdfUrl": "/data/R02.CBT.pdf",
+    "pdfPage": 7,
     "options": [
       {
         "optionNumber": 1,
@@ -494,8 +494,8 @@
     "imageUrl": "/pdf_pages/R02.CBT_Q14.png",
     "knowledgeTags": "#駐停車禁止ルール",
     "format": "SINGLE",
-    "pdfUrl": null,
-    "pdfPage": null,
+    "pdfUrl": "/data/R02.CBT.pdf",
+    "pdfPage": 7,
     "options": [
       {
         "optionNumber": 1,
@@ -529,8 +529,8 @@
     "imageUrl": "/pdf_pages/R02.CBT_Q15.png",
     "knowledgeTags": null,
     "format": "MULTI_GROUP",
-    "pdfUrl": null,
-    "pdfPage": null,
+    "pdfUrl": "/data/R02.CBT.pdf",
+    "pdfPage": 8,
     "options": [
       {
         "optionNumber": 1,
@@ -574,8 +574,8 @@
     "imageUrl": "/pdf_pages/R02.CBT_Q16.png",
     "knowledgeTags": null,
     "format": "SINGLE",
-    "pdfUrl": null,
-    "pdfPage": null,
+    "pdfUrl": "/data/R02.CBT.pdf",
+    "pdfPage": 8,
     "options": [
       {
         "optionNumber": 1,
@@ -609,8 +609,8 @@
     "imageUrl": "/pdf_pages/R02.CBT_Q17.png",
     "knowledgeTags": null,
     "format": "SINGLE",
-    "pdfUrl": null,
-    "pdfPage": null,
+    "pdfUrl": "/data/R02.CBT.pdf",
+    "pdfPage": 9,
     "options": [
       {
         "optionNumber": 1,
@@ -644,8 +644,8 @@
     "imageUrl": "/pdf_pages/R02.CBT_Q18.png",
     "knowledgeTags": "#労働契約・休日",
     "format": "SINGLE",
-    "pdfUrl": null,
-    "pdfPage": null,
+    "pdfUrl": "/data/R02.CBT.pdf",
+    "pdfPage": 9,
     "options": [
       {
         "optionNumber": 1,
@@ -679,8 +679,8 @@
     "imageUrl": "/pdf_pages/R02.CBT_Q19.png",
     "knowledgeTags": "#労働契約・休日",
     "format": "SINGLE",
-    "pdfUrl": null,
-    "pdfPage": null,
+    "pdfUrl": "/data/R02.CBT.pdf",
+    "pdfPage": 10,
     "options": [
       {
         "optionNumber": 1,
@@ -714,8 +714,8 @@
     "imageUrl": "/pdf_pages/R02.CBT_Q20.png",
     "knowledgeTags": "#改善基準(拘束・休息)",
     "format": "MULTI_GROUP",
-    "pdfUrl": null,
-    "pdfPage": null,
+    "pdfUrl": "/data/R02.CBT.pdf",
+    "pdfPage": 10,
     "options": [
       {
         "optionNumber": 1,
@@ -769,8 +769,8 @@
     "imageUrl": "/pdf_pages/R02.CBT_Q21.png",
     "knowledgeTags": "#改善基準(拘束・休息)",
     "format": "SINGLE",
-    "pdfUrl": null,
-    "pdfPage": null,
+    "pdfUrl": "/data/R02.CBT.pdf",
+    "pdfPage": 11,
     "options": [
       {
         "optionNumber": 1,
@@ -804,8 +804,8 @@
     "imageUrl": "/pdf_pages/R02.CBT_Q22.png",
     "knowledgeTags": "#改善基準(拘束・休息)",
     "format": "SINGLE",
-    "pdfUrl": null,
-    "pdfPage": null,
+    "pdfUrl": "/data/R02.CBT.pdf",
+    "pdfPage": 12,
     "options": [
       {
         "optionNumber": 1,
@@ -839,8 +839,8 @@
     "imageUrl": "/pdf_pages/R02.CBT_Q23.png",
     "knowledgeTags": "#改善基準(拘束・休息)",
     "format": "SINGLE",
-    "pdfUrl": null,
-    "pdfPage": null,
+    "pdfUrl": "/data/R02.CBT.pdf",
+    "pdfPage": 13,
     "options": [
       {
         "optionNumber": 1,
@@ -874,8 +874,8 @@
     "imageUrl": "/pdf_pages/R02.CBT_Q24.png",
     "knowledgeTags": null,
     "format": "SINGLE",
-    "pdfUrl": null,
-    "pdfPage": null,
+    "pdfUrl": "/data/R02.CBT.pdf",
+    "pdfPage": 14,
     "options": [
       {
         "optionNumber": 1,
@@ -909,8 +909,8 @@
     "imageUrl": "/pdf_pages/R02.CBT_Q25.png",
     "knowledgeTags": null,
     "format": "SINGLE",
-    "pdfUrl": null,
-    "pdfPage": null,
+    "pdfUrl": "/data/R02.CBT.pdf",
+    "pdfPage": 15,
     "options": [
       {
         "optionNumber": 1,
@@ -944,8 +944,8 @@
     "imageUrl": "/pdf_pages/R02.CBT_Q26.png",
     "knowledgeTags": null,
     "format": "SINGLE",
-    "pdfUrl": null,
-    "pdfPage": null,
+    "pdfUrl": "/data/R02.CBT.pdf",
+    "pdfPage": 15,
     "options": [
       {
         "optionNumber": 1,
@@ -979,8 +979,8 @@
     "imageUrl": "/pdf_pages/R02.CBT_Q27.png",
     "knowledgeTags": null,
     "format": "SINGLE",
-    "pdfUrl": null,
-    "pdfPage": null,
+    "pdfUrl": "/data/R02.CBT.pdf",
+    "pdfPage": 16,
     "options": [
       {
         "optionNumber": 1,
@@ -1014,8 +1014,8 @@
     "imageUrl": "/pdf_pages/R02.CBT_Q28.png",
     "knowledgeTags": null,
     "format": "SINGLE",
-    "pdfUrl": null,
-    "pdfPage": null,
+    "pdfUrl": "/data/R02.CBT.pdf",
+    "pdfPage": 16,
     "options": [
       {
         "optionNumber": 1,
@@ -1049,8 +1049,8 @@
     "imageUrl": "/pdf_pages/R02.CBT_Q29.png",
     "knowledgeTags": "#改善基準(拘束・休息)",
     "format": "MULTI_GROUP",
-    "pdfUrl": null,
-    "pdfPage": null,
+    "pdfUrl": "/data/R02.CBT.pdf",
+    "pdfPage": 17,
     "options": [
       {
         "optionNumber": 1,
@@ -1099,8 +1099,8 @@
     "imageUrl": "/pdf_pages/R02.CBT_Q30.png",
     "knowledgeTags": "#駐停車禁止ルール,#交通事故の要因・防止策",
     "format": "SINGLE",
-    "pdfUrl": null,
-    "pdfPage": null,
+    "pdfUrl": "/data/R02.CBT.pdf",
+    "pdfPage": 18,
     "options": [
       {
         "optionNumber": 1,
