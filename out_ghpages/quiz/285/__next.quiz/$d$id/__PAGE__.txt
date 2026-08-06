@@ -1,0 +1,60 @@
+1:"$Sreact.fragment"
+2:I[33316,["/unkan-app/_next/static/chunks/00xfj528cblaa.js","/unkan-app/_next/static/chunks/2oejna66087rc.js","/unkan-app/_next/static/chunks/43_z4zs-xyu0_.js","/unkan-app/_next/static/chunks/3rp-g6dqtbbm0.js","/unkan-app/_next/static/chunks/30xk5g0he03sk.js"],"default"]
+8:I[52827,["/unkan-app/_next/static/chunks/00xfj528cblaa.js","/unkan-app/_next/static/chunks/2oejna66087rc.js"],"OutletBoundary"]
+9:"$Sreact.suspense"
+3:Te2a,Gemini との会話
+8問目を解説
+画面に表示されている第8問（運行指示書による指示等に関する問題）ですね。
+
+この問題の正しい選択肢は 1 と 3 です。
+それぞれの選択肢について詳しく解説します。
+
+正解の選択肢（1・3）
+1. 正しい
+事業者は、「乗務前及び乗務後の点呼のいずれも対面で行うことができない乗務」を含む運行（長距離運行などで、出発時も帰庫時も営業所で対面点呼ができないケースなど）ごとに、運行指示書を作成し、運転者に携行させ、適切な指示を行わなければなりません。（貨物自動車運送事業輸送安全規則 第9条の3第1項）
+
+3. 正しい
+当初は運行指示書が不要な運行であっても、運行の途中で予定が変更となり、乗務前・乗務後の点呼がどちらも対面でできなくなった場合は、その時点でその後の運行に関する運行指示書を作成し、電話等で運転者に適切な指示を行わなければなりません。（同規則 第9条の3第4項）
+
+誤りの選択肢（2・4）
+2. 誤り
+運行途中で経路や日時に変更が生じた場合、事業者は手元の運行指示書の写しに変更内容を記載し、電話等で指示を出します。このとき、運転者が携行している運行指示書にもその変更内容を「記載させなければならない」と規定されています。選択肢にあるような「記載を省略させる」ことはできません。（同規則 第9条の3第3項）
+
+4. 誤り
+運行指示書（およびその写し）の保存期間は1年間ですが、起算日が間違っています。「運行を計画した日」からではなく、正しくは「運行の終了の日」から1年間保存しなければなりません。（同規則 第9条の3第5項）
+
+運行指示書の作成条件、途中変更時の対応（運転者への記載義務）、および保存期間（運行終了日から1年）は試験でも頻出のポイントですので、ぜひ押さえておいてください。他にも解説が必要な問題があれば教えてくださいね。
+
+数字の根拠を
+現在表示されている第8問の選択肢4にある「1年間」という数字の根拠について解説します。
+
+「1年間保存」の法的根拠
+この数字は、以下の法令によって定められています。
+
+【根拠法令】
+「貨物自動車運送事業輸送安全規則」第9条の3 第5項（運行指示書）
+
+一般貨物自動車運送事業者等は、運行指示書及びその写しを、運行の終了の日から一年間保存しなければならない。
+
+試験対策としてのポイント
+貨物運送事業における各種記録の保存期間は、原則として「1年間」に設定されているものが多く、グループで覚えておくと便利です。
+
+1年間保存: 運行指示書、点呼記録、日常点検記録、乗務記録、苦情記録、運行記録計（タコグラフ）の記録など
+
+3年間保存: 事故記録、運転者台帳（退職後から起算）
+
+【引っかけ問題に注意】
+選択肢4は「1年間」という数字自体は法令通りで正しいですが、期間の起算日が誤っています。
+
+誤：運行を計画した日から1年間
+
+正：運行を終了した日から1年間
+
+数字だけでなく「いつから起算するのか」も頻出の引っかけパターンですので、この選択肢は「誤り」と判断できます。
+
+0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"initialQuestion":{"id":285,"year":"令和5年 (CBT)","questionNumber":8,"field":"貨物自動車運送事業法","majorField":null,"subField":null,"content":"【貨物自動車運送事業法関係】\n\n一般貨物自動車運送事業者（以下「事業者」という。）の運行指示書による指示等に関する次の記述のうち、正しいものを2つ選びなさい。なお、解答にあたっては、各選択肢に記載されている事項以外は考慮しないものとする。","imageUrl":null,"sourceSheet":null,"knowledgeTags":null,"riskCategory":null,"situationCategory":null,"format":"SINGLE","pdfUrl":null,"pdfPage":null,"options":[{"id":1126,"questionId":285,"optionNumber":1,"content":"事業者は、業務前及び業務後の点呼のいずれも対面等で行うことができない乗務を含む運行ごとに、「運行に際して注意を要する箇所の位置」等の所定の事項を記載した運行指示書を作成し、これにより事業用自動車の運転者等に対し適切な指示を行い、及びこれを当該運転者等に携行させなければならない。","isCorrect":true,"explanation":null,"structuredData":null},{"id":1127,"questionId":285,"optionNumber":2,"content":"事業者は、運行指示書の作成を要する運行の途中において、「運行の経路並びに主な経過地における発車及び到着の日時」に変更が生じた場合には、運行指示書の写しに当該変更の内容を記載し、これにより運転者等に対し電話その他の方法により、当該変更の内容について適切な指示を行わなければならない。この場合、当該運転者等が携行している運行指示書への当該変更内容の記載を省略させることができる。","isCorrect":false,"explanation":null,"structuredData":null},{"id":1128,"questionId":285,"optionNumber":3,"content":"事業者は、運行指示書の作成を要しない運行の途中において、事業用自動車の運転者等に業務前及び業務後の点呼のいずれも対面等で行うことができない業務を行わせることとなった場合には、当該業務以後の運行について、所定の事項を記載した運行指示書を作成し、及びこれにより当該運転者等に対し電話その他の方法により適切な指示を行わなければならない。","isCorrect":true,"explanation":null,"structuredData":null},{"id":1129,"questionId":285,"optionNumber":4,"content":"事業者は、法令の規定により運行指示書を作成した場合には、当該運行指示書を、運行を計画した日から1年間保存しなければならない。","isCorrect":false,"explanation":null,"structuredData":null}],"explanation":{"id":50,"questionId":285,"content":"$3","isDebated":true},"correctOptions":[],"userMeta":null,"attempts":[],"isDebated":false,"isBookmarked":false,"keywords":["貨物自動車運送事業法関係","一般貨物自動車運送事業者","運行指示書","指示等","各選択肢","事項以外","業務前及","業務後","対面等","事業用自動車","運転者等","当該運転者等","経路並","経過地","発車及","当該変更","当該変更内容","当該業務以後","当該運行指示書","年間保存"]},"similarQuestions":[{"id":280,"year":"令和5年 (CBT)","questionNumber":3,"isDebated":false,"score":44,"field":"貨物自動車運送事業法","sharedKeywords":["分野: 貨物自動車運送事業法","貨物自動車運送事業法関係","一般貨物自動車運送事業者","事業用自動車","各選択肢","事項以外","運転者等"]},{"id":284,"year":"令和5年 (CBT)","questionNumber":7,"isDebated":false,"score":32,"field":"貨物自動車運送事業法","sharedKeywords":["分野: 貨物自動車運送事業法","貨物自動車運送事業法関係","一般貨物自動車運送事業者","事業用自動車","各選択肢","事項以外"]},{"id":283,"year":"令和5年 (CBT)","questionNumber":6,"isDebated":false,"score":27,"field":"貨物自動車運送事業法","sharedKeywords":["分野: 貨物自動車運送事業法","貨物自動車運送事業法関係","一般貨物自動車運送事業者","事業用自動車","各選択肢","事項以外"]},{"id":282,"year":"令和5年 (CBT)","questionNumber":5,"isDebated":false,"score":27,"field":"貨物自動車運送事業法","sharedKeywords":["分野: 貨物自動車運送事業法","貨物自動車運送事業法関係","一般貨物自動車運送事業者","事業用自動車","各選択肢","事項以外"]},{"id":255,"year":"令和6年 (CBT)","questionNumber":8,"isDebated":false,"score":24,"field":"貨物自動車運送事業法","sharedKeywords":["分野: 貨物自動車運送事業法","一般貨物自動車運送事業者","事業用自動車","運行指示書","各選択肢","事項以外","運転者等"]},{"id":279,"year":"令和5年 (CBT)","questionNumber":2,"isDebated":false,"score":24,"field":"貨物自動車運送事業法","sharedKeywords":["分野: 貨物自動車運送事業法","貨物自動車運送事業法関係","一般貨物自動車運送事業者","事業用自動車"]},{"id":281,"year":"令和5年 (CBT)","questionNumber":4,"isDebated":false,"score":24,"field":"貨物自動車運送事業法","sharedKeywords":["分野: 貨物自動車運送事業法","貨物自動車運送事業法関係","事業用自動車","各選択肢","事項以外","年間保存"]},{"id":319,"year":"令和4年 (CBT)","questionNumber":8,"isDebated":false,"score":23,"field":"貨物自動車運送事業法","sharedKeywords":["分野: 貨物自動車運送事業法","一般貨物自動車運送事業者","事業用自動車","運行指示書","各選択肢","事項以外","運転者等"]},{"id":439,"year":"令和3年 (CBT)","questionNumber":8,"isDebated":false,"score":23,"field":"分野不明","sharedKeywords":["一般貨物自動車運送事業者","当該運行指示書","事業用自動車","運行指示書","各選択肢","事項以外","運転者等","年間保存"]},{"id":127,"year":"令和2年 (CBT)","questionNumber":6,"isDebated":false,"score":23,"field":"貨物自動車運送事業法","sharedKeywords":["分野: 貨物自動車運送事業法","一般貨物自動車運送事業者","当該運転者等","事業用自動車","運行指示書","各選択肢","事項以外","当該変更"]}],"nextQuestionId":286,"prevQuestionId":284,"nextIncorrectId":300,"contextModeLabel":"📅 年度別演習","groupTitle":"令和5年 (CBT)","currentPosition":8,"totalInGroup":30,"navQueryStr":"?groupBy=year","mode":"","groupQuestionIds":[278,279,280,281,282,283,284,285,286,287,288,289,290,291,292,293,294,295,296,297,298,299,300,301,302,303,304,305,306,307]}],["$L4","$L5","$L6"],"$L7"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"EvRODaMUseHO0NVWy6uLP"}
+4:["$","script","script-0",{"src":"/unkan-app/_next/static/chunks/43_z4zs-xyu0_.js","async":true}]
+5:["$","script","script-1",{"src":"/unkan-app/_next/static/chunks/3rp-g6dqtbbm0.js","async":true}]
+6:["$","script","script-2",{"src":"/unkan-app/_next/static/chunks/30xk5g0he03sk.js","async":true}]
+7:["$","$L8",null,{"children":["$","$9",null,{"name":"Next.MetadataOutlet","children":"$@a"}]}]
+a:null

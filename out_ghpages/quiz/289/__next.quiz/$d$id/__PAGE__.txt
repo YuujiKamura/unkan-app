@@ -1,0 +1,58 @@
+1:"$Sreact.fragment"
+2:I[33316,["/unkan-app/_next/static/chunks/00xfj528cblaa.js","/unkan-app/_next/static/chunks/2oejna66087rc.js","/unkan-app/_next/static/chunks/43_z4zs-xyu0_.js","/unkan-app/_next/static/chunks/3rp-g6dqtbbm0.js","/unkan-app/_next/static/chunks/30xk5g0he03sk.js"],"default"]
+8:I[52827,["/unkan-app/_next/static/chunks/00xfj528cblaa.js","/unkan-app/_next/static/chunks/2oejna66087rc.js"],"OutletBoundary"]
+9:"$Sreact.suspense"
+3:T1162,Gemini との会話
+解説
+表示されている令和5年(CBT)年度 問12【道路運送車両法関係】の解説を作成しました。
+
+この問題の正解（誤っている記述）は 選択肢1 です。
+
+各選択肢の解説
+【選択肢1：誤り（正解）】速度抑制装置の制限速度
+
+理由: 貨物自動車（車両総重量8トン以上、または最大積載量5トン以上）に装着が義務付けられている「速度抑制装置（スピードリミッター）」は、自動車が時速90キロメートルを超えて走行しないように燃料の供給を調整するものです。選択肢では「時速100キロメートル」となっているため誤りです。
+
+【選択肢2：正しい】大型後部反射器の装着義務
+
+理由: 貨物の運送の用に供する普通自動車で、車両総重量が7トン以上のものには、通常の反射器に加えて「大型後部反射器」の装着が義務付けられています。記述の通り正しい内容です。
+
+【選択肢3：正しい】突入防止装置の装着義務
+
+理由: 後続の自動車が追突した際に、追突した車の前部がトラックの荷台の下などに潜り込む（突入する）のを防ぐため、原則として自動車の後面には「突入防止装置」を備えなければなりません。記述の通り正しい内容です。
+
+【選択肢4：正しい】停止表示器材の視認距離
+
+理由: 自動車に備える停止表示器材（三角表示板など）は、夜間に200メートルの距離から走行用前照灯（ハイビーム）で照射した際に、その反射光を照射位置から確認できる基準を満たしている必要があります。記述の通り正しい内容です。
+
+💡 学習のポイント
+速度抑制装置（スピードリミッター）の作動速度「90km/h」や、停止表示器材の確認距離「200m」、大型後部反射器の対象となる「車両総重量7トン以上」といった具体的な数字は、運行管理者試験で非常によく狙われるひっかけポイントです。数字の部分を意識して暗記することをおすすめします。
+
+150mなのなんだっけか
+150mの規定は、後部反射器（リフレクター）に関するものです！
+
+先ほどの問題に出てきた「停止表示器材（三角表示板）」の200mと数字が近いため、運行管理者試験でも頻出の引っかけポイントになっています。
+
+🚗 試験で狙われやすい「距離」のまとめ
+試験対策として、以下の3つをセットで整理しておくのがおすすめです。
+
+装置・器材	視認距離の基準
+後部反射器	150m （夜間、ハイビームで照らして反射光を確認できること）
+停止表示器材	200m （夜間、ハイビームで照らして反射光を確認できること）
+尾灯（テールランプ）	300m （夜間に後方から点灯を確認できること）
+「車体に備え付けの反射器は 150m、非常時に路上へ置く三角表示板はより遠くから見えないと危ないから 200m」といったイメージで覚えておくと、本番でも迷わず解答しやすくなります！
+
+停止表示器材って車体になにか装備するとかってものではなく、単なるあの三角の奴かよ
+その通りです！おっしゃる通り、基本的にはトランクなどに積んである「単なるあの三角のやつ（三角表示板）」のことです。（最近では紫色のランプが点滅する「停止表示灯」もあります）
+
+法律用語（停止表示器材）として書かれると、車体にガッチリ組み込まれた特殊な装置のように聞こえますよね。ですが、実際は車体に据え付けるものではなく、故障時などに車から降りて後ろにポンと置く、あの持ち運び可能なアイテムのことです。
+
+画面の選択肢4に書かれている「夜間200メートルの距離から〜」というのも、「あの三角のやつは、それくらい強力に光を反射する（または発光する）基準を満たしたものでないとダメだよ」というルールのことを指しています。
+
+用語の仰々しさに騙されそうになりますが、実物をイメージできると一気に分かりやすくなりますね！
+0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"initialQuestion":{"id":289,"year":"令和5年 (CBT)","questionNumber":12,"field":"道路運送車両法","majorField":null,"subField":null,"content":"【道路運送車両法関係】\n\n道路運送車両の保安基準及びその細目を定める告示についての次の記述のうち、誤っているものを１つ選びなさい。なお、解答にあたっては、各選択肢に記載されている事項以外は考慮しないものとする。","imageUrl":null,"sourceSheet":null,"knowledgeTags":"#保安基準(寸法・重量・灯火)","riskCategory":null,"situationCategory":null,"format":"SINGLE","pdfUrl":null,"pdfPage":null,"options":[{"id":1142,"questionId":289,"optionNumber":1,"content":"貨物の運送の用に供する普通自動車であって、車両総重量が8トン以上又は最大積載量が5トン以上のものの原動機には、自動車が時速100キロメートルを超えて走行しないよう燃料の供給を調整し、かつ、自動車の速度の制御を円滑に行うことができるものとして、告示で定める基準に適合する速度抑制装置を備えなければならない。","isCorrect":true,"explanation":null,"structuredData":null},{"id":1143,"questionId":289,"optionNumber":2,"content":"貨物の運送の用に供する普通自動車であって車両総重量が7トン以上のものの後面には、所定の後部反射器を備えるほか、反射光の色、明るさ等に関し告示で定める基準に適合する大型後部反射器を備えなければならない。","isCorrect":false,"explanation":null,"structuredData":null},{"id":1144,"questionId":289,"optionNumber":3,"content":"自動車（法令に規定する自動車を除く。）の後面には、他の自動車が追突した場合に追突した自動車の車体前部が突入することを有効に防止することができるものとして、強度、形状等に関し告示で定める基準に適合する突入防止装置を備えなければならない。ただし、告示で定める構造の自動車にあっては、この限りでない。","isCorrect":false,"explanation":null,"structuredData":null},{"id":1145,"questionId":289,"optionNumber":4,"content":"自動車に備える停止表示器材は、夜間200メートルの距離から走行用前照灯で照射した場合にその反射光を照射位置から確認できるものであることなど告示で定める基準に適合するものでなければならない。","isCorrect":false,"explanation":null,"structuredData":null}],"explanation":{"id":58,"questionId":289,"content":"$3","isDebated":true},"correctOptions":[],"userMeta":null,"attempts":[],"isDebated":false,"isBookmarked":false,"keywords":["道路運送車両法関係","道路運送車両","保安基準及","各選択肢","事項以外","普通自動車","車両総重量","以上又","最大積載量","原動機","速度抑制装置","後部反射器","反射光","大型後部反射器","車体前部","形状等","突入防止装置","停止表示器材","走行用前照灯","照射位置","キロメートル","メートル"]},"similarQuestions":[{"id":133,"year":"令和2年 (CBT)","questionNumber":12,"isDebated":false,"score":84,"field":"道路運送車両法","sharedKeywords":["knowledge:#保安基準(寸法・重量・灯火)","分野: 道路運送車両法","大型後部反射器","道路運送車両","突入防止装置","保安基準及","普通自動車","車両総重量"]},{"id":169,"year":"令和2年 第1回","questionNumber":12,"isDebated":false,"score":84,"field":"道路運送車両法","sharedKeywords":["knowledge:#保安基準(寸法・重量・灯火)","分野: 道路運送車両法","道路運送車両","速度抑制装置","走行用前照灯","キロメートル","保安基準及","普通自動車"]},{"id":259,"year":"令和6年 (CBT)","questionNumber":12,"isDebated":true,"score":75,"field":"道路運送車両法","sharedKeywords":["knowledge:#保安基準(寸法・重量・灯火)","分野: 道路運送車両法","道路運送車両法関係","道路運送車両","走行用前照灯","速度抑制装置","キロメートル","保安基準及"]},{"id":132,"year":"令和2年 (CBT)","questionNumber":11,"isDebated":true,"score":65,"field":"道路運送車両法","sharedKeywords":["knowledge:#保安基準(寸法・重量・灯火)","分野: 道路運送車両法","道路運送車両","車両総重量","以上又"]},{"id":323,"year":"令和4年 (CBT)","questionNumber":12,"isDebated":true,"score":57,"field":"道路運送車両法","sharedKeywords":["knowledge:#保安基準(寸法・重量・灯火)","分野: 道路運送車両法","道路運送車両","保安基準及","各選択肢","事項以外","メートル"]},{"id":258,"year":"令和6年 (CBT)","questionNumber":11,"isDebated":false,"score":55,"field":"道路運送車両法","sharedKeywords":["knowledge:#保安基準(寸法・重量・灯火)","分野: 道路運送車両法","道路運送車両法関係"]},{"id":288,"year":"令和5年 (CBT)","questionNumber":11,"isDebated":false,"score":48,"field":"道路運送車両法","sharedKeywords":["knowledge:#保安基準(寸法・重量・灯火)","分野: 道路運送車両法","道路運送車両法関係"]},{"id":322,"year":"令和4年 (CBT)","questionNumber":11,"isDebated":true,"score":48,"field":"道路運送車両法","sharedKeywords":["knowledge:#保安基準(寸法・重量・灯火)","分野: 道路運送車両法","車両総重量","以上又"]},{"id":443,"year":"令和3年 (CBT)","questionNumber":12,"isDebated":false,"score":12,"field":"分野不明","sharedKeywords":["道路運送車両","停止表示器材","走行用前照灯","保安基準及","各選択肢","事項以外","照射位置","メートル"]},{"id":257,"year":"令和6年 (CBT)","questionNumber":10,"isDebated":true,"score":11,"field":"道路運送車両法","sharedKeywords":["分野: 道路運送車両法","道路運送車両法関係","車両総重量","各選択肢","事項以外"]}],"nextQuestionId":290,"prevQuestionId":288,"nextIncorrectId":300,"contextModeLabel":"📅 年度別演習","groupTitle":"令和5年 (CBT)","currentPosition":12,"totalInGroup":30,"navQueryStr":"?groupBy=year","mode":"","groupQuestionIds":[278,279,280,281,282,283,284,285,286,287,288,289,290,291,292,293,294,295,296,297,298,299,300,301,302,303,304,305,306,307]}],["$L4","$L5","$L6"],"$L7"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"EvRODaMUseHO0NVWy6uLP"}
+4:["$","script","script-0",{"src":"/unkan-app/_next/static/chunks/43_z4zs-xyu0_.js","async":true}]
+5:["$","script","script-1",{"src":"/unkan-app/_next/static/chunks/3rp-g6dqtbbm0.js","async":true}]
+6:["$","script","script-2",{"src":"/unkan-app/_next/static/chunks/30xk5g0he03sk.js","async":true}]
+7:["$","$L8",null,{"children":["$","$9",null,{"name":"Next.MetadataOutlet","children":"$@a"}]}]
+a:null

@@ -1,0 +1,152 @@
+1:"$Sreact.fragment"
+2:I[11434,["/unkan-app/_next/static/chunks/00xfj528cblaa.js","/unkan-app/_next/static/chunks/2oejna66087rc.js"],"default"]
+3:I[98000,["/unkan-app/_next/static/chunks/00xfj528cblaa.js","/unkan-app/_next/static/chunks/2oejna66087rc.js","/unkan-app/_next/static/chunks/43_z4zs-xyu0_.js","/unkan-app/_next/static/chunks/3rp-g6dqtbbm0.js","/unkan-app/_next/static/chunks/30xk5g0he03sk.js"],""]
+4:I[64209,["/unkan-app/_next/static/chunks/00xfj528cblaa.js","/unkan-app/_next/static/chunks/2oejna66087rc.js"],"default"]
+5:I[50441,["/unkan-app/_next/static/chunks/00xfj528cblaa.js","/unkan-app/_next/static/chunks/2oejna66087rc.js"],"default"]
+6:I[55665,["/unkan-app/_next/static/chunks/00xfj528cblaa.js","/unkan-app/_next/static/chunks/2oejna66087rc.js"],"default"]
+8:I[52827,["/unkan-app/_next/static/chunks/00xfj528cblaa.js","/unkan-app/_next/static/chunks/2oejna66087rc.js"],"OutletBoundary"]
+9:"$Sreact.suspense"
+c:I[52827,["/unkan-app/_next/static/chunks/00xfj528cblaa.js","/unkan-app/_next/static/chunks/2oejna66087rc.js"],"ViewportBoundary"]
+e:I[52827,["/unkan-app/_next/static/chunks/00xfj528cblaa.js","/unkan-app/_next/static/chunks/2oejna66087rc.js"],"MetadataBoundary"]
+10:I[25844,["/unkan-app/_next/static/chunks/00xfj528cblaa.js","/unkan-app/_next/static/chunks/2oejna66087rc.js"],"default",1]
+:HL["/unkan-app/_next/static/chunks/3yu0u4btddnts.css","style"]
+0:{"P":null,"c":["","quiz","298",""],"q":"","i":false,"f":[[["",{"children":["quiz",{"children":[["id","298","d",null],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/unkan-app/_next/static/chunks/3yu0u4btddnts.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/unkan-app/_next/static/chunks/00xfj528cblaa.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/unkan-app/_next/static/chunks/2oejna66087rc.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"ja","children":["$","body",null,{"children":["$","$L2",null,{"children":[["$","nav",null,{"style":{"padding":"0.8rem 2rem","background":"var(--surface-color)","borderBottom":"1px solid var(--surface-border)","display":"flex","position":"sticky","top":0,"zIndex":100,"backdropFilter":"blur(12px)","WebkitBackdropFilter":"blur(12px)"},"children":["$","div",null,{"style":{"display":"flex","gap":"1rem","justifyContent":"space-between","width":"100%","alignItems":"center","flexWrap":"wrap"},"children":[["$","$L3",null,{"href":"/questions","style":{"textDecoration":"none","color":"var(--text-primary)","fontWeight":"bold","display":"flex","alignItems":"center","gap":"0.5rem","fontSize":"1.2rem"},"children":"🏠 運行管理者過去問ダッシュボード"}],["$","$L4",null,{}]]}]}],["$","main",null,{"style":{"minHeight":"calc(100vh - 150px)"},"children":["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"style":{"marginTop":"4rem","padding":"2rem","background":"var(--surface-color)","borderTop":"1px solid var(--surface-border)","textAlign":"center","fontSize":"0.85rem","color":"var(--text-secondary)","lineHeight":"1.6"},"children":[["$","p",null,{"style":{"marginBottom":"0.5rem"},"children":["本アプリケーションに収録されている運行管理者試験（貨物）の過去問題および図表等の出典・参照元は以下の通りです。",["$","br",null,{}],"・",["$","a",null,{"href":"https://www.unkan.or.jp/","target":"_blank","rel":"noopener noreferrer","style":{"color":"var(--primary-color)","textDecoration":"none"},"children":"公益財団法人 運行管理者試験センター"}],["$","br",null,{}],"・",["$","a",null,{"href":"https://www.unkan-net.com/","target":"_blank","rel":"noopener noreferrer","style":{"color":"var(--primary-color)","textDecoration":"none"},"children":"運行管理者試験対策.net"}]]}],["$","p",null,{"style":{"opacity":0.8},"children":"※本サイトは個人の学習目的で作成された非公式の解説・演習用アプリケーションであり、上記機関・サイトとは一切関係ありません。"}]]}]]}]}]}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":["$L7",[["$","script","script-0",{"src":"/unkan-app/_next/static/chunks/43_z4zs-xyu0_.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/unkan-app/_next/static/chunks/3rp-g6dqtbbm0.js","async":true,"nonce":"$undefined"}],["$","script","script-2",{"src":"/unkan-app/_next/static/chunks/30xk5g0he03sk.js","async":true,"nonce":"$undefined"}]],["$","$L8",null,{"children":["$","$9",null,{"name":"Next.MetadataOutlet","children":"$@a"}]}]]}],{},null,false,null]},null,false,"$@b"]},null,false,"$@b"]},null,false,null],["$","$1","h",{"children":[null,["$","$Lc",null,{"children":"$Ld"}],["$","div",null,{"hidden":true,"children":["$","$Le",null,{"children":"$Lf"}]}],null]}],false]],"m":"$undefined","G":["$10",["$L11"]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"EvRODaMUseHO0NVWy6uLP"}
+12:[]
+b:"$W12"
+f:["$","$9",null,{"name":"Next.Metadata","children":"$L13"}]
+11:["$","link","0",{"rel":"stylesheet","href":"/unkan-app/_next/static/chunks/3yu0u4btddnts.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+d:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+14:I[70367,["/unkan-app/_next/static/chunks/00xfj528cblaa.js","/unkan-app/_next/static/chunks/2oejna66087rc.js"],"IconMark"]
+a:null
+13:[["$","title","0",{"children":"運行管理者 過去問演習・学習ダッシュボード"}],["$","meta","1",{"name":"description","content":"運行管理者の過去問演習・進捗管理アプリ"}],["$","link","2",{"rel":"icon","href":"/unkan-app/favicon.ico?favicon.2vob68tjqpejf.ico","sizes":"256x256","type":"image/x-icon"}],["$","$L14","3",{}]]
+15:I[33316,["/unkan-app/_next/static/chunks/00xfj528cblaa.js","/unkan-app/_next/static/chunks/2oejna66087rc.js","/unkan-app/_next/static/chunks/43_z4zs-xyu0_.js","/unkan-app/_next/static/chunks/3rp-g6dqtbbm0.js","/unkan-app/_next/static/chunks/30xk5g0he03sk.js"],"default"]
+16:T1c28,Gemini との会話
+解説。今の基準との対比も
+表示されている令和5年の過去問は、2024年（令和6年）4月1日に施行された改正前の「旧基準（改善基準告示）」に基づいて出題されています。
+
+今後の試験対策としては、この問題の正解（旧基準）をそのまま覚えるのは非常に危険です。各選択肢について、当時の出題意図と、現在の「新基準」ではどう変わったのかを対比して解説します。
+
+各選択肢の解説と新旧比較
+【選択肢1】隔日勤務の特例
+出題（旧基準）の判定：◯
+
+旧基準では「2暦日における拘束時間は21時間以内」「勤務終了後、継続20時間以上の休息期間」という記述で正しい内容でした。
+
+現在の新基準：❌（誤りになる）
+
+現在は休息期間の要件が厳格化され、勤務終了後に与えるべき休息期間は「継続24時間以上」に変更されています。
+
+【選択肢2】拘束時間の定義
+出題（旧基準）の判定：❌
+
+現在の新基準：❌（変わらず誤り）
+
+基準の改定に関わらず、この記述は誤りです。拘束時間とは「労働時間」と「休憩時間（仮眠等の時間も含む）」の合計であり、始業から終業までのすべての時間を指します。「休憩時間を除く」としている点が間違いです。
+
+【選択肢3】1ヶ月の拘束時間の延長
+出題（旧基準）の判定：❌（引っかけ）
+
+旧基準での正しい数字は「原則293時間、最大320時間」でした。選択肢は「329時間まで延長できる」となっているため、旧基準の時点でも誤りの選択肢です。
+
+現在の新基準：数字が大幅に短縮
+
+現在は「原則284時間、最大310時間（年間3,400時間）」へと上限が厳しくなっています。
+
+【選択肢4】休息期間の分割特例
+出題（旧基準）の判定：◯
+
+旧基準では、休息期間を分割する場合「1回当たり継続4時間以上、合計10時間以上」が正しいルールでした。
+
+現在の新基準：❌（誤りになる）
+
+現在は、休息期間の原則が「継続11時間以上（最低9時間）」に延長されました。それに伴い、分割特例のルールも以下のように変更されています。
+
+2分割の場合： 1回継続3時間以上・合計10時間以上
+
+3分割の場合： 合計12時間以上
+
+【重要】新旧基準の比較まとめ
+試験本番に向けて、以下の「新基準」の数字を確実に押さえておくことをおすすめします。
+
+項目	旧基準（出題のベース）	新基準（現在の正しい数字）
+1ヶ月の拘束時間	原則293時間（最大320時間）	原則284時間（最大310時間）
+休息期間（原則）	継続8時間以上	継続11時間以上（最低9時間）
+休息期間（分割）	1回4時間以上、合計10時間以上	
+2分割：1回3時間以上、合計10時間以上
+
+
+3分割：合計12時間以上
+
+隔日勤務の休息	継続20時間以上	継続24時間以上
+過去問演習で令和5年以前の問題を解く際は、「これは旧基準の問題だ」と常に意識し、頭の中で新基準の数字に変換しながら解き進めるのが効果的です。
+
+こんなん覚えられるのかっていう。計画者にとっての問題なんだろうけど
+
+Gemini との会話
+解説。これ旧基準とかではないか
+おっしゃる通り、鋭いですね！ご指摘の通り、この問題（令和5年）は2024年（令和6年）4月1日に施行された改正前の「旧基準（改善基準告示）」に基づいた内容です。
+
+これからの試験に向けて学習を進める上では、この旧基準の数字をそのまま暗記してしまうと非常に危険ですので、現在の「新基準」に置き換えて理解しておく必要があります。
+
+それぞれの選択肢について、旧基準での解説と、現在の「新基準」ではどう変わったのかをまとめました。
+
+令和5年 (CBT) 問21 の解説と新旧比較
+【選択肢1】隔日勤務の特例
+
+出題（旧基準）では：◯
+
+「2暦日で21時間以内」「勤務終了後、継続20時間以上の休息期間」は、旧基準では正しい記述です。
+
+新基準（現在）では：× になります
+
+現在は要件が厳格化され、休息期間は「継続24時間以上」与えなければなりません。
+
+【選択肢2】拘束時間の定義
+
+出題（旧基準）では：×
+
+新基準（現在）でも：×
+
+これは基準改定に関わらず誤りです。拘束時間とは「労働時間＋休憩時間（仮眠等の時間も含む）」であり、始業から終業までの全時間を指します。「休憩時間を除く」という記述が間違いです。
+
+【選択肢3】1ヶ月の拘束時間の延長
+
+出題（旧基準）では：引っかけの ×
+
+旧基準での正しい数字は「原則293時間、最大320時間（年3,516時間）」です。選択肢は「329時間」となっているため、旧基準でも間違いの選択肢として作られています。
+
+新基準（現在）では：数字が全く異なります
+
+現在は「原則284時間、最大310時間（年3,400時間）」へと大幅に短縮されています。
+
+【選択肢4】休息期間の分割特例
+
+出題（旧基準）では：◯
+
+「1回当たり継続4時間以上、合計10時間以上」は旧基準における正しいルールです。
+
+新基準（現在）では：× になります
+
+現在は、休息期間そのものが「継続11時間以上（下限9時間）」となりました。
+
+分割する場合のルールも「2分割なら1回継続3時間以上・合計10時間以上」「3分割なら合計12時間以上」へと変更されています。
+
+💡 今後の学習へのアドバイス
+令和5年以前の「労働基準法関係（特に改善基準告示）」の過去問を解く際は、画面下の「関連する類題」リストにある「令和6年の問題」を優先的に解くか、お手元の最新のテキストの数字と常に照らし合わせて進めるのがおすすめです。
+
+【新旧基準・重要数字の比較まとめ】
+
+項目	旧基準（出題のベース）	新基準（今後の試験で問われる数字）
+1ヶ月の拘束時間	原則293時間（最大320時間）	原則284時間（最大310時間）
+休息期間（原則）	継続8時間以上	継続11時間以上（最低9時間）
+休息期間（分割）	1回4時間以上、合計10時間以上	
+2分割: 1回3時間以上、合計10時間以上
+
+
+3分割: 合計12時間以上
+
+隔日勤務の休息	継続20時間以上	継続24時間以上
+ダッシュボードの「🧠 思考プロセスの記録」などに、「旧基準の問題！新基準では〇〇時間」とメモを残しておくと、直前期の振り返りに役立つはずです。学習応援しております！
+
+令和7年と今年の3月のデータが欲しい所だが、本でしか売ってない
+7:["$","$L15",null,{"initialQuestion":{"id":298,"year":"令和5年 (CBT)","questionNumber":21,"field":"労働基準法","majorField":null,"subField":null,"content":"【労働基準法関係】\n「自動車運転者の労働時間等の改善のための基準」等に定める貨物自動車運送事業に従事する自動車運転者（以下「トラック運転者」という。）の拘束時間等の規定に関する次の記述のうち、正しいものをすべて選びなさい。なお、解答にあたっては、各選択肢に記載されている事項以外は考慮しないものとする。","imageUrl":null,"sourceSheet":null,"knowledgeTags":"#改善基準(拘束・休息)","riskCategory":null,"situationCategory":null,"format":"SINGLE","pdfUrl":null,"pdfPage":null,"options":[{"id":1174,"questionId":298,"optionNumber":1,"content":"使用者は、業務の必要上やむを得ない場合には、当分の間、トラック運転者を隔日勤務に就かせることができる。この場合、2暦日における拘束時間は、事業場内仮眠施設又は使用者が確保した同種の施設において、夜間に4時間以上の仮眠時間を与える場合を除き、21時間を超えてはならないものとし、勤務終了後、継続20時間以上の休息期間を与えなければならない。","isCorrect":true,"explanation":null,"structuredData":null},{"id":1175,"questionId":298,"optionNumber":2,"content":"拘束時間とは、始業時間から終業時間までの時間で、休憩時間を除く労働時間の合計をいう。","isCorrect":false,"explanation":null,"structuredData":null},{"id":1176,"questionId":298,"optionNumber":3,"content":"使用者は、トラック運転者の拘束時間については、1ヵ月について293時間を超えないものとすること。ただし、労使協定があるときは、1年のうち6ヵ月までは、1年間についての拘束時間が3,516時間を超えない範囲内において、329時間まで延長することができる。","isCorrect":false,"explanation":null,"structuredData":null},{"id":1177,"questionId":298,"optionNumber":4,"content":"使用者は、業務の必要上、トラック運転者に勤務の終了後継続8時間以上の休息期間を与えることが困難な場合には、当分の間、一定期間における全勤務回数の2分の1を限度に、休息期間を拘束時間の途中及び拘束時間の経過直後に分割して与えることができるものとする。この場合において、分割された休息期間は、1日において1回当たり継続4時間以上、合計10時間以上でなければならないものとする。","isCorrect":true,"explanation":null,"structuredData":null}],"explanation":{"id":77,"questionId":298,"content":"$16","isDebated":true},"correctOptions":[],"userMeta":null,"attempts":[],"isDebated":false,"isBookmarked":false,"keywords":["分割","労働基準法関係","自動車運転者","労働時間等","貨物自動車運送事業","拘束時間等","各選択肢","事項以外","使用者","必要上","隔日勤務","拘束時間","事業場内仮眠施設又","時間以上","仮眠時間","勤務終了後","休息期間","始業時間","終業時間","休憩時間","労働時間","労使協定","範囲内","終了後継続","一定期間","全勤務回数","途中及","経過直後","トラック"]},"similarQuestions":[{"id":178,"year":"令和2年 第1回","questionNumber":21,"isDebated":false,"score":71,"field":"労働基準法","sharedKeywords":["knowledge:#改善基準(拘束・休息)","分野: 労働基準法","貨物自動車運送事業","自動車運転者","労働時間等","拘束時間等","勤務終了後","終了後継続"]},{"id":332,"year":"令和4年 (CBT)","questionNumber":21,"isDebated":true,"score":66,"field":"労働基準法","sharedKeywords":["knowledge:#改善基準(拘束・休息)","分野: 労働基準法","貨物自動車運送事業","自動車運転者","労働時間等","拘束時間等","勤務終了後","各選択肢"]},{"id":141,"year":"令和2年 (CBT)","questionNumber":20,"isDebated":true,"score":64,"field":"労働基準法","sharedKeywords":["knowledge:#改善基準(拘束・休息)","分野: 労働基準法","貨物自動車運送事業","自動車運転者","労働時間等","拘束時間等","拘束時間","労使協定"]},{"id":331,"year":"令和4年 (CBT)","questionNumber":20,"isDebated":false,"score":64,"field":"労働基準法","sharedKeywords":["knowledge:#改善基準(拘束・休息)","分野: 労働基準法","貨物自動車運送事業","自動車運転者","労働時間等","拘束時間等","拘束時間","労使協定"]},{"id":142,"year":"令和2年 (CBT)","questionNumber":21,"isDebated":true,"score":62,"field":"労働基準法","sharedKeywords":["knowledge:#改善基準(拘束・休息)","分野: 労働基準法","貨物自動車運送事業","自動車運転者","労働時間等","拘束時間等","終了後継続","全勤務回数"]},{"id":300,"year":"令和5年 (CBT)","questionNumber":23,"isDebated":false,"score":61,"field":"労働基準法","sharedKeywords":["knowledge:#改善基準(拘束・休息)","分野: 労働基準法","貨物自動車運送事業","労働基準法関係","自動車運転者","労働時間等","拘束時間等","勤務終了後"]},{"id":334,"year":"令和4年 (CBT)","questionNumber":23,"isDebated":false,"score":58,"field":"労働基準法","sharedKeywords":["knowledge:#改善基準(拘束・休息)","分野: 労働基準法","貨物自動車運送事業","自動車運転者","労働時間等","隔日勤務","拘束時間","労使協定"]},{"id":143,"year":"令和2年 (CBT)","questionNumber":22,"isDebated":false,"score":57,"field":"労働基準法","sharedKeywords":["knowledge:#改善基準(拘束・休息)","分野: 労働基準法","貨物自動車運送事業","自動車運転者","労働時間等","隔日勤務","拘束時間"]},{"id":270,"year":"令和6年 (CBT)","questionNumber":23,"isDebated":true,"score":57,"field":"労働基準法","sharedKeywords":["knowledge:#改善基準(拘束・休息)","分野: 労働基準法","貨物自動車運送事業","労働基準法関係","自動車運転者","労働時間等","休憩時間"]},{"id":144,"year":"令和2年 (CBT)","questionNumber":23,"isDebated":false,"score":57,"field":"労働基準法","sharedKeywords":["knowledge:#改善基準(拘束・休息)","分野: 労働基準法","貨物自動車運送事業","自動車運転者","労働時間等","拘束時間等","拘束時間","労使協定"]}],"nextQuestionId":299,"prevQuestionId":297,"nextIncorrectId":300,"contextModeLabel":"📅 年度別演習","groupTitle":"令和5年 (CBT)","currentPosition":21,"totalInGroup":30,"navQueryStr":"?groupBy=year","mode":"","groupQuestionIds":[278,279,280,281,282,283,284,285,286,287,288,289,290,291,292,293,294,295,296,297,298,299,300,301,302,303,304,305,306,307]}]
