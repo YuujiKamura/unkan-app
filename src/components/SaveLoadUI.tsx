@@ -148,10 +148,11 @@ export default function SaveLoadUI() {
           display: 'flex', alignItems: 'center', justifyContent: 'center'
         }}>
           <div className="glass-panel" style={{ padding: '2rem', maxWidth: '500px', width: '90%', textAlign: 'center' }}>
-            <h3 style={{ marginTop: 0, marginBottom: '1rem', color: 'var(--text-primary)' }}>共有URLが作成されました</h3>
+            <h3 style={{ marginTop: 0, marginBottom: '1rem', color: 'var(--text-primary)' }}>共有ファイルの生成完了</h3>
             <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', marginBottom: '1rem' }}>
               以下のURLを共有すると、現在の学習データ（解答履歴など）が読み込まれた状態でアプリが開きます。<br/>
-              ※数分後に自動でPagesにデプロイされてから有効になります。
+              <strong>【重要】</strong> 現在ローカルに保存されただけです。このURLを有効にするには、開発サーバーを一度停止し、以下のコマンドを実行してデプロイしてください。<br/>
+              <code>npm run build:spa &amp;&amp; pwsh -File deploy.ps1</code>
             </p>
             <input 
               type="text" 

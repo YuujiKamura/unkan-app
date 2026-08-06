@@ -23,19 +23,9 @@ export async function POST(req: Request) {
 
     fs.writeFileSync(filepath, JSON.stringify(data, null, 2), 'utf8');
 
-    // Run git add and commit in the background to ensure it's tracked
-    // Also run build:spa and deploy.ps1 in the background so it becomes live on Pages.
-    // Note: build:spa + deploy takes ~20-30 seconds, so we don't await it.
-    exec(`git add "public/data/shares/${filename}" && git commit -m "chore: share progress ${id}" && npm run build:spa && pwsh -File deploy.ps1`, 
-      { cwd: process.cwd() }, 
-      (error, stdout, stderr) => {
-        if (error) {
-          console.error(`Deploy error: ${error.message}`);
-          return;
-        }
-        console.log(`Deploy background job started/completed for share ${id}`);
-    });
-
+    // Windowsで 'npm run dev' 起動中に 'npm run build:spa' をバックグラウンドで叩くと、
+    // devサーバーが /api フォルダをロックしているため EPERM エラー（rename失敗）が発生します。
+    // そのため、ここではファイルの生成のみ行い、ユーザーに手動デプロイを促します。
     return NextResponse.json({ success: true, id, filename });
   } catch (error) {
     console.error('Failed to create share:', error);
