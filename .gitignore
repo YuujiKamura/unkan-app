@@ -16,3 +16,4 @@ public/extracted_images/
 public/pdf_pages/
 local_serve/
 tsconfig.tsbuildinfo
+prisma/dev.db
