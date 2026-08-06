@@ -1,0 +1,174 @@
+1:"$Sreact.fragment"
+2:I[11434,["/unkan-app/_next/static/chunks/0duueqjzw4i7j.js","/unkan-app/_next/static/chunks/2oejna66087rc.js"],"default"]
+3:I[98000,["/unkan-app/_next/static/chunks/0duueqjzw4i7j.js","/unkan-app/_next/static/chunks/2oejna66087rc.js","/unkan-app/_next/static/chunks/43_z4zs-xyu0_.js","/unkan-app/_next/static/chunks/3rp-g6dqtbbm0.js","/unkan-app/_next/static/chunks/30xk5g0he03sk.js"],""]
+4:I[64209,["/unkan-app/_next/static/chunks/0duueqjzw4i7j.js","/unkan-app/_next/static/chunks/2oejna66087rc.js"],"default"]
+5:I[50441,["/unkan-app/_next/static/chunks/0duueqjzw4i7j.js","/unkan-app/_next/static/chunks/2oejna66087rc.js"],"default"]
+6:I[55665,["/unkan-app/_next/static/chunks/0duueqjzw4i7j.js","/unkan-app/_next/static/chunks/2oejna66087rc.js"],"default"]
+8:I[52827,["/unkan-app/_next/static/chunks/0duueqjzw4i7j.js","/unkan-app/_next/static/chunks/2oejna66087rc.js"],"OutletBoundary"]
+9:"$Sreact.suspense"
+c:I[52827,["/unkan-app/_next/static/chunks/0duueqjzw4i7j.js","/unkan-app/_next/static/chunks/2oejna66087rc.js"],"ViewportBoundary"]
+e:I[52827,["/unkan-app/_next/static/chunks/0duueqjzw4i7j.js","/unkan-app/_next/static/chunks/2oejna66087rc.js"],"MetadataBoundary"]
+10:I[25844,["/unkan-app/_next/static/chunks/0duueqjzw4i7j.js","/unkan-app/_next/static/chunks/2oejna66087rc.js"],"default",1]
+:HL["/unkan-app/_next/static/chunks/3yu0u4btddnts.css","style"]
+0:{"P":null,"c":["","quiz","129",""],"q":"","i":false,"f":[[["",{"children":["quiz",{"children":[["id","129","d",null],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/unkan-app/_next/static/chunks/3yu0u4btddnts.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/unkan-app/_next/static/chunks/0duueqjzw4i7j.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/unkan-app/_next/static/chunks/2oejna66087rc.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"ja","children":["$","body",null,{"children":["$","$L2",null,{"children":[["$","nav",null,{"style":{"padding":"0.8rem 2rem","background":"var(--surface-color)","borderBottom":"1px solid var(--surface-border)","display":"flex","position":"sticky","top":0,"zIndex":100,"backdropFilter":"blur(12px)","WebkitBackdropFilter":"blur(12px)"},"children":["$","div",null,{"style":{"display":"flex","gap":"1rem","justifyContent":"space-between","width":"100%","alignItems":"center","flexWrap":"wrap"},"children":[["$","$L3",null,{"href":"/questions","style":{"textDecoration":"none","color":"var(--text-primary)","fontWeight":"bold","display":"flex","alignItems":"center","gap":"0.5rem","fontSize":"1.2rem"},"children":"🏠 運行管理者過去問ダッシュボード"}],["$","$L4",null,{}]]}]}],["$","main",null,{"style":{"minHeight":"calc(100vh - 150px)"},"children":["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"style":{"marginTop":"4rem","padding":"2rem","background":"var(--surface-color)","borderTop":"1px solid var(--surface-border)","textAlign":"center","fontSize":"0.85rem","color":"var(--text-secondary)","lineHeight":"1.6"},"children":[["$","p",null,{"style":{"marginBottom":"0.5rem"},"children":["本アプリケーションに収録されている運行管理者試験（貨物）の過去問題および図表等の出典・参照元は以下の通りです。",["$","br",null,{}],"・",["$","a",null,{"href":"https://www.unkan.or.jp/","target":"_blank","rel":"noopener noreferrer","style":{"color":"var(--primary-color)","textDecoration":"none"},"children":"公益財団法人 運行管理者試験センター"}],["$","br",null,{}],"・",["$","a",null,{"href":"https://www.unkan-net.com/","target":"_blank","rel":"noopener noreferrer","style":{"color":"var(--primary-color)","textDecoration":"none"},"children":"運行管理者試験対策.net"}]]}],["$","p",null,{"style":{"opacity":0.8},"children":"※本サイトは個人の学習目的で作成された非公式の解説・演習用アプリケーションであり、上記機関・サイトとは一切関係ありません。"}]]}]]}]}]}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":["$L7",[["$","script","script-0",{"src":"/unkan-app/_next/static/chunks/43_z4zs-xyu0_.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/unkan-app/_next/static/chunks/3rp-g6dqtbbm0.js","async":true,"nonce":"$undefined"}],["$","script","script-2",{"src":"/unkan-app/_next/static/chunks/30xk5g0he03sk.js","async":true,"nonce":"$undefined"}]],["$","$L8",null,{"children":["$","$9",null,{"name":"Next.MetadataOutlet","children":"$@a"}]}]]}],{},null,false,null]},null,false,"$@b"]},null,false,"$@b"]},null,false,null],["$","$1","h",{"children":[null,["$","$Lc",null,{"children":"$Ld"}],["$","div",null,{"hidden":true,"children":["$","$Le",null,{"children":"$Lf"}]}],null]}],false]],"m":"$undefined","G":["$10",["$L11"]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"Spm-s-N1z2dirOtU7lfjD"}
+12:[]
+b:"$W12"
+f:["$","$9",null,{"name":"Next.Metadata","children":"$L13"}]
+11:["$","link","0",{"rel":"stylesheet","href":"/unkan-app/_next/static/chunks/3yu0u4btddnts.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+d:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+14:I[70367,["/unkan-app/_next/static/chunks/0duueqjzw4i7j.js","/unkan-app/_next/static/chunks/2oejna66087rc.js"],"IconMark"]
+a:null
+13:[["$","title","0",{"children":"運行管理者 過去問演習・学習ダッシュボード"}],["$","meta","1",{"name":"description","content":"運行管理者の過去問演習・進捗管理アプリ"}],["$","link","2",{"rel":"icon","href":"/unkan-app/favicon.ico?favicon.2vob68tjqpejf.ico","sizes":"256x256","type":"image/x-icon"}],["$","$L14","3",{}]]
+15:I[33316,["/unkan-app/_next/static/chunks/0duueqjzw4i7j.js","/unkan-app/_next/static/chunks/2oejna66087rc.js","/unkan-app/_next/static/chunks/43_z4zs-xyu0_.js","/unkan-app/_next/static/chunks/3rp-g6dqtbbm0.js","/unkan-app/_next/static/chunks/30xk5g0he03sk.js"],"default"]
+16:T23dd,
+事業者は、新たに選任した運行管理者に、選任届出をした日の属する年度(やむを得ない理由がある場合にあっては、当該年度の翌年度)に基礎講習又は一般講習(基礎講習を受講していない当該運行管理者にあっては、基礎講習)を受講させなければならない。ただし、他の事業者において運行管理者として選任されていた者にあっては、この限りでない。
+事業者は新しく選任した運行管理者に、原則として選任届出をした年度内に基礎講習または一般講習を受けさせる義務があります。未受講なら基礎講習が必須です。他社で選任されていた場合は免除されます。これは運行管理者試験の法令科目でよく出題される正確な規定です。 
+
+国土交通省
+ +1
+運行管理者講習の義務とルール
+受講の期限
+原則：選任届出をした日の属する年度内
+例外：やむを得ない理由があるときは翌年度まで 
+
+国土交通省
+ +1
+講習の種類
+基本：基礎講習または一般講習
+条件：過去に基礎講習を受けていない人は基礎講習が必須 
+
+国土交通省
+免除の条件
+他の事業者ですでに運行管理者として選任されていた人は対象外（受講義務なし） 
+
+国土交通省
+この内容について、過去問の解説や講習の具体的な受講スケジュール・選び方など、さらに知りたい情報があればお知らせください。
+AI responses may include mistakes. For legal advice, consult a professional. Learn more
+
+
+
+
+
+8 sites
+旅客自動車運送事業運輸規則第４７条の９第３項
+第４条 旅客自動車運送事業者は、新たに選任した運行管理者に、選任届出をした日の. 属する年度（やむを得ない理由がある場合...
+
+国土交通省
+運行の管理に関する講習の種類を定める告示（貨物）
+第四条 一般貨物自動車運送事業者等は、新たに選任した運行管理者に、選任届出をした日の属する. 年度(やむを得ない理由があ...
+
+国土交通省
+【旅客】【貨物】選任された運行管理者の講習について
+選任された運行管理者は年度内に講習を受けなければならない 新しく運行管理者に選任されると、原則として選任された年度内に一...
+
+
+行政書士法人ココカラザウルス
+Show all
+これが間違ってるらしいけど何でだ
+提示された文章が「間違い（×）」とされる理由は、最後の「ただし、他の事業者において運行管理者として選任されていた者にあっては、この限りでない。」という一文が、実際の法令（告示）の定義と異なっているからです。 
+
+宮城県トラック協会
+運行管理者試験のひっかけ問題として非常によく出されるポイントです。
+間違いの理由（ひっかけのポイント）
+この法律（講習告示）における「新たに選任した運行管理者」の定義は、「自社（その事業者）において初めて選任した人」という意味です。 
+
+宮城県トラック協会
+そのため、たとえ「過去に他社で運行管理者としてバリバリ働いていた人」であっても、自社に新しく転職してきて初めて選任されたのであれば、法律上は「新たに選任した運行管理者」として扱われます。
+したがって、その転職してきた初年度に講習（基礎または一般）を受けさせる義務が発生します。 
+
+宮城県トラック協会
+正しい条文との比較
+提示されたバツの文章：
+「〜受講させなければならない。ただし、他の事業者において運行管理者として選任されていた者にあっては、この限りでない。（←ここが間違い）」
+実際の正しい決まり（国土交通省告示）：
+他社での経験者であっても免除規定はありません。自社で初めて選任したなら、初年度の受講義務があります。 
+
+宮城県トラック協会
+※ちなみに、同じ会社の中で「別の営業所に異動になっただけ（すでに自社で選任されて講習も受けている）」という場合は、新たに選任した者には当たらないため、その年度の受講は不要になります。 
+
+宮城県トラック協会
+ +1
+試験対策のアドバイス
+「他社で選任されていた人は免除される」というもっともらしい例外規定は、受験者をだますための創作（嘘のルール）です。
+「他社での経歴は関係ない。今の会社で新しく選任されたら、原則その年度に受講義務がある」と覚えておくと、この手のひっかけ問題に確実に正解できるようになります。 
+
+宮城県トラック協会
+この初年度の受講義務に関して、
+「一般講習」と「基礎講習」のどちらを受けさせるべきかの判断基準
+「やむを得ない理由」として認められる具体的なケース
+など、さらに詳しく確認したい部分はありますか？
+Try without personalization
+
+
+
+
+
+3 sites
+翻訳 - Google Translate
+単語、フレーズ、ウェブページを日本語から 100 以上の他言語にすぐに翻訳できる Google の無料サービスです。
+
+Google Translate
+運行管理者が受講する講習について
+「新たに選任された運行管理者」に選任届出をした日の属する年度(やむを得ない理由. がある場合にあっては、当該年度の翌年度...
+
+宮城県トラック協会
+新しい事業所で運行管理者に選任されたら
+Jun 30, 2026 — 運行管理者の受講義務については、「貨物自動車運送事業輸送安全規則」第23条に「運行管理者として新たに選任した者」が対象と...
+
+
+blog-t.com
+補助者って講習を受けてる人からしか選べないのか
+はい、その通りです。結論から言うと、補助者は「事前に」基礎講習を修了している（または運行管理者資格を持っている）人からしか選べません。 
+
+sociac
+ +1
+先ほどの「運行管理者」のルールとごちゃ混ぜになりやすい部分なので、違いを整理して説明します。
+「運行管理者」と「補助者」のルールの決定的な違い
+最大のひっかけポイントは、「先に選任して後から講習を受けるのが許されるかどうか」です。
+運行管理者の場合（後からでもOK）
+資格を持っている人であれば、講習をまだ受けていなくても先に選任届を出して、その年度の終わりまでに講習を受けさせればセーフです。
+補助者の場合（後から受講はNG）
+補助者には「選任届」という手続きはありませんが、自社の運行管理規程に名前を登録して業務を開始する「前」に、必ず基礎講習を修了していなければなりません。 
+
+国土交通省
+ +1
+つまり、「明日から補助者をやってもらうから、来月講習に行かせる」というのは法律違反（未経験者をいきなり補助者にすることはできない）になります。
+補助者になれる人の要件（2パターンのどちらか）
+補助者として業務を行う（点呼などを代行する）には、以下のいずれかを満たしている必要があります。 
+
+sociac
+運行管理者「基礎講習」を修了した人
+運行管理者資格者証を持っている人（試験合格者など） 
+
+sociac
+※大半の現場では、資格を持たない一般のドライバーや事務員に3日間の基礎講習を受けてもらい、修了した翌日から補助者として任命しています。 
+
+sociac
+ +1
+試験に出るまとめ
+運行管理者 ＝ 選任が「先」、講習は「後（年度内）」で良い。
+補助者 ＝ 講習が「先」、選任（業務開始）は「後」でなければならない。 
+
+sociac
+この補助者の要件について：
+補助者ができる業務の範囲（運行管理者の代わりにできること・できないこと）
+補助者を活用した点呼の回数制限などのルール
+など、実務や試験対策で合わせて押さえておきたいポイントはありますか？
+Try without personalization
+
+
+
+
+
+4 sites
+運行管理者について - 国土交通省
+運行管理者の補助者について. 自動車運送事業者は、運行管理者の業務を補助させるため、国土交通大臣が認定した講習を受講した...
+
+国土交通省
+Training and Employment System Q&A
+Ｑ４４ Is it necessary for not only those in charge of training...
+
+法務省
+運行管理者補助者になるには？仕事内容や選定方法
+Mar 17, 2023 — 運行管理者補助者になるには？選任基準と条件. 補助者については、運行管理者が従業員から選任することができます。運行管理者...
+7:["$","$L15",null,{"initialQuestion":{"id":129,"year":"令和2年 (CBT)","questionNumber":8,"field":"貨物自動車運送事業法","majorField":null,"subField":null,"content":"一般貨物自動車運送事業者（以下「事業者」という。）の運行管理者の選任等に関する次の記述のうち、【誤っているものを１つ】選びなさい。なお、解答にあたっては、各選択肢に記載されている事項以外は考慮しないものとする。（※法改正により一部改変）","imageUrl":null,"sourceSheet":null,"knowledgeTags":"#運行管理者の業務・選任","riskCategory":null,"situationCategory":"#正誤・択一(1つ選択)","format":"SINGLE","pdfUrl":null,"pdfPage":null,"options":[{"id":492,"questionId":129,"optionNumber":1,"content":"事業者は、一般貨物自動車運送事業の許可を受けた後、速やかに、事業用自動車（被けん引自動車を除く。）の運行を管理する営業所ごとに、当該営業所が運行を管理する事業用自動車の数を30で除して得た数(その数に1未満の端数があるときは、これを切り捨てるものとする。)に1を加算して得た数以上の運行管理者を選任しなければならない。","isCorrect":false,"explanation":null,"structuredData":null},{"id":493,"questionId":129,"optionNumber":2,"content":"国土交通大臣は、運行管理者資格者証の交付を受けている者が、貨物自動車運送事業法若しくはこの法律に基づく命令又はこれらに基づく処分に違反したときは、その運行管理者資格者証の返納を命ずることができる。また、運行管理者資格者証の返納を命ぜられ、その日から5年を経過しない者に対しては、運行管理者資格者証の交付を行わないことができる。","isCorrect":false,"explanation":null,"structuredData":null},{"id":494,"questionId":129,"optionNumber":3,"content":"事業者は、法令に規定する運行管理者資格者証を有する者又は国土交通大臣が告示で定める運行の管理に関する講習であって国土交通大臣の認定を受けたもの（基礎講習）を修了した者のうちから、運行管理者の業務を補助させるための者（補助者）を選任することができる。","isCorrect":false,"explanation":null,"structuredData":null},{"id":495,"questionId":129,"optionNumber":4,"content":"事業者は、新たに選任した運行管理者に、選任届出をした日の属する年度（やむを得ない理由がある場合にあっては、当該年度の翌年度）に基礎講習又は一般講習（基礎講習を受講していない当該運行管理者にあっては、基礎講習）を受講させなければならない。ただし、他の事業者において運行管理者として選任されていた者にあっては、この限りでない。","isCorrect":true,"explanation":null,"structuredData":null}],"explanation":{"id":119,"questionId":129,"content":"$16","isDebated":true},"correctOptions":[],"userMeta":null,"attempts":[],"isDebated":false,"isBookmarked":false,"keywords":["運行管理者","一般貨物自動車運送事業者","選任等","各選択肢","事項以外","法改正","一部改変","一般貨物自動車運送事業","事業用自動車","引自動車","当該営業所","数以上","国土交通大臣","運行管理者資格者証","貨物自動車運送事業法若","命令又","基礎講習","補助者","選任届出","当該年度","翌年度","基礎講習又","一般講習","当該運行管理者"]},"similarQuestions":[{"id":313,"year":"令和4年 (CBT)","questionNumber":2,"isDebated":false,"score":69,"field":"貨物自動車運送事業法","sharedKeywords":["situation:#正誤・択一(1つ選択)","knowledge:#運行管理者の業務・選任","分野: 貨物自動車運送事業法","一般貨物自動車運送事業者","一般貨物自動車運送事業","事業用自動車","運行管理者","当該営業所"]},{"id":280,"year":"令和5年 (CBT)","questionNumber":3,"isDebated":false,"score":67,"field":"貨物自動車運送事業法","sharedKeywords":["situation:#正誤・択一(1つ選択)","knowledge:#運行管理者の業務・選任","分野: 貨物自動車運送事業法","一般貨物自動車運送事業者","一般貨物自動車運送事業","事業用自動車","運行管理者","各選択肢"]},{"id":124,"year":"令和2年 (CBT)","questionNumber":3,"isDebated":false,"score":64,"field":"貨物自動車運送事業法","sharedKeywords":["situation:#正誤・択一(1つ選択)","knowledge:#運行管理者の業務・選任","分野: 貨物自動車運送事業法","一般貨物自動車運送事業","事業用自動車","国土交通大臣","運行管理者","各選択肢"]},{"id":250,"year":"令和6年 (CBT)","questionNumber":3,"isDebated":false,"score":56,"field":"貨物自動車運送事業法","sharedKeywords":["knowledge:#運行管理者の業務・選任","分野: 貨物自動車運送事業法","一般貨物自動車運送事業","事業用自動車","国土交通大臣","運行管理者","各選択肢","事項以外"]},{"id":314,"year":"令和4年 (CBT)","questionNumber":3,"isDebated":true,"score":53,"field":"貨物自動車運送事業法","sharedKeywords":["knowledge:#運行管理者の業務・選任","分野: 貨物自動車運送事業法","一般貨物自動車運送事業","事業用自動車","運行管理者","各選択肢","事項以外","一部改変"]},{"id":145,"year":"令和2年 (CBT)","questionNumber":24,"isDebated":false,"score":53,"field":"実務上の知識及び能力","sharedKeywords":["situation:#正誤・択一(1つ選択)","knowledge:#運行管理者の業務・選任","事業用自動車","国土交通大臣","運行管理者","各選択肢","事項以外","一部改変"]},{"id":163,"year":"令和2年 第1回","questionNumber":6,"isDebated":false,"score":47,"field":"貨物自動車運送事業法","sharedKeywords":["knowledge:#運行管理者の業務・選任","分野: 貨物自動車運送事業法","一般貨物自動車運送事業","事業用自動車","国土交通大臣","運行管理者","各選択肢","事項以外"]},{"id":279,"year":"令和5年 (CBT)","questionNumber":2,"isDebated":false,"score":45,"field":"貨物自動車運送事業法","sharedKeywords":["knowledge:#運行管理者の業務・選任","分野: 貨物自動車運送事業法","一般貨物自動車運送事業者","事業用自動車","運行管理者","当該営業所","引自動車","数以上"]},{"id":302,"year":"令和5年 (CBT)","questionNumber":25,"isDebated":false,"score":42,"field":"実務上の知識及び能力","sharedKeywords":["knowledge:#運行管理者の業務・選任","運行管理者資格者証","事業用自動車","運行管理者","各選択肢","事項以外","補助者"]},{"id":158,"year":"令和2年 第1回","questionNumber":1,"isDebated":false,"score":24,"field":"貨物自動車運送事業法","sharedKeywords":["situation:#正誤・択一(1つ選択)","分野: 貨物自動車運送事業法","一般貨物自動車運送事業者","一般貨物自動車運送事業","国土交通大臣","各選択肢","事項以外","一部改変"]}],"nextQuestionId":130,"prevQuestionId":128,"nextIncorrectId":132,"contextModeLabel":"📅 年度別演習","groupTitle":"令和2年 (CBT)","currentPosition":8,"totalInGroup":30,"navQueryStr":"?groupBy=year","mode":"","groupQuestionIds":[122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151]}]
