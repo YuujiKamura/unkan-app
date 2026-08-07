@@ -19,7 +19,8 @@ export async function GET(
       include: {
         options: { orderBy: { optionNumber: 'asc' } },
         explanation: true,
-        userMeta: true
+        userMeta: true,
+        corrections: true
       }
     });
 
@@ -104,7 +105,8 @@ export async function PATCH(
       include: {
         options: { orderBy: { optionNumber: 'asc' } },
         explanation: true,
-        userMeta: true
+        userMeta: true,
+        corrections: true
       }
     });
 

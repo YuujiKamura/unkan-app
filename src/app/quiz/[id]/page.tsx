@@ -90,10 +90,11 @@ export default async function SingleQuizPage({
     try {
       questionRaw = await prisma.question.findUnique({
         where: { id },
-        include: { 
-          options: true, 
-          explanation: true, 
+        include: {
+          options: true,
+          explanation: true,
           userMeta: true,
+          corrections: true,
           attempts: {
             orderBy: { attemptedAt: 'desc' },
             take: 10

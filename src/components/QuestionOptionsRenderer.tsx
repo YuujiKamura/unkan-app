@@ -24,6 +24,46 @@ interface QuestionOptionsRendererProps {
   showJudgments?: boolean;
   judgments?: Record<string, string>;
   toggleJudgment?: (e: React.MouseEvent, label: string, val: 'O' | 'X') => void;
+  // 正答肢の一部を「誤り」としてマーク・訂正するアノテーション機能
+  onAddCorrection?: (payload: {
+    questionId: number;
+    optionNumber: number;
+    selectedText: string;
+    startOffset: number;
+    endOffset: number;
+    correctionText: string;
+  }) => void | Promise<void>;
+  onDeleteCorrection?: (id: number, questionId: number) => void | Promise<void>;
+}
+
+interface OptionCorrectionItem {
+  id?: number;
+  optionNumber: number;
+  selectedText: string;
+  startOffset: number;
+  endOffset: number;
+  correctionText: string;
+}
+
+// 指定コンテナ内でのテキスト選択範囲を、コンテナのテキスト全体に対する文字インデックスとして取得する。
+// 右クリック時に選択が保持されている場合のみ有効な値を返す（範囲外/選択なしは null）。
+function getSelectionInfoWithin(containerEl: HTMLElement): { selectedText: string; startOffset: number; endOffset: number } | null {
+  if (typeof window === 'undefined') return null;
+  const sel = window.getSelection();
+  if (!sel || sel.rangeCount === 0 || sel.isCollapsed) return null;
+  const range = sel.getRangeAt(0);
+  if (!containerEl.contains(range.commonAncestorContainer)) return null;
+
+  const selectedText = range.toString();
+  if (!selectedText.trim()) return null;
+
+  const preRange = document.createRange();
+  preRange.selectNodeContents(containerEl);
+  preRange.setEnd(range.startContainer, range.startOffset);
+  const startOffset = preRange.toString().length;
+  const endOffset = startOffset + selectedText.length;
+
+  return { selectedText, startOffset, endOffset };
 }
 
 export default function QuestionOptionsRenderer({
@@ -37,14 +77,47 @@ export default function QuestionOptionsRenderer({
   checkIsVoided,
   showJudgments,
   judgments,
-  toggleJudgment
+  toggleJudgment,
+  onAddCorrection,
+  onDeleteCorrection
 }: QuestionOptionsRendererProps) {
-  
-  
-  const [contextMenu, setContextMenu] = React.useState<{x: number, y: number, text: string, questionText: string} | null>(null);
+
+
+  const [contextMenu, setContextMenu] = React.useState<{
+    x: number;
+    y: number;
+    text: string;
+    questionText: string;
+    correctionTarget?: { optionNumber: number; selectedText: string; startOffset: number; endOffset: number } | null;
+  } | null>(null);
+
+  // 正答肢の一部を「誤り」としてマークするための、選択範囲入力フロート
+  const [correctionEditor, setCorrectionEditor] = React.useState<{
+    x: number;
+    y: number;
+    optionNumber: number;
+    selectedText: string;
+    startOffset: number;
+    endOffset: number;
+  } | null>(null);
+  const [correctionEditorText, setCorrectionEditorText] = React.useState('');
+
+  // 保存済み訂正マークをクリックした際に表示するフロート
+  const [activeCorrectionPopup, setActiveCorrectionPopup] = React.useState<{
+    x: number;
+    y: number;
+    id: number | undefined;
+    optionNumber: number;
+    selectedText: string;
+    correctionText: string;
+  } | null>(null);
 
   React.useEffect(() => {
-    const handleClickOutside = () => setContextMenu(null);
+    const handleClickOutside = () => {
+      setContextMenu(null);
+      setCorrectionEditor(null);
+      setActiveCorrectionPopup(null);
+    };
     window.addEventListener('click', handleClickOutside);
     return () => window.removeEventListener('click', handleClickOutside);
   }, []);
@@ -102,9 +175,202 @@ export default function QuestionOptionsRenderer({
         >
           📋 クリップボードにコピー
         </button>
+        {contextMenu.correctionTarget && (
+          <>
+            <div style={{height: '1px', background: '#334155', margin: '0.2rem 0'}} />
+            <button
+              className="btn"
+              style={{textAlign: 'left', padding: '0.5rem', background: 'transparent', color: '#f87171', border: 'none', cursor: 'pointer', fontSize: '0.9rem', fontWeight: 'bold'}}
+              onClick={(e) => {
+                e.stopPropagation();
+                const target = contextMenu.correctionTarget!;
+                setCorrectionEditor({ x: contextMenu.x, y: contextMenu.y, ...target });
+                setCorrectionEditorText('');
+                setContextMenu(null);
+              }}
+            >
+              🔴 「{contextMenu.correctionTarget.selectedText.length > 12 ? contextMenu.correctionTarget.selectedText.slice(0, 12) + '…' : contextMenu.correctionTarget.selectedText}」を誤りとしてマーク
+            </button>
+          </>
+        )}
       </div>,
       document.body
     );
+  };
+
+  const renderCorrectionEditor = () => {
+    if (!correctionEditor) return null;
+    const maxW = typeof window !== "undefined" ? window.innerWidth : 1000;
+    const maxH = typeof window !== "undefined" ? window.innerHeight : 1000;
+    const posX = correctionEditor.x + 300 > maxW ? maxW - 300 : correctionEditor.x;
+    const posY = correctionEditor.y + 200 > maxH ? maxH - 200 : correctionEditor.y;
+
+    if (typeof document === "undefined") return null;
+    return ReactDOM.createPortal(
+      <div
+        style={{
+          position: 'fixed',
+          top: posY,
+          left: posX,
+          background: '#1e293b',
+          border: '1px solid #ef4444',
+          borderRadius: '8px',
+          boxShadow: '0 4px 12px rgba(0,0,0,0.5)',
+          padding: '0.8rem',
+          zIndex: 9999,
+          width: '280px'
+        }}
+        onClick={(e) => e.stopPropagation()}
+      >
+        <div style={{ fontSize: '0.8rem', color: '#f87171', marginBottom: '0.5rem', fontWeight: 'bold' }}>
+          誤りとしてマーク: 「{correctionEditor.selectedText}」
+        </div>
+        <textarea
+          autoFocus
+          value={correctionEditorText}
+          onChange={(e) => setCorrectionEditorText(e.target.value)}
+          placeholder="正しい内容・訂正コメントを入力"
+          style={{ width: '100%', minHeight: '60px', fontSize: '0.85rem', marginBottom: '0.6rem', boxSizing: 'border-box' }}
+        />
+        <div style={{ display: 'flex', gap: '0.5rem', justifyContent: 'flex-end' }}>
+          <button
+            onClick={(e) => { e.stopPropagation(); setCorrectionEditor(null); }}
+            className="btn"
+            style={{ padding: '0.3rem 0.7rem', fontSize: '0.8rem', background: 'transparent', color: '#94a3b8', border: '1px solid #475569', borderRadius: '6px', cursor: 'pointer' }}
+          >
+            キャンセル
+          </button>
+          <button
+            disabled={!correctionEditorText.trim()}
+            onClick={async (e) => {
+              e.stopPropagation();
+              const text = correctionEditorText.trim();
+              if (!text) return;
+              const target = correctionEditor;
+              setCorrectionEditor(null);
+              if (onAddCorrection && target) {
+                await onAddCorrection({
+                  questionId: currentQ.id,
+                  optionNumber: target.optionNumber,
+                  selectedText: target.selectedText,
+                  startOffset: target.startOffset,
+                  endOffset: target.endOffset,
+                  correctionText: text
+                });
+              }
+            }}
+            className="btn btn-primary"
+            style={{ padding: '0.3rem 0.9rem', fontSize: '0.8rem', opacity: correctionEditorText.trim() ? 1 : 0.5 }}
+          >
+            保存
+          </button>
+        </div>
+      </div>,
+      document.body
+    );
+  };
+
+  const renderCorrectionPopup = () => {
+    if (!activeCorrectionPopup) return null;
+    const maxW = typeof window !== "undefined" ? window.innerWidth : 1000;
+    const maxH = typeof window !== "undefined" ? window.innerHeight : 1000;
+    const posX = activeCorrectionPopup.x + 280 > maxW ? maxW - 280 : activeCorrectionPopup.x;
+    const posY = activeCorrectionPopup.y + 140 > maxH ? maxH - 140 : activeCorrectionPopup.y;
+
+    if (typeof document === "undefined") return null;
+    return ReactDOM.createPortal(
+      <div
+        style={{
+          position: 'fixed',
+          top: posY,
+          left: posX,
+          background: '#1e293b',
+          border: '1px solid #f87171',
+          borderRadius: '8px',
+          boxShadow: '0 4px 12px rgba(0,0,0,0.5)',
+          padding: '0.8rem',
+          zIndex: 9999,
+          maxWidth: '260px'
+        }}
+        onClick={(e) => e.stopPropagation()}
+      >
+        <div style={{ fontSize: '0.75rem', color: '#f87171', marginBottom: '0.4rem', fontWeight: 'bold' }}>
+          ✏️ 訂正: 「{activeCorrectionPopup.selectedText}」
+        </div>
+        <div style={{ fontSize: '0.9rem', color: '#e2e8f0', marginBottom: '0.6rem', whiteSpace: 'pre-wrap' }}>
+          {activeCorrectionPopup.correctionText}
+        </div>
+        <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
+          <button
+            onClick={async (e) => {
+              e.stopPropagation();
+              const popup = activeCorrectionPopup;
+              setActiveCorrectionPopup(null);
+              if (onDeleteCorrection && popup && popup.id !== undefined) {
+                await onDeleteCorrection(popup.id, currentQ.id);
+              }
+            }}
+            className="btn"
+            style={{ padding: '0.25rem 0.6rem', fontSize: '0.75rem', background: 'transparent', color: '#94a3b8', border: '1px solid #475569', borderRadius: '6px', cursor: 'pointer' }}
+          >
+            🗑️ この訂正を削除
+          </button>
+        </div>
+      </div>,
+      document.body
+    );
+  };
+
+  // isAnswered かつ対象が正答肢の場合のみ、保存済み訂正マークを本文に反映してレンダリングする。
+  // (「問題を解答するまでは再表示されない」仕様のゲート)
+  const renderContentWithCorrections = (content: string, corrections: OptionCorrectionItem[], optionNumber: number): React.ReactNode => {
+    const valid = (corrections || [])
+      .filter((c) => typeof c.startOffset === 'number' && typeof c.endOffset === 'number' && c.startOffset >= 0 && c.endOffset <= content.length && c.endOffset > c.startOffset)
+      .sort((a, b) => a.startOffset - b.startOffset);
+
+    const nonOverlapping: OptionCorrectionItem[] = [];
+    let lastEnd = -1;
+    for (const c of valid) {
+      if (c.startOffset >= lastEnd) {
+        nonOverlapping.push(c);
+        lastEnd = c.endOffset;
+      }
+    }
+
+    if (nonOverlapping.length === 0) return content;
+
+    const nodes: React.ReactNode[] = [];
+    let cursor = 0;
+    nonOverlapping.forEach((c, idx: number) => {
+      if (c.startOffset > cursor) {
+        nodes.push(content.slice(cursor, c.startOffset));
+      }
+      nodes.push(
+        <span
+          key={`corr-${c.id ?? idx}`}
+          style={{ color: '#f87171', fontWeight: 'bold', textDecoration: 'underline', textDecorationStyle: 'dotted', cursor: 'pointer' }}
+          onClick={(e) => {
+            e.stopPropagation();
+            e.preventDefault();
+            setActiveCorrectionPopup({
+              x: e.clientX,
+              y: e.clientY,
+              id: c.id,
+              optionNumber,
+              selectedText: c.selectedText,
+              correctionText: c.correctionText
+            });
+          }}
+        >
+          {content.slice(c.startOffset, c.endOffset)}
+        </span>
+      );
+      cursor = c.endOffset;
+    });
+    if (cursor < content.length) {
+      nodes.push(content.slice(cursor));
+    }
+    return nodes;
   };
 
   const correctOptionNumbers = (currentQ.options || []).filter((o: any) => o.isCorrect).map((o: any) => o.optionNumber);
@@ -204,6 +470,12 @@ export default function QuestionOptionsRenderer({
         let btnClass = "btn btn-secondary";
         
         const isSelected = selectedOptions.includes(opt.optionNumber);
+        const isFactuallyCorrectOpt = !!isOptionFactuallyCorrect && isOptionFactuallyCorrect(currentQ, opt.optionNumber);
+        // 保存済みの訂正マークは、この選択肢が正答肢かつ解答済みの場合のみ表示する
+        // (「問題を解答するまでは再表示されない」仕様のゲート＝答えの事前漏洩防止)
+        const optionCorrections = isAnswered && isFactuallyCorrectOpt
+          ? ((currentQ.corrections || []) as OptionCorrectionItem[]).filter((c) => c.optionNumber === opt.optionNumber)
+          : [];
         if (isAnswered) {
           if (isOptionFactuallyCorrect && isOptionFactuallyCorrect(currentQ, opt.optionNumber)) {
             // Success styling
@@ -269,21 +541,39 @@ export default function QuestionOptionsRenderer({
                 </button>
               </div>
             )}
-            <button 
+            <button
               className={btnClass}
               style={btnStyle}
               onClick={() => onSelectOption(opt.optionNumber)}
               disabled={showJudgments ? false : undefined}
-              onContextMenu={(e) => { e.preventDefault(); setContextMenu({ x: e.clientX, y: e.clientY, text: opt.content || `選択肢 ${opt.optionNumber}`, questionText: currentQ.content || '' }); }}
+              onContextMenu={(e) => {
+                e.preventDefault();
+                const containerEl = (e.currentTarget as HTMLElement).querySelector('[data-option-content]') as HTMLElement | null;
+                const selInfo = containerEl ? getSelectionInfoWithin(containerEl) : null;
+                const canMarkCorrection = !!selInfo && isAnswered && isFactuallyCorrectOpt;
+                setContextMenu({
+                  x: e.clientX,
+                  y: e.clientY,
+                  text: opt.content || `選択肢 ${opt.optionNumber}`,
+                  questionText: currentQ.content || '',
+                  correctionTarget: canMarkCorrection ? { optionNumber: opt.optionNumber, ...selInfo! } : null
+                });
+              }}
             >
-              <span style={{ fontWeight: 'bold', marginRight: '1rem', opacity: 0.7 }}>{opt.optionNumber}.</span> 
-              {opt.content || `選択肢 ${opt.optionNumber}`}
+              <span style={{ fontWeight: 'bold', marginRight: '1rem', opacity: 0.7 }}>{opt.optionNumber}.</span>
+              <span data-option-content style={{ whiteSpace: 'pre-wrap' }}>
+                {optionCorrections.length > 0
+                  ? renderContentWithCorrections(opt.content || '', optionCorrections, opt.optionNumber)
+                  : (opt.content || `選択肢 ${opt.optionNumber}`)}
+              </span>
             </button>
           </div>
         );
       })}
     </div>
     {renderContextMenu()}
+    {renderCorrectionEditor()}
+    {renderCorrectionPopup()}
     </>
   );
 }

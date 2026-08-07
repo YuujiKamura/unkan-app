@@ -6,7 +6,7 @@ import Link from 'next/link';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import remarkBreaks from 'remark-breaks';
-import { apiClient } from '@/lib/apiClient';
+import { apiClient, OptionCorrectionRecord } from '@/lib/apiClient';
 import EditQuestionModal from './EditQuestionModal';
 import EmbeddedFlowchart, { FlowchartData } from './EmbeddedFlowchart';
 import { INITIAL_PRESETS } from './FlowchartStudio';
@@ -378,6 +378,31 @@ export default function SingleQuizClient({
     await apiClient.toggleBookmark(currentQ.id, newStatus);
   };
 
+  const addCorrection = async (payload: {
+    questionId: number;
+    optionNumber: number;
+    selectedText: string;
+    startOffset: number;
+    endOffset: number;
+    correctionText: string;
+  }) => {
+    try {
+      const saved = await apiClient.saveCorrection(payload);
+      setCurrentQ((prev: typeof currentQ) => ({ ...prev, corrections: [...(prev.corrections || []), saved] }));
+    } catch (err) {
+      console.error('Failed to save correction', err);
+    }
+  };
+
+  const deleteCorrection = async (id: number, questionId: number) => {
+    try {
+      await apiClient.deleteCorrection(id, questionId);
+      setCurrentQ((prev: typeof currentQ) => ({ ...prev, corrections: (prev.corrections || []).filter((c: OptionCorrectionRecord) => c.id !== id) }));
+    } catch (err) {
+      console.error('Failed to delete correction', err);
+    }
+  };
+
   const copyToClipboard = async () => {
     if (!currentQ) return;
     
@@ -710,6 +735,8 @@ export default function SingleQuizClient({
                 showJudgments={!isCombinationQuestion}
                 judgments={judgments}
                 toggleJudgment={toggleJudgment}
+                onAddCorrection={addCorrection}
+                onDeleteCorrection={deleteCorrection}
               />
 
               {/* 解答せずに正解・解説を見るボタン */}
