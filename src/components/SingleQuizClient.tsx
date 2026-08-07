@@ -387,7 +387,7 @@ export default function SingleQuizClient({
     correctionText: string;
   }) => {
     try {
-      const saved = await apiClient.saveCorrection(payload);
+      const saved = { ...(await apiClient.saveCorrection(payload)), _justCreated: true };
       setCurrentQ((prev: typeof currentQ) => ({ ...prev, corrections: [...(prev.corrections || []), saved] }));
     } catch (err) {
       console.error('Failed to save correction', err);

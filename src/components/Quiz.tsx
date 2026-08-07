@@ -22,7 +22,7 @@ type Question = {
   isBookmarked: boolean;
   isDebated: boolean;
   options?: { optionNumber: number; content: string; isCorrect?: boolean }[];
-  corrections?: { id: number; optionNumber: number; selectedText: string; startOffset: number; endOffset: number; correctionText: string }[];
+  corrections?: { id: number; optionNumber: number; selectedText: string; startOffset: number; endOffset: number; correctionText: string; _justCreated?: boolean }[];
 };
 
 export default function Quiz({ mode }: { mode: 'random' | 'review' }) {
@@ -197,7 +197,7 @@ export default function Quiz({ mode }: { mode: 'random' | 'review' }) {
     correctionText: string;
   }) => {
     try {
-      const saved = await apiClient.saveCorrection(payload);
+      const saved = { ...(await apiClient.saveCorrection(payload)), _justCreated: true };
       setQuestions((prev) =>
         prev.map((q) =>
           q.id === payload.questionId

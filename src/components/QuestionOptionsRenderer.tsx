@@ -43,6 +43,7 @@ interface OptionCorrectionItem {
   startOffset: number;
   endOffset: number;
   correctionText: string;
+  _justCreated?: boolean; // このレンダーセッション中に自分で作成したマーク(解答前でも即表示してよい)
 }
 
 // 指定コンテナ内でのテキスト選択範囲を、コンテナのテキスト全体に対する文字インデックスとして取得する。
@@ -471,10 +472,11 @@ export default function QuestionOptionsRenderer({
         
         const isSelected = selectedOptions.includes(opt.optionNumber);
         const isFactuallyCorrectOpt = !!isOptionFactuallyCorrect && isOptionFactuallyCorrect(currentQ, opt.optionNumber);
-        // 保存済みの訂正マークは、この選択肢が正答肢かつ解答済みの場合のみ表示する
-        // (「問題を解答するまでは再表示されない」仕様のゲート＝答えの事前漏洩防止)
-        const optionCorrections = isAnswered && isFactuallyCorrectOpt
-          ? ((currentQ.corrections || []) as OptionCorrectionItem[]).filter((c) => c.optionNumber === opt.optionNumber)
+        // 訂正マークは正答肢のみに付けられる。表示は「解答済み」または「今回自分で作成したばかり」の
+        // どちらかを満たす場合のみ — 過去に付けた訂正は再解答するまで再表示しない(答えの事前漏洩防止)が、
+        // たった今作った自分のマークは即座に見えないと、解答前に付けたマークが一見消えたように見えてしまう。
+        const optionCorrections = isFactuallyCorrectOpt
+          ? ((currentQ.corrections || []) as OptionCorrectionItem[]).filter((c) => c.optionNumber === opt.optionNumber && (isAnswered || c._justCreated))
           : [];
         if (isAnswered) {
           if (isOptionFactuallyCorrect && isOptionFactuallyCorrect(currentQ, opt.optionNumber)) {
@@ -550,7 +552,7 @@ export default function QuestionOptionsRenderer({
                 e.preventDefault();
                 const containerEl = (e.currentTarget as HTMLElement).querySelector('[data-option-content]') as HTMLElement | null;
                 const selInfo = containerEl ? getSelectionInfoWithin(containerEl) : null;
-                const canMarkCorrection = !!selInfo && isAnswered && isFactuallyCorrectOpt;
+                const canMarkCorrection = !!selInfo && isFactuallyCorrectOpt;
                 setContextMenu({
                   x: e.clientX,
                   y: e.clientY,
