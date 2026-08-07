@@ -8,6 +8,17 @@ export type AttemptPayload = {
   judgments?: Record<string, 'O' | 'X'>;
 };
 
+export type CorrectionPayload = {
+  questionId: number;
+  optionNumber: number;
+  selectedText: string;
+  startOffset: number;
+  endOffset: number;
+  correctionText: string;
+};
+
+export type OptionCorrectionRecord = CorrectionPayload & { id: number; createdAt: string };
+
 // 環境変数等で SPA (LocalStorage) モードか App (API) モードかを切り替える
 // Vite 等でビルドする場合は、ここで true になるようなフラグを設ける
 const IS_SPA_MODE = process.env.NEXT_PUBLIC_APP_MODE === 'spa' || typeof window !== 'undefined' && window.location.hostname.includes('github.io');
@@ -133,6 +144,41 @@ export const apiClient = {
     const res = await fetch('/api/attempts?all=true');
     if (!res.ok) return [];
     return res.json();
+  },
+
+  async saveCorrection(payload: CorrectionPayload): Promise<OptionCorrectionRecord> {
+    if (IS_SPA_MODE) {
+      const data = getLocalData<Record<number, OptionCorrectionRecord[]>>('corrections', {});
+      const list = data[payload.questionId] || [];
+      const newItem: OptionCorrectionRecord = { id: Date.now(), ...payload, createdAt: new Date().toISOString() };
+      list.push(newItem);
+      data[payload.questionId] = list;
+      setLocalData('corrections', data);
+      return Promise.resolve(newItem);
+    }
+
+    const res = await fetch(`/api/questions/${payload.questionId}/corrections`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
+    });
+    if (!res.ok) {
+      const err = await res.json().catch(() => ({}));
+      throw new Error(`Failed to save correction: ${err.error}`);
+    }
+    return res.json();
+  },
+
+  async deleteCorrection(id: number, questionId?: number): Promise<void> {
+    if (IS_SPA_MODE) {
+      if (questionId === undefined) return;
+      const data = getLocalData<Record<number, OptionCorrectionRecord[]>>('corrections', {});
+      data[questionId] = (data[questionId] || []).filter((c) => c.id !== id);
+      setLocalData('corrections', data);
+      return Promise.resolve();
+    }
+
+    await fetch(`/api/corrections/${id}`, { method: 'DELETE' });
   }
 };
 

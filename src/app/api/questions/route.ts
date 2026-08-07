@@ -51,7 +51,8 @@ export async function GET(request: Request) {
       options: true,
       attempts: true, // クライアントで履歴を見るために含める
       explanation: true,
-      userMeta: true
+      userMeta: true,
+      corrections: true
     }
   });
 

@@ -22,6 +22,7 @@ type Question = {
   isBookmarked: boolean;
   isDebated: boolean;
   options?: { optionNumber: number; content: string; isCorrect?: boolean }[];
+  corrections?: { id: number; optionNumber: number; selectedText: string; startOffset: number; endOffset: number; correctionText: string }[];
 };
 
 export default function Quiz({ mode }: { mode: 'random' | 'review' }) {
@@ -45,6 +46,7 @@ export default function Quiz({ mode }: { mode: 'random' | 'review' }) {
           const bookmarks = (() => { try { return JSON.parse(localStorage.getItem('unkan_spa_bookmarks') || '{}'); } catch { return {}; } })();
           const debates = (() => { try { return JSON.parse(localStorage.getItem('unkan_spa_debates') || '{}'); } catch { return {}; } })();
           const explanations = (() => { try { return JSON.parse(localStorage.getItem('unkan_spa_explanations') || '{}'); } catch { return {}; } })();
+          const corrections = (() => { try { return JSON.parse(localStorage.getItem('unkan_spa_corrections') || '{}'); } catch { return {}; } })();
           const attempts = getAttemptsClient();
 
           if (mode === 'review') {
@@ -63,7 +65,8 @@ export default function Quiz({ mode }: { mode: 'random' | 'review' }) {
             ...q,
             isBookmarked: bookmarks[q.id] || false,
             isDebated: debates[q.id] || false,
-            explanation: explanations[q.id] || q.explanation || null
+            explanation: explanations[q.id] || q.explanation || null,
+            corrections: corrections[q.id] || []
           }));
           
           setQuestions(selected);
@@ -183,6 +186,43 @@ export default function Quiz({ mode }: { mode: 'random' | 'review' }) {
       selectedOptions: JSON.stringify(selectedMultiOptions),
       isCorrect: correct
     });
+  };
+
+  const addCorrection = async (payload: {
+    questionId: number;
+    optionNumber: number;
+    selectedText: string;
+    startOffset: number;
+    endOffset: number;
+    correctionText: string;
+  }) => {
+    try {
+      const saved = await apiClient.saveCorrection(payload);
+      setQuestions((prev) =>
+        prev.map((q) =>
+          q.id === payload.questionId
+            ? { ...q, corrections: [...(q.corrections || []), saved] }
+            : q
+        )
+      );
+    } catch (err) {
+      console.error('Failed to save correction', err);
+    }
+  };
+
+  const deleteCorrection = async (id: number, questionId: number) => {
+    try {
+      await apiClient.deleteCorrection(id, questionId);
+      setQuestions((prev) =>
+        prev.map((q) =>
+          q.id === questionId
+            ? { ...q, corrections: (q.corrections || []).filter((c) => c.id !== id) }
+            : q
+        )
+      );
+    } catch (err) {
+      console.error('Failed to delete correction', err);
+    }
   };
 
   const toggleBookmark = async () => {
@@ -308,6 +348,8 @@ export default function Quiz({ mode }: { mode: 'random' | 'review' }) {
           selectedMultiOptions={selectedMultiOptions}
           isOptionFactuallyCorrect={isOptionFactuallyCorrect}
           checkIsVoided={checkIsVoided}
+          onAddCorrection={addCorrection}
+          onDeleteCorrection={deleteCorrection}
         />
 
         {isMultiMode && !isAnswered && (

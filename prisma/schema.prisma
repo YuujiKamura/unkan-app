@@ -28,6 +28,7 @@ model Question {
   attempts        Attempt[]
   explanation     QuestionExplanation?
   userMeta        UserQuestionMeta?
+  corrections     OptionCorrection[]
 }
 
 model QuestionExplanation {
@@ -54,6 +55,18 @@ model Option {
   isCorrect       Boolean?  // 正答フラグ
   explanation     String?   // 選択肢毎の解説
   structuredData  String?   // JSON文字列 (MULTI_GROUP等の場合の構造化データ)
+}
+
+model OptionCorrection {
+  id              Int       @id @default(autoincrement())
+  questionId      Int
+  question        Question  @relation(fields: [questionId], references: [id], onDelete: Cascade)
+  optionNumber    Int       // どの選択肢(正答肢)の訂正か
+  selectedText    String    // 選択肢テキスト中の、誤りとしてマークした部分文字列
+  startOffset     Int       // content内の開始位置(文字インデックス)
+  endOffset       Int       // content内の終了位置(文字インデックス)
+  correctionText  String    // ユーザーが入力した訂正内容
+  createdAt       DateTime  @default(now())
 }
 
 model Attempt {
