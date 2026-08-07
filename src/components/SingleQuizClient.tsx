@@ -13,6 +13,7 @@ import { INITIAL_PRESETS } from './FlowchartStudio';
 import FlowchartLibraryModal from './FlowchartLibraryModal';
 import { saveFlowchartToLibrary, getFlowchartLibrary, SavedFlowchartItem } from '@/lib/flowchartLibrary';
 import QuestionOptionsRenderer from './QuestionOptionsRenderer';
+import MarkableText, { CorrectionItem } from './MarkableText';
 
 type ExpSegment = 
   | { type: 'text'; content: string }
@@ -660,7 +661,16 @@ export default function SingleQuizClient({
 
                 <div style={{ flex: '1 1 400px' }}>
                   <h3 style={{ marginBottom: '2rem', lineHeight: '1.8', whiteSpace: 'pre-wrap' }}>
-                    {currentQ.content}
+                    <MarkableText
+                      questionId={currentQ.id}
+                      slotNumber={0}
+                      content={currentQ.content || ''}
+                      corrections={(currentQ.corrections || []) as CorrectionItem[]}
+                      isAnswered={isAnswered}
+                      onAddCorrection={addCorrection}
+                      onDeleteCorrection={deleteCorrection}
+                      onUpdateCorrection={updateCorrection}
+                    />
                   </h3>
                   
                   {!hasLocalImage && needsImage && (

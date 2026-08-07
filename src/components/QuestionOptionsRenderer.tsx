@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import MarkableText, { CorrectionItem } from './MarkableText';
 
 export interface Question {
   id: number;
@@ -24,7 +25,7 @@ interface QuestionOptionsRendererProps {
   showJudgments?: boolean;
   judgments?: Record<string, string>;
   toggleJudgment?: (e: React.MouseEvent, label: string, val: 'O' | 'X') => void;
-  // 選択肢の一部を「誤り」としてマーク・訂正するアノテーション機能
+  // 選択肢の一部を「誤り」としてマーク・訂正するアノテーション機能 (MarkableText へ委譲)
   onAddCorrection?: (payload: {
     questionId: number;
     optionNumber: number;
@@ -35,16 +36,6 @@ interface QuestionOptionsRendererProps {
   }) => void | Promise<void>;
   onDeleteCorrection?: (id: number, questionId: number) => void | Promise<void>;
   onUpdateCorrection?: (id: number, questionId: number, correctionText: string) => void | Promise<void>;
-}
-
-interface OptionCorrectionItem {
-  id?: number;
-  optionNumber: number;
-  selectedText: string;
-  startOffset: number;
-  endOffset: number;
-  correctionText: string;
-  _justCreated?: boolean; // このレンダーセッション中に自分で作成したマーク(解答前でも即表示してよい)
 }
 
 export default function QuestionOptionsRenderer({
@@ -64,66 +55,18 @@ export default function QuestionOptionsRenderer({
   onUpdateCorrection
 }: QuestionOptionsRendererProps) {
 
-
-  const [contextMenu, setContextMenu] = React.useState<{
-    x: number;
-    y: number;
-    text: string;
-    questionText: string;
-    correctionTarget?: { optionNumber: number } | null;
-  } | null>(null);
-
-  // 正答肢の一部を「誤り」としてマークするための、文字クリック選択モード。
-  // 事前にブラウザのテキスト選択を作っておく必要はなく、右クリック → このモードに入る →
-  // 文字をクリック/ドラッグして範囲を選ぶ、という自己完結した操作フローにする
-  // (ボタン要素内はブラウザの標準ドラッグ選択が効かない/不安定なため、独自実装で完全に代替する)。
-  const [pickingOptionNumber, setPickingOptionNumber] = React.useState<number | null>(null);
-  const [pickStart, setPickStart] = React.useState<number | null>(null);
-  const [pickEnd, setPickEnd] = React.useState<number | null>(null);
-  const [isPickDragging, setIsPickDragging] = React.useState(false);
-  const [pickCorrectionText, setPickCorrectionText] = React.useState('');
-
-  // 保存済み訂正マークをクリックした際に表示するフロート
-  const [activeCorrectionPopup, setActiveCorrectionPopup] = React.useState<{
-    x: number;
-    y: number;
-    id: number | undefined;
-    optionNumber: number;
-    selectedText: string;
-    correctionText: string;
-  } | null>(null);
-  const [isPopupEditing, setIsPopupEditing] = React.useState(false);
-  const [popupEditText, setPopupEditText] = React.useState('');
+  // MULTI_GROUP用の簡易右クリックメニュー(検索・コピーのみ、訂正マーク機能はMULTI_GROUP未対応)
+  const [contextMenu, setContextMenu] = React.useState<{ x: number; y: number; text: string } | null>(null);
 
   React.useEffect(() => {
-    const handleClickOutside = () => {
-      setContextMenu(null);
-      setActiveCorrectionPopup(null);
-      setIsPopupEditing(false);
-    };
+    const handleClickOutside = () => setContextMenu(null);
     window.addEventListener('click', handleClickOutside);
     return () => window.removeEventListener('click', handleClickOutside);
   }, []);
 
-  React.useEffect(() => {
-    if (!isPickDragging) return;
-    const handleMouseUp = () => setIsPickDragging(false);
-    window.addEventListener('mouseup', handleMouseUp);
-    return () => window.removeEventListener('mouseup', handleMouseUp);
-  }, [isPickDragging]);
-
-  const exitPickingMode = () => {
-    setPickingOptionNumber(null);
-    setPickStart(null);
-    setPickEnd(null);
-    setIsPickDragging(false);
-    setPickCorrectionText('');
-  };
-
   const renderContextMenu = () => {
     if (!contextMenu) return null;
-    
-    // 画面外にはみ出ないように位置を調整
+
     const maxW = typeof window !== "undefined" ? window.innerWidth : 1000;
     const maxH = typeof window !== "undefined" ? window.innerHeight : 1000;
     const posX = contextMenu.x + 250 > maxW ? maxW - 250 : contextMenu.x;
@@ -146,8 +89,8 @@ export default function QuestionOptionsRenderer({
         gap: '0.5rem',
         minWidth: '220px'
       }}>
-        <button 
-          className="btn" 
+        <button
+          className="btn"
           style={{textAlign: 'left', padding: '0.5rem', background: 'transparent', color: '#fff', border: 'none', cursor: 'pointer', fontSize: '0.9rem'}}
           onClick={(e) => {
             e.stopPropagation();
@@ -158,8 +101,8 @@ export default function QuestionOptionsRenderer({
           🔍 Googleで検索する
         </button>
         <div style={{height: '1px', background: '#334155', margin: '0.2rem 0'}} />
-        <button 
-          className="btn" 
+        <button
+          className="btn"
           style={{textAlign: 'left', padding: '0.5rem', background: 'transparent', color: '#38bdf8', border: 'none', cursor: 'pointer', fontSize: '0.9rem'}}
           onClick={async (e) => {
             e.stopPropagation();
@@ -173,279 +116,8 @@ export default function QuestionOptionsRenderer({
         >
           📋 クリップボードにコピー
         </button>
-        {contextMenu.correctionTarget && (
-          <>
-            <div style={{height: '1px', background: '#334155', margin: '0.2rem 0'}} />
-            <button
-              className="btn"
-              style={{textAlign: 'left', padding: '0.5rem', background: 'transparent', color: '#f87171', border: 'none', cursor: 'pointer', fontSize: '0.9rem', fontWeight: 'bold'}}
-              onClick={(e) => {
-                e.stopPropagation();
-                setPickingOptionNumber(contextMenu.correctionTarget!.optionNumber);
-                setPickStart(null);
-                setPickEnd(null);
-                setPickCorrectionText('');
-                setContextMenu(null);
-              }}
-            >
-              🔴 文章の一部を誤りとしてマーク
-            </button>
-          </>
-        )}
       </div>,
       document.body
-    );
-  };
-
-  const renderCorrectionPopup = () => {
-    if (!activeCorrectionPopup) return null;
-    const maxW = typeof window !== "undefined" ? window.innerWidth : 1000;
-    const maxH = typeof window !== "undefined" ? window.innerHeight : 1000;
-    const posX = activeCorrectionPopup.x + 280 > maxW ? maxW - 280 : activeCorrectionPopup.x;
-    const posY = activeCorrectionPopup.y + 140 > maxH ? maxH - 140 : activeCorrectionPopup.y;
-
-    if (typeof document === "undefined") return null;
-    return ReactDOM.createPortal(
-      <div
-        style={{
-          position: 'fixed',
-          top: posY,
-          left: posX,
-          background: '#1e293b',
-          border: '1px solid #f87171',
-          borderRadius: '8px',
-          boxShadow: '0 4px 12px rgba(0,0,0,0.5)',
-          padding: '0.8rem',
-          zIndex: 9999,
-          maxWidth: '260px'
-        }}
-        onClick={(e) => e.stopPropagation()}
-      >
-        <div style={{ fontSize: '0.75rem', color: '#f87171', marginBottom: '0.4rem', fontWeight: 'bold' }}>
-          ✏️ 訂正: 「{activeCorrectionPopup.selectedText}」
-        </div>
-
-        {isPopupEditing ? (
-          <>
-            <textarea
-              autoFocus
-              value={popupEditText}
-              onChange={(e) => setPopupEditText(e.target.value)}
-              placeholder="正しい内容・訂正コメント(空欄可)"
-              style={{ width: '100%', minHeight: '60px', fontSize: '0.85rem', marginBottom: '0.6rem', boxSizing: 'border-box' }}
-            />
-            <div style={{ display: 'flex', justifyContent: 'flex-end', gap: '0.5rem' }}>
-              <button
-                onClick={(e) => {
-                  e.stopPropagation();
-                  setIsPopupEditing(false);
-                }}
-                className="btn"
-                style={{ padding: '0.25rem 0.6rem', fontSize: '0.75rem', background: 'transparent', color: '#94a3b8', border: '1px solid #475569', borderRadius: '6px', cursor: 'pointer' }}
-              >
-                キャンセル
-              </button>
-              <button
-                onClick={async (e) => {
-                  e.stopPropagation();
-                  const popup = activeCorrectionPopup;
-                  const text = popupEditText.trim();
-                  setActiveCorrectionPopup(null);
-                  setIsPopupEditing(false);
-                  if (onUpdateCorrection && popup && popup.id !== undefined) {
-                    await onUpdateCorrection(popup.id, currentQ.id, text);
-                  }
-                }}
-                className="btn btn-primary"
-                style={{ padding: '0.25rem 0.8rem', fontSize: '0.75rem' }}
-              >
-                保存
-              </button>
-            </div>
-          </>
-        ) : (
-          <>
-            <div style={{ fontSize: '0.9rem', color: '#e2e8f0', marginBottom: '0.6rem', whiteSpace: 'pre-wrap' }}>
-              {activeCorrectionPopup.correctionText || <span style={{ color: '#64748b', fontStyle: 'italic' }}>(訂正コメントなし)</span>}
-            </div>
-            <div style={{ display: 'flex', justifyContent: 'flex-end', gap: '0.5rem' }}>
-              <button
-                onClick={(e) => {
-                  e.stopPropagation();
-                  setPopupEditText(activeCorrectionPopup.correctionText || '');
-                  setIsPopupEditing(true);
-                }}
-                className="btn"
-                style={{ padding: '0.25rem 0.6rem', fontSize: '0.75rem', background: 'transparent', color: '#38bdf8', border: '1px solid #38bdf8', borderRadius: '6px', cursor: 'pointer' }}
-              >
-                ✏️ 追記・編集
-              </button>
-              <button
-                onClick={async (e) => {
-                  e.stopPropagation();
-                  const popup = activeCorrectionPopup;
-                  setActiveCorrectionPopup(null);
-                  if (onDeleteCorrection && popup && popup.id !== undefined) {
-                    await onDeleteCorrection(popup.id, currentQ.id);
-                  }
-                }}
-                className="btn"
-                style={{ padding: '0.25rem 0.6rem', fontSize: '0.75rem', background: 'transparent', color: '#94a3b8', border: '1px solid #475569', borderRadius: '6px', cursor: 'pointer' }}
-              >
-                🗑️ この訂正を削除
-              </button>
-            </div>
-          </>
-        )}
-      </div>,
-      document.body
-    );
-  };
-
-  // isAnswered かつ対象が正答肢の場合のみ、保存済み訂正マークを本文に反映してレンダリングする。
-  // (「問題を解答するまでは再表示されない」仕様のゲート)
-  const renderContentWithCorrections = (content: string, corrections: OptionCorrectionItem[], optionNumber: number): React.ReactNode => {
-    const valid = (corrections || [])
-      .filter((c) => typeof c.startOffset === 'number' && typeof c.endOffset === 'number' && c.startOffset >= 0 && c.endOffset <= content.length && c.endOffset > c.startOffset)
-      .sort((a, b) => a.startOffset - b.startOffset);
-
-    const nonOverlapping: OptionCorrectionItem[] = [];
-    let lastEnd = -1;
-    for (const c of valid) {
-      if (c.startOffset >= lastEnd) {
-        nonOverlapping.push(c);
-        lastEnd = c.endOffset;
-      }
-    }
-
-    if (nonOverlapping.length === 0) return content;
-
-    const nodes: React.ReactNode[] = [];
-    let cursor = 0;
-    nonOverlapping.forEach((c, idx: number) => {
-      if (c.startOffset > cursor) {
-        nodes.push(content.slice(cursor, c.startOffset));
-      }
-      nodes.push(
-        <span
-          key={`corr-${c.id ?? idx}`}
-          style={{ color: '#f87171', fontWeight: 'bold', textDecoration: 'underline', textDecorationStyle: 'dotted', cursor: 'pointer' }}
-          onClick={(e) => {
-            e.stopPropagation();
-            e.preventDefault();
-            setActiveCorrectionPopup({
-              x: e.clientX,
-              y: e.clientY,
-              id: c.id,
-              optionNumber,
-              selectedText: c.selectedText,
-              correctionText: c.correctionText
-            });
-            setIsPopupEditing(!c.correctionText);
-            setPopupEditText(c.correctionText || '');
-          }}
-        >
-          {content.slice(c.startOffset, c.endOffset)}
-        </span>
-      );
-      cursor = c.endOffset;
-    });
-    if (cursor < content.length) {
-      nodes.push(content.slice(cursor));
-    }
-    return nodes;
-  };
-
-  // 文字クリック選択モードのUI。選択肢の本文を1文字ずつクリック可能なspanとして描画し、
-  // クリック+ドラッグ(またはクリック始点→クリック終点)で範囲を選ばせる。
-  // ボタン内蔵のブラウザ標準テキスト選択に依存しないための自前実装。
-  const renderPicker = (opt: { optionNumber: number; content?: string }) => {
-    const content: string = opt.content || '';
-    const chars = Array.from(content);
-    const rangeLo = pickStart !== null && pickEnd !== null ? Math.min(pickStart, pickEnd) : null;
-    const rangeHi = pickStart !== null && pickEnd !== null ? Math.max(pickStart, pickEnd) : null;
-    const hasRange = rangeLo !== null && rangeHi !== null;
-    const selectedSlice = hasRange ? chars.slice(rangeLo!, rangeHi! + 1).join('') : '';
-
-    return (
-      <div style={{ padding: '1.2rem', width: '100%', background: 'var(--surface-color)', border: '2px solid #f87171', borderRadius: '12px' }}>
-        <div style={{ fontSize: '0.85rem', color: '#f87171', fontWeight: 'bold', marginBottom: '0.6rem' }}>
-          誤りの箇所をクリック、またはドラッグで選択してください
-        </div>
-        <div style={{ fontSize: '1.1rem', lineHeight: '2', userSelect: 'none' }}>
-          {chars.map((ch, i) => {
-            const inRange = hasRange && i >= rangeLo! && i <= rangeHi!;
-            return (
-              <span
-                key={i}
-                onMouseDown={(e) => {
-                  e.preventDefault();
-                  setIsPickDragging(true);
-                  setPickStart(i);
-                  setPickEnd(i);
-                }}
-                onMouseEnter={() => {
-                  if (isPickDragging) setPickEnd(i);
-                }}
-                style={{
-                  background: inRange ? 'rgba(248, 113, 113, 0.4)' : 'transparent',
-                  color: inRange ? '#f87171' : 'inherit',
-                  fontWeight: inRange ? 'bold' : 'normal',
-                  cursor: 'pointer',
-                  whiteSpace: 'pre-wrap'
-                }}
-              >
-                {ch}
-              </span>
-            );
-          })}
-        </div>
-
-        {hasRange && (
-          <div style={{ marginTop: '0.8rem' }}>
-            <div style={{ fontSize: '0.8rem', color: '#f87171', marginBottom: '0.4rem' }}>
-              選択中: 「{selectedSlice}」
-            </div>
-            <textarea
-              autoFocus
-              value={pickCorrectionText}
-              onChange={(e) => setPickCorrectionText(e.target.value)}
-              placeholder="正しい内容・訂正コメント(空欄でも保存可。後から追記もできます)"
-              style={{ width: '100%', minHeight: '60px', fontSize: '0.85rem', boxSizing: 'border-box' }}
-            />
-          </div>
-        )}
-
-        <div style={{ display: 'flex', gap: '0.5rem', justifyContent: 'flex-end', marginTop: '0.8rem' }}>
-          <button
-            onClick={exitPickingMode}
-            className="btn"
-            style={{ padding: '0.4rem 0.9rem', fontSize: '0.85rem', background: 'transparent', color: '#94a3b8', border: '1px solid #475569', borderRadius: '6px', cursor: 'pointer' }}
-          >
-            キャンセル
-          </button>
-          <button
-            disabled={!hasRange}
-            onClick={async () => {
-              if (!hasRange) return;
-              const payload = {
-                questionId: currentQ.id,
-                optionNumber: opt.optionNumber,
-                selectedText: selectedSlice,
-                startOffset: rangeLo!,
-                endOffset: rangeHi! + 1,
-                correctionText: pickCorrectionText.trim()
-              };
-              exitPickingMode();
-              if (onAddCorrection) await onAddCorrection(payload);
-            }}
-            className="btn btn-primary"
-            style={{ padding: '0.4rem 1rem', fontSize: '0.85rem', opacity: hasRange ? 1 : 0.5 }}
-          >
-            保存
-          </button>
-        </div>
-      </div>
     );
   };
 
@@ -472,7 +144,7 @@ export default function QuestionOptionsRenderer({
         } catch(e) {}
       }
     }
-    
+
     return (
       <>
       <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
@@ -497,7 +169,7 @@ export default function QuestionOptionsRenderer({
                   const isSelected = selectedMultiOptions[opt.optionNumber] === choice.num;
                   const globalOptionNumber = opt.optionNumber + choice.num - 1;
                   const isThisChoiceCorrect = isAnswered && correctOptionNumbers && correctOptionNumbers.includes(globalOptionNumber);
-                  
+
                   let btnStyle: React.CSSProperties = { flex: 1, padding: '0.8rem', textAlign: 'center' };
                   let btnClass = isSelected ? "btn btn-primary" : "btn btn-secondary";
 
@@ -520,7 +192,7 @@ export default function QuestionOptionsRenderer({
                       style={btnStyle}
                       onClick={() => onSelectMultiOption && onSelectMultiOption(opt.optionNumber, choice.num)}
                       disabled={isAnswered}
-                      onContextMenu={(e) => { e.preventDefault(); setContextMenu({ x: e.clientX, y: e.clientY, text: choice.text, questionText: currentQ.content || '' }); }}
+                      onContextMenu={(e) => { e.preventDefault(); setContextMenu({ x: e.clientX, y: e.clientY, text: choice.text }); }}
                     >
                       <span style={{opacity: 0.7, marginRight: '0.5rem'}}>{['①','②','③','④'][choice.num-1] || String(choice.num)}</span>
                       {choice.text}
@@ -539,19 +211,12 @@ export default function QuestionOptionsRenderer({
 
   // DEFAULT (SINGLE or MULTI_SELECT)
   return (
-    <>
     <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
       {options.map((opt: any) => {
         let btnStyle: React.CSSProperties = { justifyContent: 'flex-start', padding: '1.2rem', width: '100%', textAlign: 'left', fontSize: '1.1rem' };
         let btnClass = "btn btn-secondary";
-        
+
         const isSelected = selectedOptions.includes(opt.optionNumber);
-        // 訂正マークはどの選択肢にも付けられる(正答肢限定だと「出る時と出ない時がある」ように見えて
-        // 分かりにくいため撤廃)。表示は「解答済み」または「今回自分で作成したばかり」のどちらかを
-        // 満たす場合のみ — 過去に付けた訂正は再解答するまで再表示しない(答えの事前漏洩防止)が、
-        // たった今作った自分のマークは即座に見えないと、解答前に付けたマークが一見消えたように見えてしまう。
-        const optionCorrections = ((currentQ.corrections || []) as OptionCorrectionItem[])
-          .filter((c) => c.optionNumber === opt.optionNumber && (isAnswered || c._justCreated));
         if (isAnswered) {
           if (isOptionFactuallyCorrect && isOptionFactuallyCorrect(currentQ, opt.optionNumber)) {
             // Success styling
@@ -575,10 +240,6 @@ export default function QuestionOptionsRenderer({
           }
         } else if (isSelected) {
           btnClass = "btn btn-primary";
-        }
-
-        if (pickingOptionNumber === opt.optionNumber) {
-          return <div key={opt.optionNumber}>{renderPicker(opt)}</div>;
         }
 
         return (
@@ -621,35 +282,41 @@ export default function QuestionOptionsRenderer({
                 </button>
               </div>
             )}
-            <button
+            {/*
+              MarkableText の文字ピッカーは textarea/button を内包するため、HTML仕様上
+              <button> の子には置けない(不正なネスト、ブラウザが暗黙に閉じてDOM構造が壊れる)。
+              role="button" な <div> にして同等のクリック/キーボード操作性を持たせる。
+            */}
+            <div
               className={btnClass}
-              style={btnStyle}
+              style={{ ...btnStyle, cursor: 'pointer' }}
               onClick={() => onSelectOption(opt.optionNumber)}
-              disabled={showJudgments ? false : undefined}
-              onContextMenu={(e) => {
-                e.preventDefault();
-                setContextMenu({
-                  x: e.clientX,
-                  y: e.clientY,
-                  text: opt.content || `選択肢 ${opt.optionNumber}`,
-                  questionText: currentQ.content || '',
-                  correctionTarget: { optionNumber: opt.optionNumber }
-                });
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                  e.preventDefault();
+                  onSelectOption(opt.optionNumber);
+                }
               }}
+              role="button"
+              tabIndex={0}
             >
               <span style={{ fontWeight: 'bold', marginRight: '1rem', opacity: 0.7 }}>{opt.optionNumber}.</span>
-              <span style={{ whiteSpace: 'pre-wrap' }}>
-                {optionCorrections.length > 0
-                  ? renderContentWithCorrections(opt.content || '', optionCorrections, opt.optionNumber)
-                  : (opt.content || `選択肢 ${opt.optionNumber}`)}
-              </span>
-            </button>
+              <MarkableText
+                questionId={currentQ.id}
+                slotNumber={opt.optionNumber}
+                content={opt.content || ''}
+                fallbackText={`選択肢 ${opt.optionNumber}`}
+                corrections={(currentQ.corrections || []) as CorrectionItem[]}
+                isAnswered={isAnswered}
+                onAddCorrection={onAddCorrection}
+                onDeleteCorrection={onDeleteCorrection}
+                onUpdateCorrection={onUpdateCorrection}
+                style={{ whiteSpace: 'pre-wrap' }}
+              />
+            </div>
           </div>
         );
       })}
     </div>
-    {renderContextMenu()}
-    {renderCorrectionPopup()}
-    </>
   );
 }

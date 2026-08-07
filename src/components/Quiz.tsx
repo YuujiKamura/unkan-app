@@ -7,6 +7,7 @@ import remarkGfm from 'remark-gfm';
 import remarkBreaks from 'remark-breaks';
 import EditQuestionModal from './EditQuestionModal';
 import QuestionOptionsRenderer from './QuestionOptionsRenderer';
+import MarkableText, { CorrectionItem } from './MarkableText';
 
 import { apiClient } from '../lib/apiClient';
 
@@ -346,7 +347,16 @@ export default function Quiz({ mode }: { mode: 'random' | 'review' }) {
         
         {currentQ.content ? (
           <h3 style={{ marginBottom: '2rem', lineHeight: '1.8', whiteSpace: 'pre-wrap' }}>
-            {currentQ.content}
+            <MarkableText
+              questionId={currentQ.id}
+              slotNumber={0}
+              content={currentQ.content}
+              corrections={(currentQ.corrections || []) as CorrectionItem[]}
+              isAnswered={isAnswered}
+              onAddCorrection={addCorrection}
+              onDeleteCorrection={deleteCorrection}
+              onUpdateCorrection={updateCorrection}
+            />
           </h3>
         ) : (
           <h3 style={{ marginBottom: '2rem', lineHeight: '1.8' }}>
