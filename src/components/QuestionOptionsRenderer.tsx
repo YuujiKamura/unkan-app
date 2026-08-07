@@ -24,7 +24,7 @@ interface QuestionOptionsRendererProps {
   showJudgments?: boolean;
   judgments?: Record<string, string>;
   toggleJudgment?: (e: React.MouseEvent, label: string, val: 'O' | 'X') => void;
-  // 正答肢の一部を「誤り」としてマーク・訂正するアノテーション機能
+  // 選択肢の一部を「誤り」としてマーク・訂正するアノテーション機能
   onAddCorrection?: (payload: {
     questionId: number;
     optionNumber: number;
@@ -34,6 +34,7 @@ interface QuestionOptionsRendererProps {
     correctionText: string;
   }) => void | Promise<void>;
   onDeleteCorrection?: (id: number, questionId: number) => void | Promise<void>;
+  onUpdateCorrection?: (id: number, questionId: number, correctionText: string) => void | Promise<void>;
 }
 
 interface OptionCorrectionItem {
@@ -59,7 +60,8 @@ export default function QuestionOptionsRenderer({
   judgments,
   toggleJudgment,
   onAddCorrection,
-  onDeleteCorrection
+  onDeleteCorrection,
+  onUpdateCorrection
 }: QuestionOptionsRendererProps) {
 
 
@@ -90,11 +92,14 @@ export default function QuestionOptionsRenderer({
     selectedText: string;
     correctionText: string;
   } | null>(null);
+  const [isPopupEditing, setIsPopupEditing] = React.useState(false);
+  const [popupEditText, setPopupEditText] = React.useState('');
 
   React.useEffect(() => {
     const handleClickOutside = () => {
       setContextMenu(null);
       setActiveCorrectionPopup(null);
+      setIsPopupEditing(false);
     };
     window.addEventListener('click', handleClickOutside);
     return () => window.removeEventListener('click', handleClickOutside);
@@ -219,25 +224,79 @@ export default function QuestionOptionsRenderer({
         <div style={{ fontSize: '0.75rem', color: '#f87171', marginBottom: '0.4rem', fontWeight: 'bold' }}>
           ✏️ 訂正: 「{activeCorrectionPopup.selectedText}」
         </div>
-        <div style={{ fontSize: '0.9rem', color: '#e2e8f0', marginBottom: '0.6rem', whiteSpace: 'pre-wrap' }}>
-          {activeCorrectionPopup.correctionText}
-        </div>
-        <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
-          <button
-            onClick={async (e) => {
-              e.stopPropagation();
-              const popup = activeCorrectionPopup;
-              setActiveCorrectionPopup(null);
-              if (onDeleteCorrection && popup && popup.id !== undefined) {
-                await onDeleteCorrection(popup.id, currentQ.id);
-              }
-            }}
-            className="btn"
-            style={{ padding: '0.25rem 0.6rem', fontSize: '0.75rem', background: 'transparent', color: '#94a3b8', border: '1px solid #475569', borderRadius: '6px', cursor: 'pointer' }}
-          >
-            🗑️ この訂正を削除
-          </button>
-        </div>
+
+        {isPopupEditing ? (
+          <>
+            <textarea
+              autoFocus
+              value={popupEditText}
+              onChange={(e) => setPopupEditText(e.target.value)}
+              placeholder="正しい内容・訂正コメント(空欄可)"
+              style={{ width: '100%', minHeight: '60px', fontSize: '0.85rem', marginBottom: '0.6rem', boxSizing: 'border-box' }}
+            />
+            <div style={{ display: 'flex', justifyContent: 'flex-end', gap: '0.5rem' }}>
+              <button
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setIsPopupEditing(false);
+                }}
+                className="btn"
+                style={{ padding: '0.25rem 0.6rem', fontSize: '0.75rem', background: 'transparent', color: '#94a3b8', border: '1px solid #475569', borderRadius: '6px', cursor: 'pointer' }}
+              >
+                キャンセル
+              </button>
+              <button
+                onClick={async (e) => {
+                  e.stopPropagation();
+                  const popup = activeCorrectionPopup;
+                  const text = popupEditText.trim();
+                  setActiveCorrectionPopup(null);
+                  setIsPopupEditing(false);
+                  if (onUpdateCorrection && popup && popup.id !== undefined) {
+                    await onUpdateCorrection(popup.id, currentQ.id, text);
+                  }
+                }}
+                className="btn btn-primary"
+                style={{ padding: '0.25rem 0.8rem', fontSize: '0.75rem' }}
+              >
+                保存
+              </button>
+            </div>
+          </>
+        ) : (
+          <>
+            <div style={{ fontSize: '0.9rem', color: '#e2e8f0', marginBottom: '0.6rem', whiteSpace: 'pre-wrap' }}>
+              {activeCorrectionPopup.correctionText || <span style={{ color: '#64748b', fontStyle: 'italic' }}>(訂正コメントなし)</span>}
+            </div>
+            <div style={{ display: 'flex', justifyContent: 'flex-end', gap: '0.5rem' }}>
+              <button
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setPopupEditText(activeCorrectionPopup.correctionText || '');
+                  setIsPopupEditing(true);
+                }}
+                className="btn"
+                style={{ padding: '0.25rem 0.6rem', fontSize: '0.75rem', background: 'transparent', color: '#38bdf8', border: '1px solid #38bdf8', borderRadius: '6px', cursor: 'pointer' }}
+              >
+                ✏️ 追記・編集
+              </button>
+              <button
+                onClick={async (e) => {
+                  e.stopPropagation();
+                  const popup = activeCorrectionPopup;
+                  setActiveCorrectionPopup(null);
+                  if (onDeleteCorrection && popup && popup.id !== undefined) {
+                    await onDeleteCorrection(popup.id, currentQ.id);
+                  }
+                }}
+                className="btn"
+                style={{ padding: '0.25rem 0.6rem', fontSize: '0.75rem', background: 'transparent', color: '#94a3b8', border: '1px solid #475569', borderRadius: '6px', cursor: 'pointer' }}
+              >
+                🗑️ この訂正を削除
+              </button>
+            </div>
+          </>
+        )}
       </div>,
       document.body
     );
@@ -282,6 +341,8 @@ export default function QuestionOptionsRenderer({
               selectedText: c.selectedText,
               correctionText: c.correctionText
             });
+            setIsPopupEditing(!c.correctionText);
+            setPopupEditText(c.correctionText || '');
           }}
         >
           {content.slice(c.startOffset, c.endOffset)}
@@ -349,7 +410,7 @@ export default function QuestionOptionsRenderer({
               autoFocus
               value={pickCorrectionText}
               onChange={(e) => setPickCorrectionText(e.target.value)}
-              placeholder="正しい内容・訂正コメントを入力"
+              placeholder="正しい内容・訂正コメント(空欄でも保存可。後から追記もできます)"
               style={{ width: '100%', minHeight: '60px', fontSize: '0.85rem', boxSizing: 'border-box' }}
             />
           </div>
@@ -364,23 +425,22 @@ export default function QuestionOptionsRenderer({
             キャンセル
           </button>
           <button
-            disabled={!hasRange || !pickCorrectionText.trim()}
+            disabled={!hasRange}
             onClick={async () => {
-              const text = pickCorrectionText.trim();
-              if (!hasRange || !text) return;
+              if (!hasRange) return;
               const payload = {
                 questionId: currentQ.id,
                 optionNumber: opt.optionNumber,
                 selectedText: selectedSlice,
                 startOffset: rangeLo!,
                 endOffset: rangeHi! + 1,
-                correctionText: text
+                correctionText: pickCorrectionText.trim()
               };
               exitPickingMode();
               if (onAddCorrection) await onAddCorrection(payload);
             }}
             className="btn btn-primary"
-            style={{ padding: '0.4rem 1rem', fontSize: '0.85rem', opacity: hasRange && pickCorrectionText.trim() ? 1 : 0.5 }}
+            style={{ padding: '0.4rem 1rem', fontSize: '0.85rem', opacity: hasRange ? 1 : 0.5 }}
           >
             保存
           </button>
@@ -486,13 +546,12 @@ export default function QuestionOptionsRenderer({
         let btnClass = "btn btn-secondary";
         
         const isSelected = selectedOptions.includes(opt.optionNumber);
-        const isFactuallyCorrectOpt = !!isOptionFactuallyCorrect && isOptionFactuallyCorrect(currentQ, opt.optionNumber);
-        // 訂正マークは正答肢のみに付けられる。表示は「解答済み」または「今回自分で作成したばかり」の
-        // どちらかを満たす場合のみ — 過去に付けた訂正は再解答するまで再表示しない(答えの事前漏洩防止)が、
+        // 訂正マークはどの選択肢にも付けられる(正答肢限定だと「出る時と出ない時がある」ように見えて
+        // 分かりにくいため撤廃)。表示は「解答済み」または「今回自分で作成したばかり」のどちらかを
+        // 満たす場合のみ — 過去に付けた訂正は再解答するまで再表示しない(答えの事前漏洩防止)が、
         // たった今作った自分のマークは即座に見えないと、解答前に付けたマークが一見消えたように見えてしまう。
-        const optionCorrections = isFactuallyCorrectOpt
-          ? ((currentQ.corrections || []) as OptionCorrectionItem[]).filter((c) => c.optionNumber === opt.optionNumber && (isAnswered || c._justCreated))
-          : [];
+        const optionCorrections = ((currentQ.corrections || []) as OptionCorrectionItem[])
+          .filter((c) => c.optionNumber === opt.optionNumber && (isAnswered || c._justCreated));
         if (isAnswered) {
           if (isOptionFactuallyCorrect && isOptionFactuallyCorrect(currentQ, opt.optionNumber)) {
             // Success styling
@@ -574,7 +633,7 @@ export default function QuestionOptionsRenderer({
                   y: e.clientY,
                   text: opt.content || `選択肢 ${opt.optionNumber}`,
                   questionText: currentQ.content || '',
-                  correctionTarget: isFactuallyCorrectOpt ? { optionNumber: opt.optionNumber } : null
+                  correctionTarget: { optionNumber: opt.optionNumber }
                 });
               }}
             >

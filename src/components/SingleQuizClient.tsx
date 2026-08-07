@@ -403,6 +403,18 @@ export default function SingleQuizClient({
     }
   };
 
+  const updateCorrection = async (id: number, questionId: number, correctionText: string) => {
+    try {
+      await apiClient.updateCorrection(id, correctionText, questionId);
+      setCurrentQ((prev: typeof currentQ) => ({
+        ...prev,
+        corrections: (prev.corrections || []).map((c: OptionCorrectionRecord) => c.id === id ? { ...c, correctionText } : c)
+      }));
+    } catch (err) {
+      console.error('Failed to update correction', err);
+    }
+  };
+
   const copyToClipboard = async () => {
     if (!currentQ) return;
     
@@ -737,6 +749,7 @@ export default function SingleQuizClient({
                 toggleJudgment={toggleJudgment}
                 onAddCorrection={addCorrection}
                 onDeleteCorrection={deleteCorrection}
+                onUpdateCorrection={updateCorrection}
               />
 
               {/* 解答せずに正解・解説を見るボタン */}

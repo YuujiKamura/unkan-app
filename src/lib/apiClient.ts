@@ -179,6 +179,25 @@ export const apiClient = {
     }
 
     await fetch(`/api/corrections/${id}`, { method: 'DELETE' });
+  },
+
+  async updateCorrection(id: number, correctionText: string, questionId?: number): Promise<void> {
+    if (IS_SPA_MODE) {
+      if (questionId === undefined) return;
+      const data = getLocalData<Record<number, OptionCorrectionRecord[]>>('corrections', {});
+      const list = data[questionId] || [];
+      const idx = list.findIndex((c) => c.id === id);
+      if (idx !== -1) list[idx] = { ...list[idx], correctionText };
+      data[questionId] = list;
+      setLocalData('corrections', data);
+      return Promise.resolve();
+    }
+
+    await fetch(`/api/corrections/${id}`, {
+      method: 'PATCH',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ correctionText })
+    });
   }
 };
 

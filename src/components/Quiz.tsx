@@ -225,6 +225,21 @@ export default function Quiz({ mode }: { mode: 'random' | 'review' }) {
     }
   };
 
+  const updateCorrection = async (id: number, questionId: number, correctionText: string) => {
+    try {
+      await apiClient.updateCorrection(id, correctionText, questionId);
+      setQuestions((prev) =>
+        prev.map((q) =>
+          q.id === questionId
+            ? { ...q, corrections: (q.corrections || []).map((c) => c.id === id ? { ...c, correctionText } : c) }
+            : q
+        )
+      );
+    } catch (err) {
+      console.error('Failed to update correction', err);
+    }
+  };
+
   const toggleBookmark = async () => {
     const newStatus = !currentQ.isBookmarked;
     const newQuestions = [...questions];
@@ -350,6 +365,7 @@ export default function Quiz({ mode }: { mode: 'random' | 'review' }) {
           checkIsVoided={checkIsVoided}
           onAddCorrection={addCorrection}
           onDeleteCorrection={deleteCorrection}
+          onUpdateCorrection={updateCorrection}
         />
 
         {isMultiMode && !isAnswered && (

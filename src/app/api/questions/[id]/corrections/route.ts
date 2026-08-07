@@ -25,7 +25,7 @@ export async function POST(
       typeof startOffset !== 'number' ||
       typeof endOffset !== 'number' ||
       endOffset <= startOffset ||
-      typeof correctionText !== 'string' || correctionText.trim() === ''
+      typeof correctionText !== 'string'
     ) {
       return NextResponse.json({ error: 'Invalid payload' }, { status: 400 });
     }
@@ -37,7 +37,7 @@ export async function POST(
         selectedText,
         startOffset,
         endOffset,
-        correctionText,
+        correctionText, // 訂正コメントは空文字も許可(「間違っているのは分かるが正解は不明」のケース)
       }
     });
 
