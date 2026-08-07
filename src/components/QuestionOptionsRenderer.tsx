@@ -484,7 +484,7 @@ export default function QuestionOptionsRenderer({
     <>
     <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
       {options.map((opt: any) => {
-        let btnStyle: React.CSSProperties = { justifyContent: 'flex-start', padding: '1.2rem', width: '100%', textAlign: 'left', fontSize: '1.1rem' };
+        let btnStyle: React.CSSProperties = { justifyContent: 'flex-start', padding: '1.2rem', width: '100%', textAlign: 'left', fontSize: '1.1rem', userSelect: 'text', WebkitUserSelect: 'text' };
         let btnClass = "btn btn-secondary";
         
         const isSelected = selectedOptions.includes(opt.optionNumber);
