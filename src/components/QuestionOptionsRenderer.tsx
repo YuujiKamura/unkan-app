@@ -47,24 +47,41 @@ interface OptionCorrectionItem {
 }
 
 // 指定コンテナ内でのテキスト選択範囲を、コンテナのテキスト全体に対する文字インデックスとして取得する。
-// 右クリック時に選択が保持されている場合のみ有効な値を返す（範囲外/選択なしは null）。
+// ブラウザの素の右クリックは「選択肢番号のラベルごと行全体」を暗黙に選択することがあるため、
+// 選択範囲がコンテナの外側にはみ出していても、コンテナと重なる部分だけを切り出す(intersection)。
+// 選択がコンテナと全く重ならない場合のみ null を返す。
 function getSelectionInfoWithin(containerEl: HTMLElement): { selectedText: string; startOffset: number; endOffset: number } | null {
   if (typeof window === 'undefined') return null;
   const sel = window.getSelection();
   if (!sel || sel.rangeCount === 0 || sel.isCollapsed) return null;
   const range = sel.getRangeAt(0);
-  if (!containerEl.contains(range.commonAncestorContainer)) return null;
 
-  const selectedText = range.toString();
+  const rootEl = containerEl.parentElement;
+  if (!rootEl || !rootEl.contains(range.commonAncestorContainer)) return null;
+
+  const rootRange = document.createRange();
+  rootRange.selectNodeContents(rootEl);
+
+  const preSel = rootRange.cloneRange();
+  preSel.setEnd(range.startContainer, range.startOffset);
+  const selStart = preSel.toString().length;
+  const selEnd = selStart + range.toString().length;
+
+  const containerRange = document.createRange();
+  containerRange.selectNodeContents(containerEl);
+  const preContainer = rootRange.cloneRange();
+  preContainer.setEnd(containerRange.startContainer, containerRange.startOffset);
+  const containerStart = preContainer.toString().length;
+  const containerEnd = containerStart + containerEl.textContent!.length;
+
+  const intersectStart = Math.max(selStart, containerStart);
+  const intersectEnd = Math.min(selEnd, containerEnd);
+  if (intersectEnd <= intersectStart) return null;
+
+  const selectedText = rootEl.textContent!.slice(intersectStart, intersectEnd);
   if (!selectedText.trim()) return null;
 
-  const preRange = document.createRange();
-  preRange.selectNodeContents(containerEl);
-  preRange.setEnd(range.startContainer, range.startOffset);
-  const startOffset = preRange.toString().length;
-  const endOffset = startOffset + selectedText.length;
-
-  return { selectedText, startOffset, endOffset };
+  return { selectedText, startOffset: intersectStart - containerStart, endOffset: intersectEnd - containerStart };
 }
 
 export default function QuestionOptionsRenderer({
@@ -563,7 +580,7 @@ export default function QuestionOptionsRenderer({
               }}
             >
               <span style={{ fontWeight: 'bold', marginRight: '1rem', opacity: 0.7 }}>{opt.optionNumber}.</span>
-              <span data-option-content style={{ whiteSpace: 'pre-wrap' }}>
+              <span data-option-content style={{ whiteSpace: 'pre-wrap', userSelect: 'text', WebkitUserSelect: 'text' }}>
                 {optionCorrections.length > 0
                   ? renderContentWithCorrections(opt.content || '', optionCorrections, opt.optionNumber)
                   : (opt.content || `選択肢 ${opt.optionNumber}`)}
