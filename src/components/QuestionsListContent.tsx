@@ -15,8 +15,9 @@ type QuestionItem = {
   situationCategory?: string | null;
   isDebated: boolean;
   content: string | null;
-  correctAnswer?: number | null;
   explanation?: string | null;
+  format?: string;
+  imageUrl?: string | null;
   options?: any[];
   attempts: any[];
   _count: { attempts: number };

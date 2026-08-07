@@ -16,7 +16,6 @@ type Question = {
   questionNumber: number;
   field: string | null;
   content: string | null;
-  correctAnswer: number;
   correctOptions?: number[];
   format?: 'MULTI_GROUP' | 'NORMAL';
   explanation: string | null;
@@ -104,7 +103,9 @@ export default function Quiz({ mode }: { mode: 'random' | 'review' }) {
 
   const checkIsVoided = (q: Question) => {
     if (isMultiMode) return false;
-    return q.correctAnswer === null && (!q.options || q.options.every((o: any) => !o.isCorrect));
+    // 「解なし(不適切問題)」判定: 実際に選択肢データがあり、その全てが不正解の場合のみ voided とする。
+    // (選択肢データが未取得/未登録の場合は voided と誤判定しない)
+    return !!q.options && q.options.length > 0 && q.options.every((o: any) => !o.isCorrect);
   };
 
   const isOptionFactuallyCorrect = (q: Question, optionNum: number) => {
@@ -114,7 +115,7 @@ export default function Quiz({ mode }: { mode: 'random' | 'review' }) {
         return opt.isCorrect;
       }
     }
-    return optionNum === q.correctAnswer;
+    return false;
   };
 
   const isPointAwarded = (q: Question) => {
@@ -137,7 +138,7 @@ export default function Quiz({ mode }: { mode: 'random' | 'review' }) {
       const corrects = q.options.filter((o: any) => o.isCorrect).map((o: any) => o.optionNumber);
       if (corrects.length > 0) return corrects.join(', ');
     }
-    return q.correctAnswer || '不明';
+    return '不明';
   };
 
   const handleSelect = async (optionNumber: number) => {

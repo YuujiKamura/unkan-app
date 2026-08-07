@@ -224,7 +224,11 @@ export default function SingleQuizClient({
   };
 
   const checkIsVoided = (q: any) => {
-    return q.correctAnswer === null && (!q.options || q.options.every((o: any) => !o.isCorrect));
+    // 「解なし(不適切問題)」判定: 実際に選択肢データ(SINGLE/MULTI_GROUPともに Option 行の集合)があり、
+    // isCorrect=true な行が1つも無い場合のみ voided とする。MULTI_GROUP でも Option 行はグループ内の
+    // choice 単位でフラット化されているため、この一括チェックで「全グループが正答choiceを持たない」
+    // ことと等価になる。選択肢データ自体が未取得/未登録の場合は voided と誤判定しない。
+    return !!q.options && q.options.length > 0 && q.options.every((o: any) => !o.isCorrect);
   };
 
   const isOptionFactuallyCorrect = (q: any, optionNum: number) => {
@@ -234,7 +238,7 @@ export default function SingleQuizClient({
         return opt.isCorrect;
       }
     }
-    return optionNum === q.correctAnswer;
+    return false;
   };
 
   const isPointAwarded = (q: any, optionNum: number) => {
@@ -251,7 +255,7 @@ export default function SingleQuizClient({
       const corrects = q.options.filter((o: any) => o.isCorrect).map((o: any) => o.optionNumber);
       if (corrects.length > 0) return corrects.join(', ');
     }
-    return q.correctAnswer || '不明';
+    return '不明';
   };
 
   const handleSelect = (optionNumber: number) => {

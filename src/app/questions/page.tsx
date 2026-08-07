@@ -20,6 +20,9 @@ export default async function QuestionsList() {
           { questionNumber: 'asc' }
         ],
         include: {
+          options: {
+            orderBy: { optionNumber: 'asc' }
+          },
           attempts: {
             orderBy: { attemptedAt: 'asc' }
           },

@@ -51,46 +51,24 @@ export async function PATCH(
     }
 
     const body = await request.json();
-    const { correctAnswer, content, field, situationCategory, knowledgeTags, explanation, options } = body;
+    const { content, field, situationCategory, knowledgeTags, explanation, options, imageUrl } = body;
 
     // 1. Questionの更新データ構築
-    const updateData: any = {};
-    if (correctAnswer !== undefined && correctAnswer !== null) {
-      const parsedAns = parseInt(String(correctAnswer), 10);
-      if (parsedAns >= 1 && parsedAns <= 4) {
-        updateData.correctAnswer = parsedAns;
-      }
-    }
+    // 正答肢は Question に持たせず Option.isCorrect が正 (SoT)。下の options 配列更新で反映する。
+    const updateData: Record<string, unknown> = {};
     if (content !== undefined) updateData.content = content;
     if (field !== undefined) updateData.field = field;
     if (situationCategory !== undefined) updateData.situationCategory = situationCategory;
     if (knowledgeTags !== undefined) updateData.knowledgeTags = knowledgeTags;
+    if (imageUrl !== undefined) updateData.imageUrl = imageUrl;
 
-    const updatedQuestion = await prisma.question.update({
+    await prisma.question.update({
       where: { id },
       data: updateData,
-      include: {
-        options: { orderBy: { optionNumber: 'asc' } },
-        explanation: true,
-        userMeta: true
-      }
     });
 
-    // 2. 正答肢の変更があった場合、OptionsのisCorrectフラグを一括更新
-    if (updateData.correctAnswer !== undefined) {
-      const targetAns = updateData.correctAnswer;
-      for (const opt of updatedQuestion.options) {
-        await prisma.option.update({
-          where: { id: opt.id },
-          data: { isCorrect: opt.optionNumber === targetAns }
-        });
-      }
-    }
-
-    // 3. Optionの個別の内容・解説・正解更新があれば処理
+    // 2. Optionの個別の内容・解説・正解更新があれば処理
     if (Array.isArray(options)) {
-      // フロントエンドから複数の正解（二項目選択など）が設定された場合、
-      // 従来の correctAnswer による一括更新を上書きする
       for (const optInput of options) {
         if (optInput.id) {
           await prisma.option.update({
@@ -99,6 +77,7 @@ export async function PATCH(
               content: optInput.content !== undefined ? optInput.content : undefined,
               explanation: optInput.explanation !== undefined ? optInput.explanation : undefined,
               isCorrect: optInput.isCorrect !== undefined ? optInput.isCorrect : undefined,
+              structuredData: optInput.structuredData !== undefined ? optInput.structuredData : undefined,
             }
           });
         }
