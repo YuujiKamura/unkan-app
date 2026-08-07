@@ -10,13 +10,15 @@ export async function GET() {
         OR: [
           { userMeta: { isNot: null } },
           { attempts: { some: {} } },
-          { explanation: { isNot: null } }
+          { explanation: { isNot: null } },
+          { corrections: { some: {} } }
         ]
       },
       include: {
         userMeta: true,
         attempts: true,
-        explanation: true
+        explanation: true,
+        corrections: true
       }
     });
 
@@ -36,7 +38,15 @@ export async function GET() {
         explanation: q.explanation ? {
           content: q.explanation.content,
           isDebated: q.explanation.isDebated
-        } : null
+        } : null,
+        corrections: q.corrections.map(c => ({
+          optionNumber: c.optionNumber,
+          selectedText: c.selectedText,
+          startOffset: c.startOffset,
+          endOffset: c.endOffset,
+          correctionText: c.correctionText,
+          createdAt: c.createdAt.toISOString()
+        }))
       };
     });
 

@@ -67,6 +67,26 @@ export async function POST(request: Request) {
         }
       }
 
+      // 4. Import Corrections (mark-as-wrong annotations)
+      if (item.corrections && Array.isArray(item.corrections)) {
+        await prisma.optionCorrection.deleteMany({ where: { questionId: q.id } });
+
+        for (const c of item.corrections) {
+          if (c.optionNumber === undefined || !c.selectedText) continue;
+          await prisma.optionCorrection.create({
+            data: {
+              questionId: q.id,
+              optionNumber: c.optionNumber,
+              selectedText: c.selectedText,
+              startOffset: c.startOffset,
+              endOffset: c.endOffset,
+              correctionText: c.correctionText || '',
+              createdAt: c.createdAt ? new Date(c.createdAt) : new Date()
+            }
+          });
+        }
+      }
+
       updatedCount++;
     }
 
