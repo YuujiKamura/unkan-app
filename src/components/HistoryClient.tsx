@@ -67,7 +67,7 @@ export default function HistoryClient() {
       {!loading && dateFilter && sessions.length > 0 && (
         <div className="glass-panel" style={{ padding: '1.5rem', marginTop: '2rem' }}>
           <h3 style={{ margin: '0 0 1rem 0', color: 'var(--text-primary)' }}>
-            学習時間帯の内訳({sessions.length}区間、間隔45分以内を連続とみなす)
+            学習時間帯の内訳({sessions.length}区間、間隔30分以内を連続とみなす)
           </h3>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
             {sessions.map((s, i) => {

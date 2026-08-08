@@ -19,11 +19,13 @@ export function toJstDateStr(attemptedAt: string | Date): string {
   return jst.toISOString().split('T')[0];
 }
 
-// 実データでギャップ分布を計測して較正: 閾値15分だと1問あたりの深い調べ物・
-// 解説読み込み時間まで削られ、丸一日学習した実感(全体スパン10時間超)に対して
-// 3〜5時間しか出なかった。45分にすると内訳が安定し(60分に上げても同じ結果)、
-// かつ真に長い休憩(2〜9時間の空白)は正しく除外される。
-const DEFAULT_GAP_THRESHOLD_MINUTES = 45;
+// 運行管理者試験で扱う「改善基準告示」の連続運転時間の考え方(休憩とみなす
+// 間隔の基準)に合わせて30分を採用。実データ較正では45分の方が「丸一日
+// やってた」体感には近い数値が出たが(15分だと過少、45分で安定)、
+// このアプリの学習ドメインの概念と揃える方を優先した。この場合、
+// 間隔が30分を超えるとセッションが分割される(例: 44分の空白があると
+// 2区間に分かれて表示される)。
+const DEFAULT_GAP_THRESHOLD_MINUTES = 30;
 
 export function computeAttemptsByDate(
   attempts: AttemptLike[],
