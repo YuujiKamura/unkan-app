@@ -12,8 +12,12 @@ export default function ShareUrlImporter() {
   const [importing, setImporting] = useState(false);
 
   useEffect(() => {
+    // eslint-disable-next-line no-console
+    console.log('[ShareUrlImporter DEBUG] hash length=', window.location.hash.length, 'hash tail=', window.location.hash.slice(-30));
     const match = window.location.hash.match(/share=([^&]+)/);
     if (!match) return;
+    // eslint-disable-next-line no-console
+    console.log('[ShareUrlImporter DEBUG] matched length=', match[1].length, 'tail=', match[1].slice(-30));
 
     (async () => {
       try {
