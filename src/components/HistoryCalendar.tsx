@@ -1,4 +1,6 @@
-import React from 'react';
+'use client';
+
+import React, { useEffect, useState } from 'react';
 
 type Props = {
   attemptsByDate: Record<string, { total: number, correct: number }>;
@@ -6,6 +8,14 @@ type Props = {
 
 export default function HistoryCalendar({ attemptsByDate }: Props) {
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
+  // ForceDesktopViewportがwidth=1200を強制しているため、CSSのメディアクエリは
+  // 常にレイアウトビューポート(1200px)基準で評価され実機幅を判定できない。
+  // window.screen.width(物理画面幅、viewport強制の影響を受けない)で判定する。
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    setIsMobile(window.screen.width <= 820);
+  }, []);
 
   // Get current date
   const now = new Date();
@@ -36,24 +46,31 @@ export default function HistoryCalendar({ attemptsByDate }: Props) {
     return 'rgba(16, 185, 129, 0.95)';
   };
 
+  const weekdayFontSize = isMobile ? '2.7rem' : '0.9rem';
+  const dateFontSize = isMobile ? '2.85rem' : '0.95rem';
+  const statFontSize = isMobile ? '1.5rem' : '0.85rem';
+  const cellMinHeight = isMobile ? '160px' : '60px';
+  const cellPadding = isMobile ? '0.8rem' : '0.5rem';
+  const todayBorder = isMobile ? '3px' : '2.5px';
+
   return (
     <div className="glass-panel" style={{ padding: '1.5rem', marginBottom: '2rem', border: '2px solid #000000', background: '#ffffff' }}>
       <h3 style={{ margin: '0 0 1rem 0', display: 'flex', alignItems: 'center', gap: '0.5rem', color: '#000000', fontWeight: 'bold' }}>
         <span style={{ fontSize: '1.2rem' }}>📅</span> {year}年 {month + 1}月 の学習記録
       </h3>
-      
-      <div style={{ 
-        display: 'grid', 
-        gridTemplateColumns: 'repeat(7, 1fr)', 
+
+      <div style={{
+        display: 'grid',
+        gridTemplateColumns: 'repeat(7, 1fr)',
         gap: '6px',
         textAlign: 'center'
       }}>
         {weekDays.map(day => (
-          <div key={day} style={{ fontSize: '4.5rem', color: '#000000', fontWeight: 'bold', padding: '0.5rem 0' }}>
+          <div key={day} style={{ fontSize: weekdayFontSize, color: '#000000', fontWeight: 'bold', padding: '0.5rem 0' }}>
             {day}
           </div>
         ))}
-        
+
         {days.map((day, index) => {
           if (day === null) {
             return <div key={`empty-${index}`} style={{ padding: '0.5rem' }} />;
@@ -64,26 +81,26 @@ export default function HistoryCalendar({ attemptsByDate }: Props) {
           const isToday = day === now.getDate();
 
           const content = (
-            <div 
+            <div
               style={{
                 background: getHeatmapColor(stat.total),
                 borderRadius: '8px',
-                padding: '1rem',
-                minHeight: '260px',
+                padding: cellPadding,
+                minHeight: cellMinHeight,
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'center',
                 justifyContent: 'center',
-                border: isToday ? '4px solid #2563eb' : '1px solid #000000',
+                border: isToday ? `${todayBorder} solid #2563eb` : '1px solid #000000',
                 color: '#000000',
                 transition: 'transform 0.2s',
                 cursor: stat.total > 0 ? 'pointer' : 'default'
               }}
               title={`${dateStr}: ${stat.total}問解答 (${stat.correct}問正解)`}
             >
-              <div style={{ fontSize: '4.75rem', fontWeight: 'bold', color: '#000000' }}>{day}</div>
+              <div style={{ fontSize: dateFontSize, fontWeight: 'bold', color: '#000000' }}>{day}</div>
               {stat.total > 0 && (
-                <div style={{ fontSize: '1.8rem', marginTop: '8px', fontWeight: 'bold', color: '#000000', whiteSpace: 'nowrap' }}>
+                <div style={{ fontSize: statFontSize, marginTop: '8px', fontWeight: 'bold', color: '#000000', whiteSpace: 'nowrap' }}>
                   {stat.correct}/{stat.total}問
                 </div>
               )}
