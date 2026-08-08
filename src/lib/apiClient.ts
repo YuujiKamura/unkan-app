@@ -196,6 +196,24 @@ export const apiClient = {
     return res.json();
   },
 
+  // SPAモード専用: localStorage上の全ユーザーデータをquestionId単位のまま生で返す
+  // (questions.json一覧ページ等でinitialQuestionsにクライアント側マージするために使う)
+  getLocalUserData(): {
+    attempts: (AttemptPayload & { id: number; attemptedAt: string })[];
+    bookmarks: Record<number, boolean>;
+    explanations: Record<number, string>;
+    debates: Record<number, boolean>;
+    corrections: Record<number, OptionCorrectionRecord[]>;
+  } {
+    return {
+      attempts: getLocalData('attempts', []),
+      bookmarks: getLocalData('bookmarks', {}),
+      explanations: getLocalData('explanations', {}),
+      debates: getLocalData('debates', {}),
+      corrections: getLocalData('corrections', {})
+    };
+  },
+
   async deleteCorrection(id: number, questionId?: number): Promise<void> {
     if (IS_SPA_MODE) {
       if (questionId === undefined) return;

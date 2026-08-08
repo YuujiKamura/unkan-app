@@ -1,15 +1,17 @@
 'use client';
 
 import { useSearchParams } from 'next/navigation';
+import { useState, useEffect } from 'react';
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 import HistoryCalendar from '@/components/HistoryCalendar';
 import QuestionsListContent from '@/components/QuestionsListContent';
 import SubFieldChart from '@/components/SubFieldChart';
 import { sortQuestionsBySimilarityChain } from '@/lib/similarity';
+import { apiClient } from '@/lib/apiClient';
 
 export default function QuestionsClientWrapper({
   initialQuestions,
-  attemptsByDate
+  attemptsByDate: initialAttemptsByDate
 }: {
   initialQuestions: any[];
   attemptsByDate: Record<string, { total: number, correct: number }>;
@@ -19,7 +21,56 @@ export default function QuestionsClientWrapper({
   const selectedField = searchParams.get('field');
   const groupBy = ['field', 'knowledge', 'situation'].includes(groupByParam || '') ? groupByParam : 'year';
 
-  let mappedQuestions = [...initialQuestions];
+  const [questionsState, setQuestionsState] = useState(initialQuestions);
+  const [attemptsByDate, setAttemptsByDate] = useState(initialAttemptsByDate);
+
+  // SPA(Pages)版: サーバー側では常に空データで静的生成されているため、
+  // クライアント側でLocalStorageの実データ(セーブ/ロードで復元したものを含む)をマージする
+  useEffect(() => {
+    const isSpaMode = process.env.NEXT_PUBLIC_APP_MODE === 'spa' || window.location.hostname.includes('github.io');
+    if (!isSpaMode) return;
+
+    const local = apiClient.getLocalUserData();
+
+    const attemptsByQuestion = new Map<number, typeof local.attempts>();
+    for (const a of local.attempts) {
+      const list = attemptsByQuestion.get(a.questionId) || [];
+      list.push(a);
+      attemptsByQuestion.set(a.questionId, list);
+    }
+
+    const merged = initialQuestions.map((q) => {
+      const qAttempts = (attemptsByQuestion.get(q.id) || [])
+        .slice()
+        .sort((a, b) => new Date(a.attemptedAt).getTime() - new Date(b.attemptedAt).getTime());
+      const explanationContent = local.explanations[q.id];
+
+      return {
+        ...q,
+        attempts: qAttempts,
+        _count: { attempts: qAttempts.length },
+        explanation: explanationContent !== undefined ? explanationContent : q.explanation,
+        isDebated: local.debates[q.id] || false,
+        isBookmarked: local.bookmarks[q.id] || false,
+        corrections: local.corrections[q.id] || []
+      };
+    });
+    setQuestionsState(merged);
+
+    const byDate: Record<string, { total: number; correct: number }> = {};
+    for (const a of local.attempts) {
+      const d = new Date(a.attemptedAt);
+      d.setHours(d.getHours() + 9);
+      const dateStr = d.toISOString().split('T')[0];
+      if (!byDate[dateStr]) byDate[dateStr] = { total: 0, correct: 0 };
+      byDate[dateStr].total++;
+      if (a.isCorrect) byDate[dateStr].correct++;
+    }
+    setAttemptsByDate(byDate);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  let mappedQuestions = [...questionsState];
 
   // カスタムソート: 和暦を西暦相当に変換して降順でソート
   const getYearNum = (yearStr: string | null) => {
