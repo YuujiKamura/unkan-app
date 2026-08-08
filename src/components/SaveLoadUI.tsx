@@ -87,11 +87,13 @@ export default function SaveLoadUI() {
 
       if (isSpaMode) {
         // Pages版はサーバーが無いためデータをURLフラグメントに直接埋め込む。
-        // 8000文字を超えるURLはSlack等のチャットツールで崩れる実用上のリスクがあるため、
-        // 超過時はAI解説文(長文になりがち)を除いた軽量版に自動フォールバックする。
-        const MAX_ENCODED_LENGTH = 8000;
+        // 15000文字を超えるURLはチャットツールで崩れる実用上のリスクがあるため、
+        // 超過時は段階的に軽量化する: (1)AI解説文除去 → (2)解答履歴を各問題
+        // 最新1回分のみに絞る。学習到達度の共有が目的なら全履歴より現在地の方が
+        // 有用なので、この間引きは実用上の妥協ではなく妥当な絞り込みにもなる。
+        const MAX_ENCODED_LENGTH = 15000;
         let encoded = await compressToBase64Url(JSON.stringify(data));
-        let explanationsTrimmed = false;
+        let trimLevel = 0;
 
         if (encoded.length > MAX_ENCODED_LENGTH) {
           const lightData = data.map((item) => ({
@@ -99,7 +101,16 @@ export default function SaveLoadUI() {
             explanation: item.explanation ? { content: null, isDebated: item.explanation.isDebated } : null
           }));
           encoded = await compressToBase64Url(JSON.stringify(lightData));
-          explanationsTrimmed = true;
+          trimLevel = 1;
+
+          if (encoded.length > MAX_ENCODED_LENGTH) {
+            const minimalData = lightData.map((item) => ({
+              ...item,
+              attempts: item.attempts.length > 0 ? [item.attempts[item.attempts.length - 1]] : []
+            }));
+            encoded = await compressToBase64Url(JSON.stringify(minimalData));
+            trimLevel = 2;
+          }
         }
 
         if (encoded.length > MAX_ENCODED_LENGTH) {
@@ -109,8 +120,13 @@ export default function SaveLoadUI() {
         }
 
         setShareUrl(`https://yuujikamura.github.io/unkan-app/#share=${encoded}`);
-        setStatusMsg(explanationsTrimmed ? '共有URLを作成しました(データ量が多いため解説文は含まれていません)' : '');
-        if (explanationsTrimmed) setTimeout(() => setStatusMsg(''), 4000);
+        const trimMsg = trimLevel === 2
+          ? '共有URLを作成しました(データ量が多いため解説文と過去の解答履歴は最新分のみになっています)'
+          : trimLevel === 1
+            ? '共有URLを作成しました(データ量が多いため解説文は含まれていません)'
+            : '';
+        setStatusMsg(trimMsg);
+        if (trimMsg) setTimeout(() => setStatusMsg(''), 4000);
         return;
       }
 
