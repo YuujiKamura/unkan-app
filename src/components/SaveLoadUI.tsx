@@ -130,7 +130,7 @@ export default function SaveLoadUI() {
         return;
       }
 
-      // ローカルファイルに書くだけ(git commit/pushは別途明示的に行う)。
+      // ローカルファイルに書いてgit push まで行う(サーバー側で完結)。
       // 固定パスなので共有URLも常に同じ短い形になる。
       const resShare = await fetch('/api/userdata/publish-default', {
         method: 'POST',
@@ -138,9 +138,14 @@ export default function SaveLoadUI() {
         body: JSON.stringify(data)
       });
       if (!resShare.ok) throw new Error('Publish failed');
+      const publishResult = await resShare.json();
 
       setShareUrl('https://yuujikamura.github.io/unkan-app/#share=default');
-      setStatusMsg('ローカルに保存しました(Pagesへの反映にはgit push が別途必要です)');
+      setStatusMsg(
+        publishResult.pushed
+          ? '公開しました(数十秒でPagesに反映されます)'
+          : '前回と内容が同じでした(既に最新です)'
+      );
     } catch (err) {
       console.error(err);
       setStatusMsg('エラーが発生しました');
@@ -186,7 +191,7 @@ export default function SaveLoadUI() {
               読み込むか確認するダイアログが表示されます。<br/>
               {isSpaMode
                 ? '（※データはURL自体に埋め込まれています。サーバー保存はしていません）'
-                : '（※ローカルファイルに保存しました。Pages側に反映するにはgit push が別途必要です）'}
+                : '（※リポジトリへ自動push済みです。数十秒でPages側にも反映されます）'}
             </p>
             <input 
               type="text" 
