@@ -11871,81 +11871,225 @@
     "knowledgeTags": "#NEEDS_IMAGE",
     "riskCategory": null,
     "situationCategory": null,
-    "format": "SINGLE",
+    "format": "MULTI_GROUP",
     "pdfUrl": "/data/R03.CBT.pdf",
     "pdfPage": 14,
     "options": [
       {
-        "id": 1847,
+        "id": 1967,
         "questionId": 455,
         "optionNumber": 1,
-        "content": "車両の異常の有無",
+        "content": "A : ① 車両の異常の有無",
         "isCorrect": false,
         "explanation": null,
-        "structuredData": null
+        "structuredData": "{\"title\": \"A\", \"choices\": [{\"num\": 1, \"text\": \"車両の異常の有無\"}, {\"num\": 2, \"text\": \"貨物の積載状況\"}, {\"num\": 3, \"text\": \"運転者交替時の通告内容\"}, {\"num\": 4, \"text\": \"薬物の使用状況\"}, {\"num\": 5, \"text\": \"指示事項\"}, {\"num\": 6, \"text\": \"日常点検の状況\"}, {\"num\": 7, \"text\": \"疾病・疲労・睡眠不足等の状況\"}, {\"num\": 8, \"text\": \"自動車・道路・運行の状況\"}]}"
       },
       {
-        "id": 1848,
+        "id": 1968,
         "questionId": 455,
         "optionNumber": 2,
-        "content": "貨物の積載状況",
+        "content": "A : ② 貨物の積載状況",
         "isCorrect": false,
         "explanation": null,
-        "structuredData": null
+        "structuredData": "{\"title\": \"A\", \"choices\": [{\"num\": 1, \"text\": \"車両の異常の有無\"}, {\"num\": 2, \"text\": \"貨物の積載状況\"}, {\"num\": 3, \"text\": \"運転者交替時の通告内容\"}, {\"num\": 4, \"text\": \"薬物の使用状況\"}, {\"num\": 5, \"text\": \"指示事項\"}, {\"num\": 6, \"text\": \"日常点検の状況\"}, {\"num\": 7, \"text\": \"疾病・疲労・睡眠不足等の状況\"}, {\"num\": 8, \"text\": \"自動車・道路・運行の状況\"}]}"
       },
       {
-        "id": 1849,
+        "id": 1969,
         "questionId": 455,
         "optionNumber": 3,
-        "content": "運転者交替時の通告内容",
-        "isCorrect": true,
+        "content": "A : ③ 運転者交替時の通告内容",
+        "isCorrect": false,
         "explanation": null,
-        "structuredData": null
+        "structuredData": "{\"title\": \"A\", \"choices\": [{\"num\": 1, \"text\": \"車両の異常の有無\"}, {\"num\": 2, \"text\": \"貨物の積載状況\"}, {\"num\": 3, \"text\": \"運転者交替時の通告内容\"}, {\"num\": 4, \"text\": \"薬物の使用状況\"}, {\"num\": 5, \"text\": \"指示事項\"}, {\"num\": 6, \"text\": \"日常点検の状況\"}, {\"num\": 7, \"text\": \"疾病・疲労・睡眠不足等の状況\"}, {\"num\": 8, \"text\": \"自動車・道路・運行の状況\"}]}"
       },
       {
-        "id": 1850,
+        "id": 1970,
         "questionId": 455,
         "optionNumber": 4,
-        "content": "薬物の使用状況",
+        "content": "A : ④ 薬物の使用状況",
         "isCorrect": false,
         "explanation": null,
-        "structuredData": null
+        "structuredData": "{\"title\": \"A\", \"choices\": [{\"num\": 1, \"text\": \"車両の異常の有無\"}, {\"num\": 2, \"text\": \"貨物の積載状況\"}, {\"num\": 3, \"text\": \"運転者交替時の通告内容\"}, {\"num\": 4, \"text\": \"薬物の使用状況\"}, {\"num\": 5, \"text\": \"指示事項\"}, {\"num\": 6, \"text\": \"日常点検の状況\"}, {\"num\": 7, \"text\": \"疾病・疲労・睡眠不足等の状況\"}, {\"num\": 8, \"text\": \"自動車・道路・運行の状況\"}]}"
       },
       {
-        "id": 1851,
+        "id": 1971,
         "questionId": 455,
         "optionNumber": 5,
-        "content": "指示事項",
+        "content": "A : ⑤ 指示事項",
         "isCorrect": true,
         "explanation": null,
-        "structuredData": null
+        "structuredData": "{\"title\": \"A\", \"choices\": [{\"num\": 1, \"text\": \"車両の異常の有無\"}, {\"num\": 2, \"text\": \"貨物の積載状況\"}, {\"num\": 3, \"text\": \"運転者交替時の通告内容\"}, {\"num\": 4, \"text\": \"薬物の使用状況\"}, {\"num\": 5, \"text\": \"指示事項\"}, {\"num\": 6, \"text\": \"日常点検の状況\"}, {\"num\": 7, \"text\": \"疾病・疲労・睡眠不足等の状況\"}, {\"num\": 8, \"text\": \"自動車・道路・運行の状況\"}]}"
       },
       {
-        "id": 1852,
+        "id": 1972,
         "questionId": 455,
         "optionNumber": 6,
-        "content": "日常点検の状況",
+        "content": "A : ⑥ 日常点検の状況",
         "isCorrect": false,
         "explanation": null,
-        "structuredData": null
+        "structuredData": "{\"title\": \"A\", \"choices\": [{\"num\": 1, \"text\": \"車両の異常の有無\"}, {\"num\": 2, \"text\": \"貨物の積載状況\"}, {\"num\": 3, \"text\": \"運転者交替時の通告内容\"}, {\"num\": 4, \"text\": \"薬物の使用状況\"}, {\"num\": 5, \"text\": \"指示事項\"}, {\"num\": 6, \"text\": \"日常点検の状況\"}, {\"num\": 7, \"text\": \"疾病・疲労・睡眠不足等の状況\"}, {\"num\": 8, \"text\": \"自動車・道路・運行の状況\"}]}"
       },
       {
-        "id": 1853,
+        "id": 1973,
         "questionId": 455,
         "optionNumber": 7,
-        "content": "疾病・疲労・睡眠不足等の状況",
-        "isCorrect": true,
-        "explanation": null,
-        "structuredData": null
-      },
-      {
-        "id": 1854,
-        "questionId": 455,
-        "optionNumber": 8,
-        "content": "自動車・道路・運行の状況",
+        "content": "A : ⑦ 疾病・疲労・睡眠不足等の状況",
         "isCorrect": false,
         "explanation": null,
-        "structuredData": null
+        "structuredData": "{\"title\": \"A\", \"choices\": [{\"num\": 1, \"text\": \"車両の異常の有無\"}, {\"num\": 2, \"text\": \"貨物の積載状況\"}, {\"num\": 3, \"text\": \"運転者交替時の通告内容\"}, {\"num\": 4, \"text\": \"薬物の使用状況\"}, {\"num\": 5, \"text\": \"指示事項\"}, {\"num\": 6, \"text\": \"日常点検の状況\"}, {\"num\": 7, \"text\": \"疾病・疲労・睡眠不足等の状況\"}, {\"num\": 8, \"text\": \"自動車・道路・運行の状況\"}]}"
+      },
+      {
+        "id": 1974,
+        "questionId": 455,
+        "optionNumber": 8,
+        "content": "A : ⑧ 自動車・道路・運行の状況",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\": \"A\", \"choices\": [{\"num\": 1, \"text\": \"車両の異常の有無\"}, {\"num\": 2, \"text\": \"貨物の積載状況\"}, {\"num\": 3, \"text\": \"運転者交替時の通告内容\"}, {\"num\": 4, \"text\": \"薬物の使用状況\"}, {\"num\": 5, \"text\": \"指示事項\"}, {\"num\": 6, \"text\": \"日常点検の状況\"}, {\"num\": 7, \"text\": \"疾病・疲労・睡眠不足等の状況\"}, {\"num\": 8, \"text\": \"自動車・道路・運行の状況\"}]}"
+      },
+      {
+        "id": 1975,
+        "questionId": 455,
+        "optionNumber": 9,
+        "content": "B : ① 車両の異常の有無",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\": \"B\", \"choices\": [{\"num\": 1, \"text\": \"車両の異常の有無\"}, {\"num\": 2, \"text\": \"貨物の積載状況\"}, {\"num\": 3, \"text\": \"運転者交替時の通告内容\"}, {\"num\": 4, \"text\": \"薬物の使用状況\"}, {\"num\": 5, \"text\": \"指示事項\"}, {\"num\": 6, \"text\": \"日常点検の状況\"}, {\"num\": 7, \"text\": \"疾病・疲労・睡眠不足等の状況\"}, {\"num\": 8, \"text\": \"自動車・道路・運行の状況\"}]}"
+      },
+      {
+        "id": 1976,
+        "questionId": 455,
+        "optionNumber": 10,
+        "content": "B : ② 貨物の積載状況",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\": \"B\", \"choices\": [{\"num\": 1, \"text\": \"車両の異常の有無\"}, {\"num\": 2, \"text\": \"貨物の積載状況\"}, {\"num\": 3, \"text\": \"運転者交替時の通告内容\"}, {\"num\": 4, \"text\": \"薬物の使用状況\"}, {\"num\": 5, \"text\": \"指示事項\"}, {\"num\": 6, \"text\": \"日常点検の状況\"}, {\"num\": 7, \"text\": \"疾病・疲労・睡眠不足等の状況\"}, {\"num\": 8, \"text\": \"自動車・道路・運行の状況\"}]}"
+      },
+      {
+        "id": 1977,
+        "questionId": 455,
+        "optionNumber": 11,
+        "content": "B : ③ 運転者交替時の通告内容",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\": \"B\", \"choices\": [{\"num\": 1, \"text\": \"車両の異常の有無\"}, {\"num\": 2, \"text\": \"貨物の積載状況\"}, {\"num\": 3, \"text\": \"運転者交替時の通告内容\"}, {\"num\": 4, \"text\": \"薬物の使用状況\"}, {\"num\": 5, \"text\": \"指示事項\"}, {\"num\": 6, \"text\": \"日常点検の状況\"}, {\"num\": 7, \"text\": \"疾病・疲労・睡眠不足等の状況\"}, {\"num\": 8, \"text\": \"自動車・道路・運行の状況\"}]}"
+      },
+      {
+        "id": 1978,
+        "questionId": 455,
+        "optionNumber": 12,
+        "content": "B : ④ 薬物の使用状況",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\": \"B\", \"choices\": [{\"num\": 1, \"text\": \"車両の異常の有無\"}, {\"num\": 2, \"text\": \"貨物の積載状況\"}, {\"num\": 3, \"text\": \"運転者交替時の通告内容\"}, {\"num\": 4, \"text\": \"薬物の使用状況\"}, {\"num\": 5, \"text\": \"指示事項\"}, {\"num\": 6, \"text\": \"日常点検の状況\"}, {\"num\": 7, \"text\": \"疾病・疲労・睡眠不足等の状況\"}, {\"num\": 8, \"text\": \"自動車・道路・運行の状況\"}]}"
+      },
+      {
+        "id": 1979,
+        "questionId": 455,
+        "optionNumber": 13,
+        "content": "B : ⑤ 指示事項",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\": \"B\", \"choices\": [{\"num\": 1, \"text\": \"車両の異常の有無\"}, {\"num\": 2, \"text\": \"貨物の積載状況\"}, {\"num\": 3, \"text\": \"運転者交替時の通告内容\"}, {\"num\": 4, \"text\": \"薬物の使用状況\"}, {\"num\": 5, \"text\": \"指示事項\"}, {\"num\": 6, \"text\": \"日常点検の状況\"}, {\"num\": 7, \"text\": \"疾病・疲労・睡眠不足等の状況\"}, {\"num\": 8, \"text\": \"自動車・道路・運行の状況\"}]}"
+      },
+      {
+        "id": 1980,
+        "questionId": 455,
+        "optionNumber": 14,
+        "content": "B : ⑥ 日常点検の状況",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\": \"B\", \"choices\": [{\"num\": 1, \"text\": \"車両の異常の有無\"}, {\"num\": 2, \"text\": \"貨物の積載状況\"}, {\"num\": 3, \"text\": \"運転者交替時の通告内容\"}, {\"num\": 4, \"text\": \"薬物の使用状況\"}, {\"num\": 5, \"text\": \"指示事項\"}, {\"num\": 6, \"text\": \"日常点検の状況\"}, {\"num\": 7, \"text\": \"疾病・疲労・睡眠不足等の状況\"}, {\"num\": 8, \"text\": \"自動車・道路・運行の状況\"}]}"
+      },
+      {
+        "id": 1981,
+        "questionId": 455,
+        "optionNumber": 15,
+        "content": "B : ⑦ 疾病・疲労・睡眠不足等の状況",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": "{\"title\": \"B\", \"choices\": [{\"num\": 1, \"text\": \"車両の異常の有無\"}, {\"num\": 2, \"text\": \"貨物の積載状況\"}, {\"num\": 3, \"text\": \"運転者交替時の通告内容\"}, {\"num\": 4, \"text\": \"薬物の使用状況\"}, {\"num\": 5, \"text\": \"指示事項\"}, {\"num\": 6, \"text\": \"日常点検の状況\"}, {\"num\": 7, \"text\": \"疾病・疲労・睡眠不足等の状況\"}, {\"num\": 8, \"text\": \"自動車・道路・運行の状況\"}]}"
+      },
+      {
+        "id": 1982,
+        "questionId": 455,
+        "optionNumber": 16,
+        "content": "B : ⑧ 自動車・道路・運行の状況",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\": \"B\", \"choices\": [{\"num\": 1, \"text\": \"車両の異常の有無\"}, {\"num\": 2, \"text\": \"貨物の積載状況\"}, {\"num\": 3, \"text\": \"運転者交替時の通告内容\"}, {\"num\": 4, \"text\": \"薬物の使用状況\"}, {\"num\": 5, \"text\": \"指示事項\"}, {\"num\": 6, \"text\": \"日常点検の状況\"}, {\"num\": 7, \"text\": \"疾病・疲労・睡眠不足等の状況\"}, {\"num\": 8, \"text\": \"自動車・道路・運行の状況\"}]}"
+      },
+      {
+        "id": 1983,
+        "questionId": 455,
+        "optionNumber": 17,
+        "content": "C : ① 車両の異常の有無",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\": \"C\", \"choices\": [{\"num\": 1, \"text\": \"車両の異常の有無\"}, {\"num\": 2, \"text\": \"貨物の積載状況\"}, {\"num\": 3, \"text\": \"運転者交替時の通告内容\"}, {\"num\": 4, \"text\": \"薬物の使用状況\"}, {\"num\": 5, \"text\": \"指示事項\"}, {\"num\": 6, \"text\": \"日常点検の状況\"}, {\"num\": 7, \"text\": \"疾病・疲労・睡眠不足等の状況\"}, {\"num\": 8, \"text\": \"自動車・道路・運行の状況\"}]}"
+      },
+      {
+        "id": 1984,
+        "questionId": 455,
+        "optionNumber": 18,
+        "content": "C : ② 貨物の積載状況",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\": \"C\", \"choices\": [{\"num\": 1, \"text\": \"車両の異常の有無\"}, {\"num\": 2, \"text\": \"貨物の積載状況\"}, {\"num\": 3, \"text\": \"運転者交替時の通告内容\"}, {\"num\": 4, \"text\": \"薬物の使用状況\"}, {\"num\": 5, \"text\": \"指示事項\"}, {\"num\": 6, \"text\": \"日常点検の状況\"}, {\"num\": 7, \"text\": \"疾病・疲労・睡眠不足等の状況\"}, {\"num\": 8, \"text\": \"自動車・道路・運行の状況\"}]}"
+      },
+      {
+        "id": 1985,
+        "questionId": 455,
+        "optionNumber": 19,
+        "content": "C : ③ 運転者交替時の通告内容",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": "{\"title\": \"C\", \"choices\": [{\"num\": 1, \"text\": \"車両の異常の有無\"}, {\"num\": 2, \"text\": \"貨物の積載状況\"}, {\"num\": 3, \"text\": \"運転者交替時の通告内容\"}, {\"num\": 4, \"text\": \"薬物の使用状況\"}, {\"num\": 5, \"text\": \"指示事項\"}, {\"num\": 6, \"text\": \"日常点検の状況\"}, {\"num\": 7, \"text\": \"疾病・疲労・睡眠不足等の状況\"}, {\"num\": 8, \"text\": \"自動車・道路・運行の状況\"}]}"
+      },
+      {
+        "id": 1986,
+        "questionId": 455,
+        "optionNumber": 20,
+        "content": "C : ④ 薬物の使用状況",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\": \"C\", \"choices\": [{\"num\": 1, \"text\": \"車両の異常の有無\"}, {\"num\": 2, \"text\": \"貨物の積載状況\"}, {\"num\": 3, \"text\": \"運転者交替時の通告内容\"}, {\"num\": 4, \"text\": \"薬物の使用状況\"}, {\"num\": 5, \"text\": \"指示事項\"}, {\"num\": 6, \"text\": \"日常点検の状況\"}, {\"num\": 7, \"text\": \"疾病・疲労・睡眠不足等の状況\"}, {\"num\": 8, \"text\": \"自動車・道路・運行の状況\"}]}"
+      },
+      {
+        "id": 1987,
+        "questionId": 455,
+        "optionNumber": 21,
+        "content": "C : ⑤ 指示事項",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\": \"C\", \"choices\": [{\"num\": 1, \"text\": \"車両の異常の有無\"}, {\"num\": 2, \"text\": \"貨物の積載状況\"}, {\"num\": 3, \"text\": \"運転者交替時の通告内容\"}, {\"num\": 4, \"text\": \"薬物の使用状況\"}, {\"num\": 5, \"text\": \"指示事項\"}, {\"num\": 6, \"text\": \"日常点検の状況\"}, {\"num\": 7, \"text\": \"疾病・疲労・睡眠不足等の状況\"}, {\"num\": 8, \"text\": \"自動車・道路・運行の状況\"}]}"
+      },
+      {
+        "id": 1988,
+        "questionId": 455,
+        "optionNumber": 22,
+        "content": "C : ⑥ 日常点検の状況",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\": \"C\", \"choices\": [{\"num\": 1, \"text\": \"車両の異常の有無\"}, {\"num\": 2, \"text\": \"貨物の積載状況\"}, {\"num\": 3, \"text\": \"運転者交替時の通告内容\"}, {\"num\": 4, \"text\": \"薬物の使用状況\"}, {\"num\": 5, \"text\": \"指示事項\"}, {\"num\": 6, \"text\": \"日常点検の状況\"}, {\"num\": 7, \"text\": \"疾病・疲労・睡眠不足等の状況\"}, {\"num\": 8, \"text\": \"自動車・道路・運行の状況\"}]}"
+      },
+      {
+        "id": 1989,
+        "questionId": 455,
+        "optionNumber": 23,
+        "content": "C : ⑦ 疾病・疲労・睡眠不足等の状況",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\": \"C\", \"choices\": [{\"num\": 1, \"text\": \"車両の異常の有無\"}, {\"num\": 2, \"text\": \"貨物の積載状況\"}, {\"num\": 3, \"text\": \"運転者交替時の通告内容\"}, {\"num\": 4, \"text\": \"薬物の使用状況\"}, {\"num\": 5, \"text\": \"指示事項\"}, {\"num\": 6, \"text\": \"日常点検の状況\"}, {\"num\": 7, \"text\": \"疾病・疲労・睡眠不足等の状況\"}, {\"num\": 8, \"text\": \"自動車・道路・運行の状況\"}]}"
+      },
+      {
+        "id": 1990,
+        "questionId": 455,
+        "optionNumber": 24,
+        "content": "C : ⑧ 自動車・道路・運行の状況",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\": \"C\", \"choices\": [{\"num\": 1, \"text\": \"車両の異常の有無\"}, {\"num\": 2, \"text\": \"貨物の積載状況\"}, {\"num\": 3, \"text\": \"運転者交替時の通告内容\"}, {\"num\": 4, \"text\": \"薬物の使用状況\"}, {\"num\": 5, \"text\": \"指示事項\"}, {\"num\": 6, \"text\": \"日常点検の状況\"}, {\"num\": 7, \"text\": \"疾病・疲労・睡眠不足等の状況\"}, {\"num\": 8, \"text\": \"自動車・道路・運行の状況\"}]}"
       }
     ],
     "explanation": null,
