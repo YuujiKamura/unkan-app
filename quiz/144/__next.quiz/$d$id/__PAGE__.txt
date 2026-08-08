@@ -1,6 +1,58 @@
 1:"$Sreact.fragment"
-2:I[33316,["/unkan-app/_next/static/chunks/0duueqjzw4i7j.js","/unkan-app/_next/static/chunks/2oejna66087rc.js","/unkan-app/_next/static/chunks/43_z4zs-xyu0_.js","/unkan-app/_next/static/chunks/3rp-g6dqtbbm0.js","/unkan-app/_next/static/chunks/30xk5g0he03sk.js"],"default"]
-3:I[52827,["/unkan-app/_next/static/chunks/0duueqjzw4i7j.js","/unkan-app/_next/static/chunks/2oejna66087rc.js"],"OutletBoundary"]
-4:"$Sreact.suspense"
-0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"initialQuestion":{"id":144,"year":"令和2年 (CBT)","questionNumber":23,"field":"労働基準法","majorField":null,"subField":null,"content":"下表は、貨物自動車運送事業に従事する自動車運転者の 1 ヵ月の勤務状況の例を示したものであるが、「自動車運転者の労働時間等の改善のための基準」に定める拘束時間等に照らし、次の 1～4 の中から【違反している事項を 1 つ】選びなさい。なお、1 人乗務とし、「1 ヵ月についての拘束時間の延長に関する労使協定」があり、下表の 1 ヵ月は、当該協定により 1 ヵ月についての拘束時間を延長することができる月に該当するものとする。（※法改正により一部改変）","imageUrl":null,"sourceSheet":null,"knowledgeTags":"#改善基準(拘束・休息・運転時間)","riskCategory":null,"situationCategory":"#計算問題, #図表・写真問題, #正誤・択一(1つ選択)","format":"SINGLE","pdfUrl":null,"pdfPage":null,"options":[{"id":540,"questionId":144,"optionNumber":1,"content":"1 日の最大拘束時間","isCorrect":false,"explanation":null,"structuredData":null},{"id":541,"questionId":144,"optionNumber":2,"content":"当該 5 週間のすべての日を特定日とした 2 日を平均した 1 日当たりの運転時間","isCorrect":true,"explanation":null,"structuredData":null},{"id":542,"questionId":144,"optionNumber":3,"content":"2 週間を平均した 1 週間当たりの運転時間","isCorrect":false,"explanation":null,"structuredData":null},{"id":543,"questionId":144,"optionNumber":4,"content":"1 ヵ月の拘束時間","isCorrect":false,"explanation":null,"structuredData":null}],"explanation":null,"correctOptions":[],"userMeta":null,"attempts":[],"isDebated":false,"isBookmarked":false,"keywords":["貨物自動車運送事業","自動車運転者","勤務状況","労働時間等","拘束時間等","人乗務","拘束時間","労使協定","当該協定","法改正","一部改変","最大拘束時間","特定日","運転時間","週間当"]},"similarQuestions":[{"id":143,"year":"令和2年 (CBT)","questionNumber":22,"isDebated":false,"score":96,"field":"労働基準法","sharedKeywords":["knowledge:#改善基準(拘束・休息・運転時間)","situation: #正誤・択一(1つ選択)","situation: #図表・写真問題","situation:#計算問題","分野: 労働基準法","貨物自動車運送事業","自動車運転者","労働時間等"]},{"id":299,"year":"令和5年 (CBT)","questionNumber":22,"isDebated":true,"score":94,"field":"労働基準法","sharedKeywords":["knowledge:#改善基準(拘束・休息・運転時間)","situation: #正誤・択一(1つ選択)","situation: #図表・写真問題","situation:#計算問題","分野: 労働基準法","貨物自動車運送事業","自動車運転者","労働時間等"]},{"id":150,"year":"令和2年 (CBT)","questionNumber":29,"isDebated":false,"score":79,"field":"実務上の知識及び能力","sharedKeywords":["knowledge:#改善基準(拘束・休息・運転時間)","situation: #正誤・択一(1つ選択)","situation: #図表・写真問題","situation:#計算問題","自動車運転者","労働時間等","一部改変","運転時間"]},{"id":186,"year":"令和2年 第1回","questionNumber":29,"isDebated":false,"score":76,"field":"実務上の知識及び能力","sharedKeywords":["knowledge:#改善基準(拘束・休息・運転時間)","situation: #正誤・択一(1つ選択)","situation: #図表・写真問題","situation:#計算問題","自動車運転者","労働時間等","一部改変","法改正"]},{"id":334,"year":"令和4年 (CBT)","questionNumber":23,"isDebated":false,"score":64,"field":"労働基準法","sharedKeywords":["knowledge:#改善基準(拘束・休息・運転時間)","situation: #図表・写真問題","situation:#計算問題","分野: 労働基準法","貨物自動車運送事業","自動車運転者","労働時間等","拘束時間"]},{"id":300,"year":"令和5年 (CBT)","questionNumber":23,"isDebated":false,"score":64,"field":"労働基準法","sharedKeywords":["knowledge:#改善基準(拘束・休息・運転時間)","situation: #図表・写真問題","situation:#計算問題","分野: 労働基準法","貨物自動車運送事業","自動車運転者","最大拘束時間","労働時間等"]},{"id":269,"year":"令和6年 (CBT)","questionNumber":22,"isDebated":true,"score":64,"field":"労働基準法","sharedKeywords":["knowledge:#改善基準(拘束・休息・運転時間)","situation: #図表・写真問題","situation:#計算問題","分野: 労働基準法","貨物自動車運送事業","自動車運転者","労働時間等","運転時間"]},{"id":180,"year":"令和2年 第1回","questionNumber":23,"isDebated":false,"score":64,"field":"労働基準法","sharedKeywords":["knowledge:#改善基準(拘束・休息・運転時間)","situation: #図表・写真問題","situation:#計算問題","分野: 労働基準法","貨物自動車運送事業","自動車運転者","最大拘束時間","労働時間等"]},{"id":179,"year":"令和2年 第1回","questionNumber":22,"isDebated":false,"score":61,"field":"労働基準法","sharedKeywords":["knowledge:#改善基準(拘束・休息・運転時間)","situation: #図表・写真問題","situation:#計算問題","分野: 労働基準法","貨物自動車運送事業","自動車運転者","労働時間等","勤務状況"]},{"id":270,"year":"令和6年 (CBT)","questionNumber":23,"isDebated":true,"score":61,"field":"労働基準法","sharedKeywords":["knowledge:#改善基準(拘束・休息・運転時間)","situation: #図表・写真問題","situation:#計算問題","分野: 労働基準法","貨物自動車運送事業","自動車運転者","労働時間等"]}],"nextQuestionId":145,"prevQuestionId":143,"nextIncorrectId":129,"contextModeLabel":"📅 年度別演習","groupTitle":"令和2年 (CBT)","currentPosition":23,"totalInGroup":30,"navQueryStr":"?groupBy=year","mode":"","groupQuestionIds":[122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151]}],[["$","script","script-0",{"src":"/unkan-app/_next/static/chunks/43_z4zs-xyu0_.js","async":true}],["$","script","script-1",{"src":"/unkan-app/_next/static/chunks/3rp-g6dqtbbm0.js","async":true}],["$","script","script-2",{"src":"/unkan-app/_next/static/chunks/30xk5g0he03sk.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"Spm-s-N1z2dirOtU7lfjD"}
-5:null
+2:I[33316,["/unkan-app/_next/static/chunks/1a79roryo1vyq.js","/unkan-app/_next/static/chunks/2oejna66087rc.js","/unkan-app/_next/static/chunks/0_0x3100ish5v.js","/unkan-app/_next/static/chunks/1zn97q9hw_a-b.js","/unkan-app/_next/static/chunks/3_k2os2p43c3d.js"],"default"]
+8:I[52827,["/unkan-app/_next/static/chunks/1a79roryo1vyq.js","/unkan-app/_next/static/chunks/2oejna66087rc.js"],"OutletBoundary"]
+9:"$Sreact.suspense"
+3:Td4a,これとかも2週間を平均したうんたらってのは何だ
+「2週間を平均した1週間当たりの運転時間」、これもまたお役所言葉でややこしいですよね。試験問題を見ていると頭が痛くなる表現の代表格です。
+
+結論から言うと、これは試験対策としては「どの連続する2つの週を足しても、運転時間の合計が『88時間』を超えたらアウト！」というルールとして覚えてしまうのが一番簡単です。
+
+なぜこんな変な言い回しになっているのか、そのカラクリと試験での解き方を解説しますね。
+
+💡 なぜ「2週間を平均」するのか？
+本来、トラック運転手の運転時間は「1週間あたり44時間以内」というのが国の理想（大原則）です。
+
+しかし、実際の仕事では「今週は長距離ばかりでめちゃくちゃ忙しいけど、来週は近場ばかりでヒマ」というような波がありますよね。すべてを「絶対に1週44時間！」とガチガチに縛ってしまうと、運送会社が仕事を回せなくなってしまいます。
+
+そこで、「忙しい週があってもいいけど、その前後でちゃんと調整してね。2週間セットで合計88時間（平均して44時間）に収まっていれば許すよ」という、実務に配慮した柔軟なルール（救済措置）になっているのです。
+
+📝 試験での超実践的な解き方（88時間チェック法）
+問題文の「2週間を平均して44時間」をそのまま計算しようとして、「足して2で割って…」とやると時間がかかりますし、ミスも増えます。
+
+試験で勤務表（1週目〜5週目の運転時間）が出たら、ひたすら「隣り合う週を足し算」して、88時間を超えていないかチェックしてください。
+
+【チェックする組み合わせ】
+
+1週目 ＋ 2週目 ＝ 88時間以内か？
+
+2週目 ＋ 3週目 ＝ 88時間以内か？ ⚠️（ここが一番のひっかけポイント！）
+
+3週目 ＋ 4週目 ＝ 88時間以内か？
+
+4週目 ＋ 5週目 ＝ 88時間以内か？
+
+どれか1つでも「89時間以上」になったら、その時点で【違反（アウト）】です。
+
+⚠️ ひっかけの罠（よくあるパターン）
+例えば、各週の運転時間が以下のような表があったとします。
+
+1週目：40時間
+
+2週目：45時間
+
+3週目：46時間
+
+4週目：40時間
+
+パッと見、「1週目＋2週目（85時間）」や「3週目＋4週目（86時間）」だけを見て「ヨシ、どっちも88時間以内だからセーフだな！」と判断してしまう受験生が非常に多いです。
+
+しかし、「2週目＋3週目」を足すと 45時間 ＋ 46時間 ＝ 91時間 となり、88時間をオーバーしてしまっています。これが「違反」になるパターンです。
+
+「1日〜31日のカレンダーの枠」ではなく、「どこを切り取っても連続する2週間でバランスを取れているか」を見ているわけです。
+
+試験本番では、表の横に「1+2」「2+3」「3+4」「4+5」の合計値をパパッとメモして書き出してしまうのが、見落としを防ぐ最強の対策になります！いかがでしょうか、少しスッキリしましたか？0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"initialQuestion":{"id":144,"year":"令和2年 (CBT)","questionNumber":23,"field":"労働基準法","majorField":null,"subField":null,"content":"下表は、貨物自動車運送事業に従事する自動車運転者の 1 ヵ月の勤務状況の例を示したものであるが、「自動車運転者の労働時間等の改善のための基準」に定める拘束時間等に照らし、次の 1～4 の中から【違反している事項を 1 つ】選びなさい。なお、1 人乗務とし、「1 ヵ月についての拘束時間の延長に関する労使協定」があり、下表の 1 ヵ月は、当該協定により 1 ヵ月についての拘束時間を延長することができる月に該当するものとする。（※法改正により一部改変）","imageUrl":"/pdf_pages/R02.CBT_Q23.png","sourceSheet":null,"knowledgeTags":"#改善基準(拘束・休息)","riskCategory":null,"situationCategory":"#表・グラフ","format":"SINGLE","pdfUrl":"/data/R02.CBT.pdf","pdfPage":13,"options":[{"id":540,"questionId":144,"optionNumber":1,"content":"1 日の最大拘束時間","isCorrect":false,"explanation":null,"structuredData":null},{"id":541,"questionId":144,"optionNumber":2,"content":"当該 5 週間のすべての日を特定日とした 2 日を平均した 1 日当たりの運転時間","isCorrect":true,"explanation":null,"structuredData":null},{"id":542,"questionId":144,"optionNumber":3,"content":"2 週間を平均した 1 週間当たりの運転時間","isCorrect":false,"explanation":null,"structuredData":null},{"id":543,"questionId":144,"optionNumber":4,"content":"1 ヵ月の拘束時間","isCorrect":false,"explanation":null,"structuredData":null}],"explanation":{"id":143,"questionId":144,"content":"$3","isDebated":true},"correctOptions":[],"userMeta":null,"attempts":[],"isDebated":false,"isBookmarked":false,"keywords":["貨物自動車運送事業","自動車運転者","勤務状況","労働時間等","拘束時間等","人乗務","拘束時間","労使協定","当該協定","法改正","一部改変","最大拘束時間","特定日","運転時間","週間当"]},"similarQuestions":[{"id":143,"year":"令和2年 (CBT)","questionNumber":22,"isDebated":true,"score":91,"field":"労働基準法","sharedKeywords":["knowledge:#改善基準(拘束・休息)","situation:#表・グラフ","分野: 労働基準法","貨物自動車運送事業","自動車運転者","労働時間等","勤務状況","拘束時間"]},{"id":334,"year":"令和4年 (CBT)","questionNumber":23,"isDebated":false,"score":90,"field":"労働基準法","sharedKeywords":["knowledge:#改善基準(拘束・休息)","situation:#表・グラフ","分野: 労働基準法","貨物自動車運送事業","自動車運転者","労働時間等","拘束時間","労使協定"]},{"id":300,"year":"令和5年 (CBT)","questionNumber":23,"isDebated":true,"score":90,"field":"労働基準法","sharedKeywords":["knowledge:#改善基準(拘束・休息)","situation:#表・グラフ","分野: 労働基準法","貨物自動車運送事業","自動車運転者","最大拘束時間","労働時間等","拘束時間等"]},{"id":270,"year":"令和6年 (CBT)","questionNumber":23,"isDebated":true,"score":82,"field":"労働基準法","sharedKeywords":["knowledge:#改善基準(拘束・休息)","situation:#表・グラフ","分野: 労働基準法","貨物自動車運送事業","自動車運転者","労働時間等"]},{"id":141,"year":"令和2年 (CBT)","questionNumber":20,"isDebated":true,"score":72,"field":"労働基準法","sharedKeywords":["knowledge:#改善基準(拘束・休息)","分野: 労働基準法","貨物自動車運送事業","自動車運転者","最大拘束時間","労働時間等","拘束時間等","一部改変"]},{"id":331,"year":"令和4年 (CBT)","questionNumber":20,"isDebated":false,"score":72,"field":"労働基準法","sharedKeywords":["knowledge:#改善基準(拘束・休息)","分野: 労働基準法","貨物自動車運送事業","自動車運転者","最大拘束時間","労働時間等","拘束時間等","一部改変"]},{"id":180,"year":"令和2年 第1回","questionNumber":23,"isDebated":false,"score":71,"field":"労働基準法","sharedKeywords":["knowledge:#改善基準(拘束・休息)","situation:#表・グラフ","分野: 労働基準法","貨物自動車運送事業","自動車運転者","最大拘束時間","労働時間等","勤務状況"]},{"id":179,"year":"令和2年 第1回","questionNumber":22,"isDebated":false,"score":65,"field":"労働基準法","sharedKeywords":["knowledge:#改善基準(拘束・休息)","situation:#表・グラフ","分野: 労働基準法","貨物自動車運送事業","自動車運転者","労働時間等","勤務状況","一部改変"]},{"id":332,"year":"令和4年 (CBT)","questionNumber":21,"isDebated":true,"score":63,"field":"労働基準法","sharedKeywords":["knowledge:#改善基準(拘束・休息)","分野: 労働基準法","貨物自動車運送事業","自動車運転者","労働時間等","拘束時間等","一部改変","拘束時間"]},{"id":178,"year":"令和2年 第1回","questionNumber":21,"isDebated":false,"score":62,"field":"労働基準法","sharedKeywords":["knowledge:#改善基準(拘束・休息)","分野: 労働基準法","貨物自動車運送事業","自動車運転者","最大拘束時間","労働時間等","拘束時間等","一部改変"]}],"nextQuestionId":145,"prevQuestionId":143,"nextIncorrectId":null,"contextModeLabel":"📅 年度別演習","groupTitle":"令和2年 (CBT)","currentPosition":23,"totalInGroup":30,"navQueryStr":"?groupBy=year","mode":"","groupQuestionIds":[122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151]}],["$L4","$L5","$L6"],"$L7"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"tDGhSCSpBRBDStRjBnDu9"}
+4:["$","script","script-0",{"src":"/unkan-app/_next/static/chunks/0_0x3100ish5v.js","async":true}]
+5:["$","script","script-1",{"src":"/unkan-app/_next/static/chunks/1zn97q9hw_a-b.js","async":true}]
+6:["$","script","script-2",{"src":"/unkan-app/_next/static/chunks/3_k2os2p43c3d.js","async":true}]
+7:["$","$L8",null,{"children":["$","$9",null,{"name":"Next.MetadataOutlet","children":"$@a"}]}]
+a:null

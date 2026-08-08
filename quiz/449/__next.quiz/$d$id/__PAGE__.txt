@@ -1,0 +1,99 @@
+1:"$Sreact.fragment"
+2:I[33316,["/unkan-app/_next/static/chunks/1a79roryo1vyq.js","/unkan-app/_next/static/chunks/2oejna66087rc.js","/unkan-app/_next/static/chunks/0_0x3100ish5v.js","/unkan-app/_next/static/chunks/1zn97q9hw_a-b.js","/unkan-app/_next/static/chunks/3_k2os2p43c3d.js"],"default"]
+8:I[52827,["/unkan-app/_next/static/chunks/1a79roryo1vyq.js","/unkan-app/_next/static/chunks/2oejna66087rc.js"],"OutletBoundary"]
+9:"$Sreact.suspense"
+3:T1467,Skip to main contentAccessibility help
+AI Mode
+All
+Images
+Shopping
+Videos
+More
+Pro
+
+
+
+
+出来高払制その他の請負制で使用する労働者については、使用者は、労働時間にかかわらず一定額の賃金の保障をしなければならない。
+いいえ、その記述は誤りです。労働基準法第27条では、労働時間「にかかわらず」ではなく、「労働時間に応じ」一定額の賃金の保障をしなければならないと定めています。 
+
+顧問弁護士SOS
+ +1
+出来高払制の保障給の仕組み
+労働基準法第27条（出来高払制の保障給）の正しい内容は以下の通りです。
+労働時間に応じた保障: 働いた時間に対して一定の収入を確保させる必要があります。完全なノーワーク・ノーペイの原則はあるものの、働いた時間に対して成果がゼロであっても一切無給とすることは認められません。
+趣旨: 会社の都合（機械の故障や仕事の減少など）で作業ができなかったとき、労働者の責任ではない理由で給料が極端に減るのを防ぐためです。
+目安額: 一般的に、平均賃金の60％程度以上を保障するのが妥当とされています。 
+
+社会保険労務士合格研究室
+ +4
+もし特定の給与体系や法律の適用について詳しく知りたい場合は、具体的な職種や現在の給与の決め方を教えてください。
+
+
+
+
+
+社会保険労務士合格研究室
+R2.2.24 出来高払制の保障給 - 社会保険労務士合格研究室
+出来高払制その他の請負制の場合、出来高がゼロだったら賃金もゼロというのは許されず、労働者が働いた以上は、労働時間に応じた...
+
+顧問弁護士SOS
+賃金を完全歩合制にできるか？ | みらい総合法律事務所
+労働基準法第27条では、「出来高払制その他の請負制で使用する労働者については、使用者は、労働時間に応じ一定額の賃金の保障...
+
+
+www.loi.gr.jp
+出来高払いとは何か？(P5-7) - 【公式】弁護士法人 ロア・ユナイテッド法律事務所 | 東京都港区虎ノ門
+出来高払制とは、労働者の製造した物の量や価格、売上額などに応じて一定比率で額が定まる賃金制度です。労基法では、出来高払制...
+Show all
+法第 20 条（解雇の予告）の規定は、「季節的業務に 4 ヵ月以内の期間を定めて使用される者」に該当する労働者について、当該者が法に定める期間を超えて引き続き使用されるに至らない限り適用しない。
+はい、その記述は正しい（正当）です。 
+
+社会保険労務士合格研究室
+労働基準法第21条の規定により、「季節的業務に4ヵ月以内の期間を定めて使用される者」に対しては、原則として同法第20条の解雇予告（または解雇予告手当の支払い）の規定は適用されません。 
+
+社長のための労働相談マニュアル
+ +1
+解雇予告の適用除外と例外ルール
+ただし、この除外規定には労働基準法第21条但書による例外があります。 
+
+鈴悠法律事務所
+原則（適用除外）: 「季節的業務に4ヵ月以内の期間を定めて使用される者」は解雇予告が不要です。
+例外（適用対象へ変化）: 当初定めた「所定の期間」を超えて引き続き使用されるに至った場合は、その時点から解雇予告の規定が適用されます。 
+
+社長のための労働相談マニュアル
+ +2
+注意すべきポイント
+条文上の表現は「所定の期間を超えて」となっているため、例えば「3ヶ月」の期間を定めていた季節労働者を3ヶ月を超えて引き続き使用した場合は、4ヶ月以内であっても解雇予告が必要になります。そのため、ご提示いただいた「当該者が法に定める期間（所定の期間）を超えて引き続き使用されるに至らない限り適用しない」という記述は、法律の趣旨と完全に一致します。 
+
+社会保険労務士合格研究室
+ +1
+他にも有期雇用契約の雇止めや、他の適用除外グループ（日雇い、試用期間など）について確認したい点はありますか？
+Try without personalization
+
+
+
+
+
+Japanese Law Translation
+Labor Standards Act - English - Japanese Law Translation
+... of the preceding Article do not apply to a worker fallin...
+
+社会保険労務士合格研究室
+H29.1.4 第２１条 解雇の予告除外 - 社会保険労務士合格研究室
+2か月以内の期間を定めて雇入れた労働者に対しては、解雇の予告に関する規定は適用されません。 ただし、2か月以内の契約でも...
+
+社長のための労働相談マニュアル
+解雇予告の適用除外｜社長のための労働相談マニュアル
+解雇予告制度の適用除外が認められる例としては、次のようなものがあります。 * 日々雇い入れられる者（1か月を超えて引き続...
+
+Show all
+Ask anything
+
+
+AI Mode response is ready0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"initialQuestion":{"id":449,"year":"令和3年 (CBT)","questionNumber":18,"field":"労働基準法","majorField":"貨物","subField":null,"content":"労働基準法（以下「法」という。）に定める労働契約等についての次の記述のうち、【正しいものを 2 つ】選びなさい。なお、解答にあたっては、各選択肢に記載されている事項以外は考慮しないものとする。","imageUrl":null,"sourceSheet":null,"knowledgeTags":"","riskCategory":null,"situationCategory":null,"format":"SINGLE","pdfUrl":"/data/R03.CBT.pdf","pdfPage":10,"options":[{"id":1823,"questionId":449,"optionNumber":1,"content":"使用者は、労働契約の不履行について違約金を定め、又は損害賠償額を予定する契約をしてはならない。","isCorrect":true,"explanation":null,"structuredData":null},{"id":1824,"questionId":449,"optionNumber":2,"content":"法第 20 条（解雇の予告）の規定は、「季節的業務に 4 ヵ月以内の期間を定めて使用される者」に該当する労働者について、当該者が法に定める期間を超えて引き続き使用されるに至らない限り適用しない。","isCorrect":true,"explanation":null,"structuredData":null},{"id":1825,"questionId":449,"optionNumber":3,"content":"「平均賃金」とは、これを算定すべき事由の発生した日以前 3 ヵ月間にその労働者に対し支払われた賃金の総額を、その期間の所定労働日数で除した金額をいう。","isCorrect":false,"explanation":null,"structuredData":null},{"id":1826,"questionId":449,"optionNumber":4,"content":"出来高払制その他の請負制で使用する労働者については、使用者は、労働時間にかかわらず一定額の賃金の保障をしなければならない。","isCorrect":false,"explanation":null,"structuredData":null}],"explanation":{"id":169,"questionId":449,"content":"$3","isDebated":true},"correctOptions":[],"userMeta":null,"attempts":[],"isDebated":false,"isBookmarked":false,"keywords":["損害賠償","労働基準法","労働契約等","各選択肢","事項以外","使用者","労働契約","不履行","違約金","損害賠償額","季節的業務","月以内","労働者","当該者","平均賃金","日以前","所定労働日数","出来高払制","請負制","労働時間","一定額"]},"similarQuestions":[{"id":265,"year":"令和6年 (CBT)","questionNumber":18,"isDebated":true,"score":56,"field":"労働基準法","sharedKeywords":["分野: 労働基準法","所定労働日数","労働基準法","損害賠償額","損害賠償","各選択肢","事項以外","平均賃金"]},{"id":329,"year":"令和4年 (CBT)","questionNumber":18,"isDebated":false,"score":34,"field":"労働基準法","sharedKeywords":["分野: 労働基準法","労働基準法","労働契約等","損害賠償額","季節的業務","損害賠償","各選択肢","事項以外"]},{"id":175,"year":"令和2年 第1回","questionNumber":18,"isDebated":false,"score":20,"field":"労働基準法","sharedKeywords":["分野: 労働基準法","労働基準法","各選択肢","事項以外","労働時間","労働契約","使用者"]},{"id":139,"year":"令和2年 (CBT)","questionNumber":18,"isDebated":false,"score":19,"field":"労働基準法","sharedKeywords":["分野: 労働基準法","労働基準法","季節的業務","労働契約","各選択肢","事項以外","平均賃金","使用者"]},{"id":295,"year":"令和5年 (CBT)","questionNumber":18,"isDebated":true,"score":18,"field":"労働基準法","sharedKeywords":["分野: 労働基準法","労働基準法","季節的業務","各選択肢","事項以外","平均賃金","使用者","月以内"]},{"id":266,"year":"令和6年 (CBT)","questionNumber":19,"isDebated":true,"score":14,"field":"労働基準法","sharedKeywords":["分野: 労働基準法","労働基準法","各選択肢","事項以外","労働時間","使用者","労働者"]},{"id":296,"year":"令和5年 (CBT)","questionNumber":19,"isDebated":true,"score":13,"field":"労働基準法","sharedKeywords":["分野: 労働基準法","労働基準法","各選択肢","事項以外","労働時間","使用者","労働者"]},{"id":450,"year":"令和3年 (CBT)","questionNumber":19,"isDebated":true,"score":13,"field":"労働基準法","sharedKeywords":["分野: 労働基準法","労働基準法","各選択肢","事項以外","労働時間","使用者","労働者"]},{"id":140,"year":"令和2年 (CBT)","questionNumber":19,"isDebated":false,"score":9,"field":"労働基準法","sharedKeywords":["分野: 労働基準法","労働基準法","各選択肢","事項以外","労働時間","使用者","労働者"]},{"id":330,"year":"令和4年 (CBT)","questionNumber":19,"isDebated":false,"score":9,"field":"労働基準法","sharedKeywords":["分野: 労働基準法","労働基準法","各選択肢","事項以外","労働時間","使用者","労働者"]}],"nextQuestionId":450,"prevQuestionId":448,"nextIncorrectId":450,"contextModeLabel":"📅 年度別演習","groupTitle":"令和3年 (CBT)","currentPosition":18,"totalInGroup":30,"navQueryStr":"?groupBy=year","mode":"","groupQuestionIds":[432,433,434,435,436,437,438,439,440,441,442,443,444,445,446,447,448,449,450,451,452,453,454,455,456,457,458,459,460,461]}],["$L4","$L5","$L6"],"$L7"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"tDGhSCSpBRBDStRjBnDu9"}
+4:["$","script","script-0",{"src":"/unkan-app/_next/static/chunks/0_0x3100ish5v.js","async":true}]
+5:["$","script","script-1",{"src":"/unkan-app/_next/static/chunks/1zn97q9hw_a-b.js","async":true}]
+6:["$","script","script-2",{"src":"/unkan-app/_next/static/chunks/3_k2os2p43c3d.js","async":true}]
+7:["$","$L8",null,{"children":["$","$9",null,{"name":"Next.MetadataOutlet","children":"$@a"}]}]
+a:null

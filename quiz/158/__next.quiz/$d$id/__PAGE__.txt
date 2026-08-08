@@ -1,8 +1,86 @@
 1:"$Sreact.fragment"
-2:I[33316,["/unkan-app/_next/static/chunks/0duueqjzw4i7j.js","/unkan-app/_next/static/chunks/2oejna66087rc.js","/unkan-app/_next/static/chunks/43_z4zs-xyu0_.js","/unkan-app/_next/static/chunks/3rp-g6dqtbbm0.js","/unkan-app/_next/static/chunks/30xk5g0he03sk.js"],"default"]
-5:I[52827,["/unkan-app/_next/static/chunks/0duueqjzw4i7j.js","/unkan-app/_next/static/chunks/2oejna66087rc.js"],"OutletBoundary"]
-6:"$Sreact.suspense"
-0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"initialQuestion":{"id":158,"year":"令和2年 第1回","questionNumber":1,"field":"貨物自動車運送事業法","majorField":null,"subField":null,"content":"一般貨物自動車運送事業に関する次の記述のうち、正しいものを1つ選び、解答用紙の該当する欄にマークしなさい。なお、解答にあたっては、各選択肢に記載されている事項以外は考慮しないものとする。（※法改正により一部改変）","imageUrl":"/pdf_pages/R02.1_Q1.png","sourceSheet":"R02.1_full.json","knowledgeTags":"#許可・届出・認可","riskCategory":null,"situationCategory":"#正誤・択一(1つ選択)","format":"SINGLE","pdfUrl":"/data/R02.1.pdf","pdfPage":1,"options":[{"id":621,"questionId":158,"optionNumber":1,"content":"1: 一般貨物自動車運送事業を経営しようとする者は、国土交通大臣の認可を受けなければならない。","isCorrect":false,"explanation":null,"structuredData":null},{"id":622,"questionId":158,"optionNumber":2,"content":"2: 貨物自動車利用運送とは、一般貨物自動車運送事業、特定貨物自動車運送事業又は貨物軽自動車運送事業を経営する者が他の一般貨物自動車運送事業、特定貨物自動車運送事業又は貨物軽自動車運送事業を経営する者の行う運送（自動車を使用しないで貨物の運送を行わせることを内容とする契約によるものを除く。）を利用してする貨物の運送をいう。","isCorrect":false,"explanation":null,"structuredData":null},{"id":623,"questionId":158,"optionNumber":3,"content":"3: 特別積合せ貨物運送とは、特定の者の需要に応じて有償で自動車を使用し、営業所その他の事業場（以下「事業場」という。）において、限定された貨物の集貨を行い、集貨された貨物を積み合わせて他の事業場に運送し、当該他の事業場において運送された貨物の配達に必要な仕分を行うものであって、これらの事業場の間における当該積合せ貨物の運送を定期的に行うものをいう。","isCorrect":false,"explanation":null,"structuredData":null},{"id":624,"questionId":158,"optionNumber":4,"content":"4: 国土交通大臣が標準運送約款を定めて公示した場合（これを変更して公示した場合を含む。）において、一般貨物自動車運送事業者が、標準運送約款と同一の運送約款を定め、又は現に定めている運送約款を標準運送約款と同一のものに変更したときは、その運送約款については、国土交通大臣の認可を受けたものとみなす。","isCorrect":true,"explanation":null,"structuredData":null}],"explanation":null,"correctOptions":[],"userMeta":null,"attempts":[],"isDebated":false,"isBookmarked":false,"keywords":["一般貨物自動車運送事業","解答用紙","各選択肢","事項以外","法改正","一部改変","国土交通大臣","貨物自動車利用運送","特定貨物自動車運送事業又","貨物軽自動車運送事業","特別積合","貨物運送","営業所","事業場","当該他","当該積合","定期的","標準運送約款","一般貨物自動車運送事業者","運送約款"]},"similarQuestions":[{"id":122,"year":"令和2年 (CBT)","questionNumber":1,"isDebated":true,"score":56,"field":"貨物自動車運送事業法","sharedKeywords":["knowledge:#許可・届出・認可","分野: 貨物自動車運送事業法","一般貨物自動車運送事業","貨物軽自動車運送事業","各選択肢","事項以外","特別積合","貨物運送"]},{"id":160,"year":"令和2年 第1回","questionNumber":3,"isDebated":false,"score":49,"field":"貨物自動車運送事業法","sharedKeywords":["situation:#正誤・択一(1つ選択)","knowledge:#許可・届出・認可","分野: 貨物自動車運送事業法","一般貨物自動車運送事業者","国土交通大臣","各選択肢","事項以外","一部改変"]},{"id":312,"year":"令和4年 (CBT)","questionNumber":1,"isDebated":false,"score":43,"field":"貨物自動車運送事業法","sharedKeywords":["knowledge:#許可・届出・認可","分野: 貨物自動車運送事業法","一般貨物自動車運送事業者","一般貨物自動車運送事業","国土交通大臣","各選択肢","事項以外","一部改変"]},{"id":249,"year":"令和6年 (CBT)","questionNumber":2,"isDebated":false,"score":36,"field":"貨物自動車運送事業法","sharedKeywords":["knowledge:#許可・届出・認可","分野: 貨物自動車運送事業法","一般貨物自動車運送事業者","国土交通大臣"]},{"id":248,"year":"令和6年 (CBT)","questionNumber":1,"isDebated":false,"score":34,"field":"貨物自動車運送事業法","sharedKeywords":["knowledge:#許可・届出・認可","分野: 貨物自動車運送事業法","一般貨物自動車運送事業","各選択肢","事項以外"]},{"id":278,"year":"令和5年 (CBT)","questionNumber":1,"isDebated":true,"score":34,"field":"貨物自動車運送事業法","sharedKeywords":["knowledge:#許可・届出・認可","分野: 貨物自動車運送事業法","一般貨物自動車運送事業","各選択肢","事項以外"]},{"id":280,"year":"令和5年 (CBT)","questionNumber":3,"isDebated":false,"score":26,"field":"貨物自動車運送事業法","sharedKeywords":["situation:#正誤・択一(1つ選択)","分野: 貨物自動車運送事業法","一般貨物自動車運送事業者","一般貨物自動車運送事業","各選択肢","事項以外","営業所"]},{"id":313,"year":"令和4年 (CBT)","questionNumber":2,"isDebated":false,"score":26,"field":"貨物自動車運送事業法","sharedKeywords":["situation:#正誤・択一(1つ選択)","分野: 貨物自動車運送事業法","一般貨物自動車運送事業者","一般貨物自動車運送事業","各選択肢","事項以外","一部改変","法改正"]},{"id":129,"year":"令和2年 (CBT)","questionNumber":8,"isDebated":true,"score":24,"field":"貨物自動車運送事業法","sharedKeywords":["situation:#正誤・択一(1つ選択)","分野: 貨物自動車運送事業法","一般貨物自動車運送事業者","一般貨物自動車運送事業","国土交通大臣","各選択肢","事項以外","一部改変"]},{"id":317,"year":"令和4年 (CBT)","questionNumber":6,"isDebated":true,"score":24,"field":"貨物自動車運送事業法","sharedKeywords":["situation:#正誤・択一(1つ選択)","分野: 貨物自動車運送事業法","一般貨物自動車運送事業者","国土交通大臣","各選択肢","事項以外","一部改変","特別積合"]}],"nextQuestionId":159,"prevQuestionId":null,"nextIncorrectId":null,"contextModeLabel":"📅 年度別演習","groupTitle":"令和2年 第1回","currentPosition":1,"totalInGroup":30,"navQueryStr":"?groupBy=year","mode":"","groupQuestionIds":[158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187]}],[["$","script","script-0",{"src":"/unkan-app/_next/static/chunks/43_z4zs-xyu0_.js","async":true}],["$","script","script-1",{"src":"/unkan-app/_next/static/chunks/3rp-g6dqtbbm0.js","async":true}],"$L3"],"$L4"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"Spm-s-N1z2dirOtU7lfjD"}
-3:["$","script","script-2",{"src":"/unkan-app/_next/static/chunks/30xk5g0he03sk.js","async":true}]
-4:["$","$L5",null,{"children":["$","$6",null,{"name":"Next.MetadataOutlet","children":"$@7"}]}]
-7:null
+2:I[33316,["/unkan-app/_next/static/chunks/1a79roryo1vyq.js","/unkan-app/_next/static/chunks/2oejna66087rc.js","/unkan-app/_next/static/chunks/0_0x3100ish5v.js","/unkan-app/_next/static/chunks/1zn97q9hw_a-b.js","/unkan-app/_next/static/chunks/3_k2os2p43c3d.js"],"default"]
+8:I[52827,["/unkan-app/_next/static/chunks/1a79roryo1vyq.js","/unkan-app/_next/static/chunks/2oejna66087rc.js"],"OutletBoundary"]
+9:"$Sreact.suspense"
+3:T14ef,Gemini との会話
+解説
+令和2年 第1回（問1）の貨物自動車運送事業法に関する問題ですね。
+画面上の表示通り、正解は「4」です。各選択肢のどこが間違っているのか（あるいは正しいのか）、ポイントを絞って解説します。
+
+【正解】選択肢 4 ⭕
+「国土交通大臣が標準運送約款を定めて公示した場合〜その運送約款については、国土交通大臣の認可を受けたものとみなす。」
+
+解説: 記述の通りで正しいです。運送約款は原則として国土交通大臣の「認可」が必要ですが、あらかじめ国が定めた「標準運送約款」と全く同じ内容のものを採用する場合に限り、自動的に認可を受けたものとみなされます（みなし認可）。
+
+【不正解の選択肢と理由】
+選択肢 1 ❌
+
+誤りの箇所: 「国土交通大臣の認可を受けなければならない。」
+
+正しい内容: 「国土交通大臣の許可を受けなければならない。」
+
+解説: 一般貨物自動車運送事業を始めるためのハードルは「認可」ではなく、より厳格な「許可」です。「許可」と「認可」の引っかけは運行管理者試験の頻出パターンですので、事業の経営＝「許可」としっかり覚えておきましょう。
+
+選択肢 2 ❌
+
+誤りの箇所: 「（自動車を使用しないで貨物の運送を行わせることを内容とする契約によるものを除く。）」
+
+正しい内容: 「（自動車を使用してする貨物の運送に係るものに限る。）」
+
+解説: 貨物自動車利用運送の定義についての引っかけです。「自動車を使用しないで〜」という除外規定ではなく、「自動車を使用してする運送に限る」というのが正しい条文です。
+
+選択肢 3 ❌
+
+誤りの箇所: 「特定の者の需要に応じて〜」および「限定された貨物の集貨を行い〜」
+
+正しい内容: 「不特定の者の需要に応じて〜」であり、貨物も限定されません。
+
+解説: 特別積合せ貨物運送（いわゆる路線便・宅配便など）の定義です。特定の荷主ではなく「不特定の者（誰からでも）」の荷物を集め、事業場（ターミナルなど）で仕分けをして定期的に運送する形態を指します。「特定の者」を対象とするのは特定貨物自動車運送事業です。
+
+💡 学習のアドバイス
+この問題は、運送事業法の「用語の定義」と「許可・認可の違い」を問う王道の問題です。特に 「事業の開始＝許可」「運送約款＝認可（標準ならみなし）」 および 「特別積合せ＝不特定の者」 というキーワードの結びつきは、今後もよく出題されるので押さえておくと安心です。画面上の「☆ 弱点・まぐれ登録」を活用して、ぜひ復習に役立ててください！
+
+認可と許可なんか考えたこともなかったけど
+日常会話だと「許可」も「認可」もほぼ同じ意味で使いますから、意識したことがなくて当然です！実はこの言葉の違い、運行管理者試験では超定番の引っかけポイントなんです。
+
+ここで違いをスッキリさせておくと、今後の確実な得点源になりますよ。法律上のニュアンスの違いは以下のようになっています。
+
+📝 「許可」「認可」「届出」の違い
+許可（きょか）：原則「禁止」されていることを、条件を満たした人にだけ特別に解除すること。
+
+対象: 事業の開始など、ハードルが高く重要なもの。
+
+例: 「一般貨物自動車運送事業を経営する」
+
+（理由：誰でも勝手にトラック運送業を始めると危険なので、厳しい安全基準などをクリアした人だけに“特別に許す”ため）
+
+認可（にんか）：自分たちで決めたルールを、国が「それでOK」と承認して効力を発生させること。
+
+対象: 約款（ルール）や運賃の設定など。
+
+例: 「運送約款を定める」
+
+（理由：利用者との契約ルールが不当でないかを国がチェックして、お墨付きを与えるため）
+
+届出（とどけで）：「こういうことしますね」と国に知らせる（書類を出す）だけで手続きが完了するもの。
+
+対象: 軽微な変更事項など。
+
+例: 会社の役員の変更、事業用自動車の数の変更など。
+
+🎯 試験対策の合言葉
+本試験では、深く悩みすぎず以下のキーワードの組み合わせを暗記してしまえばバッチリです！
+
+「事業を経営（開始）する」 ＝ 許可
+
+「約款（ルール）を決める」 ＝ 認可
+
+画面の「🧠 思考プロセスの記録・メモを追加する」機能で、「用語不明：事業の開始は『許可』、約款は『認可』」とメモを残しておくと、後から見返したときに記憶に定着しやすくなるのでおすすめです。
+
+他にも、テキストや過去問を読んでいて「この用語の使い分け、よく分からないな…」とモヤモヤしている言葉はありますか？
+0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"initialQuestion":{"id":158,"year":"令和2年 第1回","questionNumber":1,"field":"貨物自動車運送事業法","majorField":null,"subField":null,"content":"一般貨物自動車運送事業に関する次の記述のうち、正しいものを1つ選び、解答用紙の該当する欄にマークしなさい。なお、解答にあたっては、各選択肢に記載されている事項以外は考慮しないものとする。（※法改正により一部改変）","imageUrl":"/pdf_pages/R02.1_Q1.png","sourceSheet":"R02.1_full.json","knowledgeTags":null,"riskCategory":null,"situationCategory":null,"format":"SINGLE","pdfUrl":"/data/R02.1.pdf","pdfPage":1,"options":[{"id":621,"questionId":158,"optionNumber":1,"content":"1: 一般貨物自動車運送事業を経営しようとする者は、国土交通大臣の認可を受けなければならない。","isCorrect":false,"explanation":null,"structuredData":null},{"id":622,"questionId":158,"optionNumber":2,"content":"2: 貨物自動車利用運送とは、一般貨物自動車運送事業、特定貨物自動車運送事業又は貨物軽自動車運送事業を経営する者が他の一般貨物自動車運送事業、特定貨物自動車運送事業又は貨物軽自動車運送事業を経営する者の行う運送（自動車を使用しないで貨物の運送を行わせることを内容とする契約によるものを除く。）を利用してする貨物の運送をいう。","isCorrect":false,"explanation":null,"structuredData":null},{"id":623,"questionId":158,"optionNumber":3,"content":"3: 特別積合せ貨物運送とは、特定の者の需要に応じて有償で自動車を使用し、営業所その他の事業場（以下「事業場」という。）において、限定された貨物の集貨を行い、集貨された貨物を積み合わせて他の事業場に運送し、当該他の事業場において運送された貨物の配達に必要な仕分を行うものであって、これらの事業場の間における当該積合せ貨物の運送を定期的に行うものをいう。","isCorrect":false,"explanation":null,"structuredData":null},{"id":624,"questionId":158,"optionNumber":4,"content":"4: 国土交通大臣が標準運送約款を定めて公示した場合（これを変更して公示した場合を含む。）において、一般貨物自動車運送事業者が、標準運送約款と同一の運送約款を定め、又は現に定めている運送約款を標準運送約款と同一のものに変更したときは、その運送約款については、国土交通大臣の認可を受けたものとみなす。","isCorrect":true,"explanation":null,"structuredData":null}],"explanation":{"id":184,"questionId":158,"content":"$3","isDebated":true},"correctOptions":[],"userMeta":null,"attempts":[],"isDebated":false,"isBookmarked":false,"keywords":["一般貨物自動車運送事業","解答用紙","各選択肢","事項以外","法改正","一部改変","国土交通大臣","貨物自動車利用運送","特定貨物自動車運送事業又","貨物軽自動車運送事業","特別積合","貨物運送","営業所","事業場","当該他","当該積合","定期的","標準運送約款","一般貨物自動車運送事業者","運送約款"]},"similarQuestions":[{"id":122,"year":"令和2年 (CBT)","questionNumber":1,"isDebated":true,"score":44,"field":"貨物自動車運送事業法","sharedKeywords":["分野: 貨物自動車運送事業法","一般貨物自動車運送事業","貨物軽自動車運送事業","各選択肢","事項以外","特別積合","貨物運送","当該積合"]},{"id":434,"year":"令和3年 (CBT)","questionNumber":3,"isDebated":false,"score":28,"field":"貨物自動車運送事業法","sharedKeywords":["分野: 貨物自動車運送事業法","一般貨物自動車運送事業","国土交通大臣","各選択肢","事項以外","一部改変","法改正"]},{"id":280,"year":"令和5年 (CBT)","questionNumber":3,"isDebated":false,"score":27,"field":"貨物自動車運送事業法","sharedKeywords":["分野: 貨物自動車運送事業法","一般貨物自動車運送事業者","一般貨物自動車運送事業","各選択肢","事項以外","営業所"]},{"id":250,"year":"令和6年 (CBT)","questionNumber":3,"isDebated":true,"score":27,"field":"貨物自動車運送事業法","sharedKeywords":["分野: 貨物自動車運送事業法","一般貨物自動車運送事業","国土交通大臣","各選択肢","事項以外"]},{"id":312,"year":"令和4年 (CBT)","questionNumber":1,"isDebated":false,"score":23,"field":"貨物自動車運送事業法","sharedKeywords":["分野: 貨物自動車運送事業法","一般貨物自動車運送事業者","一般貨物自動車運送事業","国土交通大臣","各選択肢","事項以外","一部改変","運送約款"]},{"id":314,"year":"令和4年 (CBT)","questionNumber":3,"isDebated":true,"score":23,"field":"貨物自動車運送事業法","sharedKeywords":["分野: 貨物自動車運送事業法","一般貨物自動車運送事業","各選択肢","事項以外","一部改変","法改正","営業所"]},{"id":432,"year":"令和3年 (CBT)","questionNumber":1,"isDebated":false,"score":22,"field":"貨物自動車運送事業法","sharedKeywords":["分野: 貨物自動車運送事業法","一般貨物自動車運送事業者","国土交通大臣","各選択肢","事項以外","一部改変","法改正"]},{"id":124,"year":"令和2年 (CBT)","questionNumber":3,"isDebated":false,"score":21,"field":"貨物自動車運送事業法","sharedKeywords":["分野: 貨物自動車運送事業法","一般貨物自動車運送事業","国土交通大臣","各選択肢","事項以外","一部改変","法改正"]},{"id":163,"year":"令和2年 第1回","questionNumber":6,"isDebated":true,"score":18,"field":"貨物自動車運送事業法","sharedKeywords":["分野: 貨物自動車運送事業法","一般貨物自動車運送事業","国土交通大臣","解答用紙","各選択肢","事項以外","一部改変","法改正"]},{"id":433,"year":"令和3年 (CBT)","questionNumber":2,"isDebated":false,"score":17,"field":"貨物自動車運送事業法","sharedKeywords":["分野: 貨物自動車運送事業法","一般貨物自動車運送事業者"]}],"nextQuestionId":159,"prevQuestionId":null,"nextIncorrectId":159,"contextModeLabel":"📅 年度別演習","groupTitle":"令和2年 第1回","currentPosition":1,"totalInGroup":30,"navQueryStr":"?groupBy=year","mode":"","groupQuestionIds":[158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187]}],["$L4","$L5","$L6"],"$L7"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"tDGhSCSpBRBDStRjBnDu9"}
+4:["$","script","script-0",{"src":"/unkan-app/_next/static/chunks/0_0x3100ish5v.js","async":true}]
+5:["$","script","script-1",{"src":"/unkan-app/_next/static/chunks/1zn97q9hw_a-b.js","async":true}]
+6:["$","script","script-2",{"src":"/unkan-app/_next/static/chunks/3_k2os2p43c3d.js","async":true}]
+7:["$","$L8",null,{"children":["$","$9",null,{"name":"Next.MetadataOutlet","children":"$@a"}]}]
+a:null
