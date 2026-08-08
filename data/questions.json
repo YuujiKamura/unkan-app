@@ -1000,7 +1000,7 @@
         "id": 518,
         "questionId": 137,
         "optionNumber": 3,
-        "content": "車両は、黄色又は赤色の灯火の信号にかかわらず左折することができる。（標識の画像あり：青地に白の左向き矢印）道路交通法施行規則別記様式第1。矢印及びわくの色彩は青色、地の色彩は白色とする。",
+        "content": "車両は、黄色又は赤色の灯火の信号にかかわらず左折することができる。（標識の画像あり：白地に青の左向き矢印）道路交通法施行規則別記様式第1。矢印及びわくの色彩は青色、地の色彩は白色とする。",
         "isCorrect": false,
         "explanation": null,
         "structuredData": null
@@ -2348,7 +2348,7 @@
     "knowledgeTags": null,
     "riskCategory": null,
     "situationCategory": null,
-    "format": "SINGLE",
+    "format": "MULTI_GROUP",
     "pdfUrl": "/data/R02.1.pdf",
     "pdfPage": 5,
     "options": [
@@ -2356,55 +2356,55 @@
         "id": 645,
         "questionId": 164,
         "optionNumber": 1,
-        "content": "A①: 1年",
+        "content": "A : ① 1年",
         "isCorrect": false,
         "explanation": null,
-        "structuredData": null
+        "structuredData": "{\"title\": \"A\", \"choices\": [{\"num\": 1, \"text\": \"1年\"}, {\"num\": 2, \"text\": \"3年\"}]}"
       },
       {
         "id": 646,
         "questionId": 164,
         "optionNumber": 2,
-        "content": "A②: 3年",
-        "isCorrect": false,
+        "content": "A : ② 3年",
+        "isCorrect": true,
         "explanation": null,
-        "structuredData": null
+        "structuredData": "{\"title\": \"A\", \"choices\": [{\"num\": 1, \"text\": \"1年\"}, {\"num\": 2, \"text\": \"3年\"}]}"
       },
       {
         "id": 647,
         "questionId": 164,
         "optionNumber": 3,
-        "content": "B①: 1年",
+        "content": "B : ① 1年",
         "isCorrect": false,
         "explanation": null,
-        "structuredData": null
+        "structuredData": "{\"title\": \"B\", \"choices\": [{\"num\": 1, \"text\": \"1年\"}, {\"num\": 2, \"text\": \"3年\"}]}"
       },
       {
         "id": 648,
         "questionId": 164,
         "optionNumber": 4,
-        "content": "B②: 3年",
-        "isCorrect": false,
+        "content": "B : ② 3年",
+        "isCorrect": true,
         "explanation": null,
-        "structuredData": null
+        "structuredData": "{\"title\": \"B\", \"choices\": [{\"num\": 1, \"text\": \"1年\"}, {\"num\": 2, \"text\": \"3年\"}]}"
       },
       {
         "id": 649,
         "questionId": 164,
         "optionNumber": 5,
-        "content": "C①: 1ヵ月",
-        "isCorrect": false,
+        "content": "C : ① 1ヵ月",
+        "isCorrect": true,
         "explanation": null,
-        "structuredData": null
+        "structuredData": "{\"title\": \"C\", \"choices\": [{\"num\": 1, \"text\": \"1ヵ月\"}, {\"num\": 2, \"text\": \"3ヵ月\"}]}"
       },
       {
         "id": 650,
         "questionId": 164,
         "optionNumber": 6,
-        "content": "C②: 3ヵ月",
+        "content": "C : ② 3ヵ月",
         "isCorrect": false,
         "explanation": null,
-        "structuredData": null
+        "structuredData": "{\"title\": \"C\", \"choices\": [{\"num\": 1, \"text\": \"1ヵ月\"}, {\"num\": 2, \"text\": \"3ヵ月\"}]}"
       }
     ],
     "explanation": {
@@ -2604,63 +2604,225 @@
     "knowledgeTags": "#自動車の登録・車検",
     "riskCategory": null,
     "situationCategory": null,
-    "format": "SINGLE",
+    "format": "MULTI_GROUP",
     "pdfUrl": "/data/R02.1.pdf",
     "pdfPage": 7,
     "options": [
       {
-        "id": 663,
+        "id": 1943,
         "questionId": 168,
         "optionNumber": 1,
-        "content": "1: 新規検査",
-        "isCorrect": false,
+        "content": "A : 1: 新規検査",
+        "isCorrect": true,
         "explanation": null,
-        "structuredData": null
+        "structuredData": "{\"title\": \"A\", \"choices\": [{\"num\": 1, \"text\": \"新規検査\"}, {\"num\": 2, \"text\": \"継続検査\"}, {\"num\": 3, \"text\": \"構造等変更検査\"}, {\"num\": 4, \"text\": \"予備検査\"}, {\"num\": 5, \"text\": \"15日\"}, {\"num\": 6, \"text\": \"30日\"}]}"
       },
       {
-        "id": 664,
+        "id": 1944,
         "questionId": 168,
         "optionNumber": 2,
-        "content": "2: 継続検査",
+        "content": "A : 2: 継続検査",
         "isCorrect": false,
         "explanation": null,
-        "structuredData": null
+        "structuredData": "{\"title\": \"A\", \"choices\": [{\"num\": 1, \"text\": \"新規検査\"}, {\"num\": 2, \"text\": \"継続検査\"}, {\"num\": 3, \"text\": \"構造等変更検査\"}, {\"num\": 4, \"text\": \"予備検査\"}, {\"num\": 5, \"text\": \"15日\"}, {\"num\": 6, \"text\": \"30日\"}]}"
       },
       {
-        "id": 665,
+        "id": 1945,
         "questionId": 168,
         "optionNumber": 3,
-        "content": "3: 構造等変更検査",
+        "content": "A : 3: 構造等変更検査",
         "isCorrect": false,
         "explanation": null,
-        "structuredData": null
+        "structuredData": "{\"title\": \"A\", \"choices\": [{\"num\": 1, \"text\": \"新規検査\"}, {\"num\": 2, \"text\": \"継続検査\"}, {\"num\": 3, \"text\": \"構造等変更検査\"}, {\"num\": 4, \"text\": \"予備検査\"}, {\"num\": 5, \"text\": \"15日\"}, {\"num\": 6, \"text\": \"30日\"}]}"
       },
       {
-        "id": 666,
+        "id": 1946,
         "questionId": 168,
         "optionNumber": 4,
-        "content": "4: 予備検査",
+        "content": "A : 4: 予備検査",
         "isCorrect": false,
         "explanation": null,
-        "structuredData": null
+        "structuredData": "{\"title\": \"A\", \"choices\": [{\"num\": 1, \"text\": \"新規検査\"}, {\"num\": 2, \"text\": \"継続検査\"}, {\"num\": 3, \"text\": \"構造等変更検査\"}, {\"num\": 4, \"text\": \"予備検査\"}, {\"num\": 5, \"text\": \"15日\"}, {\"num\": 6, \"text\": \"30日\"}]}"
       },
       {
-        "id": 667,
+        "id": 1947,
         "questionId": 168,
         "optionNumber": 5,
-        "content": "5: 15日",
+        "content": "A : 5: 15日",
         "isCorrect": false,
         "explanation": null,
-        "structuredData": null
+        "structuredData": "{\"title\": \"A\", \"choices\": [{\"num\": 1, \"text\": \"新規検査\"}, {\"num\": 2, \"text\": \"継続検査\"}, {\"num\": 3, \"text\": \"構造等変更検査\"}, {\"num\": 4, \"text\": \"予備検査\"}, {\"num\": 5, \"text\": \"15日\"}, {\"num\": 6, \"text\": \"30日\"}]}"
       },
       {
-        "id": 668,
+        "id": 1948,
         "questionId": 168,
         "optionNumber": 6,
-        "content": "6: 30日",
+        "content": "A : 6: 30日",
         "isCorrect": false,
         "explanation": null,
-        "structuredData": null
+        "structuredData": "{\"title\": \"A\", \"choices\": [{\"num\": 1, \"text\": \"新規検査\"}, {\"num\": 2, \"text\": \"継続検査\"}, {\"num\": 3, \"text\": \"構造等変更検査\"}, {\"num\": 4, \"text\": \"予備検査\"}, {\"num\": 5, \"text\": \"15日\"}, {\"num\": 6, \"text\": \"30日\"}]}"
+      },
+      {
+        "id": 1949,
+        "questionId": 168,
+        "optionNumber": 7,
+        "content": "B : 1: 新規検査",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\": \"B\", \"choices\": [{\"num\": 1, \"text\": \"新規検査\"}, {\"num\": 2, \"text\": \"継続検査\"}, {\"num\": 3, \"text\": \"構造等変更検査\"}, {\"num\": 4, \"text\": \"予備検査\"}, {\"num\": 5, \"text\": \"15日\"}, {\"num\": 6, \"text\": \"30日\"}]}"
+      },
+      {
+        "id": 1950,
+        "questionId": 168,
+        "optionNumber": 8,
+        "content": "B : 2: 継続検査",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": "{\"title\": \"B\", \"choices\": [{\"num\": 1, \"text\": \"新規検査\"}, {\"num\": 2, \"text\": \"継続検査\"}, {\"num\": 3, \"text\": \"構造等変更検査\"}, {\"num\": 4, \"text\": \"予備検査\"}, {\"num\": 5, \"text\": \"15日\"}, {\"num\": 6, \"text\": \"30日\"}]}"
+      },
+      {
+        "id": 1951,
+        "questionId": 168,
+        "optionNumber": 9,
+        "content": "B : 3: 構造等変更検査",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\": \"B\", \"choices\": [{\"num\": 1, \"text\": \"新規検査\"}, {\"num\": 2, \"text\": \"継続検査\"}, {\"num\": 3, \"text\": \"構造等変更検査\"}, {\"num\": 4, \"text\": \"予備検査\"}, {\"num\": 5, \"text\": \"15日\"}, {\"num\": 6, \"text\": \"30日\"}]}"
+      },
+      {
+        "id": 1952,
+        "questionId": 168,
+        "optionNumber": 10,
+        "content": "B : 4: 予備検査",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\": \"B\", \"choices\": [{\"num\": 1, \"text\": \"新規検査\"}, {\"num\": 2, \"text\": \"継続検査\"}, {\"num\": 3, \"text\": \"構造等変更検査\"}, {\"num\": 4, \"text\": \"予備検査\"}, {\"num\": 5, \"text\": \"15日\"}, {\"num\": 6, \"text\": \"30日\"}]}"
+      },
+      {
+        "id": 1953,
+        "questionId": 168,
+        "optionNumber": 11,
+        "content": "B : 5: 15日",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\": \"B\", \"choices\": [{\"num\": 1, \"text\": \"新規検査\"}, {\"num\": 2, \"text\": \"継続検査\"}, {\"num\": 3, \"text\": \"構造等変更検査\"}, {\"num\": 4, \"text\": \"予備検査\"}, {\"num\": 5, \"text\": \"15日\"}, {\"num\": 6, \"text\": \"30日\"}]}"
+      },
+      {
+        "id": 1954,
+        "questionId": 168,
+        "optionNumber": 12,
+        "content": "B : 6: 30日",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\": \"B\", \"choices\": [{\"num\": 1, \"text\": \"新規検査\"}, {\"num\": 2, \"text\": \"継続検査\"}, {\"num\": 3, \"text\": \"構造等変更検査\"}, {\"num\": 4, \"text\": \"予備検査\"}, {\"num\": 5, \"text\": \"15日\"}, {\"num\": 6, \"text\": \"30日\"}]}"
+      },
+      {
+        "id": 1955,
+        "questionId": 168,
+        "optionNumber": 13,
+        "content": "C : 1: 新規検査",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\": \"C\", \"choices\": [{\"num\": 1, \"text\": \"新規検査\"}, {\"num\": 2, \"text\": \"継続検査\"}, {\"num\": 3, \"text\": \"構造等変更検査\"}, {\"num\": 4, \"text\": \"予備検査\"}, {\"num\": 5, \"text\": \"15日\"}, {\"num\": 6, \"text\": \"30日\"}]}"
+      },
+      {
+        "id": 1956,
+        "questionId": 168,
+        "optionNumber": 14,
+        "content": "C : 2: 継続検査",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\": \"C\", \"choices\": [{\"num\": 1, \"text\": \"新規検査\"}, {\"num\": 2, \"text\": \"継続検査\"}, {\"num\": 3, \"text\": \"構造等変更検査\"}, {\"num\": 4, \"text\": \"予備検査\"}, {\"num\": 5, \"text\": \"15日\"}, {\"num\": 6, \"text\": \"30日\"}]}"
+      },
+      {
+        "id": 1957,
+        "questionId": 168,
+        "optionNumber": 15,
+        "content": "C : 3: 構造等変更検査",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\": \"C\", \"choices\": [{\"num\": 1, \"text\": \"新規検査\"}, {\"num\": 2, \"text\": \"継続検査\"}, {\"num\": 3, \"text\": \"構造等変更検査\"}, {\"num\": 4, \"text\": \"予備検査\"}, {\"num\": 5, \"text\": \"15日\"}, {\"num\": 6, \"text\": \"30日\"}]}"
+      },
+      {
+        "id": 1958,
+        "questionId": 168,
+        "optionNumber": 16,
+        "content": "C : 4: 予備検査",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\": \"C\", \"choices\": [{\"num\": 1, \"text\": \"新規検査\"}, {\"num\": 2, \"text\": \"継続検査\"}, {\"num\": 3, \"text\": \"構造等変更検査\"}, {\"num\": 4, \"text\": \"予備検査\"}, {\"num\": 5, \"text\": \"15日\"}, {\"num\": 6, \"text\": \"30日\"}]}"
+      },
+      {
+        "id": 1959,
+        "questionId": 168,
+        "optionNumber": 17,
+        "content": "C : 5: 15日",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": "{\"title\": \"C\", \"choices\": [{\"num\": 1, \"text\": \"新規検査\"}, {\"num\": 2, \"text\": \"継続検査\"}, {\"num\": 3, \"text\": \"構造等変更検査\"}, {\"num\": 4, \"text\": \"予備検査\"}, {\"num\": 5, \"text\": \"15日\"}, {\"num\": 6, \"text\": \"30日\"}]}"
+      },
+      {
+        "id": 1960,
+        "questionId": 168,
+        "optionNumber": 18,
+        "content": "C : 6: 30日",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\": \"C\", \"choices\": [{\"num\": 1, \"text\": \"新規検査\"}, {\"num\": 2, \"text\": \"継続検査\"}, {\"num\": 3, \"text\": \"構造等変更検査\"}, {\"num\": 4, \"text\": \"予備検査\"}, {\"num\": 5, \"text\": \"15日\"}, {\"num\": 6, \"text\": \"30日\"}]}"
+      },
+      {
+        "id": 1961,
+        "questionId": 168,
+        "optionNumber": 19,
+        "content": "D : 1: 新規検査",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\": \"D\", \"choices\": [{\"num\": 1, \"text\": \"新規検査\"}, {\"num\": 2, \"text\": \"継続検査\"}, {\"num\": 3, \"text\": \"構造等変更検査\"}, {\"num\": 4, \"text\": \"予備検査\"}, {\"num\": 5, \"text\": \"15日\"}, {\"num\": 6, \"text\": \"30日\"}]}"
+      },
+      {
+        "id": 1962,
+        "questionId": 168,
+        "optionNumber": 20,
+        "content": "D : 2: 継続検査",
+        "isCorrect": true,
+        "explanation": null,
+        "structuredData": "{\"title\": \"D\", \"choices\": [{\"num\": 1, \"text\": \"新規検査\"}, {\"num\": 2, \"text\": \"継続検査\"}, {\"num\": 3, \"text\": \"構造等変更検査\"}, {\"num\": 4, \"text\": \"予備検査\"}, {\"num\": 5, \"text\": \"15日\"}, {\"num\": 6, \"text\": \"30日\"}]}"
+      },
+      {
+        "id": 1963,
+        "questionId": 168,
+        "optionNumber": 21,
+        "content": "D : 3: 構造等変更検査",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\": \"D\", \"choices\": [{\"num\": 1, \"text\": \"新規検査\"}, {\"num\": 2, \"text\": \"継続検査\"}, {\"num\": 3, \"text\": \"構造等変更検査\"}, {\"num\": 4, \"text\": \"予備検査\"}, {\"num\": 5, \"text\": \"15日\"}, {\"num\": 6, \"text\": \"30日\"}]}"
+      },
+      {
+        "id": 1964,
+        "questionId": 168,
+        "optionNumber": 22,
+        "content": "D : 4: 予備検査",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\": \"D\", \"choices\": [{\"num\": 1, \"text\": \"新規検査\"}, {\"num\": 2, \"text\": \"継続検査\"}, {\"num\": 3, \"text\": \"構造等変更検査\"}, {\"num\": 4, \"text\": \"予備検査\"}, {\"num\": 5, \"text\": \"15日\"}, {\"num\": 6, \"text\": \"30日\"}]}"
+      },
+      {
+        "id": 1965,
+        "questionId": 168,
+        "optionNumber": 23,
+        "content": "D : 5: 15日",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\": \"D\", \"choices\": [{\"num\": 1, \"text\": \"新規検査\"}, {\"num\": 2, \"text\": \"継続検査\"}, {\"num\": 3, \"text\": \"構造等変更検査\"}, {\"num\": 4, \"text\": \"予備検査\"}, {\"num\": 5, \"text\": \"15日\"}, {\"num\": 6, \"text\": \"30日\"}]}"
+      },
+      {
+        "id": 1966,
+        "questionId": 168,
+        "optionNumber": 24,
+        "content": "D : 6: 30日",
+        "isCorrect": false,
+        "explanation": null,
+        "structuredData": "{\"title\": \"D\", \"choices\": [{\"num\": 1, \"text\": \"新規検査\"}, {\"num\": 2, \"text\": \"継続検査\"}, {\"num\": 3, \"text\": \"構造等変更検査\"}, {\"num\": 4, \"text\": \"予備検査\"}, {\"num\": 5, \"text\": \"15日\"}, {\"num\": 6, \"text\": \"30日\"}]}"
       }
     ],
     "explanation": null,
@@ -2860,7 +3022,7 @@
     "knowledgeTags": "#過労・酒気・過積載(禁止行為)",
     "riskCategory": null,
     "situationCategory": null,
-    "format": "SINGLE",
+    "format": "MULTI_GROUP",
     "pdfUrl": "/data/R02.1.pdf",
     "pdfPage": 9,
     "options": [
@@ -2868,55 +3030,55 @@
         "id": 681,
         "questionId": 172,
         "optionNumber": 1,
-        "content": "A①: 運転を指示",
+        "content": "A : ① 運転を指示",
         "isCorrect": false,
         "explanation": null,
-        "structuredData": null
+        "structuredData": "{\"title\": \"A\", \"choices\": [{\"num\": 1, \"text\": \"運転を指示\"}, {\"num\": 2, \"text\": \"車両等を提供\"}]}"
       },
       {
         "id": 682,
         "questionId": 172,
         "optionNumber": 2,
-        "content": "A②: 車両等を提供",
-        "isCorrect": false,
+        "content": "A : ② 車両等を提供",
+        "isCorrect": true,
         "explanation": null,
-        "structuredData": null
+        "structuredData": "{\"title\": \"A\", \"choices\": [{\"num\": 1, \"text\": \"運転を指示\"}, {\"num\": 2, \"text\": \"車両等を提供\"}]}"
       },
       {
         "id": 683,
         "questionId": 172,
         "optionNumber": 3,
-        "content": "B①: 車両に同乗",
-        "isCorrect": false,
+        "content": "B : ① 車両に同乗",
+        "isCorrect": true,
         "explanation": null,
-        "structuredData": null
+        "structuredData": "{\"title\": \"B\", \"choices\": [{\"num\": 1, \"text\": \"車両に同乗\"}, {\"num\": 2, \"text\": \"機会を提供\"}]}"
       },
       {
         "id": 684,
         "questionId": 172,
         "optionNumber": 4,
-        "content": "B②: 機会を提供",
+        "content": "B : ② 機会を提供",
         "isCorrect": false,
         "explanation": null,
-        "structuredData": null
+        "structuredData": "{\"title\": \"B\", \"choices\": [{\"num\": 1, \"text\": \"車両に同乗\"}, {\"num\": 2, \"text\": \"機会を提供\"}]}"
       },
       {
         "id": 685,
         "questionId": 172,
         "optionNumber": 5,
-        "content": "C①: 0.15",
-        "isCorrect": false,
+        "content": "C : ① 0.15",
+        "isCorrect": true,
         "explanation": null,
-        "structuredData": null
+        "structuredData": "{\"title\": \"C\", \"choices\": [{\"num\": 1, \"text\": \"0.15\"}, {\"num\": 2, \"text\": \"0.25\"}]}"
       },
       {
         "id": 686,
         "questionId": 172,
         "optionNumber": 6,
-        "content": "C②: 0.25",
+        "content": "C : ② 0.25",
         "isCorrect": false,
         "explanation": null,
-        "structuredData": null
+        "structuredData": "{\"title\": \"C\", \"choices\": [{\"num\": 1, \"text\": \"0.15\"}, {\"num\": 2, \"text\": \"0.25\"}]}"
       }
     ],
     "explanation": null,
@@ -3168,112 +3330,76 @@
     "pdfPage": 11,
     "options": [
       {
-        "id": 1335,
-        "questionId": 177,
-        "optionNumber": 1,
-        "content": "1 : ① A:",
-        "isCorrect": true,
-        "explanation": null,
-        "structuredData": "{\"title\":\"1\",\"choices\":[{\"num\":1,\"text\":\"A:\"},{\"num\":2,\"text\":\"労働時間\"},{\"num\":3,\"text\":\"運転時間\"}]}"
-      },
-      {
         "id": 1336,
         "questionId": 177,
-        "optionNumber": 2,
-        "content": "1 : ② 労働時間",
-        "isCorrect": false,
+        "optionNumber": 1,
+        "content": "A : ① 労働時間",
+        "isCorrect": true,
         "explanation": null,
-        "structuredData": "{\"title\":\"1\",\"choices\":[{\"num\":1,\"text\":\"A:\"},{\"num\":2,\"text\":\"労働時間\"},{\"num\":3,\"text\":\"運転時間\"}]}"
+        "structuredData": "{\"title\": \"A\", \"choices\": [{\"num\": 1, \"text\": \"労働時間\"}, {\"num\": 2, \"text\": \"運転時間\"}]}"
       },
       {
         "id": 1337,
         "questionId": 177,
-        "optionNumber": 3,
-        "content": "1 : ② 運転時間",
+        "optionNumber": 2,
+        "content": "A : ② 運転時間",
         "isCorrect": false,
         "explanation": null,
-        "structuredData": "{\"title\":\"1\",\"choices\":[{\"num\":1,\"text\":\"A:\"},{\"num\":2,\"text\":\"労働時間\"},{\"num\":3,\"text\":\"運転時間\"}]}"
-      },
-      {
-        "id": 1338,
-        "questionId": 177,
-        "optionNumber": 4,
-        "content": "2 : ① B:",
-        "isCorrect": false,
-        "explanation": null,
-        "structuredData": "{\"title\":\"2\",\"choices\":[{\"num\":1,\"text\":\"B:\"},{\"num\":2,\"text\":\"使用者\"},{\"num\":3,\"text\":\"労働関係の当事者\"}]}"
+        "structuredData": "{\"title\": \"A\", \"choices\": [{\"num\": 1, \"text\": \"労働時間\"}, {\"num\": 2, \"text\": \"運転時間\"}]}"
       },
       {
         "id": 1339,
         "questionId": 177,
-        "optionNumber": 5,
-        "content": "2 : ② 使用者",
-        "isCorrect": true,
+        "optionNumber": 3,
+        "content": "B : ① 使用者",
+        "isCorrect": false,
         "explanation": null,
-        "structuredData": "{\"title\":\"2\",\"choices\":[{\"num\":1,\"text\":\"B:\"},{\"num\":2,\"text\":\"使用者\"},{\"num\":3,\"text\":\"労働関係の当事者\"}]}"
+        "structuredData": "{\"title\": \"B\", \"choices\": [{\"num\": 1, \"text\": \"使用者\"}, {\"num\": 2, \"text\": \"労働関係の当事者\"}]}"
       },
       {
         "id": 1340,
         "questionId": 177,
-        "optionNumber": 6,
-        "content": "2 : ② 労働関係の当事者",
-        "isCorrect": false,
+        "optionNumber": 4,
+        "content": "B : ② 労働関係の当事者",
+        "isCorrect": true,
         "explanation": null,
-        "structuredData": "{\"title\":\"2\",\"choices\":[{\"num\":1,\"text\":\"B:\"},{\"num\":2,\"text\":\"使用者\"},{\"num\":3,\"text\":\"労働関係の当事者\"}]}"
-      },
-      {
-        "id": 1341,
-        "questionId": 177,
-        "optionNumber": 7,
-        "content": "3 : ① C:",
-        "isCorrect": false,
-        "explanation": null,
-        "structuredData": "{\"title\":\"3\",\"choices\":[{\"num\":1,\"text\":\"C:\"},{\"num\":2,\"text\":\"維持\"},{\"num\":3,\"text\":\"向上\"}]}"
+        "structuredData": "{\"title\": \"B\", \"choices\": [{\"num\": 1, \"text\": \"使用者\"}, {\"num\": 2, \"text\": \"労働関係の当事者\"}]}"
       },
       {
         "id": 1342,
         "questionId": 177,
-        "optionNumber": 8,
-        "content": "3 : ② 維持",
-        "isCorrect": true,
+        "optionNumber": 5,
+        "content": "C : ① 維持",
+        "isCorrect": false,
         "explanation": null,
-        "structuredData": "{\"title\":\"3\",\"choices\":[{\"num\":1,\"text\":\"C:\"},{\"num\":2,\"text\":\"維持\"},{\"num\":3,\"text\":\"向上\"}]}"
+        "structuredData": "{\"title\": \"C\", \"choices\": [{\"num\": 1, \"text\": \"維持\"}, {\"num\": 2, \"text\": \"向上\"}]}"
       },
       {
         "id": 1343,
         "questionId": 177,
-        "optionNumber": 9,
-        "content": "3 : ② 向上",
-        "isCorrect": false,
+        "optionNumber": 6,
+        "content": "C : ② 向上",
+        "isCorrect": true,
         "explanation": null,
-        "structuredData": "{\"title\":\"3\",\"choices\":[{\"num\":1,\"text\":\"C:\"},{\"num\":2,\"text\":\"維持\"},{\"num\":3,\"text\":\"向上\"}]}"
-      },
-      {
-        "id": 1344,
-        "questionId": 177,
-        "optionNumber": 10,
-        "content": "4 : ① D:",
-        "isCorrect": false,
-        "explanation": null,
-        "structuredData": "{\"title\":\"4\",\"choices\":[{\"num\":1,\"text\":\"D:\"},{\"num\":2,\"text\":\"休息期間を短縮し\"},{\"num\":3,\"text\":\"労働時間を延長し\"}]}"
+        "structuredData": "{\"title\": \"C\", \"choices\": [{\"num\": 1, \"text\": \"維持\"}, {\"num\": 2, \"text\": \"向上\"}]}"
       },
       {
         "id": 1345,
         "questionId": 177,
-        "optionNumber": 11,
-        "content": "4 : ② 休息期間を短縮し",
-        "isCorrect": true,
+        "optionNumber": 7,
+        "content": "D : ① 休息期間を短縮し",
+        "isCorrect": false,
         "explanation": null,
-        "structuredData": "{\"title\":\"4\",\"choices\":[{\"num\":1,\"text\":\"D:\"},{\"num\":2,\"text\":\"休息期間を短縮し\"},{\"num\":3,\"text\":\"労働時間を延長し\"}]}"
+        "structuredData": "{\"title\": \"D\", \"choices\": [{\"num\": 1, \"text\": \"休息期間を短縮し\"}, {\"num\": 2, \"text\": \"労働時間を延長し\"}]}"
       },
       {
         "id": 1346,
         "questionId": 177,
-        "optionNumber": 12,
-        "content": "4 : ② 労働時間を延長し",
-        "isCorrect": false,
+        "optionNumber": 8,
+        "content": "D : ② 労働時間を延長し",
+        "isCorrect": true,
         "explanation": null,
-        "structuredData": "{\"title\":\"4\",\"choices\":[{\"num\":1,\"text\":\"D:\"},{\"num\":2,\"text\":\"休息期間を短縮し\"},{\"num\":3,\"text\":\"労働時間を延長し\"}]}"
+        "structuredData": "{\"title\": \"D\", \"choices\": [{\"num\": 1, \"text\": \"休息期間を短縮し\"}, {\"num\": 2, \"text\": \"労働時間を延長し\"}]}"
       }
     ],
     "explanation": null,
@@ -3696,85 +3822,58 @@
     "pdfPage": 17,
     "options": [
       {
-        "id": 1347,
-        "questionId": 185,
-        "optionNumber": 1,
-        "content": "1 : ① ア:",
-        "isCorrect": false,
-        "explanation": null,
-        "structuredData": "{\"title\":\"1\",\"choices\":[{\"num\":1,\"text\":\"ア:\"},{\"num\":2,\"text\":\"15メートル\"},{\"num\":3,\"text\":\"20メートル\"}]}"
-      },
-      {
         "id": 1348,
         "questionId": 185,
-        "optionNumber": 2,
-        "content": "1 : ② 15メートル",
-        "isCorrect": true,
+        "optionNumber": 1,
+        "content": "ア : ① 15メートル",
+        "isCorrect": false,
         "explanation": null,
-        "structuredData": "{\"title\":\"1\",\"choices\":[{\"num\":1,\"text\":\"ア:\"},{\"num\":2,\"text\":\"15メートル\"},{\"num\":3,\"text\":\"20メートル\"}]}"
+        "structuredData": "{\"title\": \"ア\", \"choices\": [{\"num\": 1, \"text\": \"15メートル\"}, {\"num\": 2, \"text\": \"20メートル\"}]}"
       },
       {
         "id": 1349,
         "questionId": 185,
-        "optionNumber": 3,
-        "content": "1 : ② 20メートル",
-        "isCorrect": false,
+        "optionNumber": 2,
+        "content": "ア : ② 20メートル",
+        "isCorrect": true,
         "explanation": null,
-        "structuredData": "{\"title\":\"1\",\"choices\":[{\"num\":1,\"text\":\"ア:\"},{\"num\":2,\"text\":\"15メートル\"},{\"num\":3,\"text\":\"20メートル\"}]}"
-      },
-      {
-        "id": 1350,
-        "questionId": 185,
-        "optionNumber": 4,
-        "content": "2 : ① イ:",
-        "isCorrect": false,
-        "explanation": null,
-        "structuredData": "{\"title\":\"2\",\"choices\":[{\"num\":1,\"text\":\"イ:\"},{\"num\":2,\"text\":\"55メートル\"},{\"num\":3,\"text\":\"60メートル\"}]}"
+        "structuredData": "{\"title\": \"ア\", \"choices\": [{\"num\": 1, \"text\": \"15メートル\"}, {\"num\": 2, \"text\": \"20メートル\"}]}"
       },
       {
         "id": 1351,
         "questionId": 185,
-        "optionNumber": 5,
-        "content": "2 : ② 55メートル",
-        "isCorrect": true,
+        "optionNumber": 3,
+        "content": "イ : ① 55メートル",
+        "isCorrect": false,
         "explanation": null,
-        "structuredData": "{\"title\":\"2\",\"choices\":[{\"num\":1,\"text\":\"イ:\"},{\"num\":2,\"text\":\"55メートル\"},{\"num\":3,\"text\":\"60メートル\"}]}"
+        "structuredData": "{\"title\": \"イ\", \"choices\": [{\"num\": 1, \"text\": \"55メートル\"}, {\"num\": 2, \"text\": \"60メートル\"}]}"
       },
       {
         "id": 1352,
         "questionId": 185,
-        "optionNumber": 6,
-        "content": "2 : ② 60メートル",
-        "isCorrect": false,
-        "explanation": null,
-        "structuredData": "{\"title\":\"2\",\"choices\":[{\"num\":1,\"text\":\"イ:\"},{\"num\":2,\"text\":\"55メートル\"},{\"num\":3,\"text\":\"60メートル\"}]}"
-      },
-      {
-        "id": 1353,
-        "questionId": 185,
-        "optionNumber": 7,
-        "content": "3 : ① ウ:",
+        "optionNumber": 4,
+        "content": "イ : ② 60メートル",
         "isCorrect": true,
         "explanation": null,
-        "structuredData": "{\"title\":\"3\",\"choices\":[{\"num\":1,\"text\":\"ウ:\"},{\"num\":2,\"text\":\"25メートル\"},{\"num\":3,\"text\":\"30メートル\"}]}"
+        "structuredData": "{\"title\": \"イ\", \"choices\": [{\"num\": 1, \"text\": \"55メートル\"}, {\"num\": 2, \"text\": \"60メートル\"}]}"
       },
       {
         "id": 1354,
         "questionId": 185,
-        "optionNumber": 8,
-        "content": "3 : ② 25メートル",
-        "isCorrect": false,
+        "optionNumber": 5,
+        "content": "ウ : ① 25メートル",
+        "isCorrect": true,
         "explanation": null,
-        "structuredData": "{\"title\":\"3\",\"choices\":[{\"num\":1,\"text\":\"ウ:\"},{\"num\":2,\"text\":\"25メートル\"},{\"num\":3,\"text\":\"30メートル\"}]}"
+        "structuredData": "{\"title\": \"ウ\", \"choices\": [{\"num\": 1, \"text\": \"25メートル\"}, {\"num\": 2, \"text\": \"30メートル\"}]}"
       },
       {
         "id": 1355,
         "questionId": 185,
-        "optionNumber": 9,
-        "content": "3 : ② 30メートル",
+        "optionNumber": 6,
+        "content": "ウ : ② 30メートル",
         "isCorrect": false,
         "explanation": null,
-        "structuredData": "{\"title\":\"3\",\"choices\":[{\"num\":1,\"text\":\"ウ:\"},{\"num\":2,\"text\":\"25メートル\"},{\"num\":3,\"text\":\"30メートル\"}]}"
+        "structuredData": "{\"title\": \"ウ\", \"choices\": [{\"num\": 1, \"text\": \"25メートル\"}, {\"num\": 2, \"text\": \"30メートル\"}]}"
       }
     ],
     "explanation": null,
@@ -3798,121 +3897,94 @@
     "pdfPage": 18,
     "options": [
       {
-        "id": 1356,
-        "questionId": 186,
-        "optionNumber": 1,
-        "content": "1 : ① ア:",
-        "isCorrect": false,
-        "explanation": null,
-        "structuredData": "{\"title\":\"1\",\"choices\":[{\"num\":1,\"text\":\"ア:\"},{\"num\":2,\"text\":\"7時00分\"},{\"num\":3,\"text\":\"7時20分\"},{\"num\":4,\"text\":\"7時40分\"},{\"num\":5,\"text\":\"8時00分\"}]}"
-      },
-      {
         "id": 1357,
         "questionId": 186,
-        "optionNumber": 2,
-        "content": "1 : ② 7時00分",
+        "optionNumber": 1,
+        "content": "ア : ① 7時00分",
         "isCorrect": false,
         "explanation": null,
-        "structuredData": "{\"title\":\"1\",\"choices\":[{\"num\":1,\"text\":\"ア:\"},{\"num\":2,\"text\":\"7時00分\"},{\"num\":3,\"text\":\"7時20分\"},{\"num\":4,\"text\":\"7時40分\"},{\"num\":5,\"text\":\"8時00分\"}]}"
+        "structuredData": "{\"title\": \"ア\", \"choices\": [{\"num\": 1, \"text\": \"7時00分\"}, {\"num\": 2, \"text\": \"7時20分\"}, {\"num\": 3, \"text\": \"7時40分\"}, {\"num\": 4, \"text\": \"8時00分\"}]}"
       },
       {
         "id": 1358,
         "questionId": 186,
-        "optionNumber": 3,
-        "content": "1 : ② 7時20分",
-        "isCorrect": true,
+        "optionNumber": 2,
+        "content": "ア : ② 7時20分",
+        "isCorrect": false,
         "explanation": null,
-        "structuredData": "{\"title\":\"1\",\"choices\":[{\"num\":1,\"text\":\"ア:\"},{\"num\":2,\"text\":\"7時00分\"},{\"num\":3,\"text\":\"7時20分\"},{\"num\":4,\"text\":\"7時40分\"},{\"num\":5,\"text\":\"8時00分\"}]}"
+        "structuredData": "{\"title\": \"ア\", \"choices\": [{\"num\": 1, \"text\": \"7時00分\"}, {\"num\": 2, \"text\": \"7時20分\"}, {\"num\": 3, \"text\": \"7時40分\"}, {\"num\": 4, \"text\": \"8時00分\"}]}"
       },
       {
         "id": 1359,
         "questionId": 186,
-        "optionNumber": 4,
-        "content": "1 : ② 7時40分",
-        "isCorrect": false,
+        "optionNumber": 3,
+        "content": "ア : ③ 7時40分",
+        "isCorrect": true,
         "explanation": null,
-        "structuredData": "{\"title\":\"1\",\"choices\":[{\"num\":1,\"text\":\"ア:\"},{\"num\":2,\"text\":\"7時00分\"},{\"num\":3,\"text\":\"7時20分\"},{\"num\":4,\"text\":\"7時40分\"},{\"num\":5,\"text\":\"8時00分\"}]}"
+        "structuredData": "{\"title\": \"ア\", \"choices\": [{\"num\": 1, \"text\": \"7時00分\"}, {\"num\": 2, \"text\": \"7時20分\"}, {\"num\": 3, \"text\": \"7時40分\"}, {\"num\": 4, \"text\": \"8時00分\"}]}"
       },
       {
         "id": 1360,
         "questionId": 186,
-        "optionNumber": 5,
-        "content": "1 : ② 8時00分",
+        "optionNumber": 4,
+        "content": "ア : ④ 8時00分",
         "isCorrect": false,
         "explanation": null,
-        "structuredData": "{\"title\":\"1\",\"choices\":[{\"num\":1,\"text\":\"ア:\"},{\"num\":2,\"text\":\"7時00分\"},{\"num\":3,\"text\":\"7時20分\"},{\"num\":4,\"text\":\"7時40分\"},{\"num\":5,\"text\":\"8時00分\"}]}"
-      },
-      {
-        "id": 1361,
-        "questionId": 186,
-        "optionNumber": 6,
-        "content": "2 : ① イ:",
-        "isCorrect": false,
-        "explanation": null,
-        "structuredData": "{\"title\":\"2\",\"choices\":[{\"num\":1,\"text\":\"イ:\"},{\"num\":2,\"text\":\"45キロメートル\"},{\"num\":3,\"text\":\"50キロメートル\"},{\"num\":4,\"text\":\"55キロメートル\"},{\"num\":5,\"text\":\"60キロメートル\"}]}"
+        "structuredData": "{\"title\": \"ア\", \"choices\": [{\"num\": 1, \"text\": \"7時00分\"}, {\"num\": 2, \"text\": \"7時20分\"}, {\"num\": 3, \"text\": \"7時40分\"}, {\"num\": 4, \"text\": \"8時00分\"}]}"
       },
       {
         "id": 1362,
         "questionId": 186,
-        "optionNumber": 7,
-        "content": "2 : ② 45キロメートル",
-        "isCorrect": true,
+        "optionNumber": 5,
+        "content": "イ : ① 45キロメートル",
+        "isCorrect": false,
         "explanation": null,
-        "structuredData": "{\"title\":\"2\",\"choices\":[{\"num\":1,\"text\":\"イ:\"},{\"num\":2,\"text\":\"45キロメートル\"},{\"num\":3,\"text\":\"50キロメートル\"},{\"num\":4,\"text\":\"55キロメートル\"},{\"num\":5,\"text\":\"60キロメートル\"}]}"
+        "structuredData": "{\"title\": \"イ\", \"choices\": [{\"num\": 1, \"text\": \"45キロメートル\"}, {\"num\": 2, \"text\": \"50キロメートル\"}, {\"num\": 3, \"text\": \"55キロメートル\"}, {\"num\": 4, \"text\": \"60キロメートル\"}]}"
       },
       {
         "id": 1363,
         "questionId": 186,
-        "optionNumber": 8,
-        "content": "2 : ② 50キロメートル",
-        "isCorrect": false,
+        "optionNumber": 6,
+        "content": "イ : ② 50キロメートル",
+        "isCorrect": true,
         "explanation": null,
-        "structuredData": "{\"title\":\"2\",\"choices\":[{\"num\":1,\"text\":\"イ:\"},{\"num\":2,\"text\":\"45キロメートル\"},{\"num\":3,\"text\":\"50キロメートル\"},{\"num\":4,\"text\":\"55キロメートル\"},{\"num\":5,\"text\":\"60キロメートル\"}]}"
+        "structuredData": "{\"title\": \"イ\", \"choices\": [{\"num\": 1, \"text\": \"45キロメートル\"}, {\"num\": 2, \"text\": \"50キロメートル\"}, {\"num\": 3, \"text\": \"55キロメートル\"}, {\"num\": 4, \"text\": \"60キロメートル\"}]}"
       },
       {
         "id": 1364,
         "questionId": 186,
-        "optionNumber": 9,
-        "content": "2 : ② 55キロメートル",
+        "optionNumber": 7,
+        "content": "イ : ③ 55キロメートル",
         "isCorrect": false,
         "explanation": null,
-        "structuredData": "{\"title\":\"2\",\"choices\":[{\"num\":1,\"text\":\"イ:\"},{\"num\":2,\"text\":\"45キロメートル\"},{\"num\":3,\"text\":\"50キロメートル\"},{\"num\":4,\"text\":\"55キロメートル\"},{\"num\":5,\"text\":\"60キロメートル\"}]}"
+        "structuredData": "{\"title\": \"イ\", \"choices\": [{\"num\": 1, \"text\": \"45キロメートル\"}, {\"num\": 2, \"text\": \"50キロメートル\"}, {\"num\": 3, \"text\": \"55キロメートル\"}, {\"num\": 4, \"text\": \"60キロメートル\"}]}"
       },
       {
         "id": 1365,
         "questionId": 186,
-        "optionNumber": 10,
-        "content": "2 : ② 60キロメートル",
+        "optionNumber": 8,
+        "content": "イ : ④ 60キロメートル",
         "isCorrect": false,
         "explanation": null,
-        "structuredData": "{\"title\":\"2\",\"choices\":[{\"num\":1,\"text\":\"イ:\"},{\"num\":2,\"text\":\"45キロメートル\"},{\"num\":3,\"text\":\"50キロメートル\"},{\"num\":4,\"text\":\"55キロメートル\"},{\"num\":5,\"text\":\"60キロメートル\"}]}"
-      },
-      {
-        "id": 1366,
-        "questionId": 186,
-        "optionNumber": 11,
-        "content": "3 : ① ウ:",
-        "isCorrect": true,
-        "explanation": null,
-        "structuredData": "{\"title\":\"3\",\"choices\":[{\"num\":1,\"text\":\"ウ:\"},{\"num\":2,\"text\":\"違反していない\"},{\"num\":3,\"text\":\"違反している\"}]}"
+        "structuredData": "{\"title\": \"イ\", \"choices\": [{\"num\": 1, \"text\": \"45キロメートル\"}, {\"num\": 2, \"text\": \"50キロメートル\"}, {\"num\": 3, \"text\": \"55キロメートル\"}, {\"num\": 4, \"text\": \"60キロメートル\"}]}"
       },
       {
         "id": 1367,
         "questionId": 186,
-        "optionNumber": 12,
-        "content": "3 : ② 違反していない",
-        "isCorrect": false,
+        "optionNumber": 9,
+        "content": "ウ : ① 違反していない",
+        "isCorrect": true,
         "explanation": null,
-        "structuredData": "{\"title\":\"3\",\"choices\":[{\"num\":1,\"text\":\"ウ:\"},{\"num\":2,\"text\":\"違反していない\"},{\"num\":3,\"text\":\"違反している\"}]}"
+        "structuredData": "{\"title\": \"ウ\", \"choices\": [{\"num\": 1, \"text\": \"違反していない\"}, {\"num\": 2, \"text\": \"違反している\"}]}"
       },
       {
         "id": 1368,
         "questionId": 186,
-        "optionNumber": 13,
-        "content": "3 : ② 違反している",
+        "optionNumber": 10,
+        "content": "ウ : ② 違反している",
         "isCorrect": false,
         "explanation": null,
-        "structuredData": "{\"title\":\"3\",\"choices\":[{\"num\":1,\"text\":\"ウ:\"},{\"num\":2,\"text\":\"違反していない\"},{\"num\":3,\"text\":\"違反している\"}]}"
+        "structuredData": "{\"title\": \"ウ\", \"choices\": [{\"num\": 1, \"text\": \"違反していない\"}, {\"num\": 2, \"text\": \"違反している\"}]}"
       }
     ],
     "explanation": null,
@@ -11321,7 +11393,7 @@
     "explanation": {
       "id": 165,
       "questionId": 447,
-      "content": "Skip to main contentAccessibility help\nAI Mode\nAll\nImages\nShopping\nVideos\nMore\nPro\n\n\n\n\n車両は、指定された方向以外の方向に進行してはならない。\n「道路標識、区画線及び道路標示に関する命令」に定める様式\n文字及び記号を青色、斜めの帯及び枠を赤色、縁及び地を白色とする。\nお尋ねの記述は、日本の道路標識における規制標識「指定方向外進行禁止（311）」（のいずれかの様式）に該当します。\n標識の基本情報\n標識名: 指定方向外進行禁止\n意味: 車両は、矢印で指定された方向以外の方向に進行してはならないことを示します。 \n配色の構成\nご提示いただいた様式（文字・記号が青、斜め帯・枠が赤、縁・地が白色）は、主に「規制の解除」を表す際、または特定の設置条件において「指定方向外進行禁止」の規制を明示・解除するデザイン様式に準拠しています。\n一般的に車道に設置されている通常の「指定方向外進行禁止」は「地が青色、矢印が白色、縁が白色」ですが、「道路標識、区画線及び道路標示に関する命令」の別表第二では、特定の案内・規制の組み合わせや予告、解除などのために、ご指摘の「白地・青記号・赤枠・赤斜帯」の配色パターン（本標識を無効化する解除標識、あるいは特定の図示仕様）が定められています。\nこの標識に関するさらに詳しい設置基準や、具体的な矢印のパターン（直進・右折・左折など）の種類についてお知りになりたいですか？ご希望に合わせて詳細をご案内します。\nAI can make mistakes, so double-check responses\n\n\n\n\n\nサインウェブ\n道路標識 規制標識 指定方向外進行禁止 右折 片面表示 894-107(894-107) | 屋外看板・標識 | 工場,物流,流通,運送 | 看板の激安通販ならサインウェブ\n道路標識 規制標識 指定方向外進行禁止 右折 片面表示 894-107 (894-107) コード 304681 目安納...\n\n\n株式会社日本緑十字社\n構内道路標識／指定方向外進行禁止／スチール製｜製品情報｜株式会社日本緑十字社 安全用品・安全標識の製造販売\n構内道路標識／指定方向外進行禁止／スチール製 製品画像 注文コード 416-635 133-151 製品名 道路標識・構...\n\n\n\nKICTEC\n指定方向外進行禁止\n道路法第46条第1項の規定に基づき、又は交通法第8条第1項の道路標識により、表示板の矢印の示す方向以外の方向への車両の進...\nShow all\n矛盾してないかこの記述\nご指摘の通り、この2つの文をそのまま並べると論理的に完全に矛盾しています。\n日常的に見かける「指定方向外進行禁止」の標識は「青地に白い矢印」であり、この記述にある「白地に青い記号、赤枠、赤斜帯」というデザインは、本来は「〜をしてはならない（禁止）」の規制を「解除」する時のデザイン（規制解除標識）だからです。 \nこの矛盾が生じている原因は、これが運行管理者試験の過去問（道路交通法分野）などで受験生を引っ掛けるために作られた「典型的な誤り（×）の選択肢」だからです。 \n\n運行管理者試験対策.net\nどこがどう矛盾しているのか？\n前半の文章（意味）：\n「指定された方向以外の方向に進行してはならない。」\nこれは「指定方向外進行禁止」という規制そのものの意味を説明しています。 \n後半の文章（色彩）：\n「文字及び記号を青色、斜めの帯及び枠を赤色、縁及び地を白色とする。」\n道路標識、区画線及び道路標示に関する命令（別表第二）において、この配色は「指定方向外進行禁止」などの規制を「解除する標識（501の2・最高速度等解除）」に適用されるルールです。 \n\ne-Gov 法令検索\n +1\n正しい組み合わせ\nもし試験問題やクイズであれば、以下のように修正しないと正しい文章になりません。\n規制を意味通りに表す場合の正しい色彩：\n文字、記号（矢印）及び縁を白色、地を青色とする。 \n\n国土交通省\nこの色彩（白地・青記号・赤枠・赤斜帯）が表す正しい意味：\n「指定方向外進行禁止」の規制の終わり（解除）を意味する。\nしたがって、「〜進行してはならない（＝今から規制する）」と言いながら、「解除の見た目（赤い斜め線）」を指定しているため、文章として完全に破綻（矛盾）しています。引っ掛け問題の選択肢として非常によく使われるパターンです。 \n\n運行管理者試験対策.net\n +1\nこの記述は資格試験などの過去問で見かけたものでしょうか？\nもし他に関連する選択肢や、道路標識の正しい色彩ルールについて確認したい点があれば、いつでも解説を追加・整理しますのでお知らせください。\n\n\n\n\n\nQiita\n読み手をイライラさせない技術記事などを書くために最低限 ...\nNov 26, 2020 — 動かないコードを書いてないか; 情報源は書いているか; 注釈は無視できるか. 各チェックリストの解説. タイトルと書いて...\n\nOggi.jp\n【矛盾なし】とは？ 正しい意味と使い方、似ている言葉などを紹介\nMar 6, 2024 — 「矛盾なし」はつじつまが合わないことが「生じない」という意味。 つまり、二つの物事の食い違いがなく、つじつまが合う状態を...\n\n\n国土交通省\n道路標識、区画線及び道路標示に関する命令(昭和三十五年\n(略). 「一時停止」を表示するものについては、文字及び縁線. を白色、縁及び地を赤色とする。 4. 8. (略). 「...\nShow all\n次はこれ。　車両は、黄色又は赤色の灯火の信号にかかわらず左折することができる。\n道路交通法施行規則 別記様式第 1\n矢印及びわくの色彩は青色、地の色彩は白色とする。\n結論から言うと、この記述は完全に正しく、矛盾はありません。運行管理者試験や運転免許試験における「正しい（◯）」の選択肢です。 \n\n\n\n\n\n\nなぜ矛盾していないのか？\n前半の文章（意味）：\n「車両は、黄色又は赤色の灯火の信号にかかわらず左折することができる。」\nこれは、いわゆる「常時左折可」のルールを説明しています。 \n\n合宿免許くりっく\n後半の文章（根拠・色彩）：\n「道路交通法施行規則 別記様式第1、矢印及びわくの色彩は青色、地の色彩は白色とする。」\nこの条件に該当する標示板（白地に青い左向きの矢印）は、まさにこの「常時左折可」を示すために設置されるものです。 \n\nnote\n·道路標識マニア\n +1\n意味（信号に関わらず左折できる）と、見た目のルール（白地に青の矢印・枠）が完全に一致しているため、論理的な破綻はありません。 \n\nソニー損保\n +1\n試験での「ひっかけ」ポイント\nこの問題が試験に出る際、受験生が惑わされやすいポイントは以下の2点です。\n「一方通行」の標識との混同\n常時左折可（標示板）: 白地に青色の矢印（本問の記述）。\n一方通行（規制標識）: 青地に白色の矢印。\n色の配置がちょうど真逆になっているため、試験では「一方通行の色彩（青地に白矢印）」にすり替えた誤りの選択肢がよく作られます。 \n\nソニー損保\n +2\n「青色の矢印信号」との混同\n信号機の下に出る「青い矢印の点灯（矢印式信号）」は、道路交通法施行令に定められています。\n一方、この「左折可」の板は、道路交通法「施行規則」別記様式第1に定められた公安委員会の「標示」です。根拠法令の書き方も非常に正確な記述になっています。 \n\ne-Gov 法令検索\n +2\n前回の問題（指定方向外進行禁止）は「規制の意味」に「解除の色彩」を混ぜたバグ文でしたが、今回の文章は非の打ち所がない正しい文章です。 \n\n合宿免許くりっく\nこのほかにも、「赤信号でも自動車は優先して右折できるケース（既に交差点内で右折している場合）」など、信号の意味に関するややこしい過去問 がいくつか存在します。\n続けてそれらの問題もチェック・解説しますか？ \nAI responses may include mistakes. For legal advice, consult a professional. Learn more\n\n\n\n\n\nソニー損保\n間違いやすい道路標識｜自動車保険はソニー損保\n「一方通行」と「左折可」の標識. 次はちょっと迷ってしまいやすい問題です。以下のどちらが「一方通行」の規制標識でしょうか...\n\n\ne-Gov 法令検索\n道路交通法施行規則（昭和三十五年総理府令第六十号）\nApr 1, 2018 — 第三条 令第二条第二項、第四条第二項及び第五条第二項の規定による都道府県公安委員会（以下「公安委員会」という。）の表示は...\n\n\n合宿免許くりっく\n「左折可」について-合宿免許 くりっくの用語集\nAug 30, 2024 — 「左折可」の標示板（白地に青色の左向きの矢印）は、前方の信号が赤色や黄色でも左折することができますが、信号に従って横断し...\nShow all\n車両総重量が 7,980 キログラムで最大積載量が 4,000 キログラムの中型自動車（専ら人を運搬する構造のもの以外のもの）は通行してはならない。\n「道路標識、区画線及び道路標示に関する命令」に定める様式\n文字及び記号を青色、斜めの帯及び枠を赤色、縁及び地を白色とする。\nこの記述は完全に矛盾しており、誤り（×）の文章です。これも運行管理者試験（貨物）などで受験生を引っ掛けるために作られた典型的な「バグ問題」です。\nどこがどう矛盾しているのか、2つのポイントに分けて解説します。\n1. 配色の矛盾（最大の罠）\n本文の主張：「〜通行してはならない（＝通行禁止の規制）」\n後半の配色：「白地、青文字・記号、赤枠、赤斜帯（＝規制の解除）」\n1問目と同様に、「通行してはならない」と言いながら、標識のデザインは「規制解除」を指定しているため、この時点で文章として完全に破綻しています。\n2. 車両区分の定義（もうひとつの罠）\nさらにこの問題は、前半の車両スペックの記述でも受験生を迷わせる巧妙な作りになっています。\n問題文の車両：車両総重量 7,980kg、最大積載量 4,000kg（貨物の中型自動車）\n実際の規制標識（特定中型貨物自動車等通行止め）の対象：\n車両総重量 8,000kg（8トン）以上\n最大積載量 5,000kg（5トン）以上\nこの問題のトラック（総重量7,980kg / 積載量4,000kg）は、いわゆる「4トントラック」と呼ばれるもので、法律上は「中型自動車」ですが、「大型貨物自動車等通行止め」の標識で一緒に規制される「特定中型貨物自動車（8トン以上）」には該当しません。\n仮にこれが「通行禁止」の正しい配色（青枠・赤斜帯など）で書かれていたとしても、そもそもこのトラックは通行禁止の対象にならないため、ダブルの意味で間違っている文章です。\nまとめ（正しい組み合わせ）\nもしこの文章を正しく直す（◯にする）のであれば、以下のようになります。\n規制を意味通りに表す場合：\n車両総重量が 8,000キログラム以上で……通行してはならない。\n標識の様式は、枠及び斜めの帯を赤色、縁及び記号を青色、地を白色とする。（※「特定の通行止め」の配色） \n運行管理者試験では、このように「規制の意味」「車両の数字（5トン/8トンの壁）」「標識の配色（規制か解除か）」の3つをシャッフルした誤り選択肢が頻出します。\nこの手の「数字」と「配色」を組み合わせたひっかけ問題は、ほかにも「最高速度」や「積載制限」の標識でよく出題されます。\nもしよろしければ、よく狙われる重要数字の基準一覧を整理してご紹介しましょうか？\n\n\n\n\n\n公益社団法人福岡県トラック協会\n令和３年度運行管理者試験（ＣＢＴ試験）出題例【貨物】\n「道路標識、区画線及び道路標示に関する命令」に定め. る様式. 文字及び記号を青色、斜めの帯及び枠を赤色、縁及び地. を...\n\n大型貨物自動車、特定中型貨物自動車及び大型特殊自動車は、最も左側の車両通行帯を通行しなければならない。\n「道路標識、区画線及び道路標示に関する命令」に定める様式\n文字、記号及び縁を白色、地を青色とする。\nこの記述は完全に正しく、矛盾はありません。運行管理者試験（貨物）における「正しい（◯）」の選択肢です。\nなぜ正しいのか？\n前半の文章（意味）：\n「大型貨物自動車、特定中型貨物自動車及び大型特殊自動車は、最も左側の車両通行帯を通行しなければならない。」\nこれは、道路標識による「特定の種類の車両の通行区分（327の3）」の規制内容を説明しています。\n後半の文章（色彩）：\n「文字、記号及び縁を白色、地を青色とする。」\nこの色彩（青地に白い文字・矢印・縁）は、日本の道路標識において「指定（青地に白）」を表す標準的なデザインルールに完全に合致しています。\n意味（この車は左側を走りなさいという指定）と、見た目のルール（青地に白）が正しく一致しています。\n試験での「ひっかけ」ポイント\nこの問題が試験に出る際、受験生を落とすために作られる「誤り（×）のパターン」は主に以下の2つです。\n車両の種類をすり替える（超頻出）\n正しくは「大型貨物・特定中型貨物・大特」ですが、ここを「大型貨物・中型貨物・大特」と書き換えて出題されます。\n4トントラックなどの「普通の中型貨物」はこの規制の対象外（一番左を走らなくてもよい）となるため、「特定」の2文字が抜けているだけでバグ（×）になります。\n色彩を「規制（白地に赤枠）」や「解除（白地に赤斜帯）」に変える\nこの標識は「〜してはいけない（禁止）」ではなく「ここを走りなさい（指定）」なので、白地に赤枠ではなく青地に白が正解です。\nこれまでの4問を振り返ると、出題者は「意味（規制・指定・解除）」「色彩のルール」「対象となる車両のスペック」の3つをシャッフルして罠を仕掛けてくることがよく分かります。\n運行管理者試験の道路交通法分野において、標識・標示に関する問題はこれで網羅できたでしょうか？\nもし他の法令（道路運送車両法や自動車車庫法など）のややこしい引っ掛け問題についても対策を進めたい場合は、いつでも次のテーマをお知らせください。\n他にも確認したい標識・標示の問題や、道路交通法でよく狙われる「過積載」や「最高速度」のひっかけパターンについて解説を進めますか？\n他の標識問題を続ける\n過積載・最高速度の基準を整理する\n別の法令（車両法・車庫法など）に進む\nAI can make mistakes, so double-check responses\n\n\n\n\n全体的に禁止は赤で、指定は青\nその通り、まさにその認識が100%正しいです！\n日本の道路標識（規制標識）の配色は、直感的に分かりやすいよう以下のように大原則が統一されています。\n「〜してはいけない」（禁止・制限） ＝ 赤色ベース\n例：車両通行止め、進入禁止、最高速度など\nデザイン：白地に赤い丸枠、赤い斜め線\n「〜しなさい / 〜だけ可能」（指定） ＝ 青色ベース\n例：一方通行、指定方向外進行禁止、特定の種類の車両の通行区分など\nデザイン：青地に白い文字・矢印\nなぜ試験問題で混乱するのか？\nこれまでに見てきた引っ掛け過去問は、この「禁止＝赤」「指定＝青」という私たちが無意識に持っている正しい感覚を、あえて文章の中でシャッフルして脳をバグらせようとしてくるからに他なりません。\n「〜進行してはならない（禁止）」なのに、記述が「青記号・赤斜帯（解除）」になっている ＝ ❌\n「〜左折することができる（指定・許可）」なのに、記述が「白地に青矢印（指定）」になっている ＝ ⭕️\n「〜通行してはならない（禁止）」なのに、記述が「青文字・赤斜帯（解除）」になっている ＝ ❌\n「〜通行しなければならない（指定）」なのに、記述が「青地に白（指定）」になっている ＝ ⭕️\nこのように、「文章が言っている意味（禁止か指定か）」と「後半の色の説明」が一致しているかどうかを、【禁止＝赤】【指定＝青】のフィルターを通して見るだけで、中身を丸暗記していなくても一瞬で正誤が見抜けるようになります。\n標識の色彩トリックは見破れるようになりましたね！\n次に、試験でこれと同じくらい受験生を悩ませる「車両総重量の数字（8トン、5トンなど）のひっかけ」や、「別の法令のややこしい問題」など、どこを対策しましょうか？\n次に進むテーマを教えてください：\n「特定中型」と「中型」の数字の壁をスッキリ整理する\n道路交通法の「過積載」に関する引っ掛け問題に挑む\n「道路運送車両法」や「車庫法」の過去問に進む\nTry without personalization\n\n\n\n\nAsk anything\n\n\nAI Mode response is ready",
+      "content": "Gemini との会話\n解説。前回のが分かりづらいのでやりなおし\n分かりづらくて申し訳ありません！もっとシンプルに、「どこを見れば一瞬で解けるか」の結論だけに絞ってまとめ直しますね。\n\nこの問題の攻略法は、ズバリ「文章の意味」と「色の説明」が合っているかを見比べるだけです。\n\n🚦 標識の色分けルール（これだけ覚える！）\n禁止（〜してはならない） ＝ 基本は 赤色（赤枠など）\n\n指定（〜しなさい、〜できる） ＝ 基本は 青色（青地に白文字など）\n\n解除（規制の終わり） ＝ 白地 に 青文字 ＋ 赤の斜め線\n\n各選択肢のチェック\n選択肢 1：❌（矛盾）\n\n意味：「進行してはならない」（＝禁止）\n\n色：「斜めの帯及び枠を赤色…」（＝解除の色！）\n\n理由： 禁止したいのに、規制を解除する時の色を説明しているのでバツです。\n\n選択肢 2：⭕️（正しい）\n\n意味：「左折することができる」（＝常時左折可）\n\n色：「矢印が青色、地が白色」\n\n理由： 意味と標示板の色（白地に青矢印）が正しく一致しているためマルです。\n\n選択肢 3：❌（矛盾 ＆ 数字の引っかけ）\n\n意味：「通行してはならない」（＝禁止）\n\n色：「斜めの帯及び枠を赤色…」（＝解除の色！）\n\n理由： 1番と同じく色が矛盾しています。さらに、記載されている重量（総重量7,980kg、積載量4,000kg）は4トンダンプ等と同じ中型トラックのスペックですが、これは「特定中型（8トン以上）」の通行止め対象にはならないため、二重の引っかけ問題になっています。\n\n選択肢 4：⭕️（正しい）\n\n意味：「左側を通行しなければならない」（＝指定）\n\n色：「地を青色とする」（＝指定の色！）\n\n理由： 指定の意味と、指定標識の色（青地に白）が正しく一致しているためマルです。\n\nしたがって、正解は 2 と 4 です。\n\n長々とした説明を省くと、実は「意味と色がちぐはぐな選択肢を弾く」だけで解けるようになっています。\nこの「禁止＝赤、指定＝青」のシンプルな見分け方を使って、他の標識問題にもチャレンジしてみますか？\n\n\n「\n運行管理者 過去問演習・学習ダッシュボード\n」を共有しています\n最新の Gemini の結果にスキップ\n",
       "isDebated": true
     },
     "correctOptions": []
