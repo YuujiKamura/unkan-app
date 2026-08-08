@@ -8,13 +8,14 @@ import QuestionsListContent from '@/components/QuestionsListContent';
 import SubFieldChart from '@/components/SubFieldChart';
 import { sortQuestionsBySimilarityChain } from '@/lib/similarity';
 import { apiClient } from '@/lib/apiClient';
+import { computeAttemptsByDate, DayStat } from '@/lib/attemptStats';
 
 export default function QuestionsClientWrapper({
   initialQuestions,
   attemptsByDate: initialAttemptsByDate
 }: {
   initialQuestions: any[];
-  attemptsByDate: Record<string, { total: number, correct: number }>;
+  attemptsByDate: Record<string, DayStat>;
 }) {
   const searchParams = useSearchParams();
   const groupByParam = searchParams.get('groupBy');
@@ -57,16 +58,7 @@ export default function QuestionsClientWrapper({
     });
     setQuestionsState(merged);
 
-    const byDate: Record<string, { total: number; correct: number }> = {};
-    for (const a of local.attempts) {
-      const d = new Date(a.attemptedAt);
-      d.setHours(d.getHours() + 9);
-      const dateStr = d.toISOString().split('T')[0];
-      if (!byDate[dateStr]) byDate[dateStr] = { total: 0, correct: 0 };
-      byDate[dateStr].total++;
-      if (a.isCorrect) byDate[dateStr].correct++;
-    }
-    setAttemptsByDate(byDate);
+    setAttemptsByDate(computeAttemptsByDate(local.attempts));
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 

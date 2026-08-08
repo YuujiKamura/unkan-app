@@ -1,6 +1,7 @@
 import { PrismaClient } from '@prisma/client';
 import { Suspense } from 'react';
 import QuestionsClientWrapper from '@/components/QuestionsClientWrapper';
+import { computeAttemptsByDate, DayStat } from '@/lib/attemptStats';
 
 const prisma = new PrismaClient();
 
@@ -76,20 +77,7 @@ export default async function QuestionsList() {
     } catch {}
   }
 
-  const attemptsByDate: Record<string, { total: number, correct: number }> = {};
-  allRecentAttempts.forEach(a => {
-    const d = new Date(a.attemptedAt);
-    d.setHours(d.getHours() + 9);
-    const dateStr = d.toISOString().split('T')[0];
-    
-    if (!attemptsByDate[dateStr]) {
-      attemptsByDate[dateStr] = { total: 0, correct: 0 };
-    }
-    attemptsByDate[dateStr].total++;
-    if (a.isCorrect) {
-      attemptsByDate[dateStr].correct++;
-    }
-  });
+  const attemptsByDate: Record<string, DayStat> = computeAttemptsByDate(allRecentAttempts);
 
   return (
     <Suspense fallback={<div className="container" style={{ textAlign: 'center', padding: '4rem' }}>読み込み中...</div>}>

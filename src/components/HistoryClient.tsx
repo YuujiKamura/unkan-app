@@ -5,6 +5,7 @@ import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import HistoryCalendar from '@/components/HistoryCalendar';
 import { apiClient } from '@/lib/apiClient';
+import { computeAttemptsByDate } from '@/lib/attemptStats';
 
 export default function HistoryClient() {
   const searchParams = useSearchParams();
@@ -33,21 +34,7 @@ export default function HistoryClient() {
     fetchData();
   }, [dateFilter]);
 
-  const attemptsByDate: Record<string, { total: number, correct: number }> = {};
-  
-  allRecentAttempts.forEach(a => {
-    const d = new Date(a.attemptedAt);
-    d.setHours(d.getHours() + 9);
-    const dateStr = d.toISOString().split('T')[0];
-    
-    if (!attemptsByDate[dateStr]) {
-      attemptsByDate[dateStr] = { total: 0, correct: 0 };
-    }
-    attemptsByDate[dateStr].total++;
-    if (a.isCorrect) {
-      attemptsByDate[dateStr].correct++;
-    }
-  });
+  const attemptsByDate = computeAttemptsByDate(allRecentAttempts);
 
   return (
     <div className="container animate-fade-in-up" style={{ maxWidth: '1000px' }}>

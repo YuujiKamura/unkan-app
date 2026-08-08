@@ -1,10 +1,18 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
+import { DayStat } from '@/lib/attemptStats';
 
 type Props = {
-  attemptsByDate: Record<string, { total: number, correct: number }>;
+  attemptsByDate: Record<string, DayStat>;
 };
+
+function formatActiveMinutes(minutes: number): string {
+  if (minutes < 60) return `${minutes}分`;
+  const h = Math.floor(minutes / 60);
+  const m = minutes % 60;
+  return m === 0 ? `${h}時間` : `${h}時間${m}分`;
+}
 
 export default function HistoryCalendar({ attemptsByDate }: Props) {
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
@@ -49,7 +57,7 @@ export default function HistoryCalendar({ attemptsByDate }: Props) {
   const weekdayFontSize = isMobile ? '2.7rem' : '0.9rem';
   const dateFontSize = isMobile ? '2.85rem' : '0.95rem';
   const statFontSize = isMobile ? '1.5rem' : '0.85rem';
-  const cellMinHeight = isMobile ? '160px' : '60px';
+  const cellMinHeight = isMobile ? '180px' : '80px';
   const cellPadding = isMobile ? '0.8rem' : '0.5rem';
   const todayBorder = isMobile ? '3px' : '2.5px';
 
@@ -77,7 +85,7 @@ export default function HistoryCalendar({ attemptsByDate }: Props) {
           }
 
           const dateStr = `${year}-${String(month + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
-          const stat = attemptsByDate[dateStr] || { total: 0, correct: 0 };
+          const stat = attemptsByDate[dateStr] || { total: 0, correct: 0, activeMinutes: 0 };
           const isToday = day === now.getDate();
 
           const content = (
@@ -96,12 +104,17 @@ export default function HistoryCalendar({ attemptsByDate }: Props) {
                 transition: 'transform 0.2s',
                 cursor: stat.total > 0 ? 'pointer' : 'default'
               }}
-              title={`${dateStr}: ${stat.total}問解答 (${stat.correct}問正解)`}
+              title={`${dateStr}: ${stat.total}問解答 (${stat.correct}問正解)${stat.activeMinutes > 0 ? ` / 実質学習時間 約${formatActiveMinutes(stat.activeMinutes)}` : ''}`}
             >
               <div style={{ fontSize: dateFontSize, fontWeight: 'bold', color: '#000000' }}>{day}</div>
               {stat.total > 0 && (
                 <div style={{ fontSize: statFontSize, marginTop: '8px', fontWeight: 'bold', color: '#000000', whiteSpace: 'nowrap' }}>
                   {stat.correct}/{stat.total}問
+                </div>
+              )}
+              {stat.activeMinutes > 0 && (
+                <div style={{ fontSize: statFontSize, marginTop: '2px', color: '#000000', opacity: 0.75, whiteSpace: 'nowrap' }}>
+                  約{formatActiveMinutes(stat.activeMinutes)}
                 </div>
               )}
             </div>
