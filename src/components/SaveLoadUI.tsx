@@ -130,18 +130,17 @@ export default function SaveLoadUI() {
         return;
       }
 
-      const resShare = await fetch('/api/userdata/share', {
+      // ローカルファイルに書くだけ(git commit/pushは別途明示的に行う)。
+      // 固定パスなので共有URLも常に同じ短い形になる。
+      const resShare = await fetch('/api/userdata/publish-default', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data)
       });
-      if (!resShare.ok) throw new Error('Share failed');
-      const shareData = await resShare.json();
+      if (!resShare.ok) throw new Error('Publish failed');
 
-      // GitHub Pagesの公開URLを直接指定する
-      const url = `https://yuujikamura.github.io/unkan-app/?share=${shareData.id}`;
-      setShareUrl(url);
-      setStatusMsg('');
+      setShareUrl('https://yuujikamura.github.io/unkan-app/#share=default');
+      setStatusMsg('ローカルに保存しました(Pagesへの反映にはgit push が別途必要です)');
     } catch (err) {
       console.error(err);
       setStatusMsg('エラーが発生しました');
@@ -187,7 +186,7 @@ export default function SaveLoadUI() {
               読み込むか確認するダイアログが表示されます。<br/>
               {isSpaMode
                 ? '（※データはURL自体に埋め込まれています。サーバー保存はしていません）'
-                : '（※データは自動的にGitHub Pagesへデプロイされます。反映まで数秒かかります）'}
+                : '（※ローカルファイルに保存しました。Pages側に反映するにはgit push が別途必要です）'}
             </p>
             <input 
               type="text" 

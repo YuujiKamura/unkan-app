@@ -17,8 +17,18 @@ export default function ShareUrlImporter() {
 
     (async () => {
       try {
-        const json = await decompressFromBase64Url(match[1]);
-        const data = JSON.parse(json);
+        let data: unknown;
+        if (match[1] === 'default') {
+          // #share=default: 固定パスの公開スナップショットを読む(URLにデータを埋め込まない)
+          const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+          const res = await fetch(`${basePath}/data/default_user.json`);
+          if (!res.ok) throw new Error('default_user.json not found');
+          data = await res.json();
+        } else {
+          const json = await decompressFromBase64Url(match[1]);
+          data = JSON.parse(json);
+        }
+
         if (Array.isArray(data)) {
           setPending(data);
         } else {
