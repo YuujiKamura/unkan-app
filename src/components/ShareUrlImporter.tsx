@@ -26,7 +26,12 @@ export default function ShareUrlImporter() {
         if (match[1] === 'default') {
           // #share=default: 固定パスの公開スナップショットを読む(URLにデータを埋め込まない)
           const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
-          const res = await fetch(`${basePath}/data/default_user.json`);
+          const fetchUrl = `${basePath}/data/default_user.json`;
+          // eslint-disable-next-line no-console
+          console.log('[ShareUrlImporter DEBUG] pathname=', window.location.pathname, 'basePath=', basePath, 'fetchUrl=', fetchUrl);
+          const res = await fetch(fetchUrl);
+          // eslint-disable-next-line no-console
+          console.log('[ShareUrlImporter DEBUG] fetch result ok=', res.ok, 'status=', res.status);
           if (!res.ok) throw new Error('default_user.json not found');
           data = await res.json();
         } else {
