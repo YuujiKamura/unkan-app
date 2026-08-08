@@ -63,3 +63,58 @@ export function computeAttemptsByDate(
 
   return result;
 }
+
+export type StudySession = {
+  start: string; // ISO
+  end: string; // ISO
+  durationMinutes: number;
+  attemptCount: number;
+};
+
+// 指定した日の解答を、間隔がgapThresholdMinutes以内なら連続とみなして
+// セッション(開始〜終了の時間帯)ごとにまとめる。学習カレンダーの合計時間
+// (computeAttemptsByDate)の内訳を、実際の時間帯として一覧表示するために使う。
+export function computeSessionsForDay(
+  attempts: AttemptLike[],
+  gapThresholdMinutes: number = DEFAULT_GAP_THRESHOLD_MINUTES
+): StudySession[] {
+  if (attempts.length === 0) return [];
+
+  const sorted = [...attempts].sort(
+    (a, b) => new Date(a.attemptedAt).getTime() - new Date(b.attemptedAt).getTime()
+  );
+
+  const gapThresholdMs = gapThresholdMinutes * 60 * 1000;
+  const sessions: StudySession[] = [];
+
+  let sessionStart = sorted[0];
+  let sessionEnd = sorted[0];
+  let count = 1;
+
+  const pushSession = () => {
+    sessions.push({
+      start: new Date(sessionStart.attemptedAt).toISOString(),
+      end: new Date(sessionEnd.attemptedAt).toISOString(),
+      durationMinutes: Math.round(
+        (new Date(sessionEnd.attemptedAt).getTime() - new Date(sessionStart.attemptedAt).getTime()) / 60000
+      ),
+      attemptCount: count
+    });
+  };
+
+  for (let i = 1; i < sorted.length; i++) {
+    const gapMs = new Date(sorted[i].attemptedAt).getTime() - new Date(sessionEnd.attemptedAt).getTime();
+    if (gapMs <= gapThresholdMs) {
+      sessionEnd = sorted[i];
+      count++;
+    } else {
+      pushSession();
+      sessionStart = sorted[i];
+      sessionEnd = sorted[i];
+      count = 1;
+    }
+  }
+  pushSession();
+
+  return sessions;
+}

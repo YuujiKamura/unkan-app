@@ -5,7 +5,7 @@ import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import HistoryCalendar from '@/components/HistoryCalendar';
 import { apiClient } from '@/lib/apiClient';
-import { computeAttemptsByDate } from '@/lib/attemptStats';
+import { computeAttemptsByDate, computeSessionsForDay } from '@/lib/attemptStats';
 
 export default function HistoryClient() {
   const searchParams = useSearchParams();
@@ -39,6 +39,7 @@ export default function HistoryClient() {
   }, [dateFilter]);
 
   const attemptsByDate = computeAttemptsByDate(allRecentAttempts);
+  const sessions = dateFilter ? computeSessionsForDay(attempts) : [];
 
   return (
     <div className="container animate-fade-in-up" style={{ maxWidth: '1000px' }}>
@@ -62,6 +63,25 @@ export default function HistoryClient() {
       </header>
 
       {!loading && <HistoryCalendar attemptsByDate={attemptsByDate} />}
+
+      {!loading && dateFilter && sessions.length > 0 && (
+        <div className="glass-panel" style={{ padding: '1.5rem', marginTop: '2rem' }}>
+          <h3 style={{ margin: '0 0 1rem 0', color: 'var(--text-primary)' }}>
+            学習時間帯の内訳({sessions.length}区間、間隔45分以内を連続とみなす)
+          </h3>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+            {sessions.map((s, i) => {
+              const fmt = (iso: string) => new Date(iso).toLocaleTimeString('ja-JP', { hour: '2-digit', minute: '2-digit' });
+              return (
+                <div key={i} style={{ display: 'flex', justifyContent: 'space-between', padding: '0.6rem 1rem', background: 'var(--bg-base)', borderRadius: '8px' }}>
+                  <span style={{ fontWeight: 'bold' }}>{fmt(s.start)} 〜 {fmt(s.end)}</span>
+                  <span style={{ color: 'var(--text-secondary)' }}>{s.durationMinutes}分 ({s.attemptCount}問)</span>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      )}
 
       <div className="glass-panel" style={{ padding: '2rem', overflowX: 'auto', marginTop: '2rem' }}>
         {loading ? (
