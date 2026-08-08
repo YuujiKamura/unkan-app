@@ -39,7 +39,11 @@ export default function HistoryClient() {
   }, [dateFilter]);
 
   const attemptsByDate = computeAttemptsByDate(allRecentAttempts);
-  const sessions = dateFilter ? computeSessionsForDay(attempts) : [];
+  // 30分以内の間隔=連続運転時間相当(短い休憩を挟むと別区間に分かれる)、
+  // 60分以内の間隔=拘束時間相当(休憩を挟んでも一勤務とみなす、より緩い括り)。
+  // 改善基準告示の2つの概念に対応させ、どちらの見方も確認できるようにする。
+  const sessions30 = dateFilter ? computeSessionsForDay(attempts, 30) : [];
+  const sessions60 = dateFilter ? computeSessionsForDay(attempts, 60) : [];
 
   return (
     <div className="container animate-fade-in-up" style={{ maxWidth: '1000px' }}>
@@ -64,22 +68,29 @@ export default function HistoryClient() {
 
       {!loading && <HistoryCalendar attemptsByDate={attemptsByDate} />}
 
-      {!loading && dateFilter && sessions.length > 0 && (
-        <div className="glass-panel" style={{ padding: '1.5rem', marginTop: '2rem' }}>
-          <h3 style={{ margin: '0 0 1rem 0', color: 'var(--text-primary)' }}>
-            学習時間帯の内訳({sessions.length}区間、間隔30分以内を連続とみなす)
-          </h3>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-            {sessions.map((s, i) => {
-              const fmt = (iso: string) => new Date(iso).toLocaleTimeString('ja-JP', { hour: '2-digit', minute: '2-digit' });
-              return (
-                <div key={i} style={{ display: 'flex', justifyContent: 'space-between', padding: '0.6rem 1rem', background: 'var(--bg-base)', borderRadius: '8px' }}>
-                  <span style={{ fontWeight: 'bold' }}>{fmt(s.start)} 〜 {fmt(s.end)}</span>
-                  <span style={{ color: 'var(--text-secondary)' }}>{s.durationMinutes}分 ({s.attemptCount}問)</span>
-                </div>
-              );
-            })}
-          </div>
+      {!loading && dateFilter && (sessions30.length > 0 || sessions60.length > 0) && (
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', marginTop: '2rem' }}>
+          {([
+            { label: '連続学習時間の内訳(間隔30分以内を連続とみなす)', sessions: sessions30 },
+            { label: '拘束時間の内訳(間隔60分以内を連続とみなす)', sessions: sessions60 }
+          ] as const).map(({ label, sessions }) => (
+            <div key={label} className="glass-panel" style={{ padding: '1.5rem' }}>
+              <h3 style={{ margin: '0 0 1rem 0', color: 'var(--text-primary)' }}>
+                {label}({sessions.length}区間)
+              </h3>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                {sessions.map((s, i) => {
+                  const fmt = (iso: string) => new Date(iso).toLocaleTimeString('ja-JP', { hour: '2-digit', minute: '2-digit' });
+                  return (
+                    <div key={i} style={{ display: 'flex', justifyContent: 'space-between', padding: '0.6rem 1rem', background: 'var(--bg-base)', borderRadius: '8px' }}>
+                      <span style={{ fontWeight: 'bold' }}>{fmt(s.start)} 〜 {fmt(s.end)}</span>
+                      <span style={{ color: 'var(--text-secondary)' }}>{s.durationMinutes}分 ({s.attemptCount}問)</span>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          ))}
         </div>
       )}
 
