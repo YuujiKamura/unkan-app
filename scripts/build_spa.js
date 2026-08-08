@@ -5,12 +5,17 @@ const { execSync } = require('child_process');
 const apiDir = path.join(__dirname, '../src/app/api');
 const apiHiddenDir = path.join(__dirname, '../src/app/_api_hidden');
 
-console.log('1. Exporting data to static JSON...');
-try {
-  execSync('npx cross-env DATABASE_URL=file:./dev.db tsx scripts/io/export_to_static_json.ts', { stdio: 'inherit' });
-} catch (e) {
-  console.error('Failed to export data');
-  process.exit(1);
+const dbPath = path.join(__dirname, '../prisma/dev.db');
+if (fs.existsSync(dbPath)) {
+  console.log('1. Exporting data to static JSON...');
+  try {
+    execSync('npx cross-env DATABASE_URL=file:./dev.db tsx scripts/io/export_to_static_json.ts', { stdio: 'inherit' });
+  } catch (e) {
+    console.error('Failed to export data');
+    process.exit(1);
+  }
+} else {
+  console.log('1. prisma/dev.db not found (CI environment) - using committed public/data/questions.json as-is');
 }
 
 console.log('2. Hiding API routes...');
