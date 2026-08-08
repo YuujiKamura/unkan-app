@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import SaveLoadUI from "../components/SaveLoadUI";
 import AutoSaveSyncProvider from "../components/AutoSaveSyncProvider";
+import ForceDesktopViewport from "../components/ForceDesktopViewport";
 import Link from 'next/link';
 
 export const metadata: Metadata = {
@@ -9,10 +10,12 @@ export const metadata: Metadata = {
   description: "運行管理者の過去問演習・進捗管理アプリ",
 };
 
-export const viewport = {
-  width: 1200,
-  initialScale: 0.5, // 必要に応じて初期のズーム倍率を調整
-};
+// Next.jsのviewport export APIはinitialScaleを省略してもdefault-metadata.jsの
+// initialScale:1で必ず補完されてしまい、device-width/1=device-width と
+// width=1200 の比較でwidth側が勝ち、画面には収まらず横スクロールが必要になる。
+// viewport exportをJSXの<head>に生で書いてもNext.jsが自動でデフォルトの
+// viewportタグをもう1本追加してしまい2本になるため、ForceDesktopViewportで
+// マウント後にJSから1本だけに統一する。
 
 export default function RootLayout({
   children,
@@ -22,6 +25,7 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <body>
+        <ForceDesktopViewport />
         <AutoSaveSyncProvider>
           <nav style={{ 
             padding: '0.8rem 2rem', 
