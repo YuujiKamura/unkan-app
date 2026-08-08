@@ -7460,11 +7460,11 @@
     "majorField": null,
     "subField": null,
     "content": "【労働基準法関係】\n「自動車運転者の労働時間等の改善のための基準」等に定める貨物自動車運送事業に従事する自動車運転者（以下「トラック運転者」という。）の拘束時間等の規定に関する次の記述のうち、正しいものをすべて選びなさい。なお、解答にあたっては、各選択肢に記載されている事項以外は考慮しないものとする。",
-    "imageUrl": null,
+    "imageUrl": "",
     "sourceSheet": null,
     "knowledgeTags": "#改善基準(拘束・休息)",
     "riskCategory": null,
-    "situationCategory": null,
+    "situationCategory": "",
     "format": "SINGLE",
     "pdfUrl": "https://www.unkan-net.com/kakomon/R05.CBT.pdf",
     "pdfPage": 21,
@@ -7500,7 +7500,7 @@
         "id": 1177,
         "questionId": 298,
         "optionNumber": 4,
-        "content": "使用者は、業務の必要上、トラック運転者に勤務の終了後継続8時間以上の休息期間を与えることが困難な場合には、当分の間、一定期間における全勤務回数の2分の1を限度に、休息期間を拘束時間の途中及び拘束時間の経過直後に分割して与えることができるものとする。この場合において、分割された休息期間は、1日において1回当たり継続4時間以上、合計10時間以上でなければならないものとする。",
+        "content": "使用者は、業務の必要上、トラック運転者に勤務の終了後継続8時間以上の休息期間を与えることが困難な場合には、当分の間、一定期間における全勤務回数の2分の1（現在は二週間につき3回まで）を限度に、休息期間を拘束時間の途中及び拘束時間の経過直後に分割して与えることができるものとする。この場合において、分割された休息期間は、1日において1回当たり継続4時間以上、合計10時間以上でなければならないものとする。",
         "isCorrect": true,
         "explanation": null,
         "structuredData": null
@@ -8000,7 +8000,7 @@
         "id": 1405,
         "questionId": 306,
         "optionNumber": 3,
-        "content": "1 : ② 315 キロメートル",
+        "content": "1 : ③ 315 キロメートル",
         "isCorrect": false,
         "explanation": null,
         "structuredData": "{\"title\":\"1\",\"choices\":[{\"num\":1,\"text\":\"280 キロメートル\"},{\"num\":2,\"text\":\"294 キロメートル\"},{\"num\":3,\"text\":\"315 キロメートル\"}]}"
@@ -8010,7 +8010,7 @@
         "questionId": 306,
         "optionNumber": 4,
         "content": "2 : ① 違反していない",
-        "isCorrect": true,
+        "isCorrect": false,
         "explanation": null,
         "structuredData": "{\"title\":\"2\",\"choices\":[{\"num\":1,\"text\":\"違反していない\"},{\"num\":2,\"text\":\"違反している\"}]}"
       },
@@ -8019,7 +8019,7 @@
         "questionId": 306,
         "optionNumber": 5,
         "content": "2 : ② 違反している",
-        "isCorrect": false,
+        "isCorrect": true,
         "explanation": null,
         "structuredData": "{\"title\":\"2\",\"choices\":[{\"num\":1,\"text\":\"違反していない\"},{\"num\":2,\"text\":\"違反している\"}]}"
       },
@@ -8042,7 +8042,12 @@
         "structuredData": "{\"title\":\"3\",\"choices\":[{\"num\":1,\"text\":\"違反していない\"},{\"num\":2,\"text\":\"違反している\"}]}"
       }
     ],
-    "explanation": null,
+    "explanation": {
+      "id": 324,
+      "questionId": 306,
+      "content": "",
+      "isDebated": false
+    },
     "correctOptions": []
   },
   {
