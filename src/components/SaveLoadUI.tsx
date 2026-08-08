@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { apiClient } from '@/lib/apiClient';
+import { compressToBase64Url } from '@/lib/shareCodec';
 
 export default function SaveLoadUI() {
   const [statusMsg, setStatusMsg] = useState('');
@@ -84,6 +85,35 @@ export default function SaveLoadUI() {
         return;
       }
 
+      if (isSpaMode) {
+        // Pages版はサーバーが無いためデータをURLフラグメントに直接埋め込む。
+        // 8000文字を超えるURLはSlack等のチャットツールで崩れる実用上のリスクがあるため、
+        // 超過時はAI解説文(長文になりがち)を除いた軽量版に自動フォールバックする。
+        const MAX_ENCODED_LENGTH = 8000;
+        let encoded = await compressToBase64Url(JSON.stringify(data));
+        let explanationsTrimmed = false;
+
+        if (encoded.length > MAX_ENCODED_LENGTH) {
+          const lightData = data.map((item) => ({
+            ...item,
+            explanation: item.explanation ? { content: null, isDebated: item.explanation.isDebated } : null
+          }));
+          encoded = await compressToBase64Url(JSON.stringify(lightData));
+          explanationsTrimmed = true;
+        }
+
+        if (encoded.length > MAX_ENCODED_LENGTH) {
+          setStatusMsg('データ量が多すぎて共有URLを作成できません');
+          setTimeout(() => setStatusMsg(''), 3000);
+          return;
+        }
+
+        setShareUrl(`https://yuujikamura.github.io/unkan-app/#share=${encoded}`);
+        setStatusMsg(explanationsTrimmed ? '共有URLを作成しました(データ量が多いため解説文は含まれていません)' : '');
+        if (explanationsTrimmed) setTimeout(() => setStatusMsg(''), 4000);
+        return;
+      }
+
       const resShare = await fetch('/api/userdata/share', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -106,15 +136,13 @@ export default function SaveLoadUI() {
   return (
     <div style={{ display: 'flex', alignItems: 'center', gap: '0.8rem' }}>
       {statusMsg && <span style={{ fontSize: '0.85rem', color: 'var(--success)' }}>{statusMsg}</span>}
-      {!isSpaMode && (
-        <button 
-          onClick={handleShare} 
-          className="btn btn-primary" 
-          style={{ padding: '0.4rem 0.8rem', fontSize: '0.9rem', borderRadius: '8px', background: 'var(--accent-primary)', border: 'none', color: '#fff' }}
-        >
-          🔗 共有
-        </button>
-      )}
+      <button
+        onClick={handleShare}
+        className="btn btn-primary"
+        style={{ padding: '0.4rem 0.8rem', fontSize: '0.9rem', borderRadius: '8px', background: 'var(--accent-primary)', border: 'none', color: '#fff' }}
+      >
+        🔗 共有
+      </button>
       <button 
         onClick={handleSave} 
         className="btn btn-secondary" 
@@ -139,8 +167,11 @@ export default function SaveLoadUI() {
           <div className="glass-panel" style={{ padding: '2rem', maxWidth: '500px', width: '90%', textAlign: 'center' }}>
             <h3 style={{ marginTop: 0, marginBottom: '1rem', color: 'var(--text-primary)' }}>共有ファイルの生成完了</h3>
             <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', marginBottom: '1rem' }}>
-              以下のURLを共有すると、現在の学習データ（解答履歴など）が読み込まれた状態でアプリが開きます。<br/>
-              （※データは自動的にGitHub Pagesへデプロイされます。反映まで数秒かかります）
+              以下のURLを開くと、現在の学習データ（解答履歴・訂正マーク・解説など）を
+              読み込むか確認するダイアログが表示されます。<br/>
+              {isSpaMode
+                ? '（※データはURL自体に埋め込まれています。サーバー保存はしていません）'
+                : '（※データは自動的にGitHub Pagesへデプロイされます。反映まで数秒かかります）'}
             </p>
             <input 
               type="text" 
