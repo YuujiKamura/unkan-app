@@ -5,6 +5,8 @@ type Props = {
 };
 
 export default function HistoryCalendar({ attemptsByDate }: Props) {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
   // Get current date
   const now = new Date();
   const year = now.getFullYear();
@@ -90,7 +92,7 @@ export default function HistoryCalendar({ attemptsByDate }: Props) {
 
           if (stat.total > 0) {
             return (
-              <a key={day} href={`/history?date=${dateStr}`} style={{ textDecoration: 'none' }}>
+              <a key={day} href={`${basePath}/history?date=${dateStr}`} style={{ textDecoration: 'none' }}>
                 {content}
               </a>
             );
