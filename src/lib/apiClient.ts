@@ -1,6 +1,7 @@
 // src/lib/apiClient.ts
 
 import { getQuestionsClient } from './dataRepository';
+import { toJstDateStr } from './attemptStats';
 
 export type AttemptPayload = {
   questionId: number;
@@ -153,7 +154,9 @@ export const apiClient = {
     if (IS_SPA_MODE) {
       const attempts = getLocalData<any[]>('attempts', []);
       if (dateFilter) {
-        return attempts.filter(a => a.attemptedAt.startsWith(dateFilter));
+        // attemptedAtはUTC文字列なのでJST変換してから日付を比較する
+        // (単純な前方一致だとJST 0〜9時台の解答が別日にズレる)
+        return attempts.filter(a => toJstDateStr(a.attemptedAt) === dateFilter);
       }
       return attempts;
     }

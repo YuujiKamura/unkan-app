@@ -23,7 +23,11 @@ export default function HistoryClient() {
           apiClient.getAttempts(dateFilter || undefined),
           apiClient.getAllAttempts()
         ]);
-        setAttempts(filteredAttempts);
+        // データソース(localStorageの追加順/DB取得順)に依存せず常に新しい順に揃える
+        const sorted = [...filteredAttempts].sort(
+          (a, b) => new Date(b.attemptedAt).getTime() - new Date(a.attemptedAt).getTime()
+        );
+        setAttempts(sorted);
         setAllRecentAttempts(allAttempts);
       } catch (err) {
         console.error('Failed to load history', err);
