@@ -49,7 +49,7 @@ export default function HistoryCalendar({ attemptsByDate }: Props) {
         textAlign: 'center'
       }}>
         {weekDays.map(day => (
-          <div key={day} style={{ fontSize: '0.9rem', color: '#000000', fontWeight: 'bold', padding: '0.5rem 0' }}>
+          <div key={day} style={{ fontSize: '4.5rem', color: '#000000', fontWeight: 'bold', padding: '0.5rem 0' }}>
             {day}
           </div>
         ))}
@@ -68,23 +68,23 @@ export default function HistoryCalendar({ attemptsByDate }: Props) {
               style={{
                 background: getHeatmapColor(stat.total),
                 borderRadius: '8px',
-                padding: '0.5rem',
-                minHeight: '60px',
+                padding: '1rem',
+                minHeight: '260px',
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'center',
                 justifyContent: 'center',
-                border: isToday ? '2.5px solid #2563eb' : '1px solid #000000',
+                border: isToday ? '4px solid #2563eb' : '1px solid #000000',
                 color: '#000000',
                 transition: 'transform 0.2s',
                 cursor: stat.total > 0 ? 'pointer' : 'default'
               }}
               title={`${dateStr}: ${stat.total}問解答 (${stat.correct}問正解)`}
             >
-              <div style={{ fontSize: '0.95rem', fontWeight: 'bold', color: '#000000' }}>{day}</div>
+              <div style={{ fontSize: '4.75rem', fontWeight: 'bold', color: '#000000' }}>{day}</div>
               {stat.total > 0 && (
-                <div style={{ fontSize: '0.85rem', marginTop: '4px', fontWeight: 'bold', color: '#000000' }}>
-                  {stat.correct} / {stat.total} 問
+                <div style={{ fontSize: '1.8rem', marginTop: '8px', fontWeight: 'bold', color: '#000000', whiteSpace: 'nowrap' }}>
+                  {stat.correct}/{stat.total}問
                 </div>
               )}
             </div>
