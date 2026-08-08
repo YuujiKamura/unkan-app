@@ -12,6 +12,11 @@ export default function ShareUrlImporter() {
   const [importing, setImporting] = useState(false);
 
   useEffect(() => {
+    // トップページ(/)はマウント直後にquestionsへリダイレクトするだけなので、
+    // ここでfetchを開始してもページ遷移により中断される
+    // ("TypeError: Failed to fetch")。リダイレクト先で処理させる。
+    if (!window.location.pathname.includes('/questions')) return;
+
     const match = window.location.hash.match(/share=([^&]+)/);
     if (!match) return;
 
