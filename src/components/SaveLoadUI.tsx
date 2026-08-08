@@ -1,8 +1,7 @@
 "use client";
 
 import { useState, useEffect } from 'react';
-
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+import { apiClient } from '@/lib/apiClient';
 
 export default function SaveLoadUI() {
   const [statusMsg, setStatusMsg] = useState('');
@@ -16,10 +15,8 @@ export default function SaveLoadUI() {
   const handleSave = async () => {
     setStatusMsg('エクスポート中...');
     try {
-      const res = await fetch('/api/userdata/export');
-      if (!res.ok) throw new Error('Export failed');
-      const data = await res.json();
-      
+      const data = await apiClient.exportUserData();
+
       if (!data || data.length === 0) {
         setStatusMsg('保存するデータがありません (まだ何も学習していません)');
         setTimeout(() => setStatusMsg(''), 2000);
@@ -59,13 +56,7 @@ export default function SaveLoadUI() {
           const parsedData = JSON.parse(content); 
           
           setStatusMsg('インポート中...');
-          const res = await fetch('/api/userdata/import', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(parsedData)
-          });
-          
-          if (!res.ok) throw new Error('Import failed');
+          await apiClient.importUserData(parsedData);
 
           setStatusMsg('データを復元しました！リロードします...');
           setTimeout(() => {
@@ -85,10 +76,8 @@ export default function SaveLoadUI() {
   const handleShare = async () => {
     setStatusMsg('共有URLを作成中...');
     try {
-      const resExp = await fetch('/api/userdata/export');
-      if (!resExp.ok) throw new Error('Export failed');
-      const data = await resExp.json();
-      
+      const data = await apiClient.exportUserData();
+
       if (!data || data.length === 0) {
         setStatusMsg('共有するデータがありません');
         setTimeout(() => setStatusMsg(''), 2000);

@@ -1,5 +1,7 @@
 // src/lib/apiClient.ts
 
+import { getQuestionsClient } from './dataRepository';
+
 export type AttemptPayload = {
   questionId: number;
   selectedOptions: string;
@@ -18,6 +20,31 @@ export type CorrectionPayload = {
 };
 
 export type OptionCorrectionRecord = CorrectionPayload & { id: number; createdAt: string };
+
+export type ExportedAttempt = {
+  isCorrect: boolean;
+  selectedOptions: string;
+  reasoning?: string;
+  attemptedAt: string;
+};
+
+export type ExportedCorrection = {
+  optionNumber: number;
+  selectedText: string;
+  startOffset: number;
+  endOffset: number;
+  correctionText: string;
+  createdAt: string;
+};
+
+export type UserDataExportItem = {
+  year: string | null;
+  questionNumber: number | null;
+  meta: { isBookmarked: boolean } | null;
+  attempts: ExportedAttempt[];
+  explanation: { content: string | null; isDebated: boolean } | null;
+  corrections: ExportedCorrection[];
+};
 
 // 環境変数等で SPA (LocalStorage) モードか App (API) モードかを切り替える
 // Vite 等でビルドする場合は、ここで true になるようなフラグを設ける
@@ -198,6 +225,143 @@ export const apiClient = {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ correctionText })
     });
+  },
+
+  async exportUserData(): Promise<UserDataExportItem[]> {
+    if (IS_SPA_MODE) {
+      const questions = await getQuestionsClient();
+      const bookmarks = getLocalData<Record<number, boolean>>('bookmarks', {});
+      const explanations = getLocalData<Record<number, string>>('explanations', {});
+      const debates = getLocalData<Record<number, boolean>>('debates', {});
+      const attempts = getLocalData<(AttemptPayload & { id: number; attemptedAt: string })[]>('attempts', []);
+      const corrections = getLocalData<Record<number, OptionCorrectionRecord[]>>('corrections', {});
+
+      const attemptsByQuestion = new Map<number, (AttemptPayload & { id: number; attemptedAt: string })[]>();
+      for (const a of attempts) {
+        const list = attemptsByQuestion.get(a.questionId) || [];
+        list.push(a);
+        attemptsByQuestion.set(a.questionId, list);
+      }
+
+      const questionIds = new Set<number>([
+        ...Object.keys(bookmarks).map(Number),
+        ...Object.keys(explanations).map(Number),
+        ...attemptsByQuestion.keys(),
+        ...Object.keys(corrections).map(Number),
+      ]);
+
+      const result: UserDataExportItem[] = [];
+      for (const qid of questionIds) {
+        const q = questions.find((qq) => qq.id === qid);
+        if (!q) continue;
+
+        const hasMeta = qid in bookmarks;
+        const hasExplanation = qid in explanations;
+        const qAttempts = attemptsByQuestion.get(qid) || [];
+        const qCorrections = corrections[qid] || [];
+        if (!hasMeta && !hasExplanation && qAttempts.length === 0 && qCorrections.length === 0) continue;
+
+        result.push({
+          year: q.year,
+          questionNumber: q.questionNumber,
+          meta: hasMeta ? { isBookmarked: bookmarks[qid] } : null,
+          attempts: qAttempts.map((a) => ({
+            isCorrect: a.isCorrect,
+            selectedOptions: a.selectedOptions,
+            reasoning: a.reasoning,
+            attemptedAt: a.attemptedAt
+          })),
+          explanation: hasExplanation ? { content: explanations[qid], isDebated: debates[qid] || false } : null,
+          corrections: qCorrections.map((c) => ({
+            optionNumber: c.optionNumber,
+            selectedText: c.selectedText,
+            startOffset: c.startOffset,
+            endOffset: c.endOffset,
+            correctionText: c.correctionText,
+            createdAt: c.createdAt
+          }))
+        });
+      }
+      return result;
+    }
+
+    const res = await fetch('/api/userdata/export');
+    if (!res.ok) throw new Error('Export failed');
+    return res.json();
+  },
+
+  async importUserData(data: UserDataExportItem[]): Promise<{ success: boolean; updatedCount: number }> {
+    if (IS_SPA_MODE) {
+      const questions = await getQuestionsClient();
+      const bookmarks = getLocalData<Record<number, boolean>>('bookmarks', {});
+      const explanations = getLocalData<Record<number, string>>('explanations', {});
+      const debates = getLocalData<Record<number, boolean>>('debates', {});
+      const attempts = getLocalData<(AttemptPayload & { id: number; attemptedAt: string })[]>('attempts', []);
+      const corrections = getLocalData<Record<number, OptionCorrectionRecord[]>>('corrections', {});
+
+      let updatedCount = 0;
+      let seq = 0;
+
+      for (const item of data) {
+        if (!item.year || item.questionNumber === undefined) continue;
+        const q = questions.find((qq) => qq.year === item.year && qq.questionNumber === item.questionNumber);
+        if (!q) continue;
+
+        if (item.meta) bookmarks[q.id] = !!item.meta.isBookmarked;
+
+        if (item.explanation) {
+          explanations[q.id] = item.explanation.content || '';
+          debates[q.id] = !!item.explanation.isDebated;
+        }
+
+        if (item.attempts && Array.isArray(item.attempts)) {
+          for (let i = attempts.length - 1; i >= 0; i--) {
+            if (attempts[i].questionId === q.id) attempts.splice(i, 1);
+          }
+          for (const a of item.attempts) {
+            attempts.push({
+              id: Date.now() + (seq++),
+              questionId: q.id,
+              isCorrect: a.isCorrect,
+              selectedOptions: a.selectedOptions,
+              reasoning: a.reasoning,
+              attemptedAt: a.attemptedAt || new Date().toISOString()
+            });
+          }
+        }
+
+        if (item.corrections && Array.isArray(item.corrections)) {
+          corrections[q.id] = item.corrections.map((c) => ({
+            id: Date.now() + (seq++),
+            questionId: q.id,
+            optionNumber: c.optionNumber,
+            selectedText: c.selectedText,
+            startOffset: c.startOffset,
+            endOffset: c.endOffset,
+            correctionText: c.correctionText || '',
+            createdAt: c.createdAt || new Date().toISOString()
+          }));
+        }
+
+        updatedCount++;
+      }
+
+      setLocalData('bookmarks', bookmarks);
+      setLocalData('explanations', explanations);
+      setLocalData('debates', debates);
+      setLocalData('attempts', attempts);
+      setLocalData('corrections', corrections);
+
+      return { success: true, updatedCount };
+    }
+
+    const res = await fetch('/api/userdata/import', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data)
+    });
+    if (!res.ok) throw new Error('Import failed');
+    return res.json();
   }
 };
 
