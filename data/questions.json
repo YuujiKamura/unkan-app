@@ -7583,7 +7583,7 @@
     "field": "労働基準法",
     "majorField": null,
     "subField": null,
-    "content": "【労働基準法関係】\n下図は、貨物自動車運送事業に従事する自動車運転者の1週間の勤務状況の例を示したものであるが、「自動車運転者の労働時間等の改善のための基準」（以下「改善基準告示」という。）に定める拘束時間等に関する次の記述のうち、正しいものを2つ選びなさい。ただし、すべて1人乗務の場合とする。なお、解答にあたっては、下図に示された内容及び各選択肢に記載されている事項以外は考慮しないものとする。",
+    "content": "【労働基準法関係】\n下図は、貨物自動車運送事業に従事する自動車運転者の1週間の勤務状況の例を示したものであるが、「自動車運転者の労働時間等の改善のための基準」（以下「改善基準告示」という。）に定める拘束時間等に関する次の記述のうち、正しいものを2つ選びなさい。ただし、すべて1人乗務の場合とする。なお、解答にあたっては、下図に示された内容及び各選択肢に記載されている事項以外は考慮しないものとする。＊正答肢を新基準に合わせて訂正。",
     "imageUrl": "https://www.unkan-net.com/kakomon/R05.CBT.pdf",
     "sourceSheet": null,
     "knowledgeTags": "#改善基準(拘束・休息)",
@@ -7598,7 +7598,7 @@
         "questionId": 300,
         "optionNumber": 1,
         "content": "1日についての拘束時間が改善基準告示に定める最大拘束時間に違反する勤務がある。",
-        "isCorrect": false,
+        "isCorrect": true,
         "explanation": null,
         "structuredData": null
       },
@@ -7625,7 +7625,7 @@
         "questionId": 300,
         "optionNumber": 4,
         "content": "勤務終了後の休息期間が改善基準告示に違反するものはない。",
-        "isCorrect": true,
+        "isCorrect": false,
         "explanation": null,
         "structuredData": null
       }
