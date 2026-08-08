@@ -7,14 +7,22 @@ import { useEffect } from 'react';
 // widthが勝ち、画面には収まらない)。initial-scaleを付けずwidthのみのmetaタグに
 // することでブラウザにdevice-width/1200のスケールを自動計算させ、PCレイアウトを
 // 画面幅ぴったりに縮小表示する。metadata API経由では実現できないためマウント後に
-// DOMを直接書き換える。
+// 属性を書き換える。
+// 注意: Next.jsのmetaタグはReactが自身のfiber木で管理しているノードなので、
+// removeしてcreateElementで作り直すとReactが後で行うremoveChildが対象喪失で
+// クラッシュする("Cannot read properties of null (reading 'removeChild')")。
+// 既存ノードのcontent属性だけをその場で書き換え、ノードの生成・削除はしない。
 export default function ForceDesktopViewport() {
   useEffect(() => {
-    document.querySelectorAll('meta[name="viewport"]').forEach((el) => el.remove());
-    const meta = document.createElement('meta');
-    meta.setAttribute('name', 'viewport');
-    meta.setAttribute('content', 'width=1200');
-    document.head.appendChild(meta);
+    const existing = document.querySelector('meta[name="viewport"]');
+    if (existing) {
+      existing.setAttribute('content', 'width=1200');
+    } else {
+      const meta = document.createElement('meta');
+      meta.setAttribute('name', 'viewport');
+      meta.setAttribute('content', 'width=1200');
+      document.head.appendChild(meta);
+    }
   }, []);
 
   return null;
