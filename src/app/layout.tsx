@@ -4,6 +4,7 @@ import SaveLoadUI from "../components/SaveLoadUI";
 import AutoSaveSyncProvider from "../components/AutoSaveSyncProvider";
 import ForceDesktopViewport from "../components/ForceDesktopViewport";
 import ShareUrlImporter from "../components/ShareUrlImporter";
+import ChunkErrorReloader from "../components/ChunkErrorReloader";
 import Link from 'next/link';
 
 export const metadata: Metadata = {
@@ -27,6 +28,7 @@ export default function RootLayout({
     <html lang="ja">
       <body>
         <ForceDesktopViewport />
+        <ChunkErrorReloader />
         <ShareUrlImporter />
         <AutoSaveSyncProvider>
           <nav style={{ 
