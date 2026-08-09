@@ -22,10 +22,11 @@ export default function ShareUrlImporter() {
         let data: unknown;
         if (match[1] === 'default') {
           // #share=default: 固定パスの公開スナップショットを読む(URLにデータを埋め込まない)。
-          // Pagesのビルド成果物ではなく、raw.githubusercontent.com経由でmasterブランチの
-          // ファイルを直接fetchする(GitHub側で5分キャッシュ・CORS全許可)。これにより
-          // 共有ボタンでのpushがPagesの再ビルド完了を待たずに反映される。
-          const res = await fetch('https://raw.githubusercontent.com/YuujiKamura/unkan-app/master/public/data/default_user.json');
+          // データはコードと別リポジトリ(unkan-app-userdata)で管理しており、
+          // raw.githubusercontent.com経由で直接fetchする(GitHub側で5分キャッシュ・
+          // CORS全許可)。別リポにはビルドworkflowが無いため、共有ボタンでのpushは
+          // unkan-app本体のPages再ビルドを一切経由せず即座に反映される。
+          const res = await fetch('https://raw.githubusercontent.com/YuujiKamura/unkan-app-userdata/main/data/default_user.json');
           if (!res.ok) throw new Error('default_user.json not found');
           data = await res.json();
         } else {

@@ -3,10 +3,6 @@ name: Deploy SPA to GitHub Pages
 on:
   push:
     branches: [master]
-    # default_user.json は raw.githubusercontent.com 経由で直接fetchするため、
-    # このファイルだけの変更(共有ボタンによる自動push)ではフルビルドを走らせない
-    paths-ignore:
-      - 'public/data/default_user.json'
   workflow_dispatch:
 
 permissions:
