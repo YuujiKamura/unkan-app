@@ -443,12 +443,6 @@ export default function SingleQuizClient({
     }
   };
 
-  const toggleDebate = async () => {
-    const newStatus = !currentQ.isDebated;
-    setCurrentQ({ ...currentQ, isDebated: newStatus });
-    await apiClient.toggleDebate(currentQ.id, newStatus);
-  };
-
   return (
     <div className="container animate-fade-in-up" style={{ maxWidth: '800px' }}>
       {/* 演習モードコンテキストヘッダーバッジ */}
@@ -478,76 +472,7 @@ export default function SingleQuizClient({
       </div>
 
       <header style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '2rem', alignItems: 'center', gap: '1rem', flexWrap: 'wrap' }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', flexWrap: 'wrap' }}>
-          <h2 className="text-secondary" style={{ margin: 0 }}>{currentQ.year}年度 問{currentQ.questionNumber}</h2>
-          <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
-            {prevQuestionId && (
-              <Link href={`/quiz/${prevQuestionId}${navQueryStr}`} className="btn btn-secondary" style={{ padding: '0.3rem 0.8rem', fontSize: '0.85rem', borderRadius: '20px' }}>
-                ◀ 前の問題
-              </Link>
-            )}
-            {nextQuestionId && (
-              <Link href={`/quiz/${nextQuestionId}${navQueryStr}`} className="btn btn-secondary" style={{ padding: '0.3rem 0.8rem', fontSize: '0.85rem', borderRadius: '20px' }}>
-                次の問題 ▶
-              </Link>
-            )}
-            {effectiveNextIncorrectId && effectiveNextIncorrectId !== currentQ.id ? (
-              <Link 
-                href={`/quiz/${effectiveNextIncorrectId}${navQueryStr}`} 
-                className="btn btn-primary" 
-                style={{ 
-                  padding: '0.35rem 0.9rem', 
-                  fontSize: '0.85rem', 
-                  borderRadius: '20px', 
-                  background: '#dc2626', 
-                  border: '1px solid #ef4444', 
-                  color: '#ffffff', 
-                  fontWeight: 'bold',
-                  boxShadow: '0 2px 8px rgba(220, 38, 38, 0.4)',
-                  textDecoration: 'none',
-                  display: 'inline-flex',
-                  alignItems: 'center',
-                  gap: '0.3rem'
-                }}
-              >
-                次の不正解へ ⏭
-              </Link>
-            ) : (
-              <button 
-                disabled 
-                className="btn btn-secondary" 
-                style={{ 
-                  padding: '0.35rem 0.9rem', 
-                  fontSize: '0.85rem', 
-                  borderRadius: '20px', 
-                  opacity: 0.4, 
-                  cursor: 'not-allowed',
-                  display: 'inline-flex',
-                  alignItems: 'center',
-                  gap: '0.3rem'
-                }}
-              >
-                次の不正解へ ⏭
-              </button>
-            )}
-          </div>
-        </div>
-        <button 
-          onClick={toggleDebate}
-          className="btn" 
-          style={{ 
-            background: currentQ.isDebated ? 'rgba(0, 168, 255, 0.2)' : 'var(--surface-color)', 
-            border: `1px solid ${currentQ.isDebated ? 'var(--accent-primary)' : 'var(--surface-border)'}`,
-            padding: '0.5rem 1rem', 
-            borderRadius: '20px',
-            cursor: 'pointer',
-            transition: 'all 0.2s'
-          }}
-        >
-          <span className={currentQ.isDebated ? "text-gradient" : ""} style={{ fontWeight: 'bold', color: currentQ.isDebated ? 'inherit' : 'var(--text-secondary)' }}>
-            {currentQ.isDebated ? '✨ ディベート済' : '未解説 (クリックで済にする)'}
-          </span>
-        </button>
+        <h2 className="text-secondary" style={{ margin: 0 }}>{currentQ.year}年度 問{currentQ.questionNumber}</h2>
       </header>
 
       <div className="glass-panel" style={{ padding: '2rem', marginBottom: '2rem' }}>
@@ -808,6 +733,58 @@ export default function SingleQuizClient({
             </>
           );
         })()}
+      </div>
+
+      <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', justifyContent: 'center', marginBottom: '2rem' }}>
+        {prevQuestionId && (
+          <Link href={`/quiz/${prevQuestionId}${navQueryStr}`} className="btn btn-secondary" style={{ padding: '0.3rem 0.8rem', fontSize: '0.85rem', borderRadius: '20px' }}>
+            ◀ 前の問題
+          </Link>
+        )}
+        {nextQuestionId && (
+          <Link href={`/quiz/${nextQuestionId}${navQueryStr}`} className="btn btn-secondary" style={{ padding: '0.3rem 0.8rem', fontSize: '0.85rem', borderRadius: '20px' }}>
+            次の問題 ▶
+          </Link>
+        )}
+        {effectiveNextIncorrectId && effectiveNextIncorrectId !== currentQ.id ? (
+          <Link
+            href={`/quiz/${effectiveNextIncorrectId}${navQueryStr}`}
+            className="btn btn-primary"
+            style={{
+              padding: '0.35rem 0.9rem',
+              fontSize: '0.85rem',
+              borderRadius: '20px',
+              background: '#dc2626',
+              border: '1px solid #ef4444',
+              color: '#ffffff',
+              fontWeight: 'bold',
+              boxShadow: '0 2px 8px rgba(220, 38, 38, 0.4)',
+              textDecoration: 'none',
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '0.3rem'
+            }}
+          >
+            次の不正解へ ⏭
+          </Link>
+        ) : (
+          <button
+            disabled
+            className="btn btn-secondary"
+            style={{
+              padding: '0.35rem 0.9rem',
+              fontSize: '0.85rem',
+              borderRadius: '20px',
+              opacity: 0.4,
+              cursor: 'not-allowed',
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '0.3rem'
+            }}
+          >
+            次の不正解へ ⏭
+          </button>
+        )}
       </div>
 
       {isAnswered && (
