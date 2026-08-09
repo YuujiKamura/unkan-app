@@ -151,7 +151,7 @@ export default function SaveLoadUI() {
       setShareUrl('https://yuujikamura.github.io/unkan-app/#share=default');
       setStatusMsg(
         publishResult.pushed
-          ? '公開しました(数十秒でPagesに反映されます)'
+          ? '公開しました(数分以内に共有リンクに反映されます)'
           : '前回と内容が同じでした(既に最新です)'
       );
     } catch (err) {
@@ -239,7 +239,7 @@ export default function SaveLoadUI() {
               読み込むか確認するダイアログが表示されます。<br/>
               {isSpaMode
                 ? '（※データはURL自体に埋め込まれています。サーバー保存はしていません）'
-                : '（※リポジトリへ自動push済みです。数十秒でPages側にも反映されます）'}
+                : '（※リポジトリへ自動push済みです。Pagesの再ビルドを待たずに数分以内に共有リンクへ反映されます）'}
             </p>
             <input 
               type="text" 
