@@ -4,10 +4,13 @@ import { useState, useEffect } from 'react';
 import { apiClient } from '@/lib/apiClient';
 import { compressToBase64Url } from '@/lib/shareCodec';
 
+const SPA_DATA_KEYS = ['unkan_spa_attempts', 'unkan_spa_bookmarks', 'unkan_spa_explanations', 'unkan_spa_debates', 'unkan_spa_corrections'];
+
 export default function SaveLoadUI() {
   const [statusMsg, setStatusMsg] = useState('');
   const [shareUrl, setShareUrl] = useState('');
   const [isSpaMode, setIsSpaMode] = useState(false);
+  const [showResetConfirm, setShowResetConfirm] = useState(false);
 
   useEffect(() => {
     setIsSpaMode(process.env.NEXT_PUBLIC_APP_MODE === 'spa' || window.location.hostname.includes('github.io'));
@@ -72,6 +75,11 @@ export default function SaveLoadUI() {
       reader.readAsText(file);
     };
     input.click();
+  };
+
+  const handleReset = () => {
+    SPA_DATA_KEYS.forEach((key) => localStorage.removeItem(key));
+    window.location.href = window.location.pathname;
   };
 
   const handleShare = async () => {
@@ -170,13 +178,53 @@ export default function SaveLoadUI() {
       >
         💾 セーブ
       </button>
-      <button 
-        onClick={handleLoad} 
-        className="btn btn-secondary" 
+      <button
+        onClick={handleLoad}
+        className="btn btn-secondary"
         style={{ padding: '0.4rem 0.8rem', fontSize: '0.9rem', borderRadius: '8px' }}
       >
         📂 ロード
       </button>
+      {isSpaMode && (
+        <button
+          onClick={() => setShowResetConfirm(true)}
+          className="btn btn-secondary"
+          style={{ padding: '0.4rem 0.8rem', fontSize: '0.9rem', borderRadius: '8px', color: 'var(--error)', borderColor: 'var(--error)' }}
+        >
+          🗑️ データを削除して初めから
+        </button>
+      )}
+
+      {showResetConfirm && (
+        <div style={{
+          position: 'fixed', top: 0, left: 0, right: 0, bottom: 0,
+          background: 'rgba(0,0,0,0.5)', zIndex: 9999,
+          display: 'flex', alignItems: 'center', justifyContent: 'center'
+        }}>
+          <div className="glass-panel" style={{ padding: '2rem', maxWidth: '440px', width: '90%', textAlign: 'center' }}>
+            <h3 style={{ marginTop: 0, marginBottom: '1rem', color: 'var(--text-primary)' }}>データを削除して初めから</h3>
+            <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', marginBottom: '1.5rem' }}>
+              このブラウザに保存されている解答履歴・訂正マーク・解説・ブックマークを
+              すべて削除し、まっさらな状態に戻します。この操作は取り消せません。
+            </p>
+            <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center' }}>
+              <button
+                className="btn"
+                style={{ background: 'var(--error)', border: 'none', color: '#fff', padding: '0.6rem 1.2rem', borderRadius: '8px', fontWeight: 'bold' }}
+                onClick={handleReset}
+              >
+                削除する
+              </button>
+              <button
+                className="btn btn-secondary"
+                onClick={() => setShowResetConfirm(false)}
+              >
+                キャンセル
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
 
       {shareUrl && (
         <div style={{
