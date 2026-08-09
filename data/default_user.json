@@ -92,6 +92,12 @@
         "selectedOptions": "{\"1\":2,\"3\":2,\"5\":2}",
         "reasoning": null,
         "attemptedAt": "2026-08-09T00:30:50.487Z"
+      },
+      {
+        "isCorrect": false,
+        "selectedOptions": "{\"1\":2,\"3\":2,\"5\":1}",
+        "reasoning": null,
+        "attemptedAt": "2026-08-09T08:31:39.147Z"
       }
     ],
     "explanation": {
@@ -181,6 +187,12 @@
         "selectedOptions": "1",
         "reasoning": null,
         "attemptedAt": "2026-08-09T01:23:09.039Z"
+      },
+      {
+        "isCorrect": true,
+        "selectedOptions": "1,4",
+        "reasoning": null,
+        "attemptedAt": "2026-08-09T08:32:11.160Z"
       }
     ],
     "explanation": null,
@@ -419,6 +431,12 @@
         "selectedOptions": "3",
         "reasoning": null,
         "attemptedAt": "2026-08-09T01:35:54.431Z"
+      },
+      {
+        "isCorrect": true,
+        "selectedOptions": "4",
+        "reasoning": null,
+        "attemptedAt": "2026-08-09T08:32:45.242Z"
       }
     ],
     "explanation": null,
@@ -732,6 +750,12 @@
         "selectedOptions": "2,4",
         "reasoning": null,
         "attemptedAt": "2026-08-09T06:31:31.804Z"
+      },
+      {
+        "isCorrect": true,
+        "selectedOptions": "2,3",
+        "reasoning": null,
+        "attemptedAt": "2026-08-09T08:33:28.146Z"
       }
     ],
     "explanation": {
@@ -962,6 +986,12 @@
         "selectedOptions": "{\"1\":1,\"4\":2,\"6\":1}",
         "reasoning": null,
         "attemptedAt": "2026-08-09T07:20:36.571Z"
+      },
+      {
+        "isCorrect": true,
+        "selectedOptions": "{\"1\":1,\"4\":1,\"6\":1}",
+        "reasoning": null,
+        "attemptedAt": "2026-08-09T08:33:56.176Z"
       }
     ],
     "explanation": {
@@ -1146,6 +1176,12 @@
         "selectedOptions": "1,4",
         "reasoning": null,
         "attemptedAt": "2026-08-09T07:27:40.374Z"
+      },
+      {
+        "isCorrect": true,
+        "selectedOptions": "2,4",
+        "reasoning": null,
+        "attemptedAt": "2026-08-09T08:34:24.062Z"
       }
     ],
     "explanation": {
@@ -1448,6 +1484,12 @@
         "selectedOptions": "1,3",
         "reasoning": null,
         "attemptedAt": "2026-08-09T07:32:32.116Z"
+      },
+      {
+        "isCorrect": true,
+        "selectedOptions": "1,2",
+        "reasoning": null,
+        "attemptedAt": "2026-08-09T08:35:00.419Z"
       }
     ],
     "explanation": null,
@@ -1504,13 +1546,34 @@
         "selectedOptions": "3",
         "reasoning": null,
         "attemptedAt": "2026-08-08T14:20:41.908Z"
+      },
+      {
+        "isCorrect": false,
+        "selectedOptions": "1",
+        "reasoning": null,
+        "attemptedAt": "2026-08-09T07:42:02.777Z"
+      },
+      {
+        "isCorrect": true,
+        "selectedOptions": "4",
+        "reasoning": null,
+        "attemptedAt": "2026-08-09T08:36:04.132Z"
       }
     ],
     "explanation": {
       "content": "Skip to main contentAccessibility help\nAI Mode\nAll\nShopping\nImages\nVideos\nMore\nPro\n\n\n\n\n4: 事業者は、労働安全衛生規則で定めるところにより、深夜業に従事する労働者が、自ら受けた健康診断の結果を証明する書面を事業者に提出した場合において、その健康診断の結果(当該健康診断の項目に異常の所見があると診断された労働者に係るものに限る。)に基づく医師からの意見聴取は、当該健康診断の結果を証明する書面が事業者に提出された日から4ヵ月以内に行わなければならない。\nその記述は誤りです。正しくは「4ヵ月以内」ではなく、書面を提出した日（または健康診断が行われた日）から3ヵ月以内に行わなければなりません。 \n\nosh-management.com\n +1\n訂正のポイント\n誤り：提出された日から4ヵ月以内\n正しい：健康診断の結果を証明する書面が事業者に提出された日から3ヵ月以内\n根拠法令：労働安全衛生規則（安衛則第51条の2など）において、自発的健康診断の結果証明書を提出した場合の医師からの意見聴取は、提出された日（または健診日）から3ヵ月以内と定められています。 \n\nosh-management.com\n +1\nもしよろしければ、以下についてもお手伝いできます：\n労働安全衛生法のほかの条文の確認\n健康診断の事後措置に関する具体的な実務フローの解説\nどのように進めましょうか？\n\n\n\n\n\nwww.shinano.or.jp\n運行管理者試験対策【労働安全衛生法】\n事業者は、労働安全衛生規則で定めるところにより、深夜業に従事する労働者が、自ら受けた健康診断の結果を証明する書面を事業者...\n\n\nosh-management.com\n労働安全衛生規則に基づく健康診断\n（３）深夜業を含む業務に常時従事する労働者に対し、６か月以内ごとに１回、定期に、健康診断を行っているが、胸部エックス線検...\n\n\n名古屋市医師会\n健康診断の実施と事後措置の概要\n(自発的健康診断の結果の提出). 第66条の2 午後10時から午前5時まで (厚生労働大臣が必要であると認める場合におい...\n\nShow all\nなんで3か月？\n労働安全衛生法で「3か月以内」と定められている理由は、労働者の健康悪化を未然に防ぎ、迅速に就業環境を改善（事後措置）するための「医学的なタイムリミット」だからです。 \n\n名古屋市医師会\n +1\n国が「4か月」ではなく「3か月」としている具体的な背景には、以下の3つの実務的・医学的理由があります。\n健康診断で「異常の所見（要再検や要治療など）」が出た場合、その状態のまま放置して過重労働や深夜業を続けると、3か月もあれば脳・心臓疾患などの重篤な過労死リスクや症状の悪化につながる可能性があります。\n医学的な観点から、健診時点のデータをもとに「このまま働かせて大丈夫か」を判断し、意味のある業務調整（残業禁止や就業制限など）を行うには、3か月が実効性を持てる限界の鮮度とされています。 \n\n名古屋市医師会\n +2\n2. 他の労働法や医療の基準との整合性\n日本の労働安全衛生法や医療の世界では、「3か月」をひとつの健康管理の区切り（クオーター）として多用しています。\n雇入れ時健診の免除期間：入社前「3か月以内」に受けた健診結果を出せば、会社の健診を省略できる。\n生活習慣病の保健指導：健診後「3か月以内」の開始が努力義務。\n医療の指標（HbA1cなど）：糖尿病の指標となるHbA1cは過去1〜2か月の血糖状態を映すため、3か月以上経つと健診時のデータと現在の体調がズレてしまい、医師が正しい就業判定を下せなくなります。 \n\nSmartHR Mag.\n +2\n3. 会社が放置するのを防ぐため\n健診結果が会社に届いてから、書類の整理や産業医との日程調整にはどうしても数週間〜1か月ほどかかります。\nもしこれを「半年以内」などと長く設定してしまうと、会社の対応が後回しになり、結果的に労働者がリスクに晒され続けます。会社に対して「結果が出たら、準備期間を考慮しつつも、速やかに（＝3か月以内に）医師に相談して業務を調整しなさい」という法的強制力を持たせるために、この絶妙な期間が設定されています。 \n\noneself.co.jp\n +1\n💡 まとめると\n「健診結果のデータが古くなってお医者さんが正しい判断をできなくなる前、かつ、労働者の体が手遅れになる前に、会社は早く産業医に意見を聞きなさい！」という、安全配慮義務に基づいた期限なのです。 \n\noneself.co.jp\n +1\nもしご興味があれば、この期限を過ぎてしまった場合に会社が受けるペナルティ（罰則）や、50人未満の小さな会社での産業医の探し方などもお話しできます。いかがいたしますか？ \n\nservice.firstcall.md\n\n\n\n\n\nJapan Pre-Entry Tuberculosis Screening (JPETS)\nJapan Pre-Entry Tuberculosis Screening | HOME（English） |\nApplicants will undergo a medical examination and chest X-ra...\n\n\noneself.co.jp\n健康診断の事後措置とは？労働安全衛生法に基づく義務や健康 ...\nJun 27, 2026 — 5-2 健康診断実施日から3ヶ月以内に医師等からの意見聴取を行う. 労働安全衛生法第66条の4および労働安全衛生規則第5...\n\n\n名古屋市医師会\n健康診断の実施と事後措置の概要\n健康診断結果に基づく医師からの意見聴取. 労働安全衛生法に定められている健康診断で、異常所見があった労働者に関して、その...\n\nShow all\n1. 体調や数値が「激変」する前に手を打つため\nAsk anything\n\n\n\nAI Mode response is ready",
       "isDebated": true
     },
-    "corrections": []
+    "corrections": [
+      {
+        "optionNumber": 4,
+        "selectedText": "4ヵ月以内",
+        "startOffset": 166,
+        "endOffset": 171,
+        "correctionText": "2か月以内",
+        "createdAt": "2026-08-09T07:42:30.925Z"
+      }
+    ]
   },
   {
     "year": "令和2年 第1回",
@@ -1522,6 +1585,18 @@
         "selectedOptions": "{\"1\":2,\"3\":1,\"5\":2,\"7\":2}",
         "reasoning": null,
         "attemptedAt": "2026-08-08T14:23:42.462Z"
+      },
+      {
+        "isCorrect": false,
+        "selectedOptions": "{\"1\":2,\"3\":1,\"5\":2,\"7\":2}",
+        "reasoning": null,
+        "attemptedAt": "2026-08-09T07:43:26.514Z"
+      },
+      {
+        "isCorrect": true,
+        "selectedOptions": "{\"1\":1,\"3\":2,\"5\":2,\"7\":2}",
+        "reasoning": null,
+        "attemptedAt": "2026-08-09T08:37:25.348Z"
       }
     ],
     "explanation": null,
@@ -1537,6 +1612,12 @@
         "selectedOptions": "1,3",
         "reasoning": null,
         "attemptedAt": "2026-08-08T14:37:03.051Z"
+      },
+      {
+        "isCorrect": true,
+        "selectedOptions": "1,3",
+        "reasoning": null,
+        "attemptedAt": "2026-08-09T07:45:09.326Z"
       }
     ],
     "explanation": null,
@@ -1569,6 +1650,184 @@
         "selectedOptions": "1,4",
         "reasoning": null,
         "attemptedAt": "2026-08-08T14:40:52.462Z"
+      },
+      {
+        "isCorrect": false,
+        "selectedOptions": "2",
+        "reasoning": null,
+        "attemptedAt": "2026-08-09T07:46:18.842Z"
+      },
+      {
+        "isCorrect": true,
+        "selectedOptions": "2,4",
+        "reasoning": null,
+        "attemptedAt": "2026-08-09T08:37:56.805Z"
+      }
+    ],
+    "explanation": null,
+    "corrections": []
+  },
+  {
+    "year": "令和2年 第1回",
+    "questionNumber": 23,
+    "meta": null,
+    "attempts": [
+      {
+        "isCorrect": false,
+        "selectedOptions": "2,3,4",
+        "reasoning": null,
+        "attemptedAt": "2026-08-09T07:49:26.125Z"
+      }
+    ],
+    "explanation": {
+      "content": "",
+      "isDebated": false
+    },
+    "corrections": []
+  },
+  {
+    "year": "令和2年 第1回",
+    "questionNumber": 24,
+    "meta": null,
+    "attempts": [
+      {
+        "isCorrect": true,
+        "selectedOptions": "2,4",
+        "reasoning": null,
+        "attemptedAt": "2026-08-09T07:57:55.553Z"
+      }
+    ],
+    "explanation": {
+      "content": "",
+      "isDebated": false
+    },
+    "corrections": [
+      {
+        "optionNumber": 3,
+        "selectedText": "1年間保存",
+        "startOffset": 144,
+        "endOffset": 149,
+        "correctionText": "指導の記録は3年間保存",
+        "createdAt": "2026-08-09T07:58:18.558Z"
+      },
+      {
+        "optionNumber": 1,
+        "selectedText": "1年間保存",
+        "startOffset": 81,
+        "endOffset": 86,
+        "correctionText": "運転者等台帳は3年間保存",
+        "createdAt": "2026-08-09T07:58:47.536Z"
+      }
+    ]
+  },
+  {
+    "year": "令和2年 第1回",
+    "questionNumber": 25,
+    "meta": null,
+    "attempts": [
+      {
+        "isCorrect": true,
+        "selectedOptions": "1,2",
+        "reasoning": null,
+        "attemptedAt": "2026-08-09T08:00:33.441Z"
+      }
+    ],
+    "explanation": null,
+    "corrections": [
+      {
+        "optionNumber": 4,
+        "selectedText": "350ミリリットル（アルコール7%）の場合、概ね2時間と",
+        "startOffset": 59,
+        "endOffset": 87,
+        "correctionText": "4時間",
+        "createdAt": "2026-08-09T08:01:01.056Z"
+      },
+      {
+        "optionNumber": 3,
+        "selectedText": "運転業務に適さない者を選任しないようにするためのものである",
+        "startOffset": 122,
+        "endOffset": 151,
+        "correctionText": "",
+        "createdAt": "2026-08-09T08:01:17.409Z"
+      }
+    ]
+  },
+  {
+    "year": "令和2年 第1回",
+    "questionNumber": 26,
+    "meta": null,
+    "attempts": [
+      {
+        "isCorrect": true,
+        "selectedOptions": "1,2,3",
+        "reasoning": null,
+        "attemptedAt": "2026-08-09T08:01:57.248Z"
+      }
+    ],
+    "explanation": null,
+    "corrections": []
+  },
+  {
+    "year": "令和2年 第1回",
+    "questionNumber": 27,
+    "meta": null,
+    "attempts": [
+      {
+        "isCorrect": false,
+        "selectedOptions": "3,4",
+        "reasoning": null,
+        "attemptedAt": "2026-08-09T08:05:12.985Z"
+      }
+    ],
+    "explanation": {
+      "content": "Skip to main contentAccessibility help\nAI Mode\nAll\nImages\nShopping\nShort videos\nMore\nPro\n\n\n\n\n2: アンチロック・ブレーキシステム(ABS)は、急ブレーキをかけた時などにタイヤがロック(回転が止まること)するのを防ぐことにより、車両の進行方向の安定性を保ち、また、ハンドル操作で障害物を回避できる可能性を高める装置である。ABSを効果的に作動させるためには、できるだけ強くブレーキペダルを踏み続けることが重要であり、この点を運転者に指導する必要がある。\nABSとは？どんなシーンで活躍する？仕組みを理解して安全運転を ...\n車の基礎知識】ABSの意味とは？警告ランプが消えないときに確認 ...\n車の車両制御とは？ ABS、TRC、ESC、EPSなどを解説【自動車用語 ...\nABS・TCS・ESC〜アンチロック・ブレーキシステムの働きと効果 ...\nスゴイぞ！いまどきのABSは軽量小型・高性能！ | Bike Life Lab ...\nご提示いただいた文章は、運行管理者試験などの安全指導において正しい内容（正しい記述）です。ABS（アンチロック・ブレーキシステム）の役割と、作動時の正しいブレーキ操作について正確に説明されています。詳細に関する要点は以下の通りです。 \n\n国土交通省\n +2\nABSの主な役割と正しい操作方法\nタイヤロックの防止: 急ブレーキ時のタイヤロックを防ぎ、車体の安定やハンドル操作による障害物回避を可能にします。\nペダルの踏み方: 効果的・継続的に作動させるため、ポンピングブレーキはせず強く踏み続ける必要があります。\n作動時の挙動: 作動時にペダルが振動したり音が鳴ることがありますが、故障ではないため踏み続けます。\n過信への注意: 制動距離が短くなる万能装置ではなく、砂利道や新雪では逆に距離が延びる場合もあります。 \n\n国土交通省\n +2\n詳細については、国土交通省の自動車総合安全情報もあわせてご参照ください。 \n\n国土交通省\nこの内容に関して、さらに過去問の解説や他の安全装置の指導ポイントについても確認したい場合はお知らせください。\n\n\n\n\n\n国土交通省\n安全な自動車に乗ろう！：自動車総合安全情報\nアンチロック・ブレーキシステム（ABS）は、急ブレーキをかけたときなどにタイヤがロック（回転が止まること）するのを防ぐこ...\n\n\nX\n#運行管理者試験一問一答 問題 アンチロック・ブレーキ ...\nアンチロック・ブレーキシステム（ABS）は、急ブレーキ時などにタイヤがロックするのを防ぎ、車両の進行方向の安定性を保つ装...\n\nfaq.subaru.jp\nABSについて教えてください。 | お問い合わせ/よくあるご質問 | SUBARU\nABS(アンチロック・ブレーキ・システム)は、急ブレーキをかけたときなどにタイヤのロックを防止し、滑りやすい路面の制動で...\nShow all\n強くって言っても適度に踏まないといかんだろうに直感と反している\n確かに「適度にいなす」のが運転のセオリーに思えるため、強く踏み続けるのは直感に反しますよね。\nその違和感は非常に自然な感覚ですが、メカニズムを知ると納得できます。\nなぜ「限界まで強く」踏む必要があるのか\n調整はコンピューターがやるから: 人間が「適度」に加減してしまうと、システムが急ブレーキ（緊急事態）だと認識できず、ABSが作動しません。\n人間の足より精密に制御するから: ABSはタイヤがロックするかしないかのギリギリの調整を1秒間に数十回の速さで行っています。人間がペダルを緩める必要はありません。\nブレーキの最大力を引き出すため: 強く踏み込むことで、システムに「今すぐ最大パワーで止まりたい」という信号を伝えることになります。\n昔の常識との違い\n昔の車にはABSがなかったため、「ポンピングブレーキ（人間がパタパタと踏み直す）」や「適度な踏み加減」が技術として教えられていました。今の車では、その調整を車が全自動でやってくれるため、人間は「ただ全力で踏み続ける」だけで一番効率よく止まれます。\nもしこのシステムに関して、作動したときの足元の感触（振動や音）や、指導時の伝え方のコツについてさらに詳しく知りたい場合は教えてください。\nTry without personalization\n\n\n\n\nAsk anything\n\n\n\nAI Mode response is ready",
+      "isDebated": true
+    },
+    "corrections": []
+  },
+  {
+    "year": "令和2年 第1回",
+    "questionNumber": 28,
+    "meta": null,
+    "attempts": [
+      {
+        "isCorrect": true,
+        "selectedOptions": "{\"1\":2,\"3\":2,\"5\":1}",
+        "reasoning": null,
+        "attemptedAt": "2026-08-09T08:14:05.295Z"
+      }
+    ],
+    "explanation": {
+      "content": "Gemini との会話\nこれサッパリ分らんわ\n運行管理者の試験でよく出る「停止距離」や「車間距離」の計算問題ですね。用語や数字が一気に出てくるので、パッと見るとややこしくて嫌になりますよね。\n\nこの問題は、以下の3つの言葉の意味を整理すると、パズルのように解けるようになります。\n\n空走距離：危険に気づいてから、ブレーキを踏む（効き始める）までに車が進んでしまう距離。\n\n制動距離：ブレーキが効き始めてから、車が完全に止まるまでに進む距離。\n\n停止距離：上記2つを足した距離（危険に気づいてから完全に止まるまでの距離）。\n\nこれらを踏まえて、ア・イ・ウの解き方を順番に解説しますね。\n\n【ア】空走距離の求め方\nここでは、ブレーキをかける直前に「1秒間」で何メートル進んだかを計算します。\n画面上は「図表省略」となっていますが、本来はタコグラフ（記録図表）から当時の時速（km/h）を読み取ります。\n\n時速を秒速（1秒間に進む距離）に直すには、時速を3.6で割るのが一番手っ取り早いです。\n\n例：もしグラフから読み取った時速が72km/hだった場合\n72÷3.6=20（秒速20m）\n\n空走時間は1秒なので、そのまま 20メートル が空走距離になります。（選択肢②）\n\n【イ】A自動車の停止距離\nこれは一番簡単です。「危険を認知してから停止するまでに走行した距離（＝停止距離）」を求めるので、【ア】の答え（空走距離）に、問題文で指定された制動距離（40m）を足すだけです。\n\nもし【ア】が20mだった場合： 20+40=60 メートル（選択肢②）\n\n【ウ】停止後のA車とB車の車間距離\nここが一番ややこしいところですが、それぞれの車が「元の位置から何メートル進んで止まったか」を比べます。\n\n最初はA車とB車の間には 50m の車間距離がありました（B車が50m先を走っている）。\n\nB車が進んだ距離（制動距離）は問題文より 35m です。\n\nA車が進んだ距離（停止距離）は 【イ】の答え（例えば60m） です。\n\nつまり、B車は元の位置から35m先で止まり、A車は元の位置から60m先で止まったことになります。\nこれを計算式にすると以下のようになります。\n\n（最初の車間50m ＋ B車が進んだ距離35m） － A車が進んだ距離60m ＝ 25m（選択肢①）\n\n今回はグラフが省略されているため【ア】の正確な数値が確定しませんが、仮に時速72kmだったとすると「ア：②、イ：②、ウ：①」という答えになります。（もし時速54kmなら「ア：①、イ：①、ウ：②」になります）。\n\n考え方の流れは掴めましたでしょうか？もしお手元で本来のタコグラフの図表が見られるようでしたら、ブレーキ直前の速度が時速何kmになっているか確認してみてくださいね。\n\n\n「\n運行管理者 過去問演習・学習ダッシュボード\n」を共有しています\n最新の Gemini の結果にスキップ\n",
+      "isDebated": true
+    },
+    "corrections": []
+  },
+  {
+    "year": "令和2年 第1回",
+    "questionNumber": 29,
+    "meta": null,
+    "attempts": [
+      {
+        "isCorrect": true,
+        "selectedOptions": "{\"1\":3,\"5\":2,\"9\":1}",
+        "reasoning": null,
+        "attemptedAt": "2026-08-09T08:17:03.728Z"
+      }
+    ],
+    "explanation": null,
+    "corrections": []
+  },
+  {
+    "year": "令和2年 第1回",
+    "questionNumber": 30,
+    "meta": null,
+    "attempts": [
+      {
+        "isCorrect": true,
+        "selectedOptions": "{\"1\":5,\"9\":3,\"17\":8}",
+        "reasoning": null,
+        "attemptedAt": "2026-08-09T08:29:46.357Z"
       }
     ],
     "explanation": null,
@@ -5222,6 +5481,12 @@
         "selectedOptions": "1,2,3",
         "reasoning": null,
         "attemptedAt": "2026-08-09T00:25:30.311Z"
+      },
+      {
+        "isCorrect": true,
+        "selectedOptions": "2,3",
+        "reasoning": null,
+        "attemptedAt": "2026-08-09T08:30:53.958Z"
       }
     ],
     "explanation": null,
