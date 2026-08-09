@@ -1,8 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { useRouter, useSearchParams } from 'next/navigation';
-import EditQuestionModal from './EditQuestionModal';
+import { useSearchParams } from 'next/navigation';
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
@@ -32,7 +31,6 @@ export default function QuestionsListContent({
   mappedQuestions: QuestionItem[];
   groupBy: 'year' | 'field' | 'knowledge' | 'situation';
 }) {
-  const router = useRouter();
   const searchParams = useSearchParams();
   const queryParam = searchParams.get('knowledge') || searchParams.get('situation') || searchParams.get('field') || searchParams.get('year');
   const storageKey = `takken_active_tab_${groupBy}`;
@@ -40,7 +38,6 @@ export default function QuestionsListContent({
   const [activeTab, setActiveTab] = useState<string>(queryParam || groups[0] || '');
   const [selectedIteration, setSelectedIteration] = useState<number | 'latest'>('latest');
   const [isMounted, setIsMounted] = useState(false);
-  const [editingQuestion, setEditingQuestion] = useState<QuestionItem | null>(null);
 
   useEffect(() => {
     setIsMounted(true);
@@ -117,7 +114,7 @@ export default function QuestionsListContent({
             <tr style={{ borderBottom: '1px solid var(--surface-border)', color: 'var(--text-secondary)' }}>
               <th style={{ padding: '0.4rem 0.5rem', whiteSpace: 'nowrap' }}>年度・番号</th>
               <th style={{ padding: '0.4rem 0.5rem', whiteSpace: 'nowrap' }}>分野</th>
-              <th style={{ padding: '0.4rem 0.5rem', whiteSpace: 'nowrap' }}>状態</th>
+              <th style={{ padding: '0.4rem 0.5rem', whiteSpace: 'nowrap' }}>不正解率</th>
               <th style={{ padding: '0.4rem 0.5rem', whiteSpace: 'nowrap' }}>
                 <select 
                   value={selectedIteration} 
@@ -136,22 +133,13 @@ export default function QuestionsListContent({
           <tbody>
             {qsForGroup.map(q => {
               const isDebated = q.isDebated;
-              const isPopulated = !!q.content;
               const displayAttempt = getAttemptForIteration(q);
               const lastAttemptDate = displayAttempt?.attemptedAt;
               const attemptCount = q.attempts.length;
-              
-              let statusLabel = '未入力';
-              let statusColor = 'var(--text-secondary)';
-              if (isDebated) {
-                statusLabel = '✨ ディベート済';
-                statusColor = 'var(--accent-primary)';
-              } else if (isPopulated) {
-                statusLabel = '問題あり (未解説)';
-                statusColor = 'var(--text-primary)';
-              }
+              const incorrectCount = q.attempts.filter((a: any) => !a.isCorrect).length;
+              const incorrectRate = attemptCount > 0 ? Math.round((incorrectCount / attemptCount) * 100) : null;
 
-              const dateStr = lastAttemptDate 
+              const dateStr = lastAttemptDate
                 ? new Date(lastAttemptDate).toLocaleDateString('ja-JP', { month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit' }) 
                 : '未挑戦';
 
@@ -183,9 +171,13 @@ export default function QuestionsListContent({
                     <div style={{ fontWeight: 'bold', fontSize: '0.9rem' }}>{q.field || '未分類'}</div>
                   </td>
                   <td style={{ padding: '0.2rem 0.5rem', whiteSpace: 'nowrap' }}>
-                    <div style={{ color: statusColor, fontWeight: isDebated ? 'bold' : 'normal' }}>
-                      {statusLabel}
-                    </div>
+                    {incorrectRate === null ? (
+                      <span style={{ color: 'var(--text-secondary)' }}>-</span>
+                    ) : (
+                      <span style={{ color: incorrectRate >= 50 ? 'var(--error)' : incorrectRate === 0 ? 'var(--success)' : 'var(--text-primary)', fontWeight: 'bold' }}>
+                        {incorrectRate}% ({incorrectCount}/{attemptCount}回)
+                      </span>
+                    )}
                   </td>
                   <td style={{ padding: '0.2rem 0.5rem', whiteSpace: 'nowrap' }}>
                     {displayAttempt ? (
@@ -210,34 +202,6 @@ export default function QuestionsListContent({
                       >
                         {q.attempts.length > 0 ? '復習する' : '挑戦する'}
                       </a>
-                      <button
-                        onClick={async () => {
-                          // 全データの取得が必要な場合はAPIから取得
-                          try {
-                            const res = await fetch(`/api/questions/${q.id}`);
-                            if (res.ok) {
-                              const fullQ = await res.json();
-                              setEditingQuestion(fullQ);
-                            } else {
-                              setEditingQuestion(q);
-                            }
-                          } catch {
-                            setEditingQuestion(q);
-                          }
-                        }}
-                        className="btn"
-                        style={{
-                          padding: '0.3rem 0.6rem',
-                          fontSize: '0.8rem',
-                          background: 'rgba(56, 189, 248, 0.15)',
-                          border: '1px solid #38bdf8',
-                          color: '#38bdf8',
-                          borderRadius: '6px',
-                          cursor: 'pointer'
-                        }}
-                      >
-                        ✏️ 修正
-                      </button>
                       {lastAttemptDate && (
                         <span style={{ fontWeight: 'bold', color: 'var(--text-primary)' }}>
                           {elapsedStr}
@@ -276,17 +240,6 @@ export default function QuestionsListContent({
 
       {/* Content */}
       {renderTable(activeTab)}
-
-      {editingQuestion && (
-        <EditQuestionModal
-          question={editingQuestion}
-          isOpen={!!editingQuestion}
-          onClose={() => setEditingQuestion(null)}
-          onSaveSuccess={() => {
-            router.refresh();
-          }}
-        />
-      )}
     </div>
   );
 }
