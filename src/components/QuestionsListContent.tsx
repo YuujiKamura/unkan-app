@@ -127,7 +127,12 @@ export default function QuestionsListContent({
                   ))}
                 </select>
               </th>
-              <th style={{ padding: '0.4rem 0.5rem', whiteSpace: 'nowrap' }}>アクション</th>
+              <th style={{ padding: '0.4rem 0.5rem', whiteSpace: 'nowrap' }}>
+                アクション
+                <span style={{ fontWeight: 'normal', fontSize: '0.75rem', color: 'var(--text-secondary)', marginLeft: '0.5rem' }}>
+                  (青=解説あり / 灰=解説なし)
+                </span>
+              </th>
             </tr>
           </thead>
           <tbody>
@@ -198,6 +203,7 @@ export default function QuestionsListContent({
                       <a
                         href={`${basePath}${quizHref}`}
                         className={`btn ${isDebated ? 'btn-primary' : 'btn-secondary'}`}
+                        title={isDebated ? '解説が登録済みの問題です' : '解説はまだ登録されていません'}
                         style={{ padding: '0.3rem 0.8rem', fontSize: '0.85rem', textDecoration: 'none' }}
                       >
                         {q.attempts.length > 0 ? '復習する' : '挑戦する'}
