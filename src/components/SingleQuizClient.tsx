@@ -309,6 +309,27 @@ export default function SingleQuizClient({
     return correctOptionNumbers.length > 0 && selectedOptions.length === correctOptionNumbers.length && selectedOptions.every(n => correctOptionNumbers.includes(n));
   })();
 
+  // 解答するボタンを押すたびに、ローカルサーバー(DBモード)のみ学習データを
+  // unkan-app-userdataへ自動push する(共有ボタンを都度押さなくてよいように)。
+  // UIをブロックしないfire-and-forget、失敗してもコンソールに出すだけ。
+  const autoPublishAfterAnswer = () => {
+    const isSpaMode = process.env.NEXT_PUBLIC_APP_MODE === 'spa' || window.location.hostname.includes('github.io');
+    if (isSpaMode) return;
+
+    (async () => {
+      try {
+        const data = await apiClient.exportUserData();
+        await fetch('/api/userdata/publish-default', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data)
+        });
+      } catch (err) {
+        console.error('Auto publish after answer failed', err);
+      }
+    })();
+  };
+
   const submitAnswer = async () => {
     if (isAnswered) return;
     if (isMultiMode && Object.keys(selectedMultiOptions).length !== multiGroupsCount) return;
@@ -324,6 +345,7 @@ export default function SingleQuizClient({
       if (attemptData && attemptData.id) {
         setCurrentAttemptId(attemptData.id);
       }
+      autoPublishAfterAnswer();
     } catch (err) {
       console.error("Failed to log attempt", err);
     }
