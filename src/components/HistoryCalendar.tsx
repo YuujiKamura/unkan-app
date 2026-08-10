@@ -69,7 +69,7 @@ export default function HistoryCalendar({ attemptsByDate }: Props) {
 
       <div style={{
         display: 'grid',
-        gridTemplateColumns: 'repeat(7, 1fr)',
+        gridTemplateColumns: 'repeat(7, minmax(0, 1fr))',
         gap: '6px',
         textAlign: 'center'
       }}>
@@ -95,6 +95,8 @@ export default function HistoryCalendar({ attemptsByDate }: Props) {
                 borderRadius: '8px',
                 padding: cellPadding,
                 minHeight: cellMinHeight,
+                minWidth: 0,
+                overflow: 'hidden',
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'center',
@@ -108,12 +110,12 @@ export default function HistoryCalendar({ attemptsByDate }: Props) {
             >
               <div style={{ fontSize: dateFontSize, fontWeight: 'bold', color: '#000000' }}>{day}</div>
               {stat.total > 0 && (
-                <div style={{ fontSize: statFontSize, marginTop: '8px', fontWeight: 'bold', color: '#000000', whiteSpace: 'nowrap' }}>
+                <div style={{ fontSize: statFontSize, marginTop: '8px', fontWeight: 'bold', color: '#000000', maxWidth: '100%' }}>
                   {stat.correct}/{stat.total}問
                 </div>
               )}
               {stat.activeMinutes > 0 && (
-                <div style={{ fontSize: statFontSize, marginTop: '2px', color: '#000000', opacity: 0.75, whiteSpace: 'nowrap' }}>
+                <div style={{ fontSize: statFontSize, marginTop: '2px', color: '#000000', opacity: 0.75, maxWidth: '100%' }}>
                   約{formatActiveMinutes(stat.activeMinutes)}
                 </div>
               )}
