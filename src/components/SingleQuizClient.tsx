@@ -560,6 +560,14 @@ export default function SingleQuizClient({
               if (!pdfUrl) pdfUrl = `https://www.unkan-net.com/kakomon/${pdfName}.pdf`;
             }
 
+            // 配布元は2つある。令和5・6年度(CBT)は公益財団法人運行管理者試験センターが
+            // 直接PDFを公開しており、それ以外の年度は運行管理者試験対策.netが配布元。
+            // どちらも「トップページ相当」へのリンクに留め、該当問題へ直接飛ぶような
+            // 表現はしない(トップページURLが変わりやすい配布元PDFの直リンクより安定するため)。
+            const isCenterSourceYear = currentQ.year === '令和6年 (CBT)' || currentQ.year === '令和5年 (CBT)';
+            const sourceSiteUrl = isCenterSourceYear ? 'https://www.unkan.or.jp/' : 'https://www.unkan-net.com/';
+            const sourceSiteName = isCenterSourceYear ? '公益財団法人運行管理者試験センター' : '運行管理者試験対策.net';
+
             // In local dev, we have images for ALL pages now (pdf_pages/)
             const hasLocalImage = isLocal && currentQ.id;
             const localImageSrc = isImageLink ? currentQ.imageUrl : (hasLocalImage ? `/pdf_pages/${pdfName}_Q${currentQ.questionNumber}.png` : null);
@@ -627,16 +635,16 @@ export default function SingleQuizClient({
                         配布元のPDFを直接ご参照ください。
                       </div>
                       <a
-                        href="https://www.unkan-net.com/"
+                        href={sourceSiteUrl}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="btn btn-primary"
                         style={{ display: 'inline-block', padding: '0.8rem 1.5rem', fontWeight: 'bold' }}
                       >
-                        📄 配布元サイトでこの問題の図表を確認する
+                        📄 配布元サイトを開く（トップページ）
                       </a>
                       <div style={{ fontSize: '0.8rem', color: 'var(--text-secondary)', marginTop: '0.5rem' }}>
-                        ※外部サイト（運行管理者試験対策.net）のトップページが開きます。<br/>
+                        ※外部サイト（{sourceSiteName}）のトップページが開きます。<br/>
                         該当年度（{currentQ.year}）のPDFを開き、問{currentQ.questionNumber}をご参照ください。
                       </div>
                     </div>
