@@ -620,16 +620,20 @@ export default function SingleQuizClient({
                     />
                   </h3>
                   
-                  {!hasLocalImage && needsImage && (
-                    <div style={{ marginTop: '1rem' }}>
-                      <a 
-                        href="https://www.unkan-net.com/" 
-                        target="_blank" 
-                        rel="noopener noreferrer" 
+                  {!hasLocalImage && (needsImage || currentQ.imageUrl) && (
+                    <div style={{ marginTop: '1rem', padding: '1rem', background: 'rgba(255,255,255,0.03)', borderRadius: '12px', border: '1px solid var(--surface-border)' }}>
+                      <div style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginBottom: '0.8rem' }}>
+                        ⚠️ この問題の図表・イラストは著作物のため、本サイトには掲載していません。<br/>
+                        配布元のPDFを直接ご参照ください。
+                      </div>
+                      <a
+                        href="https://www.unkan-net.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="btn btn-primary"
                         style={{ display: 'inline-block', padding: '0.8rem 1.5rem', fontWeight: 'bold' }}
                       >
-                        📄 この問題の図表を確認する（外部サイト）
+                        📄 配布元サイトでこの問題の図表を確認する
                       </a>
                       <div style={{ fontSize: '0.8rem', color: 'var(--text-secondary)', marginTop: '0.5rem' }}>
                         ※外部サイト（運行管理者試験対策.net）のトップページが開きます。<br/>
