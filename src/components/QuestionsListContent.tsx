@@ -143,6 +143,8 @@ export default function QuestionsListContent({
               const attemptCount = q.attempts.length;
               const incorrectCount = q.attempts.filter((a: any) => !a.isCorrect).length;
               const incorrectRate = attemptCount > 0 ? Math.round((incorrectCount / attemptCount) * 100) : null;
+              // タグだけを信用しない(#NEEDS_IMAGEは網羅されていない、SingleQuizClient.tsxと同じ判定)
+              const needsImage = !!(q.knowledgeTags?.includes('#NEEDS_IMAGE') || q.imageUrl);
 
               const dateStr = lastAttemptDate
                 ? new Date(lastAttemptDate).toLocaleDateString('ja-JP', { month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit' }) 
@@ -171,6 +173,14 @@ export default function QuestionsListContent({
                     <a href={`${basePath}${quizHref}`} style={{ color: 'var(--text-primary)', textDecoration: 'underline' }}>
                       {q.year} 問{q.questionNumber}
                     </a>
+                    {needsImage && (
+                      <span
+                        title="画像・図表を含む問題です。著作権のためPagesでは画像を表示せず、配布元PDFの参照を案内します"
+                        style={{ marginLeft: '0.4rem', fontSize: '0.75rem', padding: '0.1rem 0.4rem', borderRadius: '10px', background: 'rgba(251, 191, 36, 0.15)', border: '1px solid #fbbf24', color: '#fbbf24', fontWeight: 'normal', whiteSpace: 'nowrap' }}
+                      >
+                        🖼️ 画像あり
+                      </span>
+                    )}
                   </td>
                   <td style={{ padding: '0.2rem 0.5rem' }}>
                     <div style={{ fontWeight: 'bold', fontSize: '0.9rem' }}>{q.field || '未分類'}</div>
