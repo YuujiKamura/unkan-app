@@ -178,7 +178,7 @@ export default function QuestionsListContent({
                         title="画像・図表を含む問題です。著作権のためPagesでは画像を表示せず、配布元PDFの参照を案内します"
                         style={{ marginLeft: '0.4rem', fontSize: '0.75rem', padding: '0.1rem 0.4rem', borderRadius: '10px', background: 'rgba(251, 191, 36, 0.15)', border: '1px solid #fbbf24', color: '#fbbf24', fontWeight: 'normal', whiteSpace: 'nowrap' }}
                       >
-                        🖼️ 画像あり
+                        🖼️ 画像問題(非掲載)
                       </span>
                     )}
                   </td>
